@@ -5,17 +5,18 @@ import AST
 
 vars = {}
 
-def p_programme_statement(p):
-    ''' programme : statement '''
+def p_program_statement(p):
+    ''' program : statement '''
     p[0] = AST.ProgramNode(p[1])
 
-def p_programme_recursive(p):
-    ''' programme : statement ';' programme '''
+def p_program_recursive(p):
+    ''' program : statement ';' program '''
     p[0] = AST.ProgramNode([p[1]]+p[3].children)
 
 def p_statement(p):
     ''' statement : assignation
-        | structure '''
+        | structure
+        | shape '''
     p[0] = p[1]
     	
 def p_statement_print(p):
@@ -23,8 +24,32 @@ def p_statement_print(p):
     p[0] = AST.PrintNode(p[2])
 
 def p_structure(p):
-    ''' structure : WHILE expression '{' programme '}' '''
+    ''' structure : WHILE expression '{' program '}' '''
     p[0] = AST.WhileNode([p[2],p[4]])
+
+def p_shape(p):
+    ''' shape : circle_g '''
+    p[0] = p[1]
+
+def p_circle_g(p):
+    ''' circle_g : CIRCLE '{' x_expression ',' y_expression ',' r_expression ',' color_expression '}' '''
+    p[0] = AST.CircleNode(p[3], p[5], p[7], p[9])
+
+def p_expression_x(p):
+    ''' x_expression : X ':' NUMBER '''
+    p[0] = AST.XNode(p[3])
+
+def p_expression_y(p):
+    ''' y_expression : Y ':' NUMBER '''
+    p[0] = AST.YNode(p[3])
+    
+def p_expression_r(p):
+    ''' r_expression : R ':' NUMBER '''
+    p[0] = AST.RNode(p[3])
+    
+def p_expression_color(p):
+    ''' color_expression : COLOR ':' '(' NUMBER ',' NUMBER ',' NUMBER ')' '''
+    p[0] = AST.ColorNode(p[4], p[6], p[8])
 
 def p_expression_op(p):
     '''expression : expression ADD_OP expression
@@ -50,11 +75,10 @@ def p_assign(p):
 
 def p_error(p):
     if p:
-        print ("Syntax error in line %d" % p.lineno)
+        print ("Syntax error in line %s" % p)
         yacc.errok()
     else:
         print ("Sytax error: unexpected end of file!")
-
 
 precedence = (
     ('left', 'ADD_OP'),

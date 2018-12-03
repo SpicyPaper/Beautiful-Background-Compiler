@@ -8,7 +8,7 @@ operations = {
     '/' : lambda x,y: x/y,
 }
 
-vars ={}
+vars = {}
 
 @addToClass(AST.ProgramNode)
 def execute(self):

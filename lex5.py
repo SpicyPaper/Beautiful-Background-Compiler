@@ -1,8 +1,21 @@
 import ply.lex as lex
 
+reserved_params = (
+	'x',
+	'y',
+	'r',
+	'w',
+	'h',
+	'color',
+)
+
+reserved_objects = (
+	'circle',
+)
+
 reserved_words = (
 	'while',
-	'print'
+	'print',
 )
 
 tokens = (
@@ -10,9 +23,25 @@ tokens = (
 	'ADD_OP',
 	'MUL_OP',
 	'IDENTIFIER',
-) + tuple(map(lambda s:s.upper(),reserved_words))
+) + tuple(map(lambda s:s.upper(),reserved_words)) + tuple(map(lambda s:s.upper(),reserved_params)) + tuple(map(lambda s:s.upper(),reserved_objects))
 
-literals = '();={}'
+literals = '();={},:'
+
+def t_COLOR(t):
+	r'color'
+	return t
+
+def t_X(t):
+	r'x'
+	return t
+
+def t_Y(t):
+	r'y'
+	return t
+
+def t_R(t):
+	r'r'
+	return t
 
 def t_ADD_OP(t):
 	r'[+-]'
