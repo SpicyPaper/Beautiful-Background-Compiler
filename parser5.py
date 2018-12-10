@@ -32,36 +32,12 @@ def p_shape(p):
     p[0] = p[1]
 
 def p_circle_g(p):
-    ''' circle_g : CIRCLE '{' x_expression ',' y_expression ',' radius_expression ',' color_expression '}' '''
-    p[0] = AST.CircleNode([p[3], p[5], p[7], p[9]])
-
-def p_expression_x(p):
-    ''' x_expression : X ':' expression '''
-    p[0] = AST.XNode(p[3])
-
-def p_expression_y(p):
-    ''' y_expression : Y ':' expression '''
-    p[0] = AST.YNode(p[3])
-    
-def p_expression_radius(p):
-    ''' radius_expression : RADIUS ':' expression '''
-    p[0] = AST.RadiusNode(p[3])
+    ''' circle_g : CIRCLE '{' X ':' expression ',' Y ':' expression ',' RADIUS ':' expression ',' color_expression '}' '''
+    p[0] = AST.CircleNode([p[5], p[9], p[13], p[15]])
     
 def p_expression_color(p):
-    ''' color_expression : COLOR ':' '(' r_expression ',' g_expression ',' b_expression ')' '''
+    ''' color_expression : COLOR ':' '(' expression ',' expression ',' expression ')' '''
     p[0] = AST.ColorNode([p[4], p[6], p[8]])
-
-def p_expression_r(p):
-    ''' r_expression : expression '''
-    p[0] = AST.RNode(p[1])
-
-def p_expression_g(p):
-    ''' g_expression : expression '''
-    p[0] = AST.GNode(p[1])
-
-def p_expression_b(p):
-    ''' b_expression : expression '''
-    p[0] = AST.BNode(p[1])
 
 def p_expression_op(p):
     '''expression : expression ADD_OP expression

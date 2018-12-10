@@ -2,111 +2,93 @@
 import AST
 from AST import addToClass
 
-# opcodes de la SVM
-#    PUSHC <val>     pushes the constant <val> on the stack
-#    PUSHV <id>      pushes the value of identifier <id> on the stack
-#    SET <id>        pops a value from the top of stack and sets <id>
-#    PRINT           pops a value from the top of stack and print it
-#    ADD,SUB,DIV,MUL pops 2 values from the top of stack and compute them
-#    USUB            changes the sign of the number on the top of stack
-#    JMP <tag>       jump to :<tag>
-#    JIZ,JINZ <tag>  pops a value from the top of stack and jump to :<tag> if (not) zero
+HTMLContent = """
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="%s.js"></script>
+        <title>%s</title>
+    </head>
+    <body>
+         <canvas id="bbcCanvas" width="500" height="500"></canvas>
+    </body>
+</html>
+"""
 
-# chaque opération correspond à son instruction d'exécution de la machine SVM
-operations = {
-	'+' : 'ADD',
-	'-' : 'SUB',
-	'*' : 'MUL',
-	'/' : 'DIV'
+JSContent = """
+window.onload = function() {
+    var canvas = document.getElementById('bbcCanvas');
+    var ctx = canvas.getContext('2d');
+    %s
 }
+"""
 
-def whilecounter():
-	whilecounter.current += 1
-	return whilecounter.current
-whilecounter.current = 0
+JSCircle = """
+ctx.beginPath();
+ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
+ctx.fill();
+"""
+
+JSColor = """
+ctx.fillStyle = 'rgb(%s, %s, %s)';
+"""
+
+operations = {
+    '+' : lambda x,y: x+y,
+    '-' : lambda x,y: x-y,
+    '*' : lambda x,y: x*y,
+    '/' : lambda x,y: x/y,
+}
 
 # noeud de programme
 # retourne la suite d'opcodes de tous les enfants
 @addToClass(AST.ProgramNode)
 def compile(self):
-	bytecode = ""
+	jscode = ""
 	for c in self.children:
-		bytecode += c.compile()
-	return bytecode
+		jscode += c.compile()
+	return JSContent %(jscode)
 
-# noeud terminal
-# si c'est une variable : empile la valeur de la variable
-# si c'est une constante : empile la constante
 @addToClass(AST.TokenNode)
 def compile(self):
-	bytecode = ""
-	if isinstance(self.tok, str):
-		bytecode += "PUSHV %s\n" % self.tok
-	else:
-		bytecode += "PUSHC %s\n" % self.tok
-	return bytecode
+    return self.tok
 	
-# noeud d'assignation de variable
-# exécute le noeud à droite du signe =
-# dépile un élément et le met dans ID
 @addToClass(AST.AssignNode)
 def compile(self):
-	bytecode = ""
-	bytecode += self.children[1].compile()
-	bytecode += "SET %s\n" % self.children[0].tok
-	return bytecode
+    return self.children[1].compile()
 	
-# noeud d'affichage
-# exécute le noeud qui suit le PRINT
-# dépile un élément et l'affiche
-@addToClass(AST.PrintNode)
-def compile(self):
-	bytecode = ""
-	bytecode += self.children[0].compile()
-	bytecode += "PRINT\n"
-	return bytecode
-	
-# noeud d'opération arithmétique
-# si c'est une opération unaire (nombre négatif), empile le nombre et l'inverse
-# si c'est une opération binaire, empile les enfants puis l'opération
 @addToClass(AST.OpNode)
 def compile(self):
-	bytecode = ""
+	jscode = ""
 	if len(self.children) == 1:
-		bytecode += self.children[0].compile()
-		bytecode += "USUB\n"
+		jscode += operations[self.op](0, self.children[0].compile())
 	else:
-		for c in self.children:
-			bytecode += c.compile()
-		bytecode += operations[self.op] + "\n"
-	return bytecode
-	
-# noeud de boucle while
-# saute au label de la condition défini plus bas
-# insère le label puis le corps du body
-# insère le label puis le corps de la condition
-# réalise un saut conditionnel sur le résultat de la condition (empilé)
-@addToClass(AST.WhileNode)
+		jscode += operations[self.op](self.children[0].compile(), self.children[1].compile())
+	return jscode
+    
+@addToClass(AST.ColorNode)
 def compile(self):
-	counter = whilecounter()
-	bytecode = ""
-	bytecode += "JMP cond%s\n" % counter
-	bytecode += "body%s: " % counter
-	bytecode += self.children[1].compile()
-	bytecode += "cond%s: " % counter
-	bytecode += self.children[0].compile()
-	bytecode += "JINZ body%s\n" % counter
-	return bytecode
-	
+    return JSColor %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile())
+    
+@addToClass(AST.CircleNode)
+def compile(self):
+    jscode = self.children[3].compile()
+    jscode += JSCircle %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile())
+    return jscode
+
 if __name__ == "__main__":
     from parser5 import parse
     import sys, os
+    jsPath = os.path.splitext(sys.argv[1])[0]
+    HTMLName = os.path.splitext(sys.argv[1])[0]+'.html'
+    outfile = open(HTMLName, 'w')
+    outfile.write(HTMLContent %(jsPath, jsPath))
+
     prog = open(sys.argv[1]).read()
     ast = parse(prog)
-	print(ast)
     compiled = ast.compile()
-    name = os.path.splitext(sys.argv[1])[0]+'.vm'    
-    outfile = open(name, 'w')
+    JSName = os.path.splitext(sys.argv[1])[0]+'.js'
+    outfile = open(JSName, 'w')
     outfile.write(compiled)
     outfile.close()
-    print ("Wrote output to", name)
+    print ("Wrote output to", JSName, "and", HTMLName)

@@ -103,25 +103,7 @@ class TokenNode(Node):
         
     def __repr__(self):
         return repr(self.tok)
-
-class XNode(Node):
-    type = 'x'
-
-class YNode(Node):
-    type = 'y'
-
-class RadiusNode(Node):
-    type = 'radius'
-
-class RNode(Node):
-    type = 'r'
-
-class GNode(Node):
-    type = 'g'
-
-class BNode(Node):
-    type = 'b'
-
+        
 class ColorNode(Node):
     type = "color"
 
