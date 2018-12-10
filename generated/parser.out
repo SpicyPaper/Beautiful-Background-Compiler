@@ -16,36 +16,39 @@ Rule 5     statement -> shape
 Rule 6     statement -> PRINT expression
 Rule 7     structure -> WHILE expression { program }
 Rule 8     shape -> circle_g
-Rule 9     circle_g -> CIRCLE { x_expression , y_expression , r_expression , color_expression }
-Rule 10    x_expression -> X : NUMBER
-Rule 11    y_expression -> Y : NUMBER
-Rule 12    r_expression -> R : NUMBER
-Rule 13    color_expression -> COLOR : ( NUMBER , NUMBER , NUMBER )
-Rule 14    expression -> expression ADD_OP expression
-Rule 15    expression -> expression MUL_OP expression
-Rule 16    expression -> NUMBER
-Rule 17    expression -> IDENTIFIER
-Rule 18    expression -> ( expression )
-Rule 19    expression -> ADD_OP expression
-Rule 20    assignation -> IDENTIFIER = expression
+Rule 9     circle_g -> CIRCLE { x_expression , y_expression , radius_expression , color_expression }
+Rule 10    x_expression -> X : expression
+Rule 11    y_expression -> Y : expression
+Rule 12    radius_expression -> RADIUS : expression
+Rule 13    color_expression -> COLOR : ( r_expression , g_expression , b_expression )
+Rule 14    r_expression -> expression
+Rule 15    g_expression -> expression
+Rule 16    b_expression -> expression
+Rule 17    expression -> expression ADD_OP expression
+Rule 18    expression -> expression MUL_OP expression
+Rule 19    expression -> NUMBER
+Rule 20    expression -> IDENTIFIER
+Rule 21    expression -> ( expression )
+Rule 22    expression -> ADD_OP expression
+Rule 23    assignation -> IDENTIFIER = expression
 
 Terminals, with rules where they appear
 
-(                    : 13 18
-)                    : 13 18
+(                    : 13 21
+)                    : 13 21
 ,                    : 9 9 9 13 13
 :                    : 10 11 12 13
 ;                    : 2
-=                    : 20
-ADD_OP               : 14 19
+=                    : 23
+ADD_OP               : 17 22
 CIRCLE               : 9
 COLOR                : 13
 H                    : 
-IDENTIFIER           : 17 20
-MUL_OP               : 15
-NUMBER               : 10 11 12 13 13 13 16
+IDENTIFIER           : 20 23
+MUL_OP               : 18
+NUMBER               : 19
 PRINT                : 6
-R                    : 12
+RADIUS               : 12
 W                    : 
 WHILE                : 7
 X                    : 10
@@ -57,11 +60,14 @@ error                :
 Nonterminals, with rules where they appear
 
 assignation          : 3
+b_expression         : 13
 circle_g             : 8
 color_expression     : 9
-expression           : 6 7 14 14 15 15 18 19 20
+expression           : 6 7 10 11 12 14 15 16 17 17 18 18 21 22 23
+g_expression         : 13
 program              : 2 7 0
-r_expression         : 9
+r_expression         : 13
+radius_expression    : 9
 shape                : 5
 statement            : 1 2
 structure            : 4
@@ -79,10 +85,10 @@ state 0
     (4) statement -> . structure
     (5) statement -> . shape
     (6) statement -> . PRINT expression
-    (20) assignation -> . IDENTIFIER = expression
+    (23) assignation -> . IDENTIFIER = expression
     (7) structure -> . WHILE expression { program }
     (8) shape -> . circle_g
-    (9) circle_g -> . CIRCLE { x_expression , y_expression , r_expression , color_expression }
+    (9) circle_g -> . CIRCLE { x_expression , y_expression , radius_expression , color_expression }
 
     PRINT           shift and go to state 6
     IDENTIFIER      shift and go to state 7
@@ -142,12 +148,12 @@ state 5
 state 6
 
     (6) statement -> PRINT . expression
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -158,7 +164,7 @@ state 6
 
 state 7
 
-    (20) assignation -> IDENTIFIER . = expression
+    (23) assignation -> IDENTIFIER . = expression
 
     =               shift and go to state 17
 
@@ -166,12 +172,12 @@ state 7
 state 8
 
     (7) structure -> WHILE . expression { program }
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -191,7 +197,7 @@ state 9
 
 state 10
 
-    (9) circle_g -> CIRCLE . { x_expression , y_expression , r_expression , color_expression }
+    (9) circle_g -> CIRCLE . { x_expression , y_expression , radius_expression , color_expression }
 
     {               shift and go to state 19
 
@@ -205,10 +211,10 @@ state 11
     (4) statement -> . structure
     (5) statement -> . shape
     (6) statement -> . PRINT expression
-    (20) assignation -> . IDENTIFIER = expression
+    (23) assignation -> . IDENTIFIER = expression
     (7) structure -> . WHILE expression { program }
     (8) shape -> . circle_g
-    (9) circle_g -> . CIRCLE { x_expression , y_expression , r_expression , color_expression }
+    (9) circle_g -> . CIRCLE { x_expression , y_expression , radius_expression , color_expression }
 
     PRINT           shift and go to state 6
     IDENTIFIER      shift and go to state 7
@@ -225,8 +231,8 @@ state 11
 state 12
 
     (6) statement -> PRINT expression .
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
     ;               reduce using rule 6 (statement -> PRINT expression .)
     $end            reduce using rule 6 (statement -> PRINT expression .)
@@ -237,13 +243,13 @@ state 12
 
 state 13
 
-    (19) expression -> ADD_OP . expression
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (22) expression -> ADD_OP . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -254,39 +260,41 @@ state 13
 
 state 14
 
-    (16) expression -> NUMBER .
+    (19) expression -> NUMBER .
 
-    ADD_OP          reduce using rule 16 (expression -> NUMBER .)
-    MUL_OP          reduce using rule 16 (expression -> NUMBER .)
-    ;               reduce using rule 16 (expression -> NUMBER .)
-    $end            reduce using rule 16 (expression -> NUMBER .)
-    }               reduce using rule 16 (expression -> NUMBER .)
-    {               reduce using rule 16 (expression -> NUMBER .)
-    )               reduce using rule 16 (expression -> NUMBER .)
+    ADD_OP          reduce using rule 19 (expression -> NUMBER .)
+    MUL_OP          reduce using rule 19 (expression -> NUMBER .)
+    ;               reduce using rule 19 (expression -> NUMBER .)
+    $end            reduce using rule 19 (expression -> NUMBER .)
+    }               reduce using rule 19 (expression -> NUMBER .)
+    {               reduce using rule 19 (expression -> NUMBER .)
+    )               reduce using rule 19 (expression -> NUMBER .)
+    ,               reduce using rule 19 (expression -> NUMBER .)
 
 
 state 15
 
-    (17) expression -> IDENTIFIER .
+    (20) expression -> IDENTIFIER .
 
-    ADD_OP          reduce using rule 17 (expression -> IDENTIFIER .)
-    MUL_OP          reduce using rule 17 (expression -> IDENTIFIER .)
-    ;               reduce using rule 17 (expression -> IDENTIFIER .)
-    $end            reduce using rule 17 (expression -> IDENTIFIER .)
-    }               reduce using rule 17 (expression -> IDENTIFIER .)
-    {               reduce using rule 17 (expression -> IDENTIFIER .)
-    )               reduce using rule 17 (expression -> IDENTIFIER .)
+    ADD_OP          reduce using rule 20 (expression -> IDENTIFIER .)
+    MUL_OP          reduce using rule 20 (expression -> IDENTIFIER .)
+    ;               reduce using rule 20 (expression -> IDENTIFIER .)
+    $end            reduce using rule 20 (expression -> IDENTIFIER .)
+    }               reduce using rule 20 (expression -> IDENTIFIER .)
+    {               reduce using rule 20 (expression -> IDENTIFIER .)
+    )               reduce using rule 20 (expression -> IDENTIFIER .)
+    ,               reduce using rule 20 (expression -> IDENTIFIER .)
 
 
 state 16
 
-    (18) expression -> ( . expression )
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (21) expression -> ( . expression )
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -297,13 +305,13 @@ state 16
 
 state 17
 
-    (20) assignation -> IDENTIFIER = . expression
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (23) assignation -> IDENTIFIER = . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -315,8 +323,8 @@ state 17
 state 18
 
     (7) structure -> WHILE expression . { program }
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
     {               shift and go to state 26
     ADD_OP          shift and go to state 21
@@ -325,8 +333,8 @@ state 18
 
 state 19
 
-    (9) circle_g -> CIRCLE { . x_expression , y_expression , r_expression , color_expression }
-    (10) x_expression -> . X : NUMBER
+    (9) circle_g -> CIRCLE { . x_expression , y_expression , radius_expression , color_expression }
+    (10) x_expression -> . X : expression
 
     X               shift and go to state 28
 
@@ -342,13 +350,13 @@ state 20
 
 state 21
 
-    (14) expression -> expression ADD_OP . expression
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (17) expression -> expression ADD_OP . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -359,13 +367,13 @@ state 21
 
 state 22
 
-    (15) expression -> expression MUL_OP . expression
-    (14) expression -> . expression ADD_OP expression
-    (15) expression -> . expression MUL_OP expression
-    (16) expression -> . NUMBER
-    (17) expression -> . IDENTIFIER
-    (18) expression -> . ( expression )
-    (19) expression -> . ADD_OP expression
+    (18) expression -> expression MUL_OP . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
     NUMBER          shift and go to state 14
     IDENTIFIER      shift and go to state 15
@@ -376,17 +384,18 @@ state 22
 
 state 23
 
-    (19) expression -> ADD_OP expression .
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (22) expression -> ADD_OP expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ADD_OP          reduce using rule 19 (expression -> ADD_OP expression .)
-    MUL_OP          reduce using rule 19 (expression -> ADD_OP expression .)
-    ;               reduce using rule 19 (expression -> ADD_OP expression .)
-    $end            reduce using rule 19 (expression -> ADD_OP expression .)
-    }               reduce using rule 19 (expression -> ADD_OP expression .)
-    {               reduce using rule 19 (expression -> ADD_OP expression .)
-    )               reduce using rule 19 (expression -> ADD_OP expression .)
+    ADD_OP          reduce using rule 22 (expression -> ADD_OP expression .)
+    MUL_OP          reduce using rule 22 (expression -> ADD_OP expression .)
+    ;               reduce using rule 22 (expression -> ADD_OP expression .)
+    $end            reduce using rule 22 (expression -> ADD_OP expression .)
+    }               reduce using rule 22 (expression -> ADD_OP expression .)
+    {               reduce using rule 22 (expression -> ADD_OP expression .)
+    )               reduce using rule 22 (expression -> ADD_OP expression .)
+    ,               reduce using rule 22 (expression -> ADD_OP expression .)
 
   ! ADD_OP          [ shift and go to state 21 ]
   ! MUL_OP          [ shift and go to state 22 ]
@@ -394,9 +403,9 @@ state 23
 
 state 24
 
-    (18) expression -> ( expression . )
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (21) expression -> ( expression . )
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
     )               shift and go to state 31
     ADD_OP          shift and go to state 21
@@ -405,13 +414,13 @@ state 24
 
 state 25
 
-    (20) assignation -> IDENTIFIER = expression .
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (23) assignation -> IDENTIFIER = expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ;               reduce using rule 20 (assignation -> IDENTIFIER = expression .)
-    $end            reduce using rule 20 (assignation -> IDENTIFIER = expression .)
-    }               reduce using rule 20 (assignation -> IDENTIFIER = expression .)
+    ;               reduce using rule 23 (assignation -> IDENTIFIER = expression .)
+    $end            reduce using rule 23 (assignation -> IDENTIFIER = expression .)
+    }               reduce using rule 23 (assignation -> IDENTIFIER = expression .)
     ADD_OP          shift and go to state 21
     MUL_OP          shift and go to state 22
 
@@ -425,10 +434,10 @@ state 26
     (4) statement -> . structure
     (5) statement -> . shape
     (6) statement -> . PRINT expression
-    (20) assignation -> . IDENTIFIER = expression
+    (23) assignation -> . IDENTIFIER = expression
     (7) structure -> . WHILE expression { program }
     (8) shape -> . circle_g
-    (9) circle_g -> . CIRCLE { x_expression , y_expression , r_expression , color_expression }
+    (9) circle_g -> . CIRCLE { x_expression , y_expression , radius_expression , color_expression }
 
     PRINT           shift and go to state 6
     IDENTIFIER      shift and go to state 7
@@ -444,49 +453,51 @@ state 26
 
 state 27
 
-    (9) circle_g -> CIRCLE { x_expression . , y_expression , r_expression , color_expression }
+    (9) circle_g -> CIRCLE { x_expression . , y_expression , radius_expression , color_expression }
 
     ,               shift and go to state 33
 
 
 state 28
 
-    (10) x_expression -> X . : NUMBER
+    (10) x_expression -> X . : expression
 
     :               shift and go to state 34
 
 
 state 29
 
-    (14) expression -> expression ADD_OP expression .
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (17) expression -> expression ADD_OP expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ADD_OP          reduce using rule 14 (expression -> expression ADD_OP expression .)
-    ;               reduce using rule 14 (expression -> expression ADD_OP expression .)
-    $end            reduce using rule 14 (expression -> expression ADD_OP expression .)
-    }               reduce using rule 14 (expression -> expression ADD_OP expression .)
-    {               reduce using rule 14 (expression -> expression ADD_OP expression .)
-    )               reduce using rule 14 (expression -> expression ADD_OP expression .)
+    ADD_OP          reduce using rule 17 (expression -> expression ADD_OP expression .)
+    ;               reduce using rule 17 (expression -> expression ADD_OP expression .)
+    $end            reduce using rule 17 (expression -> expression ADD_OP expression .)
+    }               reduce using rule 17 (expression -> expression ADD_OP expression .)
+    {               reduce using rule 17 (expression -> expression ADD_OP expression .)
+    )               reduce using rule 17 (expression -> expression ADD_OP expression .)
+    ,               reduce using rule 17 (expression -> expression ADD_OP expression .)
     MUL_OP          shift and go to state 22
 
-  ! MUL_OP          [ reduce using rule 14 (expression -> expression ADD_OP expression .) ]
+  ! MUL_OP          [ reduce using rule 17 (expression -> expression ADD_OP expression .) ]
   ! ADD_OP          [ shift and go to state 21 ]
 
 
 state 30
 
-    (15) expression -> expression MUL_OP expression .
-    (14) expression -> expression . ADD_OP expression
-    (15) expression -> expression . MUL_OP expression
+    (18) expression -> expression MUL_OP expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ADD_OP          reduce using rule 15 (expression -> expression MUL_OP expression .)
-    MUL_OP          reduce using rule 15 (expression -> expression MUL_OP expression .)
-    ;               reduce using rule 15 (expression -> expression MUL_OP expression .)
-    $end            reduce using rule 15 (expression -> expression MUL_OP expression .)
-    }               reduce using rule 15 (expression -> expression MUL_OP expression .)
-    {               reduce using rule 15 (expression -> expression MUL_OP expression .)
-    )               reduce using rule 15 (expression -> expression MUL_OP expression .)
+    ADD_OP          reduce using rule 18 (expression -> expression MUL_OP expression .)
+    MUL_OP          reduce using rule 18 (expression -> expression MUL_OP expression .)
+    ;               reduce using rule 18 (expression -> expression MUL_OP expression .)
+    $end            reduce using rule 18 (expression -> expression MUL_OP expression .)
+    }               reduce using rule 18 (expression -> expression MUL_OP expression .)
+    {               reduce using rule 18 (expression -> expression MUL_OP expression .)
+    )               reduce using rule 18 (expression -> expression MUL_OP expression .)
+    ,               reduce using rule 18 (expression -> expression MUL_OP expression .)
 
   ! ADD_OP          [ shift and go to state 21 ]
   ! MUL_OP          [ shift and go to state 22 ]
@@ -494,15 +505,16 @@ state 30
 
 state 31
 
-    (18) expression -> ( expression ) .
+    (21) expression -> ( expression ) .
 
-    ADD_OP          reduce using rule 18 (expression -> ( expression ) .)
-    MUL_OP          reduce using rule 18 (expression -> ( expression ) .)
-    ;               reduce using rule 18 (expression -> ( expression ) .)
-    $end            reduce using rule 18 (expression -> ( expression ) .)
-    }               reduce using rule 18 (expression -> ( expression ) .)
-    {               reduce using rule 18 (expression -> ( expression ) .)
-    )               reduce using rule 18 (expression -> ( expression ) .)
+    ADD_OP          reduce using rule 21 (expression -> ( expression ) .)
+    MUL_OP          reduce using rule 21 (expression -> ( expression ) .)
+    ;               reduce using rule 21 (expression -> ( expression ) .)
+    $end            reduce using rule 21 (expression -> ( expression ) .)
+    }               reduce using rule 21 (expression -> ( expression ) .)
+    {               reduce using rule 21 (expression -> ( expression ) .)
+    )               reduce using rule 21 (expression -> ( expression ) .)
+    ,               reduce using rule 21 (expression -> ( expression ) .)
 
 
 state 32
@@ -514,8 +526,8 @@ state 32
 
 state 33
 
-    (9) circle_g -> CIRCLE { x_expression , . y_expression , r_expression , color_expression }
-    (11) y_expression -> . Y : NUMBER
+    (9) circle_g -> CIRCLE { x_expression , . y_expression , radius_expression , color_expression }
+    (11) y_expression -> . Y : expression
 
     Y               shift and go to state 37
 
@@ -523,10 +535,20 @@ state 33
 
 state 34
 
-    (10) x_expression -> X : . NUMBER
+    (10) x_expression -> X : . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
-    NUMBER          shift and go to state 38
+    NUMBER          shift and go to state 14
+    IDENTIFIER      shift and go to state 15
+    (               shift and go to state 16
+    ADD_OP          shift and go to state 13
 
+    expression                     shift and go to state 38
 
 state 35
 
@@ -539,66 +561,84 @@ state 35
 
 state 36
 
-    (9) circle_g -> CIRCLE { x_expression , y_expression . , r_expression , color_expression }
+    (9) circle_g -> CIRCLE { x_expression , y_expression . , radius_expression , color_expression }
 
     ,               shift and go to state 39
 
 
 state 37
 
-    (11) y_expression -> Y . : NUMBER
+    (11) y_expression -> Y . : expression
 
     :               shift and go to state 40
 
 
 state 38
 
-    (10) x_expression -> X : NUMBER .
+    (10) x_expression -> X : expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ,               reduce using rule 10 (x_expression -> X : NUMBER .)
+    ,               reduce using rule 10 (x_expression -> X : expression .)
+    ADD_OP          shift and go to state 21
+    MUL_OP          shift and go to state 22
 
 
 state 39
 
-    (9) circle_g -> CIRCLE { x_expression , y_expression , . r_expression , color_expression }
-    (12) r_expression -> . R : NUMBER
+    (9) circle_g -> CIRCLE { x_expression , y_expression , . radius_expression , color_expression }
+    (12) radius_expression -> . RADIUS : expression
 
-    R               shift and go to state 42
+    RADIUS          shift and go to state 42
 
-    r_expression                   shift and go to state 41
+    radius_expression              shift and go to state 41
 
 state 40
 
-    (11) y_expression -> Y : . NUMBER
+    (11) y_expression -> Y : . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
-    NUMBER          shift and go to state 43
+    NUMBER          shift and go to state 14
+    IDENTIFIER      shift and go to state 15
+    (               shift and go to state 16
+    ADD_OP          shift and go to state 13
 
+    expression                     shift and go to state 43
 
 state 41
 
-    (9) circle_g -> CIRCLE { x_expression , y_expression , r_expression . , color_expression }
+    (9) circle_g -> CIRCLE { x_expression , y_expression , radius_expression . , color_expression }
 
     ,               shift and go to state 44
 
 
 state 42
 
-    (12) r_expression -> R . : NUMBER
+    (12) radius_expression -> RADIUS . : expression
 
     :               shift and go to state 45
 
 
 state 43
 
-    (11) y_expression -> Y : NUMBER .
+    (11) y_expression -> Y : expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ,               reduce using rule 11 (y_expression -> Y : NUMBER .)
+    ,               reduce using rule 11 (y_expression -> Y : expression .)
+    ADD_OP          shift and go to state 21
+    MUL_OP          shift and go to state 22
 
 
 state 44
 
-    (9) circle_g -> CIRCLE { x_expression , y_expression , r_expression , . color_expression }
-    (13) color_expression -> . COLOR : ( NUMBER , NUMBER , NUMBER )
+    (9) circle_g -> CIRCLE { x_expression , y_expression , radius_expression , . color_expression }
+    (13) color_expression -> . COLOR : ( r_expression , g_expression , b_expression )
 
     COLOR           shift and go to state 47
 
@@ -606,93 +646,176 @@ state 44
 
 state 45
 
-    (12) r_expression -> R : . NUMBER
+    (12) radius_expression -> RADIUS : . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
-    NUMBER          shift and go to state 48
+    NUMBER          shift and go to state 14
+    IDENTIFIER      shift and go to state 15
+    (               shift and go to state 16
+    ADD_OP          shift and go to state 13
 
+    expression                     shift and go to state 48
 
 state 46
 
-    (9) circle_g -> CIRCLE { x_expression , y_expression , r_expression , color_expression . }
+    (9) circle_g -> CIRCLE { x_expression , y_expression , radius_expression , color_expression . }
 
     }               shift and go to state 49
 
 
 state 47
 
-    (13) color_expression -> COLOR . : ( NUMBER , NUMBER , NUMBER )
+    (13) color_expression -> COLOR . : ( r_expression , g_expression , b_expression )
 
     :               shift and go to state 50
 
 
 state 48
 
-    (12) r_expression -> R : NUMBER .
+    (12) radius_expression -> RADIUS : expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    ,               reduce using rule 12 (r_expression -> R : NUMBER .)
+    ,               reduce using rule 12 (radius_expression -> RADIUS : expression .)
+    ADD_OP          shift and go to state 21
+    MUL_OP          shift and go to state 22
 
 
 state 49
 
-    (9) circle_g -> CIRCLE { x_expression , y_expression , r_expression , color_expression } .
+    (9) circle_g -> CIRCLE { x_expression , y_expression , radius_expression , color_expression } .
 
-    ;               reduce using rule 9 (circle_g -> CIRCLE { x_expression , y_expression , r_expression , color_expression } .)
-    $end            reduce using rule 9 (circle_g -> CIRCLE { x_expression , y_expression , r_expression , color_expression } .)
-    }               reduce using rule 9 (circle_g -> CIRCLE { x_expression , y_expression , r_expression , color_expression } .)
+    ;               reduce using rule 9 (circle_g -> CIRCLE { x_expression , y_expression , radius_expression , color_expression } .)
+    $end            reduce using rule 9 (circle_g -> CIRCLE { x_expression , y_expression , radius_expression , color_expression } .)
+    }               reduce using rule 9 (circle_g -> CIRCLE { x_expression , y_expression , radius_expression , color_expression } .)
 
 
 state 50
 
-    (13) color_expression -> COLOR : . ( NUMBER , NUMBER , NUMBER )
+    (13) color_expression -> COLOR : . ( r_expression , g_expression , b_expression )
 
     (               shift and go to state 51
 
 
 state 51
 
-    (13) color_expression -> COLOR : ( . NUMBER , NUMBER , NUMBER )
+    (13) color_expression -> COLOR : ( . r_expression , g_expression , b_expression )
+    (14) r_expression -> . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
-    NUMBER          shift and go to state 52
+    NUMBER          shift and go to state 14
+    IDENTIFIER      shift and go to state 15
+    (               shift and go to state 16
+    ADD_OP          shift and go to state 13
 
+    r_expression                   shift and go to state 52
+    expression                     shift and go to state 53
 
 state 52
 
-    (13) color_expression -> COLOR : ( NUMBER . , NUMBER , NUMBER )
+    (13) color_expression -> COLOR : ( r_expression . , g_expression , b_expression )
 
-    ,               shift and go to state 53
+    ,               shift and go to state 54
 
 
 state 53
 
-    (13) color_expression -> COLOR : ( NUMBER , . NUMBER , NUMBER )
+    (14) r_expression -> expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    NUMBER          shift and go to state 54
+    ,               reduce using rule 14 (r_expression -> expression .)
+    ADD_OP          shift and go to state 21
+    MUL_OP          shift and go to state 22
 
 
 state 54
 
-    (13) color_expression -> COLOR : ( NUMBER , NUMBER . , NUMBER )
+    (13) color_expression -> COLOR : ( r_expression , . g_expression , b_expression )
+    (15) g_expression -> . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
-    ,               shift and go to state 55
+    NUMBER          shift and go to state 14
+    IDENTIFIER      shift and go to state 15
+    (               shift and go to state 16
+    ADD_OP          shift and go to state 13
 
+    g_expression                   shift and go to state 55
+    expression                     shift and go to state 56
 
 state 55
 
-    (13) color_expression -> COLOR : ( NUMBER , NUMBER , . NUMBER )
+    (13) color_expression -> COLOR : ( r_expression , g_expression . , b_expression )
 
-    NUMBER          shift and go to state 56
+    ,               shift and go to state 57
 
 
 state 56
 
-    (13) color_expression -> COLOR : ( NUMBER , NUMBER , NUMBER . )
+    (15) g_expression -> expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
 
-    )               shift and go to state 57
+    ,               reduce using rule 15 (g_expression -> expression .)
+    ADD_OP          shift and go to state 21
+    MUL_OP          shift and go to state 22
 
 
 state 57
 
-    (13) color_expression -> COLOR : ( NUMBER , NUMBER , NUMBER ) .
+    (13) color_expression -> COLOR : ( r_expression , g_expression , . b_expression )
+    (16) b_expression -> . expression
+    (17) expression -> . expression ADD_OP expression
+    (18) expression -> . expression MUL_OP expression
+    (19) expression -> . NUMBER
+    (20) expression -> . IDENTIFIER
+    (21) expression -> . ( expression )
+    (22) expression -> . ADD_OP expression
 
-    }               reduce using rule 13 (color_expression -> COLOR : ( NUMBER , NUMBER , NUMBER ) .)
+    NUMBER          shift and go to state 14
+    IDENTIFIER      shift and go to state 15
+    (               shift and go to state 16
+    ADD_OP          shift and go to state 13
+
+    b_expression                   shift and go to state 58
+    expression                     shift and go to state 59
+
+state 58
+
+    (13) color_expression -> COLOR : ( r_expression , g_expression , b_expression . )
+
+    )               shift and go to state 60
+
+
+state 59
+
+    (16) b_expression -> expression .
+    (17) expression -> expression . ADD_OP expression
+    (18) expression -> expression . MUL_OP expression
+
+    )               reduce using rule 16 (b_expression -> expression .)
+    ADD_OP          shift and go to state 21
+    MUL_OP          shift and go to state 22
+
+
+state 60
+
+    (13) color_expression -> COLOR : ( r_expression , g_expression , b_expression ) .
+
+    }               reduce using rule 13 (color_expression -> COLOR : ( r_expression , g_expression , b_expression ) .)
 

@@ -3,7 +3,7 @@ import ply.lex as lex
 reserved_params = (
 	'x',
 	'y',
-	'r',
+	'radius',
 	'w',
 	'h',
 	'color',
@@ -27,6 +27,12 @@ tokens = (
 
 literals = '();={},:'
 
+t_ignore = ' \t'
+
+def t_CIRCLE(t):
+	r'circle'
+	return t
+
 def t_COLOR(t):
 	r'color'
 	return t
@@ -39,8 +45,8 @@ def t_Y(t):
 	r'y'
 	return t
 
-def t_R(t):
-	r'r'
+def t_RADIUS(t):
+	r'radius'
 	return t
 
 def t_ADD_OP(t):
@@ -69,8 +75,6 @@ def t_IDENTIFIER(t):
 def t_newline(t):
 	r'\n+'
 	t.lexer.lineno += len(t.value)
-
-t_ignore  = ' \t'
 
 def t_error(t):
 	print ("Illegal character '%s'" % repr(t.value[0]))
