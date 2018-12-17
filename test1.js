@@ -62,6 +62,12 @@ r1 = bbcShape3;
 
 function bbcUpdate() {
 
+c1.point.x += 1.0;
+c1.point.y += -1.0;
+
+r1.point.x += 1.0;
+r1.point.y += 1.0;
+
 bbcDraw();
 
 }

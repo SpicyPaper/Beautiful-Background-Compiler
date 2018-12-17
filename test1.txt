@@ -13,4 +13,6 @@ r1 = rect {
     point(200, 200),
     size(50, 150),
     color(0, 255, 0)
-}
+};
+translate(c1, point(1, -1));
+translate(r1, point(1, 1))

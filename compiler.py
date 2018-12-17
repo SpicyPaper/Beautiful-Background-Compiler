@@ -113,6 +113,13 @@ JSColorObject = """{
     b:%s
 }"""
 
+# JS animations
+
+JSTranslate = """
+%s += %s;
+%s += %s;
+"""
+
 operations = {
     '+' : lambda x,y: x+y,
     '-' : lambda x,y: x-y,
@@ -151,7 +158,7 @@ def compile(self):
 def compile(self):
     jscode = ""
     if len(self.children) == 1:
-        jscode += operations[self.op](0, self.children[0].compile())
+        jscode += str(operations[self.op](0, self.children[0].compile()))
     else:
         jscode += str(operations[self.op](self.children[0].compile(), self.children[1].compile()))
     return jscode
@@ -177,7 +184,7 @@ def compile(self):
     circleArray = []
 
     # Get compiled values
-    point = self.children[0].compile()
+    point = self.children[0].compile()[0]
     radius = self.children[1].compile()
     color = self.children[2].compile()
 
@@ -208,7 +215,7 @@ def compile(self):
     rectArray = []
 
     # Get compiled values
-    point = self.children[0].compile()
+    point = self.children[0].compile()[0]
     size = self.children[1].compile()
     color = self.children[2].compile()
 
@@ -220,7 +227,7 @@ def compile(self):
 
     # Create js code
     jscode = color[0]
-    jscode += JSRect %(shapeName + ".point.x",shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
+    jscode += JSRect %(shapeName + ".point.x", shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
     JSDraw += jscode
 
     # Create the array
@@ -233,11 +240,28 @@ def compile(self):
 
 @addToClass(AST.PointNode)
 def compile(self):
-    return JSPointObject %(self.children[0].compile(), self.children[1].compile())
+    pointArray = []
+    jscode = JSPointObject %(self.children[0].compile(), self.children[1].compile())
+    values = (self.children[0].compile(), self.children[1].compile())
+
+    pointArray.append(jscode)
+    pointArray.append(values)
+
+    return pointArray
 
 @addToClass(AST.SizeNode)
 def compile(self):
     return JSSizeObject %(self.children[0].compile(), self.children[1].compile())
+    
+@addToClass(AST.TranslateNode)
+def compile(self):
+    global JSUpdate
+
+    identifier = self.children[0]
+    translatePoint = self.children[1].compile()[1]
+    print(translatePoint)
+
+    JSUpdate += JSTranslate %(identifier + ".point.x", translatePoint[0], identifier + ".point.y", translatePoint[1])
 
 if __name__ == "__main__":
     from parser5 import parse

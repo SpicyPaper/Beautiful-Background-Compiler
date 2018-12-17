@@ -14,7 +14,8 @@ def p_program_recursive(p):
 def p_statement(p):
     ''' statement : assignation
         | structure
-        | shape '''
+        | shape
+        | animation '''
     p[0] = p[1]
     	
 def p_statement_print(p):
@@ -24,6 +25,14 @@ def p_statement_print(p):
 def p_structure(p):
     ''' structure : WHILE expression '{' program '}' '''
     p[0] = AST.WhileNode([p[2],p[4]])
+
+def p_animation(p):
+    ''' animation : translation '''
+    p[0] = p[1]
+
+def p_animation_translation(p):
+    ''' translation : TRANSLATE '(' IDENTIFIER ',' point_expression ')' '''
+    p[0] = AST.TranslateNode([p[3], p[5]])
 
 def p_shape(p):
     ''' shape : circle_g 
