@@ -25,13 +25,13 @@ window.onload = function() {
 
 JSCircle = """
 ctx.beginPath();
-ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
+ctx.arc(%s, %s, 0, 2 * Math.PI);
 ctx.fill();
 ctx.stroke();
 """
 
 JSRect = """
-ctx.rect(%s, %s, %s, %s);
+ctx.rect(%s, %s);
 ctx.fill();
 ctx.stroke();
 """
@@ -79,14 +79,26 @@ def compile(self):
     
 @addToClass(AST.CircleNode)
 def compile(self):
-    jscode = self.children[3].compile()
-    jscode += JSCircle %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile())
+    jscode = self.children[2].compile()
+    jscode += JSCircle %(self.children[0].compile(), self.children[1].compile())
+    return jscode
+
+@addToClass(AST.PointNode)
+def compile(self):
+    jscode = ""
+    jscode += str(self.children[0].compile()) + ", " + str(self.children[1].compile())
+    return jscode
+
+@addToClass(AST.SizeNode)
+def compile(self):
+    jscode = ""
+    jscode += str(self.children[0].compile()) + ", " + str(self.children[1].compile())
     return jscode
 
 @addToClass(AST.RectNode)
 def compile(self):
-    jscode = self.children[4].compile()
-    jscode += JSRect %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile(), self.children[3].compile())
+    jscode = self.children[2].compile()
+    jscode += JSRect %(self.children[0].compile(), self.children[1].compile())
     return jscode
 
 if __name__ == "__main__":

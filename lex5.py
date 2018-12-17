@@ -1,11 +1,9 @@
 import ply.lex as lex
 
 reserved_params = (
-	'x',
-	'y',
+	'point',
+	'size',
 	'radius',
-	'w',
-	'h',
 	'color',
 )
 
@@ -42,20 +40,12 @@ def t_COLOR(t):
 	r'color'
 	return t
 
-def t_X(t):
-	r'x'
+def t_POINT(t):
+	r'point'
 	return t
 
-def t_Y(t):
-	r'y'
-	return t
-
-def t_W(t):
-	r'w'
-	return t
-
-def t_H(t):
-	r'h'
+def t_SIZE(t):
+	r'size'
 	return t
 
 def t_RADIUS(t):

@@ -112,6 +112,12 @@ class CircleNode(Node):
 
 class RectNode(Node):
     type = "rect"
+
+class PointNode(Node):
+    type = "point"
+
+class SizeNode(Node):
+    type = "size"
     
 class OpNode(Node):
     def __init__(self, op, children):
