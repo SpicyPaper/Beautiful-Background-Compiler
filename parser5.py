@@ -3,8 +3,6 @@ import ply.yacc as yacc
 from lex5 import tokens
 import AST
 
-vars = {}
-
 def p_program_statement(p):
     ''' program : statement '''
     p[0] = AST.ProgramNode(p[1])
@@ -32,8 +30,12 @@ def p_shape(p):
     p[0] = p[1]
 
 def p_circle_g(p):
-    ''' circle_g : CIRCLE '{' X ':' expression ',' Y ':' expression ',' RADIUS ':' expression ',' color_expression '}' '''
-    p[0] = AST.CircleNode([p[5], p[9], p[13], p[15]])
+    ''' circle_g : CIRCLE '{' point_expression ',' RADIUS ':' expression ',' color_expression '}' '''
+    p[0] = AST.CircleNode(p[3] + [p[7], p[9]])
+
+def p_expression_point(p):
+    ''' point_expression : X ':' expression ',' Y ':' expression '''
+    p[0] = [p[3], p[7]]
     
 def p_expression_color(p):
     ''' color_expression : COLOR ':' '(' expression ',' expression ',' expression ')' '''
@@ -58,8 +60,13 @@ def p_minus(p):
     p[0] = AST.OpNode(p[1], [p[2]])
     	
 def p_assign(p):
-    ''' assignation : IDENTIFIER '=' expression '''
-    p[0] = AST.AssignNode([AST.TokenNode(p[1]),p[3]])
+    ''' assignation : IDENTIFIER '=' assign_expression '''
+    p[0] = AST.AssignNode([AST.TokenNode(p[1]), p[3]])
+    	
+def p_assign_expression(p):
+    ''' assign_expression : expression
+        | shape '''
+    p[0] = p[1]
 
 def p_error(p):
     if p:

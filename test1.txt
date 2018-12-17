@@ -1,6 +1,13 @@
-circle {
-    x: 100,
+a = 100;
+c1 = circle {
+    x: a,
     y: 100,
     radius: 50,
     color: (255, 0, 0)
+};
+circle {
+    x: 400,
+    y: 100,
+    radius: 20,
+    color: (0, 255, 0)
 }

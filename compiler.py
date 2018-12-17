@@ -2,6 +2,8 @@
 import AST
 from AST import addToClass
 
+# HTML
+
 HTMLContent = """
 <!DOCTYPE html>
 <html>
@@ -15,13 +17,42 @@ HTMLContent = """
 </html>
 """
 
+# JS
+
 JSContent = """
 window.onload = function() {
-    var canvas = document.getElementById('bbcCanvas');
-    var ctx = canvas.getContext('2d');
-    %s
+
+canvas = document.getElementById('bbcCanvas');
+ctx = canvas.getContext('2d');
+bbcInit();
+bbcUpdate();
+
+}
+
+function bbcInit() {
+%s
+}
+
+function bbcUpdate() {
+%s
+bbcDraw();
+
+}
+
+function bbcDraw() {
+
+ctx.clearRect(0, 0, bbcCanvas.width, bbcCanvas.height);
+%s
+setTimeout(bbcUpdate, 1000 / 60);
+
 }
 """
+
+JSInit = ""
+
+JSUpdate = ""
+
+JSDraw = ""
 
 JSCircle = """
 ctx.beginPath();
@@ -32,6 +63,32 @@ ctx.fill();
 JSColor = """
 ctx.fillStyle = 'rgb(%s, %s, %s)';
 """
+
+JSAssign = """
+%s = %s;
+"""
+
+# JS Objects
+
+bbc_shape_num = 0
+
+def nextShapeNum():
+    global bbc_shape_num
+    bbc_shape_num += 1
+    return bbc_shape_num
+
+JSCircleObject = """{
+    x:%s,
+    y:%s,
+    radius:%s,
+    color:%s
+}"""
+
+JSColorObject = """{
+    r:%s,
+    g:%s,
+    b:%s
+}"""
 
 operations = {
     '+' : lambda x,y: x+y,
@@ -44,10 +101,12 @@ operations = {
 # retourne la suite d'opcodes de tous les enfants
 @addToClass(AST.ProgramNode)
 def compile(self):
-	jscode = ""
-	for c in self.children:
-		jscode += c.compile()
-	return JSContent %(jscode)
+    global JSInit
+    global JSUpdate
+    global JSDraw
+    for c in self.children:
+        c.compile()
+    return JSContent %(JSInit, JSUpdate, JSDraw)
 
 @addToClass(AST.TokenNode)
 def compile(self):
@@ -55,26 +114,69 @@ def compile(self):
 	
 @addToClass(AST.AssignNode)
 def compile(self):
-    return self.children[1].compile()
+    global JSInit
+
+    identifier = self.children[0].compile()
+    value = self.children[1].compile()
+
+    if isinstance(value, list):
+        JSInit += JSAssign %(identifier, value[1])
+    else:
+        JSInit += JSAssign %(identifier, value)
 	
 @addToClass(AST.OpNode)
 def compile(self):
-	jscode = ""
-	if len(self.children) == 1:
-		jscode += operations[self.op](0, self.children[0].compile())
-	else:
-		jscode += operations[self.op](self.children[0].compile(), self.children[1].compile())
-	return jscode
+    jscode = ""
+    if len(self.children) == 1:
+        jscode += operations[self.op](0, self.children[0].compile())
+    else:
+        jscode += str(operations[self.op](self.children[0].compile(), self.children[1].compile()))
+    return jscode
     
 @addToClass(AST.ColorNode)
 def compile(self):
-    return JSColor %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile())
+    colorArray = []
+
+    r = self.children[0].compile()
+    g = self.children[1].compile()
+    b = self.children[2].compile()
+
+    colorArray.append(JSColor %(r, g, b))
+    colorArray.append(JSColorObject %(r, g, b))
+
+    return colorArray
     
 @addToClass(AST.CircleNode)
 def compile(self):
-    jscode = self.children[3].compile()
-    jscode += JSCircle %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile())
-    return jscode
+    # Init
+    global JSInit
+    global JSDraw
+    circleArray = []
+
+    # Get compiled values
+    x = self.children[0].compile()
+    y = self.children[1].compile()
+    radius = self.children[2].compile()
+    color = self.children[3].compile()
+
+    # Create circle object
+    circleObject = JSCircleObject %(x, y, radius, color[1])
+
+    # Generate shape var name
+    shapeName = "bbcShape" + str(nextShapeNum())
+
+    # Create circle js code
+    jscode = color[0]
+    jscode += JSCircle %(shapeName + ".x", shapeName + ".y", shapeName + ".radius")
+    JSDraw += jscode
+
+    # Create the circle array
+    circleArray.append(jscode)
+    circleArray.append(shapeName)
+
+    JSInit += JSAssign %(shapeName, circleObject)
+
+    return circleArray
 
 if __name__ == "__main__":
     from parser5 import parse

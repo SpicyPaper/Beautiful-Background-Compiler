@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = "leftADD_OPleftMUL_OPrightUMINUSADD_OP CIRCLE COLOR H IDENTIFIER MUL_OP NUMBER PRINT RADIUS W WHILE X Y program : statement  program : statement ';' program  statement : assignation\n        | structure\n        | shape  statement : PRINT expression  structure : WHILE expression '{' program '}'  shape : circle_g  circle_g : CIRCLE '{' X ':' expression ',' Y ':' expression ',' RADIUS ':' expression ',' color_expression '}'  color_expression : COLOR ':' '(' expression ',' expression ',' expression ')' expression : expression ADD_OP expression\n            | expression MUL_OP expressionexpression : NUMBER\n        | IDENTIFIER expression : '(' expression ')'  expression : ADD_OP expression %prec UMINUS assignation : IDENTIFIER '=' expression "
+_lr_signature = "leftADD_OPleftMUL_OPrightUMINUSADD_OP CIRCLE COLOR H IDENTIFIER MUL_OP NUMBER PRINT RADIUS W WHILE X Y program : statement  program : statement ';' program  statement : assignation\n        | structure\n        | shape  statement : PRINT expression  structure : WHILE expression '{' program '}'  shape : circle_g  circle_g : CIRCLE '{' point_expression ',' RADIUS ':' expression ',' color_expression '}'  point_expression : X ':' expression ',' Y ':' expression  color_expression : COLOR ':' '(' expression ',' expression ',' expression ')' expression : expression ADD_OP expression\n            | expression MUL_OP expressionexpression : NUMBER\n        | IDENTIFIER expression : '(' expression ')'  expression : ADD_OP expression %prec UMINUS assignation : IDENTIFIER '=' assign_expression  assign_expression : expression\n        | shape "
     
-_lr_action_items = {'PRINT':([0,11,26,],[6,6,6,]),'IDENTIFIER':([0,6,8,11,13,16,17,21,22,26,32,37,41,48,50,52,],[7,15,15,7,15,15,15,15,15,7,15,15,15,15,15,15,]),'WHILE':([0,11,26,],[8,8,8,]),'CIRCLE':([0,11,26,],[10,10,10,]),'$end':([1,2,3,4,5,9,12,14,15,20,23,25,28,29,30,33,46,],[0,-1,-3,-4,-5,-8,-6,-13,-14,-2,-16,-17,-11,-12,-15,-7,-9,]),'}':([2,3,4,5,9,12,14,15,20,23,25,28,29,30,31,33,44,46,54,],[-1,-3,-4,-5,-8,-6,-13,-14,-2,-16,-17,-11,-12,-15,33,-7,46,-9,-10,]),';':([2,3,4,5,9,12,14,15,23,25,28,29,30,33,46,],[11,-3,-4,-5,-8,-6,-13,-14,-16,-17,-11,-12,-15,-7,-9,]),'NUMBER':([6,8,13,16,17,21,22,32,37,41,48,50,52,],[14,14,14,14,14,14,14,14,14,14,14,14,14,]),'(':([6,8,13,16,17,21,22,32,37,41,47,48,50,52,],[16,16,16,16,16,16,16,16,16,16,48,16,16,16,]),'ADD_OP':([6,8,12,13,14,15,16,17,18,21,22,23,24,25,28,29,30,32,34,37,38,41,42,48,49,50,51,52,53,],[13,13,21,13,-13,-14,13,13,21,13,13,-16,21,21,-11,-12,-15,13,21,13,21,13,21,13,21,13,21,13,21,]),'=':([7,],[17,]),'{':([10,14,15,18,23,28,29,30,],[19,-13,-14,26,-16,-11,-12,-15,]),'MUL_OP':([12,14,15,18,23,24,25,28,29,30,34,38,42,49,51,53,],[22,-13,-14,22,-16,22,22,22,-12,-15,22,22,22,22,22,22,]),')':([14,15,23,24,28,29,30,53,],[-13,-14,-16,30,-11,-12,-15,54,]),',':([14,15,23,28,29,30,34,38,42,49,51,],[-13,-14,-16,-11,-12,-15,35,39,43,50,52,]),'X':([19,],[27,]),':':([27,36,40,45,],[32,37,41,47,]),'Y':([35,],[36,]),'RADIUS':([39,],[40,]),'COLOR':([43,],[45,]),}
+_lr_action_items = {'PRINT':([0,11,28,],[6,6,6,]),'IDENTIFIER':([0,6,8,11,13,16,17,21,22,28,36,40,45,51,53,55,],[7,15,15,7,15,15,15,15,15,7,15,15,15,15,15,15,]),'WHILE':([0,11,28,],[8,8,8,]),'CIRCLE':([0,11,17,28,],[10,10,10,10,]),'$end':([1,2,3,4,5,9,12,14,15,20,23,25,26,27,31,32,33,37,49,],[0,-1,-3,-4,-5,-8,-6,-14,-15,-2,-17,-18,-19,-20,-12,-13,-16,-7,-9,]),'}':([2,3,4,5,9,12,14,15,20,23,25,26,27,31,32,33,34,37,46,49,57,],[-1,-3,-4,-5,-8,-6,-14,-15,-2,-17,-18,-19,-20,-12,-13,-16,37,-7,49,-9,-11,]),';':([2,3,4,5,9,12,14,15,23,25,26,27,31,32,33,37,49,],[11,-3,-4,-5,-8,-6,-14,-15,-17,-18,-19,-20,-12,-13,-16,-7,-9,]),'NUMBER':([6,8,13,16,17,21,22,36,40,45,51,53,55,],[14,14,14,14,14,14,14,14,14,14,14,14,14,]),'(':([6,8,13,16,17,21,22,36,40,45,50,51,53,55,],[16,16,16,16,16,16,16,16,16,16,51,16,16,16,]),'ADD_OP':([6,8,12,13,14,15,16,17,18,21,22,23,24,26,31,32,33,36,39,40,42,45,48,51,52,53,54,55,56,],[13,13,21,13,-14,-15,13,13,21,13,13,-17,21,21,-12,-13,-16,13,21,13,21,13,21,13,21,13,21,13,21,]),'=':([7,],[17,]),'{':([10,14,15,18,23,31,32,33,],[19,-14,-15,28,-17,-12,-13,-16,]),'MUL_OP':([12,14,15,18,23,24,26,31,32,33,39,42,48,52,54,56,],[22,-14,-15,22,-17,22,22,22,-13,-16,22,22,22,22,22,22,]),')':([14,15,23,24,31,32,33,56,],[-14,-15,-17,33,-12,-13,-16,57,]),',':([14,15,23,29,31,32,33,39,42,48,52,54,],[-14,-15,-17,35,-12,-13,-16,41,44,-10,53,55,]),'X':([19,],[30,]),':':([30,38,43,47,],[36,40,45,50,]),'RADIUS':([35,],[38,]),'Y':([41,],[43,]),'COLOR':([44,],[47,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'program':([0,11,26,],[1,20,31,]),'statement':([0,11,26,],[2,2,2,]),'assignation':([0,11,26,],[3,3,3,]),'structure':([0,11,26,],[4,4,4,]),'shape':([0,11,26,],[5,5,5,]),'circle_g':([0,11,26,],[9,9,9,]),'expression':([6,8,13,16,17,21,22,32,37,41,48,50,52,],[12,18,23,24,25,28,29,34,38,42,49,51,53,]),'color_expression':([43,],[44,]),}
+_lr_goto_items = {'program':([0,11,28,],[1,20,34,]),'statement':([0,11,28,],[2,2,2,]),'assignation':([0,11,28,],[3,3,3,]),'structure':([0,11,28,],[4,4,4,]),'shape':([0,11,17,28,],[5,5,27,5,]),'circle_g':([0,11,17,28,],[9,9,9,9,]),'expression':([6,8,13,16,17,21,22,36,40,45,51,53,55,],[12,18,23,24,26,31,32,39,42,48,52,54,56,]),'assign_expression':([17,],[25,]),'point_expression':([19,],[29,]),'color_expression':([44,],[46,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,21 +27,24 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> program","S'",1,None,None,None),
-  ('program -> statement','program',1,'p_program_statement','parser5.py',9),
-  ('program -> statement ; program','program',3,'p_program_recursive','parser5.py',13),
-  ('statement -> assignation','statement',1,'p_statement','parser5.py',17),
-  ('statement -> structure','statement',1,'p_statement','parser5.py',18),
-  ('statement -> shape','statement',1,'p_statement','parser5.py',19),
-  ('statement -> PRINT expression','statement',2,'p_statement_print','parser5.py',23),
-  ('structure -> WHILE expression { program }','structure',5,'p_structure','parser5.py',27),
-  ('shape -> circle_g','shape',1,'p_shape','parser5.py',31),
-  ('circle_g -> CIRCLE { X : expression , Y : expression , RADIUS : expression , color_expression }','circle_g',16,'p_circle_g','parser5.py',35),
-  ('color_expression -> COLOR : ( expression , expression , expression )','color_expression',9,'p_expression_color','parser5.py',39),
-  ('expression -> expression ADD_OP expression','expression',3,'p_expression_op','parser5.py',43),
-  ('expression -> expression MUL_OP expression','expression',3,'p_expression_op','parser5.py',44),
-  ('expression -> NUMBER','expression',1,'p_expression_num_or_var','parser5.py',48),
-  ('expression -> IDENTIFIER','expression',1,'p_expression_num_or_var','parser5.py',49),
-  ('expression -> ( expression )','expression',3,'p_expression_paren','parser5.py',53),
-  ('expression -> ADD_OP expression','expression',2,'p_minus','parser5.py',57),
-  ('assignation -> IDENTIFIER = expression','assignation',3,'p_assign','parser5.py',61),
+  ('program -> statement','program',1,'p_program_statement','parser5.py',7),
+  ('program -> statement ; program','program',3,'p_program_recursive','parser5.py',11),
+  ('statement -> assignation','statement',1,'p_statement','parser5.py',15),
+  ('statement -> structure','statement',1,'p_statement','parser5.py',16),
+  ('statement -> shape','statement',1,'p_statement','parser5.py',17),
+  ('statement -> PRINT expression','statement',2,'p_statement_print','parser5.py',21),
+  ('structure -> WHILE expression { program }','structure',5,'p_structure','parser5.py',25),
+  ('shape -> circle_g','shape',1,'p_shape','parser5.py',29),
+  ('circle_g -> CIRCLE { point_expression , RADIUS : expression , color_expression }','circle_g',10,'p_circle_g','parser5.py',33),
+  ('point_expression -> X : expression , Y : expression','point_expression',7,'p_expression_point','parser5.py',37),
+  ('color_expression -> COLOR : ( expression , expression , expression )','color_expression',9,'p_expression_color','parser5.py',41),
+  ('expression -> expression ADD_OP expression','expression',3,'p_expression_op','parser5.py',45),
+  ('expression -> expression MUL_OP expression','expression',3,'p_expression_op','parser5.py',46),
+  ('expression -> NUMBER','expression',1,'p_expression_num_or_var','parser5.py',50),
+  ('expression -> IDENTIFIER','expression',1,'p_expression_num_or_var','parser5.py',51),
+  ('expression -> ( expression )','expression',3,'p_expression_paren','parser5.py',55),
+  ('expression -> ADD_OP expression','expression',2,'p_minus','parser5.py',59),
+  ('assignation -> IDENTIFIER = assign_expression','assignation',3,'p_assign','parser5.py',63),
+  ('assign_expression -> expression','assign_expression',1,'p_assign_expression','parser5.py',67),
+  ('assign_expression -> shape','assign_expression',1,'p_assign_expression','parser5.py',68),
 ]
