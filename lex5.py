@@ -11,6 +11,7 @@ reserved_params = (
 
 reserved_objects = (
 	'circle',
+	'rect',
 )
 
 reserved_words = (
@@ -33,6 +34,10 @@ def t_CIRCLE(t):
 	r'circle'
 	return t
 
+def t_RECT(t):
+	r'rect'
+	return t
+
 def t_COLOR(t):
 	r'color'
 	return t
@@ -43,6 +48,14 @@ def t_X(t):
 
 def t_Y(t):
 	r'y'
+	return t
+
+def t_W(t):
+	r'w'
+	return t
+
+def t_H(t):
+	r'h'
 	return t
 
 def t_RADIUS(t):

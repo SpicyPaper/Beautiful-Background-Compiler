@@ -27,6 +27,13 @@ JSCircle = """
 ctx.beginPath();
 ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
 ctx.fill();
+ctx.stroke();
+"""
+
+JSRect = """
+ctx.rect(%s, %s, %s, %s);
+ctx.fill();
+ctx.stroke();
 """
 
 JSColor = """
@@ -74,6 +81,12 @@ def compile(self):
 def compile(self):
     jscode = self.children[3].compile()
     jscode += JSCircle %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile())
+    return jscode
+
+@addToClass(AST.RectNode)
+def compile(self):
+    jscode = self.children[4].compile()
+    jscode += JSRect %(self.children[0].compile(), self.children[1].compile(), self.children[2].compile(), self.children[3].compile())
     return jscode
 
 if __name__ == "__main__":
