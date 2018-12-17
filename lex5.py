@@ -1,16 +1,15 @@
 import ply.lex as lex
 
 reserved_params = (
-	'x',
-	'y',
+	'point',
+	'size',
 	'radius',
-	'w',
-	'h',
 	'color',
 )
 
 reserved_objects = (
 	'circle',
+	'rect',
 )
 
 reserved_words = (
@@ -33,16 +32,20 @@ def t_CIRCLE(t):
 	r'circle'
 	return t
 
+def t_RECT(t):
+	r'rect'
+	return t
+
 def t_COLOR(t):
 	r'color'
 	return t
 
-def t_X(t):
-	r'x'
+def t_POINT(t):
+	r'point'
 	return t
 
-def t_Y(t):
-	r'y'
+def t_SIZE(t):
+	r'size'
 	return t
 
 def t_RADIUS(t):

@@ -58,6 +58,14 @@ JSCircle = """
 ctx.beginPath();
 ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
 ctx.fill();
+ctx.stroke();
+"""
+
+JSRect = """
+ctx.beginPath();
+ctx.rect(%s, %s, %s, %s);
+ctx.fill();
+ctx.stroke();
 """
 
 JSColor = """
@@ -78,10 +86,25 @@ def nextShapeNum():
     return bbc_shape_num
 
 JSCircleObject = """{
-    x:%s,
-    y:%s,
+    point:%s,
     radius:%s,
     color:%s
+}"""
+
+JSRectObject = """{
+    point:%s,
+    size:%s,
+    color:%s
+}"""
+
+JSSizeObject = """{
+    width:%s,
+    height:%s
+}"""
+
+JSPointObject = """{
+    x:%s,
+    y:%s
 }"""
 
 JSColorObject = """{
@@ -154,29 +177,67 @@ def compile(self):
     circleArray = []
 
     # Get compiled values
-    x = self.children[0].compile()
-    y = self.children[1].compile()
-    radius = self.children[2].compile()
-    color = self.children[3].compile()
+    point = self.children[0].compile()
+    radius = self.children[1].compile()
+    color = self.children[2].compile()
 
-    # Create circle object
-    circleObject = JSCircleObject %(x, y, radius, color[1])
+    # Create object
+    circleObject = JSCircleObject %(point, radius, color[1])
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
 
-    # Create circle js code
+    # Create js code
     jscode = color[0]
-    jscode += JSCircle %(shapeName + ".x", shapeName + ".y", shapeName + ".radius")
+    jscode += JSCircle %(shapeName + ".point.x", shapeName + ".point.y", shapeName + ".radius")
     JSDraw += jscode
 
-    # Create the circle array
+    # Create the array
     circleArray.append(jscode)
     circleArray.append(shapeName)
 
     JSInit += JSAssign %(shapeName, circleObject)
 
     return circleArray
+
+@addToClass(AST.RectNode)
+def compile(self):
+    # Init
+    global JSInit
+    global JSDraw
+    rectArray = []
+
+    # Get compiled values
+    point = self.children[0].compile()
+    size = self.children[1].compile()
+    color = self.children[2].compile()
+
+    # Create object
+    rectObject = JSRectObject %(point, size, color[1])
+
+    # Generate shape var name
+    shapeName = "bbcShape" + str(nextShapeNum())
+
+    # Create js code
+    jscode = color[0]
+    jscode += JSRect %(shapeName + ".point.x",shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
+    JSDraw += jscode
+
+    # Create the array
+    rectArray.append(jscode)
+    rectArray.append(shapeName)
+
+    JSInit += JSAssign %(shapeName, rectObject)
+
+    return rectArray
+
+@addToClass(AST.PointNode)
+def compile(self):
+    return JSPointObject %(self.children[0].compile(), self.children[1].compile())
+
+@addToClass(AST.SizeNode)
+def compile(self):
+    return JSSizeObject %(self.children[0].compile(), self.children[1].compile())
 
 if __name__ == "__main__":
     from parser5 import parse

@@ -26,20 +26,29 @@ def p_structure(p):
     p[0] = AST.WhileNode([p[2],p[4]])
 
 def p_shape(p):
-    ''' shape : circle_g '''
+    ''' shape : circle_g 
+        | rect_g '''
     p[0] = p[1]
 
 def p_circle_g(p):
-    ''' circle_g : CIRCLE '{' point_expression ',' RADIUS ':' expression ',' color_expression '}' '''
-    p[0] = AST.CircleNode(p[3] + [p[7], p[9]])
+    ''' circle_g : CIRCLE '{' point_expression ',' RADIUS '(' expression ')' ',' color_expression '}' '''
+    p[0] = AST.CircleNode([p[3], p[7], p[10]])
+
+def p_rect_g(p):
+    ''' rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}' '''
+    p[0] = AST.RectNode([p[3], p[5], p[7]])
 
 def p_expression_point(p):
-    ''' point_expression : X ':' expression ',' Y ':' expression '''
-    p[0] = [p[3], p[7]]
+    ''' point_expression : POINT '(' expression ',' expression ')' '''
+    p[0] = AST.PointNode([p[3], p[5]])
+
+def p_expression_size(p):
+    ''' size_expression : SIZE '(' expression ',' expression ')' '''
+    p[0] = AST.SizeNode([p[3], p[5]])
     
 def p_expression_color(p):
-    ''' color_expression : COLOR ':' '(' expression ',' expression ',' expression ')' '''
-    p[0] = AST.ColorNode([p[4], p[6], p[8]])
+    ''' color_expression : COLOR '(' expression ',' expression ',' expression ')' '''
+    p[0] = AST.ColorNode([p[3], p[5], p[7]])
 
 def p_expression_op(p):
     '''expression : expression ADD_OP expression

@@ -10,6 +10,7 @@ est une utilisation un peu "limite" de graphviz. �a marche, mais le layout n'e
 pas toujours optimal...
 '''
 
+#import pydot_ng as pydot
 import pydot
 
 class Node:
@@ -109,6 +110,15 @@ class ColorNode(Node):
 
 class CircleNode(Node):
     type = "circle"
+
+class RectNode(Node):
+    type = "rect"
+
+class PointNode(Node):
+    type = "point"
+
+class SizeNode(Node):
+    type = "size"
     
 class OpNode(Node):
     def __init__(self, op, children):
