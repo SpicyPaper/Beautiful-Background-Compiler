@@ -34,6 +34,10 @@ def p_animation_translation(p):
     ''' translation : TRANSLATE '(' IDENTIFIER ',' point_expression ')' '''
     p[0] = AST.TranslateNode([p[3], p[5]])
 
+def p_animation_rotation(p):
+    ''' translation : ROTATE '(' IDENTIFIER ',' expression ')' '''
+    p[0] = AST.RotateNode([p[3], p[5]])
+
 def p_shape(p):
     ''' shape : circle_g 
         | rect_g '''

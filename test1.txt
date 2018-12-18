@@ -15,4 +15,5 @@ r1 = rect {
     color(0, 255, 0)
 };
 translate(c1, point(1, -1));
-translate(r1, point(1, 1))
+translate(r1, point(1, 1));
+rotate(r1, 0.2)

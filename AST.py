@@ -105,6 +105,9 @@ class TokenNode(Node):
     def __repr__(self):
         return repr(self.tok)
 
+class RotateNode(Node):
+    type = "rotate"
+
 class TranslateNode(Node):
     type = "translate"
         
