@@ -2,6 +2,8 @@
 window.onload = function() {
 
 canvas = document.getElementById('bbcCanvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 ctx = canvas.getContext('2d');
 bbcInit();
 bbcUpdate();
@@ -15,9 +17,13 @@ a = 100.0;
 bbcShape1 = {
     point:{
     x:a,
-    y:100.0
+    y:
+Math.floor(Math.random() * (500.0 - 0 + 1)) + 0
+
 },
-    radius:50.0,
+    radius:
+Math.floor(Math.random() * (100.0 - 50.0 + 1)) + 50.0
+,
     color:{
     r:255.0,
     g:0.0,

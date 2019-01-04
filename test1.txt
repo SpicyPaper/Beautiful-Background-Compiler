@@ -1,7 +1,7 @@
 a = 100;
 c1 = circle {
-    point(a, 100),
-    radius(50),
+    point(a, random(500)),
+    radius(random(50, 100)),
     color(255, 0, 0)
 };
 circle {

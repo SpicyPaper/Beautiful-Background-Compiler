@@ -126,6 +126,9 @@ class PointNode(Node):
 class SizeNode(Node):
     type = "size"
     
+class RandomNode(Node):
+    type = "random"
+
 class OpNode(Node):
     def __init__(self, op, children):
         Node.__init__(self, children)

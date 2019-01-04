@@ -23,6 +23,8 @@ JSContent = """
 window.onload = function() {
 
 canvas = document.getElementById('bbcCanvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 ctx = canvas.getContext('2d');
 bbcInit();
 bbcUpdate();
@@ -130,6 +132,10 @@ JSTranslate = """
 
 JSRotate = """
 %s += %s;
+"""
+
+JSRandom = """
+Math.floor(Math.random() * ({1} - {0} + 1)) + {0}
 """
 
 operations = {
@@ -282,6 +288,14 @@ def compile(self):
     rotation = self.children[1].compile()
 
     JSUpdate += JSRotate %(identifier + ".rotation", rotation)
+
+@addToClass(AST.RandomNode)
+def compile(self):
+    if len(self.children) == 1:
+        jscode = JSRandom.format(0, self.children[0].compile())
+    else:
+        jscode = JSRandom.format(self.children[0].compile(), self.children[1].compile())
+    return jscode
 
 if __name__ == "__main__":
     from parser5 import parse

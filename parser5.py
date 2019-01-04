@@ -76,6 +76,14 @@ def p_expression_num_or_var(p):
 def p_expression_paren(p):
     '''expression : '(' expression ')' '''
     p[0] = p[2]
+
+def p_expression_random_max(p):
+    '''expression : RANDOM '(' expression ')' '''
+    p[0] = AST.RandomNode(p[3])
+
+def p_expression_random_min_max(p):
+    '''expression : RANDOM '(' expression ',' expression ')' '''
+    p[0] = AST.RandomNode([p[3], p[5]])
     	
 def p_minus(p):
     ''' expression : ADD_OP expression %prec UMINUS'''
