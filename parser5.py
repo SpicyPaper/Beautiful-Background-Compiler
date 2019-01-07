@@ -122,6 +122,14 @@ def p_error(p):
     else:
         print ("Sytax error: unexpected end of file!")
 
+def p_expression_random_max(p):
+    '''expression : RANDOM '(' expression ')' '''
+    p[0] = AST.RandomNode(p[3])
+
+def p_expression_random_min_max(p):
+    '''expression : RANDOM '(' expression ',' expression ')' '''
+    p[0] = AST.RandomNode([p[3], p[5]])
+
 precedence = (
     ('left', 'ADD_OP'),
     ('left', 'MUL_OP'),

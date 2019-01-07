@@ -16,6 +16,7 @@ reserved_objects = (
 reserved_functions = (
 	'translate',
 	'rotate',
+	'random'
 )
 
 reserved_words = (
@@ -34,6 +35,10 @@ tokens = (
 literals = '();={},:'
 
 t_ignore = ' \t'
+
+def t_RANDOM(t):
+	r'random'
+	return t
 
 def t_ROTATE(t):
 	r'rotate'

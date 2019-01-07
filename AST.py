@@ -21,7 +21,7 @@ class Node:
         self.ID = str(Node.count)
         Node.count+=1
         if not children: self.children = []
-        elif hasattr(children,'__len__'):
+        elif isinstance(children, list):
             self.children = children
         else:
             self.children = [children]
@@ -172,6 +172,9 @@ class EntryNode(Node):
     type = 'ENTRY'
     def __init__(self):
         Node.__init__(self, None)
+
+class RandomNode(Node):
+    type = "random"
     
 def addToClass(cls):
     ''' D�corateur permettant d'ajouter la fonction d�cor�e en tant que m�thode

@@ -1,5 +1,6 @@
 # coding=utf-8
 import AST
+import random
 from AST import addToClass
 
 # HTML
@@ -112,6 +113,10 @@ ctx.fillStyle = 'rgb(%s, %s, %s)';
 
 JSAssign = """
 %s = %s;
+"""
+
+JSRandom = """
+Math.floor(Math.random() * ({1} - {0} + 1)) + {0}
 """
 
 # JS Objects
@@ -241,10 +246,10 @@ def compile(self):
 	
 @addToClass(AST.OpNode)
 def compile(self):
-    if len(self.children) == 1:
-        return operations[self.op](0, self.children[0].compile())
-    else:
+    if len(self.children) > 1:
         return operations[self.op](self.children[0].compile(), self.children[1].compile())
+    else:
+        return operations[self.op](0, self.children[0].compile())
     
 @addToClass(AST.ColorNode)
 def compile(self):
@@ -416,9 +421,23 @@ def compile(self):
 
     JSUpdate += JSRotate %(identifier + ".rotation", rotation, identifier, translatePoint[0], identifier, translatePoint[1])
 
+@addToClass(AST.RandomNode)
+def compile(self):
+    min = 0
+    max = self.children[0].compile()
+
+    if len(self.children) > 1:
+        min = max
+        max = self.children[1].compile()
+
+    return random.randint(min, max)
+
+
 if __name__ == "__main__":
     from parser5 import parse
     import sys, os
+    random.seed()
+
     jsPath = os.path.splitext(sys.argv[1])[0]
     HTMLName = os.path.splitext(sys.argv[1])[0]+'.html'
     outfile = open(HTMLName, 'w')

@@ -1,4 +1,21 @@
 i = 0;
+
+for(0, 1000, 1) {
+    vx = random(-10, 10);
+    vy = random(-10, 10);
+    dx = random(1920);
+    dy = random(1080);
+    translate(
+        circle {
+            point(dx, dy),
+            radius(5),
+            color(random(255), random(255), random(255))
+        },
+        point(vx, vy)
+    );
+};
+
+i = 0;
 for(0, 20, 1) {
     rotate(
         polygon {
