@@ -28,6 +28,7 @@ tokens = (
 	'ADD_OP',
 	'MUL_OP',
 	'IDENTIFIER',
+	'AROUND',
 ) + tuple(map(lambda s:s.upper(),reserved_words)) + tuple(map(lambda s:s.upper(),reserved_params)) + tuple(map(lambda s:s.upper(),reserved_objects)) + tuple(map(lambda s:s.upper(),reserved_functions))
 
 literals = '();={},:'
@@ -40,6 +41,10 @@ def t_ROTATE(t):
 
 def t_TRANSLATE(t):
 	r'translate'
+	return t
+
+def t_AROUND(t):
+	r'around'
 	return t
 
 def t_CIRCLE(t):

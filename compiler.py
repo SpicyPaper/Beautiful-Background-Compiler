@@ -32,10 +32,16 @@ bbcUpdate();
 }
 
 function bbcInit() {
+start = Date.now();
+updateTime = 1000 * 50;
 %s
 }
 
 function bbcUpdate() {
+if(Date.now() > start + updateTime)
+{
+    bbcInit();
+}
 %s
 bbcDraw();
 
@@ -58,7 +64,9 @@ JSDraw = ""
 
 JSCircle = """
 ctx.save();
+ctx.translate(%s, %s);
 ctx.rotate(%s * Math.PI / 180);
+ctx.translate(-%s, -%s);
 ctx.beginPath();
 ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
 ctx.fill();
@@ -68,7 +76,9 @@ ctx.restore();
 
 JSRect = """
 ctx.save();
+ctx.translate(%s, %s);
 ctx.rotate(%s * Math.PI / 180);
+ctx.translate(-%s, -%s);
 ctx.beginPath();
 ctx.rect(%s, %s, %s, %s);
 ctx.fill();
@@ -78,7 +88,9 @@ ctx.restore();
 
 JSPolygon = """
 ctx.save();
+ctx.translate(%s, %s);
 ctx.rotate(%s * Math.PI / 180);
+ctx.translate(-%s, -%s);
 ctx.beginPath();%s
 ctx.closePath();
 ctx.fill();
@@ -115,20 +127,23 @@ JSCircleObject = """{
     point:%s,
     radius:%s,
     color:%s,
-    rotation:%s
+    rotation:%s,
+    around:%s
 }"""
 
 JSRectObject = """{
     point:%s,
     size:%s,
     color:%s,
-    rotation:%s
+    rotation:%s,
+    around:%s
 }"""
 
 JSPolygonObject = """{
     points:%s,
     color:%s,
-    rotation:%s
+    rotation:%s,
+    around:%s
 }"""
 
 JSSizeObject = """{
@@ -150,12 +165,14 @@ JSColorObject = """{
 # JS animations
 
 JSTranslate = """
-%s += %s;
-%s += %s;
+%s.point.x += %s;
+%s.point.y += %s;
 """
 
 JSRotate = """
 %s += %s;
+%s.around.x = %s;
+%s.around.y = %s;
 """
 
 operations = {
@@ -253,16 +270,17 @@ def compile(self):
     point = self.children[0].compile()[0]
     radius = self.children[1].compile()
     color = self.children[2].compile()
+    around = JSPointObject %(0, 0)
 
     # Create object
-    circleObject = JSCircleObject %(point, radius, color[1], 0)
+    circleObject = JSCircleObject %(point, radius, color[1], 0, around)
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
 
     # Create js code
     jscode = color[0]
-    jscode += JSCircle %(shapeName + ".rotation", shapeName + ".point.x", shapeName + ".point.y", shapeName + ".radius")
+    jscode += JSCircle %(shapeName + ".around.x", shapeName + ".around.y", shapeName + ".rotation", shapeName + ".around.x", shapeName + ".around.y", shapeName + ".point.x", shapeName + ".point.y", shapeName + ".radius")
     JSDraw += jscode
 
     # Create the array
@@ -284,16 +302,17 @@ def compile(self):
     point = self.children[0].compile()[0]
     size = self.children[1].compile()
     color = self.children[2].compile()
+    around = JSPointObject %(0, 0)
 
     # Create object
-    rectObject = JSRectObject %(point, size, color[1], 0)
+    rectObject = JSRectObject %(point, size, color[1], 0, around)
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
 
     # Create js code
     jscode = color[0]
-    jscode += JSRect %(shapeName + ".rotation", shapeName + ".point.x", shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
+    jscode += JSRect %(shapeName + ".around.x", shapeName + ".around.y", shapeName + ".rotation", shapeName + ".around.x", shapeName + ".around.y", shapeName + ".point.x", shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
     JSDraw += jscode
 
     # Create the array
@@ -327,9 +346,10 @@ def compile(self):
         array.append(pointsforJS[i][0])
         array.append(pointsforJS[i][1])
         pointsforJS[i] = array
+    around = JSPointObject %(0, 0)
 
     # Create object
-    polygonObject = JSPolygonObject %(pointsforJS, color[1], 0)
+    polygonObject = JSPolygonObject %(pointsforJS, color[1], 0, around)
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
@@ -342,7 +362,7 @@ def compile(self):
             jspoints += (JSMoveTo %(shapeName + ".points[" + str(i) + "][0]", shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
         else:
             jspoints += (JSLineTo %(shapeName + ".points[" + str(i) + "][0]", shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
-    jscode += JSPolygon %(shapeName + ".rotation", jspoints)
+    jscode += JSPolygon %(shapeName + ".around.x", shapeName + ".around.y", shapeName + ".rotation", shapeName + ".around.x", shapeName + ".around.y", jspoints)
     JSDraw += jscode
 
     # Create the array
@@ -379,7 +399,7 @@ def compile(self):
 
     translatePoint = self.children[1].compile()[1]
 
-    JSUpdate += JSTranslate %(identifier + ".point.x", translatePoint[0], identifier + ".point.y", translatePoint[1])
+    JSUpdate += JSTranslate %(identifier, translatePoint[0], identifier, translatePoint[1])
     
 @addToClass(AST.RotateNode)
 def compile(self):
@@ -391,8 +411,10 @@ def compile(self):
         identifier = identifier[1]
 
     rotation = self.children[1].compile()
+    
+    translatePoint = self.children[2].compile()[1]
 
-    JSUpdate += JSRotate %(identifier + ".rotation", rotation)
+    JSUpdate += JSRotate %(identifier + ".rotation", rotation, identifier, translatePoint[0], identifier, translatePoint[1])
 
 if __name__ == "__main__":
     from parser5 import parse

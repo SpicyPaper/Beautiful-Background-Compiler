@@ -40,8 +40,8 @@ def p_animation_translation(p):
     p[0] = AST.TranslateNode([p[3], p[5]])
 
 def p_animation_rotation(p):
-    ''' translation : ROTATE '(' animation_param ',' expression ')' '''
-    p[0] = AST.RotateNode([p[3], p[5]])
+    ''' translation : ROTATE '(' animation_param ',' expression ',' AROUND '(' point_expression ')' ')' '''
+    p[0] = AST.RotateNode([p[3], p[5], p[9]])
 
 def p_animation_param_id(p):
     ''' animation_param : IDENTIFIER '''
