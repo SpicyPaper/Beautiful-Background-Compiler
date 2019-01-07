@@ -10,8 +10,8 @@ est une utilisation un peu "limite" de graphviz. �a marche, mais le layout n'e
 pas toujours optimal...
 '''
 
-#import pydot_ng as pydot
-import pydot
+import pydot_ng as pydot
+#import pydot
 
 class Node:
     count = 0
@@ -117,8 +117,14 @@ class CircleNode(Node):
 class RectNode(Node):
     type = "rect"
 
+class PolygonNode(Node):
+    type = "polygon"
+
 class PointNode(Node):
     type = "point"
+
+class LinkedPointNode(Node):
+    type = "linked_point"
 
 class SizeNode(Node):
     type = "size"

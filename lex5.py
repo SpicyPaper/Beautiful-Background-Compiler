@@ -10,6 +10,7 @@ reserved_params = (
 reserved_objects = (
 	'circle',
 	'rect',
+	'polygon',
 )
 
 reserved_functions = (
@@ -47,6 +48,10 @@ def t_CIRCLE(t):
 
 def t_RECT(t):
 	r'rect'
+	return t
+
+def t_POLYGON(t):
+	r'polygon'
 	return t
 
 def t_COLOR(t):

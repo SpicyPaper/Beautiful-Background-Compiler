@@ -36,7 +36,8 @@ def p_animation_translation(p):
 
 def p_shape(p):
     ''' shape : circle_g 
-        | rect_g '''
+        | rect_g
+        | polygon_g '''
     p[0] = p[1]
 
 def p_circle_g(p):
@@ -46,6 +47,18 @@ def p_circle_g(p):
 def p_rect_g(p):
     ''' rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}' '''
     p[0] = AST.RectNode([p[3], p[5], p[7]])
+
+def p_polygon_g(p):
+    ''' polygon_g : POLYGON '{' point_expression ',' color_expression '}' '''
+    p[0] = AST.PolygonNode([p[3], p[5]])
+
+def p_expression_points(p):
+    ''' points_expression : point_expression 
+        | point_expression ',' points_expression '''
+    try:
+        p[0] = AST.LinkedPointNode([p[1], p[3]])
+    except:
+        p[0] = AST.LinkedPointNode([p[1]])
 
 def p_expression_point(p):
     ''' point_expression : POINT '(' expression ',' expression ')' '''
