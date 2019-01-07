@@ -130,7 +130,7 @@ class PointNode(Node):
     type = "point"
 
 class LinkedPointNode(Node):
-    type = "linked_point"
+    type = "linked points"
 
 class SizeNode(Node):
     type = "size"

@@ -57,16 +57,16 @@ def p_rect_g(p):
     p[0] = AST.RectNode([p[3], p[5], p[7]])
 
 def p_polygon_g(p):
-    ''' polygon_g : POLYGON '{' point_expression ',' color_expression '}' '''
-    p[0] = AST.PolygonNode([p[3], p[5]])
+    ''' polygon_g : POLYGON '{' '(' points_expression ')' ',' color_expression '}' '''
+    p[0] = AST.PolygonNode([p[4], p[7]])
 
 def p_expression_points(p):
-    ''' points_expression : point_expression 
-        | point_expression ',' points_expression '''
-    try:
-        p[0] = AST.LinkedPointNode([p[1], p[3]])
-    except:
-        p[0] = AST.LinkedPointNode([p[1]])
+    ''' points_expression : point_expression '''
+    p[0] = AST.LinkedPointNode(p[1])
+
+def p_expression_points_recursive(p):
+    ''' points_expression : point_expression ',' points_expression '''
+    p[0] = AST.LinkedPointNode([p[1]]+p[3].children)
 
 def p_expression_point(p):
     ''' point_expression : POINT '(' expression ',' expression ')' '''
