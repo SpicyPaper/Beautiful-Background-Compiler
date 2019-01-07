@@ -18,7 +18,7 @@ reserved_functions = (
 )
 
 reserved_words = (
-	'while',
+	'for',
 	'print',
 )
 

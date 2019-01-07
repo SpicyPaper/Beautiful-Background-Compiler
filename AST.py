@@ -107,6 +107,15 @@ class TokenNode(Node):
         
     def __repr__(self):
         return repr(self.tok)
+        
+class TokenShapeNode(Node):
+    type = 'token'
+    def __init__(self, tok):
+        Node.__init__(self)
+        self.tok = tok
+        
+    def __repr__(self):
+        return repr(self.tok)
 
 class RotateNode(Node):
     type = "rotate"
@@ -144,11 +153,14 @@ class OpNode(Node):
 class AssignNode(Node):
     type = '='
     
+class AssignShapeNode(Node):
+    type = '='
+    
 class PrintNode(Node):
     type = 'print'
     
-class WhileNode(Node):
-    type = 'while'
+class ForNode(Node):
+    type = 'for'
     
 class EntryNode(Node):
     type = 'ENTRY'

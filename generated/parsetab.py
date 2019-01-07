@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = "leftADD_OPleftMUL_OPrightUMINUSADD_OP CIRCLE COLOR IDENTIFIER MUL_OP NUMBER POINT PRINT RADIUS RECT ROTATE SIZE TRANSLATE WHILE program : subprogram  subprogram : statement  subprogram : statement ';' subprogram  statement : assignation\n        | structure\n        | shape\n        | animation  statement : PRINT expression  structure : WHILE expression '{' subprogram '}'  animation : translation  translation : TRANSLATE '(' IDENTIFIER ',' point_expression ')'  translation : ROTATE '(' IDENTIFIER ',' expression ')'  shape : circle_g \n        | rect_g  circle_g : CIRCLE '{' point_expression ',' RADIUS '(' expression ')' ',' color_expression '}'  rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}'  point_expression : POINT '(' expression ',' expression ')'  size_expression : SIZE '(' expression ',' expression ')'  color_expression : COLOR '(' expression ',' expression ',' expression ')' expression : expression ADD_OP expression\n            | expression MUL_OP expressionexpression : NUMBER\n        | IDENTIFIER expression : '(' expression ')'  expression : ADD_OP expression %prec UMINUS assignation : IDENTIFIER '=' assign_expression  assign_expression : expression\n        | shape "
+_lr_signature = "leftADD_OPleftMUL_OPrightUMINUSADD_OP CIRCLE COLOR FOR IDENTIFIER MUL_OP NUMBER POINT PRINT RADIUS RECT ROTATE SIZE TRANSLATE program : subprogram  subprogram : statement ';'  subprogram : statement ';' subprogram  statement : assignation\n        | assignation_shape\n        | structure\n        | shape\n        | animation  statement : PRINT expression  structure : FOR '(' expression ',' expression ',' expression ')' '{' subprogram '}'  animation : translation  translation : TRANSLATE '(' animation_param ',' point_expression ')'  translation : ROTATE '(' animation_param ',' expression ')'  animation_param : IDENTIFIER animation_param : shape shape : circle_g \n        | rect_g  circle_g : CIRCLE '{' point_expression ',' RADIUS '(' expression ')' ',' color_expression '}'  rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}'  point_expression : POINT '(' expression ',' expression ')'  size_expression : SIZE '(' expression ',' expression ')'  color_expression : COLOR '(' expression ',' expression ',' expression ')' expression : expression ADD_OP expression\n            | expression MUL_OP expressionexpression : NUMBER\n        | IDENTIFIER expression : '(' expression ')'  expression : ADD_OP expression %prec UMINUS assignation_shape : IDENTIFIER '=' shape  assignation : IDENTIFIER '=' expression "
     
-_lr_action_items = {'PRINT':([0,18,38,],[8,8,8,]),'IDENTIFIER':([0,8,10,18,20,23,24,28,29,31,32,38,49,52,60,61,63,74,75,80,84,],[9,22,22,9,22,22,22,42,43,22,22,9,22,22,22,22,22,22,22,22,22,]),'WHILE':([0,18,38,],[10,10,10,]),'CIRCLE':([0,18,24,38,],[14,14,14,14,]),'RECT':([0,18,24,38,],[15,15,15,15,]),'TRANSLATE':([0,18,38,],[16,16,16,]),'ROTATE':([0,18,38,],[17,17,17,]),'$end':([1,2,3,4,5,6,7,11,12,13,19,21,22,30,33,35,36,37,44,45,46,53,64,65,73,82,],[0,-1,-2,-4,-5,-6,-7,-13,-14,-10,-8,-22,-23,-3,-25,-26,-27,-28,-20,-21,-24,-9,-11,-12,-16,-15,]),'}':([3,4,5,6,7,11,12,13,19,21,22,30,33,35,36,37,44,45,46,47,53,64,65,68,73,79,82,86,],[-2,-4,-5,-6,-7,-13,-14,-10,-8,-22,-23,-3,-25,-26,-27,-28,-20,-21,-24,53,-9,-11,-12,73,-16,82,-15,-19,]),';':([3,4,5,6,7,11,12,13,19,21,22,33,35,36,37,44,45,46,53,64,65,73,82,],[18,-4,-5,-6,-7,-13,-14,-10,-8,-22,-23,-25,-26,-27,-28,-20,-21,-24,-9,-11,-12,-16,-15,]),'NUMBER':([8,10,20,23,24,31,32,49,52,60,61,63,74,75,80,84,],[21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,]),'(':([8,10,16,17,20,23,24,31,32,40,49,52,54,57,60,61,63,69,74,75,80,84,],[23,23,28,29,23,23,23,23,23,49,23,23,60,63,23,23,23,74,23,23,23,23,]),'ADD_OP':([8,10,19,20,21,22,23,24,25,31,32,33,34,36,44,45,46,49,52,55,59,60,61,63,66,67,70,74,75,77,78,80,83,84,85,],[20,20,31,20,-22,-23,20,20,31,20,20,-25,31,31,-20,-21,-24,20,20,31,31,20,20,20,31,31,31,20,20,31,31,20,31,20,31,]),'=':([9,],[24,]),'{':([14,15,21,22,25,33,44,45,46,],[26,27,-22,-23,38,-25,-20,-21,-24,]),'MUL_OP':([19,21,22,25,33,34,36,44,45,46,55,59,66,67,70,77,78,83,85,],[32,-22,-23,32,-25,32,32,32,-21,-24,32,32,32,32,32,32,32,32,32,]),')':([21,22,33,34,44,45,46,58,59,66,67,72,78,85,],[-22,-23,-25,46,-20,-21,-24,64,65,71,72,-17,81,86,]),',':([21,22,33,39,41,42,43,44,45,46,55,56,70,71,72,77,81,83,],[-22,-23,-25,48,50,51,52,-20,-21,-24,61,62,75,76,-17,80,-18,84,]),'POINT':([26,27,51,],[40,40,40,]),'RADIUS':([48,],[54,]),'SIZE':([50,],[57,]),'COLOR':([62,76,],[69,69,]),}
+_lr_action_items = {'PRINT':([0,19,81,],[9,9,9,]),'IDENTIFIER':([0,9,19,21,24,25,26,29,30,32,33,49,51,54,62,63,64,66,79,80,81,87,92,],[10,23,10,23,23,23,23,43,43,23,23,23,23,23,23,23,23,23,23,23,10,23,23,]),'FOR':([0,19,81,],[11,11,11,]),'CIRCLE':([0,19,25,29,30,81,],[15,15,15,15,15,15,]),'RECT':([0,19,25,29,30,81,],[16,16,16,16,16,16,]),'TRANSLATE':([0,19,81,],[17,17,17,]),'ROTATE':([0,19,81,],[18,18,18,]),'$end':([1,2,19,31,],[0,-1,-2,-3,]),';':([3,4,5,6,7,8,12,13,14,20,22,23,34,36,37,46,47,48,67,68,78,89,90,],[19,-4,-5,-6,-7,-8,-16,-17,-11,-9,-25,-26,-28,-30,-29,-23,-24,-27,-12,-13,-19,-10,-18,]),'NUMBER':([9,21,24,25,26,32,33,49,51,54,62,63,64,66,79,80,87,92,],[22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,]),'(':([9,11,17,18,21,24,25,26,32,33,40,49,51,54,56,59,62,63,64,66,73,79,80,87,92,],[24,26,29,30,24,24,24,24,24,24,51,24,24,24,63,66,24,24,24,24,79,24,24,24,24,]),'ADD_OP':([9,20,21,22,23,24,25,26,32,33,34,35,36,38,46,47,48,49,51,54,55,57,61,62,63,64,66,69,70,71,74,79,80,83,84,87,91,92,93,],[21,32,21,-25,-26,21,21,21,21,21,-28,32,32,32,-23,-24,-27,21,21,21,32,32,32,21,21,21,21,32,32,32,32,21,21,32,32,21,32,21,32,]),'=':([10,],[25,]),',':([12,13,22,23,34,38,39,41,42,43,44,45,46,47,48,55,57,58,74,76,77,78,83,88,90,91,],[-16,-17,-25,-26,-28,49,50,52,53,-14,-15,54,-23,-24,-27,62,64,65,80,82,-20,-19,87,-21,-18,92,]),'{':([15,16,75,],[27,28,81,]),'}':([19,31,72,85,86,94,],[-2,-3,78,89,90,-22,]),'MUL_OP':([20,22,23,34,35,36,38,46,47,48,55,57,61,69,70,71,74,83,84,91,93,],[33,-25,-26,-28,33,33,33,33,-24,-27,33,33,33,33,33,33,33,33,33,33,33,]),')':([22,23,34,35,46,47,48,60,61,69,70,71,77,84,93,],[-25,-26,-28,48,-23,-24,-27,67,68,75,76,77,-20,88,94,]),'POINT':([27,28,53,],[40,40,40,]),'RADIUS':([50,],[56,]),'SIZE':([52,],[59,]),'COLOR':([65,82,],[73,73,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'program':([0,],[1,]),'subprogram':([0,18,38,],[2,30,47,]),'statement':([0,18,38,],[3,3,3,]),'assignation':([0,18,38,],[4,4,4,]),'structure':([0,18,38,],[5,5,5,]),'shape':([0,18,24,38,],[6,6,37,6,]),'animation':([0,18,38,],[7,7,7,]),'circle_g':([0,18,24,38,],[11,11,11,11,]),'rect_g':([0,18,24,38,],[12,12,12,12,]),'translation':([0,18,38,],[13,13,13,]),'expression':([8,10,20,23,24,31,32,49,52,60,61,63,74,75,80,84,],[19,25,33,34,36,44,45,55,59,66,67,70,77,78,83,85,]),'assign_expression':([24,],[35,]),'point_expression':([26,27,51,],[39,41,58,]),'size_expression':([50,],[56,]),'color_expression':([62,76,],[68,79,]),}
+_lr_goto_items = {'program':([0,],[1,]),'subprogram':([0,19,81,],[2,31,85,]),'statement':([0,19,81,],[3,3,3,]),'assignation':([0,19,81,],[4,4,4,]),'assignation_shape':([0,19,81,],[5,5,5,]),'structure':([0,19,81,],[6,6,6,]),'shape':([0,19,25,29,30,81,],[7,7,37,44,44,7,]),'animation':([0,19,81,],[8,8,8,]),'circle_g':([0,19,25,29,30,81,],[12,12,12,12,12,12,]),'rect_g':([0,19,25,29,30,81,],[13,13,13,13,13,13,]),'translation':([0,19,81,],[14,14,14,]),'expression':([9,21,24,25,26,32,33,49,51,54,62,63,64,66,79,80,87,92,],[20,34,35,36,38,46,47,55,57,61,69,70,71,74,83,84,91,93,]),'point_expression':([27,28,53,],[39,41,60,]),'animation_param':([29,30,],[42,45,]),'size_expression':([52,],[58,]),'color_expression':([65,82,],[72,86,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -28,31 +28,33 @@ del _lr_goto_items
 _lr_productions = [
   ("S' -> program","S'",1,None,None,None),
   ('program -> subprogram','program',1,'p_program_statement','parser5.py',7),
-  ('subprogram -> statement','subprogram',1,'p_program_subprogram','parser5.py',11),
+  ('subprogram -> statement ;','subprogram',2,'p_program_subprogram','parser5.py',11),
   ('subprogram -> statement ; subprogram','subprogram',3,'p_program_recursive','parser5.py',15),
   ('statement -> assignation','statement',1,'p_statement','parser5.py',19),
-  ('statement -> structure','statement',1,'p_statement','parser5.py',20),
-  ('statement -> shape','statement',1,'p_statement','parser5.py',21),
-  ('statement -> animation','statement',1,'p_statement','parser5.py',22),
-  ('statement -> PRINT expression','statement',2,'p_statement_print','parser5.py',26),
-  ('structure -> WHILE expression { subprogram }','structure',5,'p_structure','parser5.py',30),
-  ('animation -> translation','animation',1,'p_animation','parser5.py',34),
-  ('translation -> TRANSLATE ( IDENTIFIER , point_expression )','translation',6,'p_animation_translation','parser5.py',38),
-  ('translation -> ROTATE ( IDENTIFIER , expression )','translation',6,'p_animation_rotation','parser5.py',42),
-  ('shape -> circle_g','shape',1,'p_shape','parser5.py',46),
-  ('shape -> rect_g','shape',1,'p_shape','parser5.py',47),
-  ('circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression }','circle_g',11,'p_circle_g','parser5.py',51),
-  ('rect_g -> RECT { point_expression , size_expression , color_expression }','rect_g',8,'p_rect_g','parser5.py',55),
-  ('point_expression -> POINT ( expression , expression )','point_expression',6,'p_expression_point','parser5.py',59),
-  ('size_expression -> SIZE ( expression , expression )','size_expression',6,'p_expression_size','parser5.py',63),
-  ('color_expression -> COLOR ( expression , expression , expression )','color_expression',8,'p_expression_color','parser5.py',67),
-  ('expression -> expression ADD_OP expression','expression',3,'p_expression_op','parser5.py',71),
-  ('expression -> expression MUL_OP expression','expression',3,'p_expression_op','parser5.py',72),
-  ('expression -> NUMBER','expression',1,'p_expression_num_or_var','parser5.py',76),
-  ('expression -> IDENTIFIER','expression',1,'p_expression_num_or_var','parser5.py',77),
-  ('expression -> ( expression )','expression',3,'p_expression_paren','parser5.py',81),
-  ('expression -> ADD_OP expression','expression',2,'p_minus','parser5.py',85),
-  ('assignation -> IDENTIFIER = assign_expression','assignation',3,'p_assign','parser5.py',89),
-  ('assign_expression -> expression','assign_expression',1,'p_assign_expression','parser5.py',93),
-  ('assign_expression -> shape','assign_expression',1,'p_assign_expression','parser5.py',94),
+  ('statement -> assignation_shape','statement',1,'p_statement','parser5.py',20),
+  ('statement -> structure','statement',1,'p_statement','parser5.py',21),
+  ('statement -> shape','statement',1,'p_statement','parser5.py',22),
+  ('statement -> animation','statement',1,'p_statement','parser5.py',23),
+  ('statement -> PRINT expression','statement',2,'p_statement_print','parser5.py',27),
+  ('structure -> FOR ( expression , expression , expression ) { subprogram }','structure',11,'p_structure','parser5.py',31),
+  ('animation -> translation','animation',1,'p_animation','parser5.py',35),
+  ('translation -> TRANSLATE ( animation_param , point_expression )','translation',6,'p_animation_translation','parser5.py',39),
+  ('translation -> ROTATE ( animation_param , expression )','translation',6,'p_animation_rotation','parser5.py',43),
+  ('animation_param -> IDENTIFIER','animation_param',1,'p_animation_param_id','parser5.py',47),
+  ('animation_param -> shape','animation_param',1,'p_animation_param_shape','parser5.py',51),
+  ('shape -> circle_g','shape',1,'p_shape','parser5.py',55),
+  ('shape -> rect_g','shape',1,'p_shape','parser5.py',56),
+  ('circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression }','circle_g',11,'p_circle_g','parser5.py',60),
+  ('rect_g -> RECT { point_expression , size_expression , color_expression }','rect_g',8,'p_rect_g','parser5.py',64),
+  ('point_expression -> POINT ( expression , expression )','point_expression',6,'p_expression_point','parser5.py',68),
+  ('size_expression -> SIZE ( expression , expression )','size_expression',6,'p_expression_size','parser5.py',72),
+  ('color_expression -> COLOR ( expression , expression , expression )','color_expression',8,'p_expression_color','parser5.py',76),
+  ('expression -> expression ADD_OP expression','expression',3,'p_expression_op','parser5.py',80),
+  ('expression -> expression MUL_OP expression','expression',3,'p_expression_op','parser5.py',81),
+  ('expression -> NUMBER','expression',1,'p_expression_num_or_var','parser5.py',85),
+  ('expression -> IDENTIFIER','expression',1,'p_expression_num_or_var','parser5.py',86),
+  ('expression -> ( expression )','expression',3,'p_expression_paren','parser5.py',90),
+  ('expression -> ADD_OP expression','expression',2,'p_minus','parser5.py',94),
+  ('assignation_shape -> IDENTIFIER = shape','assignation_shape',3,'p_assign_shape','parser5.py',98),
+  ('assignation -> IDENTIFIER = expression','assignation',3,'p_assign','parser5.py',102),
 ]

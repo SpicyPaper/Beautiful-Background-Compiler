@@ -8,7 +8,7 @@ def p_program_statement(p):
     p[0] = AST.ProgramNode(p[1])
 
 def p_program_subprogram(p):
-    ''' subprogram : statement '''
+    ''' subprogram : statement ';' '''
     p[0] = AST.SubProgramNode(p[1])
 
 def p_program_recursive(p):
@@ -17,6 +17,7 @@ def p_program_recursive(p):
 
 def p_statement(p):
     ''' statement : assignation
+        | assignation_shape
         | structure
         | shape
         | animation '''
@@ -27,20 +28,28 @@ def p_statement_print(p):
     p[0] = AST.PrintNode(p[2])
 
 def p_structure(p):
-    ''' structure : WHILE expression '{' subprogram '}' '''
-    p[0] = AST.WhileNode([p[2],p[4]])
+    ''' structure : FOR '(' expression ',' expression ',' expression ')' '{' subprogram '}' '''
+    p[0] = AST.ForNode([p[3], p[5], p[7], p[10]])
 
 def p_animation(p):
     ''' animation : translation '''
     p[0] = p[1]
 
 def p_animation_translation(p):
-    ''' translation : TRANSLATE '(' IDENTIFIER ',' point_expression ')' '''
-    p[0] = AST.TranslateNode([AST.TokenNode(p[3]), p[5]])
+    ''' translation : TRANSLATE '(' animation_param ',' point_expression ')' '''
+    p[0] = AST.TranslateNode([p[3], p[5]])
 
 def p_animation_rotation(p):
-    ''' translation : ROTATE '(' IDENTIFIER ',' expression ')' '''
-    p[0] = AST.RotateNode([AST.TokenNode(p[3]), p[5]])
+    ''' translation : ROTATE '(' animation_param ',' expression ')' '''
+    p[0] = AST.RotateNode([p[3], p[5]])
+
+def p_animation_param_id(p):
+    ''' animation_param : IDENTIFIER'''
+    p[0] = AST.TokenShapeNode(p[1])
+
+def p_animation_param_shape(p):
+    ''' animation_param : shape'''
+    p[0] = p[1]
 
 def p_shape(p):
     ''' shape : circle_g 
@@ -85,14 +94,13 @@ def p_minus(p):
     ''' expression : ADD_OP expression %prec UMINUS'''
     p[0] = AST.OpNode(p[1], [p[2]])
     	
+def p_assign_shape(p):
+    ''' assignation_shape : IDENTIFIER '=' shape '''
+    p[0] = AST.AssignShapeNode([AST.TokenShapeNode(p[1]), p[3]])
+    
 def p_assign(p):
-    ''' assignation : IDENTIFIER '=' assign_expression '''
+    ''' assignation : IDENTIFIER '=' expression '''
     p[0] = AST.AssignNode([AST.TokenNode(p[1]), p[3]])
-    	
-def p_assign_expression(p):
-    ''' assign_expression : expression
-        | shape '''
-    p[0] = p[1]
 
 def p_error(p):
     if p:

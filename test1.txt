@@ -1,18 +1,17 @@
-a = 100;
-c1 = circle {
-    point(a, 100),
-    radius(50),
-    color(255, 0, 0)
+tmp = -20;
+i = tmp;
+for(0, i * -2, 1) {
+    j = tmp;
+    for(0, j * -2, 1) {
+        translate(
+            circle {
+                point(300, 100),
+                radius(20),
+                color(0, 255, 0)
+            },
+            point(i, -j)
+        );
+        j = j + 1;
+    };
+    i = i + 1;
 };
-c2 = circle {
-    point(400, 100),
-    radius(20),
-    color(0, 255, 0)
-};
-r1 = rect {
-    point(200, 200),
-    size(50, 150),
-    color(0, 255, 0)
-};
-translate(c1, point(1, -1));
-rotate(r1, 1000)

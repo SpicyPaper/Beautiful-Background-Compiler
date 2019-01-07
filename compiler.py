@@ -11,7 +11,7 @@ HTMLContent = """
         <script src="%s.js"></script>
         <title>%s</title>
     </head>
-    <body>
+    <body style="margin: 0px; padding: 0px; overflow:hidden;">
          <canvas id="bbcCanvas" width="500" height="500"></canvas>
     </body>
 </html>
@@ -23,6 +23,8 @@ JSContent = """
 window.onload = function() {
 
 canvas = document.getElementById('bbcCanvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 ctx = canvas.getContext('2d');
 bbcInit();
 bbcUpdate();
@@ -139,6 +141,8 @@ operations = {
     '/' : lambda x,y: x/y,
 }
 
+vars = {}
+
 # noeud de programme
 # retourne la suite d'opcodes de tous les enfants
 @addToClass(AST.ProgramNode)
@@ -155,35 +159,51 @@ def compile(self):
     for c in self.children:
         c.compile()
 
-@addToClass(AST.WhileNode)
+@addToClass(AST.ForNode)
 def compile(self):
-    if(self.children[0].compile()):
-        self.children[1].compile()
+    start = int(self.children[0].compile())
+    end = int(self.children[1].compile())
+    step = int(self.children[2].compile())
+
+    for i in range(start, end, step):
+        self.children[3].compile()
 
 @addToClass(AST.TokenNode)
 def compile(self):
+    if isinstance(self.tok, str):
+        try:
+            return vars[self.tok]
+        except KeyError:
+            print ("*** Error: variable %s undefined!" % self.tok)
+    return self.tok
+
+@addToClass(AST.TokenShapeNode)
+def compile(self):
     return self.tok
 	
-@addToClass(AST.AssignNode)
+@addToClass(AST.AssignShapeNode)
 def compile(self):
     global JSInit
 
     identifier = self.children[0].compile()
     value = self.children[1].compile()
+    
+    JSInit += JSAssign %(identifier, value[1])
+	
+@addToClass(AST.AssignNode)
+def compile(self):
 
-    if isinstance(value, list):
-        JSInit += JSAssign %(identifier, value[1])
-    else:
-        JSInit += JSAssign %(identifier, value)
+    identifier = self.children[0].tok
+    value = self.children[1].compile()
+
+    vars[identifier] = value
 	
 @addToClass(AST.OpNode)
 def compile(self):
-    jscode = ""
     if len(self.children) == 1:
-        jscode += str(operations[self.op](0, self.children[0].compile()))
+        return operations[self.op](0, self.children[0].compile())
     else:
-        jscode += str(operations[self.op](self.children[0].compile(), self.children[1].compile()))
-    return jscode
+        return operations[self.op](self.children[0].compile(), self.children[1].compile())
     
 @addToClass(AST.ColorNode)
 def compile(self):
@@ -278,8 +298,12 @@ def compile(self):
 @addToClass(AST.TranslateNode)
 def compile(self):
     global JSUpdate
-
+    
     identifier = self.children[0].compile()
+
+    if isinstance(identifier, list):
+        identifier = identifier[1]
+
     translatePoint = self.children[1].compile()[1]
 
     JSUpdate += JSTranslate %(identifier + ".point.x", translatePoint[0], identifier + ".point.y", translatePoint[1])
@@ -289,6 +313,10 @@ def compile(self):
     global JSUpdate
 
     identifier = self.children[0].compile()
+
+    if isinstance(identifier, list):
+        identifier = identifier[1]
+
     rotation = self.children[1].compile()
 
     JSUpdate += JSRotate %(identifier + ".rotation", rotation)
