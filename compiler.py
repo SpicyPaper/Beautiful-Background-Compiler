@@ -55,17 +55,23 @@ JSUpdate = ""
 JSDraw = ""
 
 JSCircle = """
+ctx.save();
+ctx.rotate(%s * Math.PI / 180);
 ctx.beginPath();
 ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
 ctx.fill();
 ctx.stroke();
+ctx.restore();
 """
 
 JSRect = """
+ctx.save();
+ctx.rotate(%s * Math.PI / 180);
 ctx.beginPath();
 ctx.rect(%s, %s, %s, %s);
 ctx.fill();
 ctx.stroke();
+ctx.restore();
 """
 
 JSColor = """
@@ -88,13 +94,15 @@ def nextShapeNum():
 JSCircleObject = """{
     point:%s,
     radius:%s,
-    color:%s
+    color:%s,
+    rotation:%s
 }"""
 
 JSRectObject = """{
     point:%s,
     size:%s,
-    color:%s
+    color:%s,
+    rotation:%s
 }"""
 
 JSSizeObject = """{
@@ -120,6 +128,10 @@ JSTranslate = """
 %s += %s;
 """
 
+JSRotate = """
+%s += %s;
+"""
+
 operations = {
     '+' : lambda x,y: x+y,
     '-' : lambda x,y: x-y,
@@ -137,6 +149,16 @@ def compile(self):
     for c in self.children:
         c.compile()
     return JSContent %(JSInit, JSUpdate, JSDraw)
+
+@addToClass(AST.SubProgramNode)
+def compile(self):
+    for c in self.children:
+        c.compile()
+
+@addToClass(AST.WhileNode)
+def compile(self):
+    if(self.children[0].compile()):
+        self.children[1].compile()
 
 @addToClass(AST.TokenNode)
 def compile(self):
@@ -189,14 +211,14 @@ def compile(self):
     color = self.children[2].compile()
 
     # Create object
-    circleObject = JSCircleObject %(point, radius, color[1])
+    circleObject = JSCircleObject %(point, radius, color[1], 0)
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
 
     # Create js code
     jscode = color[0]
-    jscode += JSCircle %(shapeName + ".point.x", shapeName + ".point.y", shapeName + ".radius")
+    jscode += JSCircle %(shapeName + ".rotation", shapeName + ".point.x", shapeName + ".point.y", shapeName + ".radius")
     JSDraw += jscode
 
     # Create the array
@@ -220,14 +242,14 @@ def compile(self):
     color = self.children[2].compile()
 
     # Create object
-    rectObject = JSRectObject %(point, size, color[1])
+    rectObject = JSRectObject %(point, size, color[1], 0)
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
 
     # Create js code
     jscode = color[0]
-    jscode += JSRect %(shapeName + ".point.x", shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
+    jscode += JSRect %(shapeName + ".rotation", shapeName + ".point.x", shapeName + ".point.y", shapeName + ".size.width", shapeName + ".size.height")
     JSDraw += jscode
 
     # Create the array
@@ -257,11 +279,19 @@ def compile(self):
 def compile(self):
     global JSUpdate
 
-    identifier = self.children[0]
+    identifier = self.children[0].compile()
     translatePoint = self.children[1].compile()[1]
-    print(translatePoint)
 
     JSUpdate += JSTranslate %(identifier + ".point.x", translatePoint[0], identifier + ".point.y", translatePoint[1])
+    
+@addToClass(AST.RotateNode)
+def compile(self):
+    global JSUpdate
+
+    identifier = self.children[0].compile()
+    rotation = self.children[1].compile()
+
+    JSUpdate += JSRotate %(identifier + ".rotation", rotation)
 
 if __name__ == "__main__":
     from parser5 import parse

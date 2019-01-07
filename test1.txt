@@ -4,7 +4,7 @@ c1 = circle {
     radius(50),
     color(255, 0, 0)
 };
-circle {
+c2 = circle {
     point(400, 100),
     radius(20),
     color(0, 255, 0)
@@ -19,4 +19,4 @@ p1 = polygon {
     color(0, 255, 0)
 };
 translate(c1, point(1, -1));
-translate(r1, point(1, 1))
+rotate(r1, 1000)

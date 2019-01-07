@@ -94,7 +94,10 @@ class Node:
             return graph    
         
 class ProgramNode(Node):
-    type = 'Program'
+    type = 'program'
+        
+class SubProgramNode(Node):
+    type = 'subprogram'
         
 class TokenNode(Node):
     type = 'token'
@@ -104,6 +107,9 @@ class TokenNode(Node):
         
     def __repr__(self):
         return repr(self.tok)
+
+class RotateNode(Node):
+    type = "rotate"
 
 class TranslateNode(Node):
     type = "translate"
