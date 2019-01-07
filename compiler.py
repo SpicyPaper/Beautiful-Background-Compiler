@@ -76,6 +76,24 @@ ctx.stroke();
 ctx.restore();
 """
 
+JSPolygon = """
+ctx.save();
+ctx.rotate(%s * Math.PI / 180);
+ctx.beginPath();%s
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
+ctx.restore();
+"""
+
+JSMoveTo = """
+ctx.moveTo(%s, %s);
+"""
+
+JSLineTo = """
+ctx.lineTo(%s, %s);
+"""
+
 JSColor = """
 ctx.fillStyle = 'rgb(%s, %s, %s)';
 """
@@ -103,6 +121,12 @@ JSCircleObject = """{
 JSRectObject = """{
     point:%s,
     size:%s,
+    color:%s,
+    rotation:%s
+}"""
+
+JSPolygonObject = """{
+    points:%s,
     color:%s,
     rotation:%s
 }"""
@@ -279,6 +303,55 @@ def compile(self):
     JSInit += JSAssign %(shapeName, rectObject)
 
     return rectArray
+
+@addToClass(AST.LinkedPointNode)
+def compile(self):
+    points = []
+    for c in self.children:
+        points.append(c.compile())
+    return points
+
+@addToClass(AST.PolygonNode)
+def compile(self):
+    # Init
+    global JSInit
+    global JSDraw
+    polygonArray = []
+
+    # Get compiled values
+    points = self.children[0].compile()
+    color = self.children[1].compile()
+    pointsforJS = [point[1] for point in points]
+    for i in range(0, len(pointsforJS)):
+        array = []
+        array.append(pointsforJS[i][0])
+        array.append(pointsforJS[i][1])
+        pointsforJS[i] = array
+
+    # Create object
+    polygonObject = JSPolygonObject %(pointsforJS, color[1], 0)
+
+    # Generate shape var name
+    shapeName = "bbcShape" + str(nextShapeNum())
+
+    # Create js code
+    jscode = color[0]
+    jspoints = ""
+    for i in range(0, len(points)):
+        if i == 0:
+            jspoints += (JSMoveTo %(shapeName + ".points[" + str(i) + "][0]", shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
+        else:
+            jspoints += (JSLineTo %(shapeName + ".points[" + str(i) + "][0]", shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
+    jscode += JSPolygon %(shapeName + ".rotation", jspoints)
+    JSDraw += jscode
+
+    # Create the array
+    polygonArray.append(jscode)
+    polygonArray.append(shapeName)
+
+    JSInit += JSAssign %(shapeName, polygonObject)
+
+    return polygonArray
 
 @addToClass(AST.PointNode)
 def compile(self):

@@ -44,16 +44,17 @@ def p_animation_rotation(p):
     p[0] = AST.RotateNode([p[3], p[5]])
 
 def p_animation_param_id(p):
-    ''' animation_param : IDENTIFIER'''
+    ''' animation_param : IDENTIFIER '''
     p[0] = AST.TokenShapeNode(p[1])
 
 def p_animation_param_shape(p):
-    ''' animation_param : shape'''
+    ''' animation_param : shape '''
     p[0] = p[1]
 
 def p_shape(p):
     ''' shape : circle_g 
-        | rect_g '''
+        | rect_g
+        | polygon_g '''
     p[0] = p[1]
 
 def p_circle_g(p):
@@ -63,6 +64,18 @@ def p_circle_g(p):
 def p_rect_g(p):
     ''' rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}' '''
     p[0] = AST.RectNode([p[3], p[5], p[7]])
+
+def p_polygon_g(p):
+    ''' polygon_g : POLYGON '{' '(' points_expression ')' ',' color_expression '}' '''
+    p[0] = AST.PolygonNode([p[4], p[7]])
+
+def p_expression_points(p):
+    ''' points_expression : point_expression '''
+    p[0] = AST.LinkedPointNode(p[1])
+
+def p_expression_points_recursive(p):
+    ''' points_expression : point_expression ',' points_expression '''
+    p[0] = AST.LinkedPointNode([p[1]]+p[3].children)
 
 def p_expression_point(p):
     ''' point_expression : POINT '(' expression ',' expression ')' '''

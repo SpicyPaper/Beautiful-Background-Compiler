@@ -132,8 +132,14 @@ class CircleNode(Node):
 class RectNode(Node):
     type = "rect"
 
+class PolygonNode(Node):
+    type = "polygon"
+
 class PointNode(Node):
     type = "point"
+
+class LinkedPointNode(Node):
+    type = "linked points"
 
 class SizeNode(Node):
     type = "size"
