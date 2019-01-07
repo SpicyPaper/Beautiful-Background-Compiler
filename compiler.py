@@ -56,8 +56,8 @@ JSDraw = ""
 
 JSCircle = """
 ctx.save();
-ctx.beginPath();
 ctx.rotate(%s * Math.PI / 180);
+ctx.beginPath();
 ctx.arc(%s, %s, %s, 0, 2 * Math.PI);
 ctx.fill();
 ctx.stroke();
@@ -66,8 +66,8 @@ ctx.restore();
 
 JSRect = """
 ctx.save();
-ctx.beginPath();
 ctx.rotate(%s * Math.PI / 180);
+ctx.beginPath();
 ctx.rect(%s, %s, %s, %s);
 ctx.fill();
 ctx.stroke();
@@ -149,6 +149,16 @@ def compile(self):
     for c in self.children:
         c.compile()
     return JSContent %(JSInit, JSUpdate, JSDraw)
+
+@addToClass(AST.SubProgramNode)
+def compile(self):
+    for c in self.children:
+        c.compile()
+
+@addToClass(AST.WhileNode)
+def compile(self):
+    if(self.children[0].compile()):
+        self.children[1].compile()
 
 @addToClass(AST.TokenNode)
 def compile(self):
@@ -269,7 +279,7 @@ def compile(self):
 def compile(self):
     global JSUpdate
 
-    identifier = self.children[0]
+    identifier = self.children[0].compile()
     translatePoint = self.children[1].compile()[1]
 
     JSUpdate += JSTranslate %(identifier + ".point.x", translatePoint[0], identifier + ".point.y", translatePoint[1])
@@ -278,7 +288,7 @@ def compile(self):
 def compile(self):
     global JSUpdate
 
-    identifier = self.children[0]
+    identifier = self.children[0].compile()
     rotation = self.children[1].compile()
 
     JSUpdate += JSRotate %(identifier + ".rotation", rotation)

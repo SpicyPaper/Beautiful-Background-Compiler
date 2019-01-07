@@ -4,12 +4,16 @@ from lex5 import tokens
 import AST
 
 def p_program_statement(p):
-    ''' program : statement '''
+    ''' program : subprogram '''
     p[0] = AST.ProgramNode(p[1])
 
+def p_program_subprogram(p):
+    ''' subprogram : statement '''
+    p[0] = AST.SubProgramNode(p[1])
+
 def p_program_recursive(p):
-    ''' program : statement ';' program '''
-    p[0] = AST.ProgramNode([p[1]]+p[3].children)
+    ''' subprogram : statement ';' subprogram '''
+    p[0] = AST.SubProgramNode([p[1]]+p[3].children)
 
 def p_statement(p):
     ''' statement : assignation
@@ -23,7 +27,7 @@ def p_statement_print(p):
     p[0] = AST.PrintNode(p[2])
 
 def p_structure(p):
-    ''' structure : WHILE expression '{' program '}' '''
+    ''' structure : WHILE expression '{' subprogram '}' '''
     p[0] = AST.WhileNode([p[2],p[4]])
 
 def p_animation(p):
@@ -32,11 +36,11 @@ def p_animation(p):
 
 def p_animation_translation(p):
     ''' translation : TRANSLATE '(' IDENTIFIER ',' point_expression ')' '''
-    p[0] = AST.TranslateNode([p[3], p[5]])
+    p[0] = AST.TranslateNode([AST.TokenNode(p[3]), p[5]])
 
 def p_animation_rotation(p):
     ''' translation : ROTATE '(' IDENTIFIER ',' expression ')' '''
-    p[0] = AST.RotateNode([p[3], p[5]])
+    p[0] = AST.RotateNode([AST.TokenNode(p[3]), p[5]])
 
 def p_shape(p):
     ''' shape : circle_g 

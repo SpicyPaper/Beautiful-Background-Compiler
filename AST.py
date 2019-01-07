@@ -94,7 +94,10 @@ class Node:
             return graph    
         
 class ProgramNode(Node):
-    type = 'Program'
+    type = 'program'
+        
+class SubProgramNode(Node):
+    type = 'subprogram'
         
 class TokenNode(Node):
     type = 'token'
