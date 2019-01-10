@@ -126,6 +126,15 @@ class TokenColorNode(Node):
     def __repr__(self):
         return repr(self.tok)
 
+class TokenPointNode(Node):
+    type = 'token'
+    def __init__(self, tok):
+        Node.__init__(self)
+        self.tok = tok
+        
+    def __repr__(self):
+        return repr(self.tok)
+
 class RotateNode(Node):
     type = "rotate"
 
@@ -172,6 +181,9 @@ class AssignShapeNode(Node):
     type = '='
 
 class AssignColorNode(Node):
+    type = "="
+
+class AssignPointNode(Node):
     type = "="
     
 class PrintNode(Node):

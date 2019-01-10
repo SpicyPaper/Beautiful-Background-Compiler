@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = "leftADD_OPleftMUL_OPrightUMINUSADD_OP AROUND CIRCLE COLOR FOR IDENTIFIER MUL_OP NUMBER POINT POLYGON PRINT RADIUS RANDOM RECT ROTATE SIZE TRANSLATE program : subprogram  subprogram : statement ';'  subprogram : statement ';' subprogram  statement : assignation\n        | assignation_shape\n        | assignation_color\n        | structure\n        | shape\n        | animation  statement : PRINT expression  structure : FOR '(' expression ',' expression ',' expression ')' '{' subprogram '}'  animation : translation  translation : TRANSLATE '(' animation_param ',' point_expression ')'  translation : ROTATE '(' animation_param ',' expression ',' AROUND '(' point_expression ')' ')'  animation_param : IDENTIFIER  animation_param : shape  shape : circle_g \n        | rect_g\n        | polygon_g  circle_g : CIRCLE '{' point_expression ',' RADIUS '(' expression ')' ',' color_expression '}'  rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}'  polygon_g : POLYGON '{' '(' points_expression ')' ',' color_expression '}'  points_expression : point_expression  points_expression : point_expression ',' points_expression  point_expression : POINT '(' expression ',' expression ')'  size_expression : SIZE '(' expression ',' expression ')'  color_expression : COLOR '(' expression ',' expression ',' expression ')' expression : expression ADD_OP expression\n            | expression MUL_OP expressionexpression : NUMBER\n        | IDENTIFIER expression : '(' expression ')'  expression : ADD_OP expression %prec UMINUS assignation_color : IDENTIFIER '=' color_expression  assignation_shape : IDENTIFIER '=' shape  assignation : IDENTIFIER '=' expression expression : RANDOM '(' expression ')' expression : RANDOM '(' expression ',' expression ')' "
+_lr_signature = "leftADD_OPleftMUL_OPrightUMINUSADD_OP AROUND CIRCLE COLOR FOR IDENTIFIER MUL_OP NUMBER POINT POLYGON PRINT RADIUS RANDOM RECT ROTATE SIZE TRANSLATE program : subprogram  subprogram : statement ';'  subprogram : statement ';' subprogram  statement : assignation\n        | assignation_shape\n        | assignation_color\n        | assignation_point\n        | structure\n        | shape\n        | animation  statement : PRINT expression  structure : FOR '(' expression ',' expression ',' expression ')' '{' subprogram '}'  animation : translation  translation : TRANSLATE '(' animation_param ',' point_expression ')'  translation : ROTATE '(' animation_param ',' expression ',' AROUND '(' point_expression ')' ')'  animation_param : IDENTIFIER  animation_param : shape  shape : circle_g \n        | rect_g\n        | polygon_g  circle_g : CIRCLE '{' point_expression ',' RADIUS '(' expression ')' ',' color_expression '}'  rect_g : RECT '{' point_expression ',' size_expression ',' color_expression '}'  polygon_g : POLYGON '{' '(' points_expression ')' ',' color_expression '}'  points_expression : point_expression  points_expression : point_expression ',' points_expression  point_expression : POINT '(' expression ',' expression ')'  size_expression : SIZE '(' expression ',' expression ')'  color_expression : COLOR '(' expression ',' expression ',' expression ')' expression : expression ADD_OP expression\n            | expression MUL_OP expressionexpression : NUMBER\n        | IDENTIFIER expression : '(' expression ')'  expression : ADD_OP expression %prec UMINUS assignation_point : IDENTIFIER '=' point_expression  assignation_color : IDENTIFIER '=' color_expression  assignation_shape : IDENTIFIER '=' shape  assignation : IDENTIFIER '=' expression expression : RANDOM '(' expression ')' expression : RANDOM '(' expression ',' expression ')' "
     
-_lr_action_items = {'PRINT':([0,22,109,],[10,10,10,]),'IDENTIFIER':([0,10,22,24,27,29,30,34,35,37,38,41,59,60,62,67,69,81,82,83,84,86,100,105,109,],[11,26,11,26,26,26,26,52,52,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,11,]),'FOR':([0,22,109,],[12,12,12,]),'CIRCLE':([0,22,29,34,35,109,],[17,17,17,17,17,17,]),'RECT':([0,22,29,34,35,109,],[18,18,18,18,18,18,]),'POLYGON':([0,22,29,34,35,109,],[19,19,19,19,19,19,]),'TRANSLATE':([0,22,109,],[20,20,20,]),'ROTATE':([0,22,109,],[21,21,21,]),'$end':([1,2,22,36,],[0,-1,-2,-3,]),';':([3,4,5,6,7,8,9,13,14,15,16,23,25,26,39,42,43,44,55,56,57,68,89,91,104,106,113,118,119,120,],[22,-4,-5,-6,-7,-8,-9,-17,-18,-19,-12,-10,-30,-31,-33,-36,-35,-34,-28,-29,-32,-37,-13,-38,-21,-22,-27,-11,-20,-14,]),'NUMBER':([10,24,27,29,30,37,38,41,59,60,62,67,69,81,82,83,84,86,100,105,],[25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,25,]),'(':([10,12,20,21,24,27,28,29,30,33,37,38,41,45,48,59,60,62,67,69,72,75,81,82,83,84,86,99,100,105,],[27,30,34,35,27,27,41,27,27,50,27,27,27,59,62,27,27,27,27,27,83,86,27,27,27,27,27,107,27,27,]),'ADD_OP':([10,23,24,25,26,27,29,30,37,38,39,40,41,42,46,55,56,57,58,59,60,62,67,68,69,70,71,73,79,80,81,82,83,84,86,91,92,93,94,95,97,100,105,108,111,],[24,37,24,-30,-31,24,24,24,24,24,-33,37,24,37,37,-28,-29,-32,37,24,24,24,24,-37,24,37,37,37,37,37,24,24,24,24,24,-38,37,37,37,37,37,24,24,37,37,]),'RANDOM':([10,24,27,29,30,37,38,41,59,60,62,67,69,81,82,83,84,86,100,105,],[28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,]),'=':([11,],[29,]),',':([13,14,15,25,26,39,46,47,49,51,52,53,54,55,56,57,58,65,68,70,71,73,74,76,79,91,92,97,102,103,104,106,116,119,],[-17,-18,-19,-30,-31,-33,60,61,63,66,-15,-16,67,-28,-29,-32,69,77,-37,81,82,84,85,87,90,-38,100,105,110,-25,-21,-22,-26,-20,]),'{':([17,18,19,101,],[31,32,33,109,]),'}':([22,36,96,98,113,114,115,],[-2,-3,104,106,-27,118,119,]),'MUL_OP':([23,25,26,39,40,42,46,55,56,57,58,68,70,71,73,79,80,91,92,93,94,95,97,108,111,],[38,-30,-31,-33,38,38,38,38,-29,-32,38,-37,38,38,38,38,38,-38,38,38,38,38,38,38,38,]),')':([25,26,39,40,55,56,57,58,64,65,68,78,80,88,91,93,94,95,103,108,111,112,117,],[-30,-31,-33,57,-28,-29,-32,68,76,-23,-37,89,91,-24,-38,101,102,103,-25,113,116,117,120,]),'COLOR':([29,85,87,110,],[45,45,45,45,]),'POINT':([31,32,50,66,77,107,],[48,48,48,48,48,48,]),'RADIUS':([61,],[72,]),'SIZE':([63,],[75,]),'AROUND':([90,],[99,]),}
+_lr_action_items = {'PRINT':([0,23,111,],[11,11,11,]),'IDENTIFIER':([0,11,23,25,28,30,31,35,36,38,39,42,61,62,63,69,71,83,84,85,86,88,102,107,111,],[12,27,12,27,27,27,27,54,54,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,12,]),'FOR':([0,23,111,],[13,13,13,]),'CIRCLE':([0,23,30,35,36,111,],[18,18,18,18,18,18,]),'RECT':([0,23,30,35,36,111,],[19,19,19,19,19,19,]),'POLYGON':([0,23,30,35,36,111,],[20,20,20,20,20,20,]),'TRANSLATE':([0,23,111,],[21,21,21,]),'ROTATE':([0,23,111,],[22,22,22,]),'$end':([1,2,23,37,],[0,-1,-2,-3,]),';':([3,4,5,6,7,8,9,10,14,15,16,17,24,26,27,40,43,44,45,46,57,58,59,70,91,93,103,106,108,115,120,121,122,],[23,-4,-5,-6,-7,-8,-9,-10,-18,-19,-20,-13,-11,-31,-32,-34,-38,-37,-36,-35,-29,-30,-33,-39,-14,-40,-26,-22,-23,-28,-12,-21,-15,]),'NUMBER':([11,25,28,30,31,38,39,42,61,62,63,69,71,83,84,85,86,88,102,107,],[26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,]),'(':([11,13,21,22,25,28,29,30,31,34,38,39,42,47,48,61,62,63,69,71,75,77,83,84,85,86,88,101,102,107,],[28,31,35,36,28,28,42,28,28,52,28,28,28,61,62,28,28,28,28,28,86,88,28,28,28,28,28,109,28,28,]),'ADD_OP':([11,24,25,26,27,28,30,31,38,39,40,41,42,43,49,57,58,59,60,61,62,63,69,70,71,72,73,74,81,82,83,84,85,86,88,93,94,95,96,97,99,102,107,110,113,],[25,38,25,-31,-32,25,25,25,25,25,-34,38,25,38,38,-29,-30,-33,38,25,25,25,25,-39,25,38,38,38,38,38,25,25,25,25,25,-40,38,38,38,38,38,25,25,38,38,]),'RANDOM':([11,25,28,30,31,38,39,42,61,62,63,69,71,83,84,85,86,88,102,107,],[29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,29,]),'=':([12,],[30,]),',':([14,15,16,26,27,40,49,50,51,53,54,55,56,57,58,59,60,67,70,72,73,74,76,78,81,93,94,99,103,105,106,108,118,121,],[-18,-19,-20,-31,-32,-34,63,64,65,68,-16,-17,69,-29,-30,-33,71,79,-39,83,84,85,87,89,92,-40,102,107,-26,112,-22,-23,-27,-21,]),'{':([18,19,20,104,],[32,33,34,111,]),'}':([23,37,98,100,115,116,117,],[-2,-3,106,108,-28,120,121,]),'MUL_OP':([24,26,27,40,41,43,49,57,58,59,60,70,72,73,74,81,82,93,94,95,96,97,99,110,113,],[39,-31,-32,-34,39,39,39,39,-30,-33,39,-39,39,39,39,39,39,-40,39,39,39,39,39,39,39,]),')':([26,27,40,41,57,58,59,60,66,67,70,80,82,90,93,95,96,97,103,110,113,114,119,],[-31,-32,-34,59,-29,-30,-33,70,78,-24,-39,91,93,-25,-40,103,104,105,-26,115,118,119,122,]),'COLOR':([30,87,89,112,],[47,47,47,47,]),'POINT':([30,32,33,52,68,79,109,],[48,48,48,48,48,48,48,]),'RADIUS':([64,],[75,]),'SIZE':([65,],[77,]),'AROUND':([92,],[101,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'program':([0,],[1,]),'subprogram':([0,22,109,],[2,36,114,]),'statement':([0,22,109,],[3,3,3,]),'assignation':([0,22,109,],[4,4,4,]),'assignation_shape':([0,22,109,],[5,5,5,]),'assignation_color':([0,22,109,],[6,6,6,]),'structure':([0,22,109,],[7,7,7,]),'shape':([0,22,29,34,35,109,],[8,8,43,53,53,8,]),'animation':([0,22,109,],[9,9,9,]),'circle_g':([0,22,29,34,35,109,],[13,13,13,13,13,13,]),'rect_g':([0,22,29,34,35,109,],[14,14,14,14,14,14,]),'polygon_g':([0,22,29,34,35,109,],[15,15,15,15,15,15,]),'translation':([0,22,109,],[16,16,16,]),'expression':([10,24,27,29,30,37,38,41,59,60,62,67,69,81,82,83,84,86,100,105,],[23,39,40,42,46,55,56,58,70,71,73,79,80,92,93,94,95,97,108,111,]),'color_expression':([29,85,87,110,],[44,96,98,115,]),'point_expression':([31,32,50,66,77,107,],[47,49,65,78,65,112,]),'animation_param':([34,35,],[51,54,]),'points_expression':([50,77,],[64,88,]),'size_expression':([63,],[74,]),}
+_lr_goto_items = {'program':([0,],[1,]),'subprogram':([0,23,111,],[2,37,116,]),'statement':([0,23,111,],[3,3,3,]),'assignation':([0,23,111,],[4,4,4,]),'assignation_shape':([0,23,111,],[5,5,5,]),'assignation_color':([0,23,111,],[6,6,6,]),'assignation_point':([0,23,111,],[7,7,7,]),'structure':([0,23,111,],[8,8,8,]),'shape':([0,23,30,35,36,111,],[9,9,44,55,55,9,]),'animation':([0,23,111,],[10,10,10,]),'circle_g':([0,23,30,35,36,111,],[14,14,14,14,14,14,]),'rect_g':([0,23,30,35,36,111,],[15,15,15,15,15,15,]),'polygon_g':([0,23,30,35,36,111,],[16,16,16,16,16,16,]),'translation':([0,23,111,],[17,17,17,]),'expression':([11,25,28,30,31,38,39,42,61,62,63,69,71,83,84,85,86,88,102,107,],[24,40,41,43,49,57,58,60,72,73,74,81,82,94,95,96,97,99,110,113,]),'color_expression':([30,87,89,112,],[45,98,100,117,]),'point_expression':([30,32,33,52,68,79,109,],[46,50,51,67,80,67,114,]),'animation_param':([35,36,],[53,56,]),'points_expression':([52,79,],[66,90,]),'size_expression':([65,],[76,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -33,36 +33,38 @@ _lr_productions = [
   ('statement -> assignation','statement',1,'p_statement','parser5.py',19),
   ('statement -> assignation_shape','statement',1,'p_statement','parser5.py',20),
   ('statement -> assignation_color','statement',1,'p_statement','parser5.py',21),
-  ('statement -> structure','statement',1,'p_statement','parser5.py',22),
-  ('statement -> shape','statement',1,'p_statement','parser5.py',23),
-  ('statement -> animation','statement',1,'p_statement','parser5.py',24),
-  ('statement -> PRINT expression','statement',2,'p_statement_print','parser5.py',28),
-  ('structure -> FOR ( expression , expression , expression ) { subprogram }','structure',11,'p_structure','parser5.py',32),
-  ('animation -> translation','animation',1,'p_animation','parser5.py',36),
-  ('translation -> TRANSLATE ( animation_param , point_expression )','translation',6,'p_animation_translation','parser5.py',40),
-  ('translation -> ROTATE ( animation_param , expression , AROUND ( point_expression ) )','translation',11,'p_animation_rotation','parser5.py',44),
-  ('animation_param -> IDENTIFIER','animation_param',1,'p_animation_param_id','parser5.py',48),
-  ('animation_param -> shape','animation_param',1,'p_animation_param_shape','parser5.py',52),
-  ('shape -> circle_g','shape',1,'p_shape','parser5.py',56),
-  ('shape -> rect_g','shape',1,'p_shape','parser5.py',57),
-  ('shape -> polygon_g','shape',1,'p_shape','parser5.py',58),
-  ('circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression }','circle_g',11,'p_circle_g','parser5.py',62),
-  ('rect_g -> RECT { point_expression , size_expression , color_expression }','rect_g',8,'p_rect_g','parser5.py',66),
-  ('polygon_g -> POLYGON { ( points_expression ) , color_expression }','polygon_g',8,'p_polygon_g','parser5.py',70),
-  ('points_expression -> point_expression','points_expression',1,'p_expression_points','parser5.py',74),
-  ('points_expression -> point_expression , points_expression','points_expression',3,'p_expression_points_recursive','parser5.py',78),
-  ('point_expression -> POINT ( expression , expression )','point_expression',6,'p_expression_point','parser5.py',82),
-  ('size_expression -> SIZE ( expression , expression )','size_expression',6,'p_expression_size','parser5.py',86),
-  ('color_expression -> COLOR ( expression , expression , expression )','color_expression',8,'p_expression_color','parser5.py',90),
-  ('expression -> expression ADD_OP expression','expression',3,'p_expression_op','parser5.py',94),
-  ('expression -> expression MUL_OP expression','expression',3,'p_expression_op','parser5.py',95),
-  ('expression -> NUMBER','expression',1,'p_expression_num_or_var','parser5.py',99),
-  ('expression -> IDENTIFIER','expression',1,'p_expression_num_or_var','parser5.py',100),
-  ('expression -> ( expression )','expression',3,'p_expression_paren','parser5.py',104),
-  ('expression -> ADD_OP expression','expression',2,'p_minus','parser5.py',108),
-  ('assignation_color -> IDENTIFIER = color_expression','assignation_color',3,'p_assign_color','parser5.py',112),
-  ('assignation_shape -> IDENTIFIER = shape','assignation_shape',3,'p_assign_shape','parser5.py',116),
-  ('assignation -> IDENTIFIER = expression','assignation',3,'p_assign','parser5.py',120),
-  ('expression -> RANDOM ( expression )','expression',4,'p_expression_random_max','parser5.py',131),
-  ('expression -> RANDOM ( expression , expression )','expression',6,'p_expression_random_min_max','parser5.py',135),
+  ('statement -> assignation_point','statement',1,'p_statement','parser5.py',22),
+  ('statement -> structure','statement',1,'p_statement','parser5.py',23),
+  ('statement -> shape','statement',1,'p_statement','parser5.py',24),
+  ('statement -> animation','statement',1,'p_statement','parser5.py',25),
+  ('statement -> PRINT expression','statement',2,'p_statement_print','parser5.py',29),
+  ('structure -> FOR ( expression , expression , expression ) { subprogram }','structure',11,'p_structure','parser5.py',33),
+  ('animation -> translation','animation',1,'p_animation','parser5.py',37),
+  ('translation -> TRANSLATE ( animation_param , point_expression )','translation',6,'p_animation_translation','parser5.py',41),
+  ('translation -> ROTATE ( animation_param , expression , AROUND ( point_expression ) )','translation',11,'p_animation_rotation','parser5.py',45),
+  ('animation_param -> IDENTIFIER','animation_param',1,'p_animation_param_id','parser5.py',49),
+  ('animation_param -> shape','animation_param',1,'p_animation_param_shape','parser5.py',53),
+  ('shape -> circle_g','shape',1,'p_shape','parser5.py',57),
+  ('shape -> rect_g','shape',1,'p_shape','parser5.py',58),
+  ('shape -> polygon_g','shape',1,'p_shape','parser5.py',59),
+  ('circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression }','circle_g',11,'p_circle_g','parser5.py',63),
+  ('rect_g -> RECT { point_expression , size_expression , color_expression }','rect_g',8,'p_rect_g','parser5.py',67),
+  ('polygon_g -> POLYGON { ( points_expression ) , color_expression }','polygon_g',8,'p_polygon_g','parser5.py',71),
+  ('points_expression -> point_expression','points_expression',1,'p_expression_points','parser5.py',75),
+  ('points_expression -> point_expression , points_expression','points_expression',3,'p_expression_points_recursive','parser5.py',79),
+  ('point_expression -> POINT ( expression , expression )','point_expression',6,'p_expression_point','parser5.py',83),
+  ('size_expression -> SIZE ( expression , expression )','size_expression',6,'p_expression_size','parser5.py',87),
+  ('color_expression -> COLOR ( expression , expression , expression )','color_expression',8,'p_expression_color','parser5.py',91),
+  ('expression -> expression ADD_OP expression','expression',3,'p_expression_op','parser5.py',95),
+  ('expression -> expression MUL_OP expression','expression',3,'p_expression_op','parser5.py',96),
+  ('expression -> NUMBER','expression',1,'p_expression_num_or_var','parser5.py',100),
+  ('expression -> IDENTIFIER','expression',1,'p_expression_num_or_var','parser5.py',101),
+  ('expression -> ( expression )','expression',3,'p_expression_paren','parser5.py',105),
+  ('expression -> ADD_OP expression','expression',2,'p_minus','parser5.py',109),
+  ('assignation_point -> IDENTIFIER = point_expression','assignation_point',3,'p_assign_point','parser5.py',113),
+  ('assignation_color -> IDENTIFIER = color_expression','assignation_color',3,'p_assign_color','parser5.py',117),
+  ('assignation_shape -> IDENTIFIER = shape','assignation_shape',3,'p_assign_shape','parser5.py',121),
+  ('assignation -> IDENTIFIER = expression','assignation',3,'p_assign','parser5.py',125),
+  ('expression -> RANDOM ( expression )','expression',4,'p_expression_random_max','parser5.py',136),
+  ('expression -> RANDOM ( expression , expression )','expression',6,'p_expression_random_min_max','parser5.py',140),
 ]

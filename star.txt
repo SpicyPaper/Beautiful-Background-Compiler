@@ -1,5 +1,6 @@
 BACKGROUND_COLOR = color(0, 0, 0);
 
+
 i = 0;
 
 for(0, 1000, 1) {

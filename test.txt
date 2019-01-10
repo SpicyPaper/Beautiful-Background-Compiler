@@ -1,8 +1,17 @@
 BACKGROUND_COLOR = color(0, 255, 255);
 
+test = 30;
+TEST = 10;
+
 a = random(0, 500);
 c1 = circle {
     point(a, 100),
-    radius(50),
+    radius(test),
+    color(255, 0, 0)
+};
+
+c2 = circle {
+    point(a, 200),
+    radius(TEST),
     color(255, 0, 0)
 };
