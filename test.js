@@ -5,6 +5,7 @@ canvas = document.getElementById('bbcCanvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 ctx = canvas.getContext('2d');
+BACKGROUND_COLOR = 'rgb(255, 255, 255)';
 bbcInit();
 bbcUpdate();
 
@@ -14,11 +15,13 @@ function bbcInit() {
 start = Date.now();
 updateTime = 1000 * 50;
 
+BACKGROUND_COLOR = 
+ctx.fillStyle = 'rgb(0.0, 255.0, 255.0)';
+;
+
 bbcShape1 = {
     point:{
-    x:
-Math.floor(Math.random() * (500.0 - 0.0 + 1)) + 0.0
-,
+    x:455,
     y:100.0
 },
     radius:50.0,
@@ -51,6 +54,9 @@ bbcDraw();
 function bbcDraw() {
 
 ctx.clearRect(0, 0, bbcCanvas.width, bbcCanvas.height);
+ctx.fillStyle = BACKGROUND_COLOR;
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 
 ctx.fillStyle = 'rgb(255.0, 0.0, 0.0)';
 

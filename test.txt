@@ -1,3 +1,5 @@
+BACKGROUND_COLOR = color(0, 255, 255);
+
 a = random(0, 500);
 c1 = circle {
     point(a, 100),

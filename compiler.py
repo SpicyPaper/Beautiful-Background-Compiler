@@ -27,6 +27,7 @@ canvas = document.getElementById('bbcCanvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 ctx = canvas.getContext('2d');
+BACKGROUND_COLOR = 'rgb(255, 255, 255)';
 bbcInit();
 bbcUpdate();
 
@@ -51,6 +52,9 @@ bbcDraw();
 function bbcDraw() {
 
 ctx.clearRect(0, 0, bbcCanvas.width, bbcCanvas.height);
+ctx.fillStyle = BACKGROUND_COLOR;
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 %s
 setTimeout(bbcUpdate, 1000 / 60);
 
@@ -226,6 +230,19 @@ def compile(self):
 @addToClass(AST.TokenShapeNode)
 def compile(self):
     return self.tok
+
+@addToClass(AST.TokenColorNode)
+def compile(self):
+    return self.tok
+
+@addToClass(AST.AssignColorNode)
+def compile(self):
+    global JSInit
+
+    identifier = self.children[0].compile()
+    value = self.children[1].compile()
+    
+    JSInit += JSAssign %(identifier, value[0])
 	
 @addToClass(AST.AssignShapeNode)
 def compile(self):
