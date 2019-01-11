@@ -1,17 +1,9 @@
-BACKGROUND_COLOR = color(0, 255, 255);
-
-test = 30;
-TEST = 10;
-
-a = random(0, 500);
-c1 = circle {
-    point(a, 100),
-    radius(test),
-    color(255, 0, 0)
+circle {
+    point(250, 150),
+    radius(10),
+    color(120, 230, 0)
 };
 
-c2 = circle {
-    point(a, 200),
-    radius(TEST),
-    color(255, 0, 0)
-};
+r1 = rect { point(300, 200), size(25, 47), color(0, 0, 255) };
+
+rotate ( r1, 0.5, around(point(300 + 25 / 2, 200 + 47 / 2)) );

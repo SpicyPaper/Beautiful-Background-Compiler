@@ -33,6 +33,7 @@ BACKGROUND_SIZE = {
 
 ctx = canvas.getContext('2d');
 BACKGROUND_COLOR = 'rgb(255, 255, 255)';
+
 bbcInit();
 bbcUpdate();
 
@@ -48,8 +49,7 @@ updateTime = 1000 * 50;
 }
 
 function bbcUpdate() {
-if(Date.now() > start + updateTime)
-{
+if(Date.now() > start + updateTime) {
     bbcInit();
 }
 %s
