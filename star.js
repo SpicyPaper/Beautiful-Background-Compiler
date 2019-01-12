@@ -29,15 +29,11 @@ ctx.fillStyle = 'rgb(0.0, 0.0, 0.0)';
 ;
 
 bbcShape1 = {
-    point:{
-    x:1524,
-    y:372
-},
-    radius:5.0,
+    points:[[0.0, 0.0], [800.0, 0.0], [600.0, 300.0], [800.0, 500.0], [600.0, 700.0], [0.0, 700.0]],
     color:{
-    r:174,
-    g:98,
-    b:181
+    r:255.0,
+    g:0.0,
+    b:0.0
 },
     rotation:0,
     around:{
@@ -47,15 +43,11 @@ bbcShape1 = {
 };
 
 bbcShape2 = {
-    point:{
-    x:1261,
-    y:204
-},
-    radius:5.0,
+    points:[[800.0, 0.0], [600.0, 300.0], [800.0, 500.0], [600.0, 700.0], [650.0, 700.0], [850.0, 500.0], [650.0, 300.0], [850.0, 0.0]],
     color:{
-    r:151,
-    g:139,
-    b:190
+    r:255.0,
+    g:150.0,
+    b:0.0
 },
     rotation:0,
     around:{
@@ -66,14 +58,14 @@ bbcShape2 = {
 
 bbcShape3 = {
     point:{
-    x:993,
-    y:643
+    x:1493,
+    y:854
 },
     radius:5.0,
     color:{
-    r:179,
-    g:192,
-    b:197
+    r:170,
+    g:85,
+    b:223
 },
     rotation:0,
     around:{
@@ -84,14 +76,14 @@ bbcShape3 = {
 
 bbcShape4 = {
     point:{
-    x:1639,
-    y:552
+    x:110,
+    y:474
 },
     radius:5.0,
     color:{
-    r:102,
-    g:218,
-    b:215
+    r:40,
+    g:227,
+    b:32
 },
     rotation:0,
     around:{
@@ -102,14 +94,14 @@ bbcShape4 = {
 
 bbcShape5 = {
     point:{
-    x:1110,
-    y:32
+    x:1647,
+    y:588
 },
     radius:5.0,
     color:{
-    r:82,
-    g:181,
-    b:246
+    r:157,
+    g:43,
+    b:208
 },
     rotation:0,
     around:{
@@ -120,14 +112,14 @@ bbcShape5 = {
 
 bbcShape6 = {
     point:{
-    x:1689,
-    y:1073
+    x:1582,
+    y:27
 },
     radius:5.0,
     color:{
-    r:57,
-    g:86,
-    b:42
+    r:126,
+    g:139,
+    b:224
 },
     rotation:0,
     around:{
@@ -138,14 +130,14 @@ bbcShape6 = {
 
 bbcShape7 = {
     point:{
-    x:1408,
-    y:192
+    x:354,
+    y:959
 },
     radius:5.0,
     color:{
-    r:251,
-    g:85,
-    b:119
+    r:202,
+    g:136,
+    b:34
 },
     rotation:0,
     around:{
@@ -156,14 +148,14 @@ bbcShape7 = {
 
 bbcShape8 = {
     point:{
-    x:921,
-    y:65
+    x:534,
+    y:190
 },
     radius:5.0,
     color:{
-    r:173,
-    g:212,
-    b:130
+    r:114,
+    g:51,
+    b:118
 },
     rotation:0,
     around:{
@@ -174,14 +166,14 @@ bbcShape8 = {
 
 bbcShape9 = {
     point:{
-    x:416,
-    y:85
+    x:1305,
+    y:638
 },
     radius:5.0,
     color:{
-    r:39,
-    g:17,
-    b:14
+    r:226,
+    g:207,
+    b:17
 },
     rotation:0,
     around:{
@@ -192,14 +184,14 @@ bbcShape9 = {
 
 bbcShape10 = {
     point:{
-    x:807,
-    y:31
+    x:1410,
+    y:606
 },
     radius:5.0,
     color:{
-    r:84,
-    g:172,
-    b:255
+    r:48,
+    g:60,
+    b:71
 },
     rotation:0,
     around:{
@@ -210,14 +202,14 @@ bbcShape10 = {
 
 bbcShape11 = {
     point:{
-    x:318,
-    y:632
+    x:1395,
+    y:64
 },
     radius:5.0,
     color:{
-    r:6,
-    g:176,
-    b:29
+    r:10,
+    g:53,
+    b:13
 },
     rotation:0,
     around:{
@@ -228,14 +220,14 @@ bbcShape11 = {
 
 bbcShape12 = {
     point:{
-    x:144,
-    y:1060
+    x:1160,
+    y:756
 },
     radius:5.0,
     color:{
-    r:34,
-    g:105,
-    b:212
+    r:207,
+    g:77,
+    b:14
 },
     rotation:0,
     around:{
@@ -246,14 +238,14 @@ bbcShape12 = {
 
 bbcShape13 = {
     point:{
-    x:1753,
-    y:630
+    x:1307,
+    y:78
 },
     radius:5.0,
     color:{
-    r:242,
-    g:149,
-    b:14
+    r:193,
+    g:171,
+    b:47
 },
     rotation:0,
     around:{
@@ -264,14 +256,14 @@ bbcShape13 = {
 
 bbcShape14 = {
     point:{
-    x:400,
-    y:734
+    x:1568,
+    y:3
 },
     radius:5.0,
     color:{
-    r:201,
-    g:54,
-    b:229
+    r:16,
+    g:40,
+    b:251
 },
     rotation:0,
     around:{
@@ -282,14 +274,14 @@ bbcShape14 = {
 
 bbcShape15 = {
     point:{
-    x:202,
-    y:898
+    x:561,
+    y:1019
 },
     radius:5.0,
     color:{
-    r:215,
-    g:202,
-    b:126
+    r:52,
+    g:207,
+    b:18
 },
     rotation:0,
     around:{
@@ -300,14 +292,14 @@ bbcShape15 = {
 
 bbcShape16 = {
     point:{
-    x:1522,
-    y:743
+    x:955,
+    y:229
 },
     radius:5.0,
     color:{
-    r:58,
-    g:189,
-    b:67
+    r:143,
+    g:87,
+    b:58
 },
     rotation:0,
     around:{
@@ -318,14 +310,14 @@ bbcShape16 = {
 
 bbcShape17 = {
     point:{
-    x:827,
-    y:149
+    x:622,
+    y:940
 },
     radius:5.0,
     color:{
-    r:241,
-    g:171,
-    b:28
+    r:119,
+    g:7,
+    b:57
 },
     rotation:0,
     around:{
@@ -336,14 +328,14 @@ bbcShape17 = {
 
 bbcShape18 = {
     point:{
-    x:379,
-    y:905
+    x:1065,
+    y:583
 },
     radius:5.0,
     color:{
-    r:184,
-    g:239,
-    b:234
+    r:113,
+    g:55,
+    b:216
 },
     rotation:0,
     around:{
@@ -354,13 +346,13 @@ bbcShape18 = {
 
 bbcShape19 = {
     point:{
-    x:788,
-    y:169
+    x:1315,
+    y:870
 },
     radius:5.0,
     color:{
-    r:162,
-    g:59,
+    r:224,
+    g:144,
     b:238
 },
     rotation:0,
@@ -372,14 +364,14 @@ bbcShape19 = {
 
 bbcShape20 = {
     point:{
-    x:1857,
-    y:20
+    x:393,
+    y:567
 },
     radius:5.0,
     color:{
-    r:160,
-    g:231,
-    b:2
+    r:162,
+    g:208,
+    b:205
 },
     rotation:0,
     around:{
@@ -390,14 +382,14 @@ bbcShape20 = {
 
 bbcShape21 = {
     point:{
-    x:562,
-    y:353
+    x:1663,
+    y:1023
 },
     radius:5.0,
     color:{
-    r:44,
-    g:114,
-    b:154
+    r:14,
+    g:249,
+    b:92
 },
     rotation:0,
     around:{
@@ -408,1146 +400,12 @@ bbcShape21 = {
 
 bbcShape22 = {
     point:{
-    x:1182,
-    y:553
-},
-    radius:5.0,
-    color:{
-    r:223,
-    g:60,
-    b:157
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape23 = {
-    point:{
-    x:386,
-    y:1035
-},
-    radius:5.0,
-    color:{
-    r:179,
-    g:116,
-    b:52
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape24 = {
-    point:{
-    x:150,
-    y:790
-},
-    radius:5.0,
-    color:{
-    r:118,
-    g:185,
-    b:29
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape25 = {
-    point:{
-    x:1619,
-    y:97
-},
-    radius:5.0,
-    color:{
-    r:96,
-    g:145,
-    b:103
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape26 = {
-    point:{
-    x:1773,
-    y:983
-},
-    radius:5.0,
-    color:{
-    r:188,
-    g:111,
-    b:240
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape27 = {
-    point:{
-    x:300,
-    y:875
-},
-    radius:5.0,
-    color:{
-    r:186,
-    g:61,
-    b:50
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape28 = {
-    point:{
-    x:907,
-    y:660
-},
-    radius:5.0,
-    color:{
-    r:249,
-    g:97,
-    b:180
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape29 = {
-    point:{
-    x:886,
-    y:307
-},
-    radius:5.0,
-    color:{
-    r:112,
-    g:91,
-    b:14
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape30 = {
-    point:{
-    x:450,
-    y:878
-},
-    radius:5.0,
-    color:{
-    r:134,
-    g:48,
-    b:98
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape31 = {
-    point:{
-    x:1180,
-    y:652
-},
-    radius:5.0,
-    color:{
-    r:160,
-    g:181,
-    b:63
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape32 = {
-    point:{
-    x:1272,
-    y:881
-},
-    radius:5.0,
-    color:{
-    r:52,
-    g:221,
-    b:232
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape33 = {
-    point:{
-    x:1061,
-    y:90
-},
-    radius:5.0,
-    color:{
-    r:228,
-    g:145,
-    b:120
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape34 = {
-    point:{
-    x:1661,
-    y:843
-},
-    radius:5.0,
-    color:{
-    r:113,
-    g:193,
-    b:1
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape35 = {
-    point:{
-    x:125,
-    y:683
-},
-    radius:5.0,
-    color:{
-    r:180,
-    g:40,
-    b:126
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape36 = {
-    point:{
-    x:1395,
-    y:534
-},
-    radius:5.0,
-    color:{
-    r:51,
-    g:25,
-    b:62
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape37 = {
-    point:{
-    x:842,
-    y:1025
-},
-    radius:5.0,
-    color:{
-    r:39,
-    g:66,
-    b:57
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape38 = {
-    point:{
-    x:393,
-    y:1031
-},
-    radius:5.0,
-    color:{
-    r:21,
-    g:28,
-    b:45
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape39 = {
-    point:{
-    x:791,
-    y:179
-},
-    radius:5.0,
-    color:{
-    r:207,
-    g:137,
-    b:202
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape40 = {
-    point:{
-    x:165,
-    y:778
-},
-    radius:5.0,
-    color:{
-    r:156,
-    g:122,
-    b:118
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape41 = {
-    point:{
-    x:1200,
-    y:653
-},
-    radius:5.0,
-    color:{
-    r:189,
-    g:236,
-    b:188
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape42 = {
-    point:{
-    x:621,
-    y:1021
-},
-    radius:5.0,
-    color:{
-    r:218,
-    g:98,
-    b:121
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape43 = {
-    point:{
-    x:42,
-    y:583
-},
-    radius:5.0,
-    color:{
-    r:53,
-    g:58,
-    b:0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape44 = {
-    point:{
-    x:941,
-    y:58
-},
-    radius:5.0,
-    color:{
-    r:85,
-    g:189,
-    b:11
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape45 = {
-    point:{
-    x:322,
-    y:562
-},
-    radius:5.0,
-    color:{
-    r:200,
-    g:0,
-    b:227
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape46 = {
-    point:{
-    x:1795,
-    y:694
-},
-    radius:5.0,
-    color:{
-    r:5,
-    g:0,
-    b:99
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape47 = {
-    point:{
-    x:955,
-    y:493
-},
-    radius:5.0,
-    color:{
-    r:205,
-    g:171,
-    b:38
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape48 = {
-    point:{
-    x:60,
-    y:42
-},
-    radius:5.0,
-    color:{
-    r:12,
-    g:228,
-    b:1
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape49 = {
-    point:{
-    x:1820,
-    y:733
-},
-    radius:5.0,
-    color:{
-    r:215,
-    g:46,
-    b:111
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape50 = {
-    point:{
-    x:1016,
-    y:1038
-},
-    radius:5.0,
-    color:{
-    r:35,
-    g:41,
-    b:55
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape51 = {
-    point:{
-    x:761,
-    y:399
-},
-    radius:5.0,
-    color:{
-    r:203,
-    g:137,
-    b:157
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape52 = {
-    point:{
-    x:877,
-    y:13
-},
-    radius:5.0,
-    color:{
-    r:218,
-    g:214,
-    b:48
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape53 = {
-    point:{
-    x:199,
-    y:135
-},
-    radius:5.0,
-    color:{
-    r:18,
-    g:220,
-    b:141
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape54 = {
-    point:{
-    x:1486,
-    y:908
-},
-    radius:5.0,
-    color:{
-    r:5,
-    g:206,
-    b:79
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape55 = {
-    point:{
-    x:327,
-    y:570
-},
-    radius:5.0,
-    color:{
-    r:242,
-    g:197,
-    b:231
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape56 = {
-    point:{
-    x:1420,
-    y:598
-},
-    radius:5.0,
-    color:{
-    r:25,
-    g:236,
-    b:179
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape57 = {
-    point:{
-    x:814,
-    y:497
-},
-    radius:5.0,
-    color:{
-    r:249,
-    g:113,
-    b:217
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape58 = {
-    point:{
-    x:707,
-    y:156
-},
-    radius:5.0,
-    color:{
-    r:32,
-    g:198,
-    b:217
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape59 = {
-    point:{
-    x:234,
-    y:819
-},
-    radius:5.0,
-    color:{
-    r:43,
-    g:111,
-    b:48
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape60 = {
-    point:{
-    x:252,
-    y:441
-},
-    radius:5.0,
-    color:{
-    r:247,
-    g:184,
-    b:85
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape61 = {
-    point:{
-    x:639,
-    y:618
-},
-    radius:5.0,
-    color:{
-    r:120,
-    g:16,
-    b:82
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape62 = {
-    point:{
-    x:1608,
-    y:468
-},
-    radius:5.0,
-    color:{
-    r:48,
-    g:69,
-    b:174
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape63 = {
-    point:{
-    x:1718,
-    y:973
-},
-    radius:5.0,
-    color:{
-    r:206,
-    g:201,
-    b:220
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape64 = {
-    point:{
-    x:747,
-    y:399
-},
-    radius:5.0,
-    color:{
-    r:100,
-    g:223,
-    b:57
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape65 = {
-    point:{
-    x:591,
-    y:320
-},
-    radius:5.0,
-    color:{
-    r:168,
-    g:253,
-    b:34
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape66 = {
-    point:{
-    x:1285,
-    y:471
-},
-    radius:5.0,
-    color:{
-    r:228,
-    g:208,
-    b:243
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape67 = {
-    point:{
-    x:376,
+    x:767,
     y:295
 },
     radius:5.0,
     color:{
-    r:146,
-    g:237,
-    b:120
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape68 = {
-    point:{
-    x:712,
-    y:333
-},
-    radius:5.0,
-    color:{
-    r:245,
-    g:247,
-    b:151
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape69 = {
-    point:{
-    x:1848,
-    y:1023
-},
-    radius:5.0,
-    color:{
-    r:181,
-    g:221,
-    b:142
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape70 = {
-    point:{
-    x:1053,
-    y:133
-},
-    radius:5.0,
-    color:{
-    r:36,
-    g:165,
-    b:145
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape71 = {
-    point:{
-    x:103,
-    y:675
-},
-    radius:5.0,
-    color:{
-    r:96,
-    g:185,
-    b:161
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape72 = {
-    point:{
-    x:130,
-    y:558
-},
-    radius:5.0,
-    color:{
-    r:104,
-    g:78,
-    b:64
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape73 = {
-    point:{
-    x:416,
-    y:376
-},
-    radius:5.0,
-    color:{
-    r:196,
-    g:194,
-    b:46
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape74 = {
-    point:{
-    x:312,
-    y:112
-},
-    radius:5.0,
-    color:{
-    r:247,
-    g:68,
-    b:63
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape75 = {
-    point:{
-    x:178,
-    y:149
-},
-    radius:5.0,
-    color:{
-    r:191,
-    g:227,
-    b:24
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape76 = {
-    point:{
-    x:1810,
-    y:450
-},
-    radius:5.0,
-    color:{
-    r:33,
-    g:29,
-    b:186
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape77 = {
-    point:{
-    x:546,
-    y:601
-},
-    radius:5.0,
-    color:{
-    r:169,
-    g:146,
-    b:97
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape78 = {
-    point:{
-    x:1313,
-    y:775
-},
-    radius:5.0,
-    color:{
-    r:147,
-    g:35,
-    b:136
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape79 = {
-    point:{
-    x:1414,
-    y:1077
-},
-    radius:5.0,
-    color:{
-    r:224,
-    g:187,
-    b:169
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape80 = {
-    point:{
-    x:1413,
-    y:889
-},
-    radius:5.0,
-    color:{
-    r:92,
-    g:89,
-    b:65
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape81 = {
-    point:{
-    x:866,
-    y:464
-},
-    radius:5.0,
-    color:{
-    r:77,
-    g:220,
-    b:40
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape82 = {
-    point:{
-    x:1701,
-    y:988
-},
-    radius:5.0,
-    color:{
-    r:54,
-    g:8,
-    b:146
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape83 = {
-    point:{
-    x:1713,
-    y:798
-},
-    radius:5.0,
-    color:{
-    r:125,
-    g:88,
-    b:180
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape84 = {
-    point:{
-    x:78,
-    y:48
-},
-    radius:5.0,
-    color:{
-    r:135,
-    g:139,
-    b:27
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape85 = {
-    point:{
-    x:1110,
-    y:629
-},
-    radius:5.0,
-    color:{
-    r:112,
+    r:193,
     g:53,
     b:93
 },
@@ -1558,16 +416,1150 @@ bbcShape85 = {
 }
 };
 
-bbcShape86 = {
+bbcShape23 = {
     point:{
-    x:1659,
-    y:615
+    x:1375,
+    y:408
 },
     radius:5.0,
     color:{
-    r:235,
-    g:149,
-    b:62
+    r:206,
+    g:91,
+    b:220
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape24 = {
+    point:{
+    x:1539,
+    y:661
+},
+    radius:5.0,
+    color:{
+    r:180,
+    g:57,
+    b:104
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape25 = {
+    point:{
+    x:6,
+    y:696
+},
+    radius:5.0,
+    color:{
+    r:70,
+    g:168,
+    b:171
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape26 = {
+    point:{
+    x:235,
+    y:1006
+},
+    radius:5.0,
+    color:{
+    r:198,
+    g:96,
+    b:244
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape27 = {
+    point:{
+    x:960,
+    y:724
+},
+    radius:5.0,
+    color:{
+    r:160,
+    g:10,
+    b:147
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape28 = {
+    point:{
+    x:1517,
+    y:570
+},
+    radius:5.0,
+    color:{
+    r:152,
+    g:113,
+    b:195
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape29 = {
+    point:{
+    x:778,
+    y:54
+},
+    radius:5.0,
+    color:{
+    r:250,
+    g:3,
+    b:149
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape30 = {
+    point:{
+    x:1471,
+    y:635
+},
+    radius:5.0,
+    color:{
+    r:239,
+    g:252,
+    b:96
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape31 = {
+    point:{
+    x:199,
+    y:984
+},
+    radius:5.0,
+    color:{
+    r:213,
+    g:31,
+    b:108
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape32 = {
+    point:{
+    x:1017,
+    y:1054
+},
+    radius:5.0,
+    color:{
+    r:185,
+    g:75,
+    b:245
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape33 = {
+    point:{
+    x:1855,
+    y:989
+},
+    radius:5.0,
+    color:{
+    r:222,
+    g:24,
+    b:182
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape34 = {
+    point:{
+    x:1359,
+    y:781
+},
+    radius:5.0,
+    color:{
+    r:85,
+    g:145,
+    b:220
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape35 = {
+    point:{
+    x:1455,
+    y:509
+},
+    radius:5.0,
+    color:{
+    r:207,
+    g:206,
+    b:69
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape36 = {
+    point:{
+    x:1542,
+    y:1047
+},
+    radius:5.0,
+    color:{
+    r:176,
+    g:185,
+    b:209
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape37 = {
+    point:{
+    x:341,
+    y:565
+},
+    radius:5.0,
+    color:{
+    r:85,
+    g:181,
+    b:48
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape38 = {
+    point:{
+    x:531,
+    y:28
+},
+    radius:5.0,
+    color:{
+    r:222,
+    g:248,
+    b:96
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape39 = {
+    point:{
+    x:1097,
+    y:496
+},
+    radius:5.0,
+    color:{
+    r:157,
+    g:223,
+    b:48
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape40 = {
+    point:{
+    x:76,
+    y:173
+},
+    radius:5.0,
+    color:{
+    r:208,
+    g:70,
+    b:190
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape41 = {
+    point:{
+    x:1201,
+    y:2
+},
+    radius:5.0,
+    color:{
+    r:227,
+    g:206,
+    b:235
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape42 = {
+    point:{
+    x:956,
+    y:895
+},
+    radius:5.0,
+    color:{
+    r:29,
+    g:77,
+    b:130
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape43 = {
+    point:{
+    x:894,
+    y:247
+},
+    radius:5.0,
+    color:{
+    r:5,
+    g:118,
+    b:204
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape44 = {
+    point:{
+    x:1019,
+    y:275
+},
+    radius:5.0,
+    color:{
+    r:2,
+    g:38,
+    b:242
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape45 = {
+    point:{
+    x:256,
+    y:695
+},
+    radius:5.0,
+    color:{
+    r:230,
+    g:228,
+    b:156
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape46 = {
+    point:{
+    x:1001,
+    y:461
+},
+    radius:5.0,
+    color:{
+    r:108,
+    g:191,
+    b:208
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape47 = {
+    point:{
+    x:410,
+    y:811
+},
+    radius:5.0,
+    color:{
+    r:183,
+    g:240,
+    b:102
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape48 = {
+    point:{
+    x:78,
+    y:289
+},
+    radius:5.0,
+    color:{
+    r:67,
+    g:41,
+    b:58
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape49 = {
+    point:{
+    x:1040,
+    y:600
+},
+    radius:5.0,
+    color:{
+    r:232,
+    g:94,
+    b:46
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape50 = {
+    point:{
+    x:1682,
+    y:184
+},
+    radius:5.0,
+    color:{
+    r:122,
+    g:9,
+    b:100
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape51 = {
+    point:{
+    x:1425,
+    y:597
+},
+    radius:5.0,
+    color:{
+    r:50,
+    g:48,
+    b:36
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape52 = {
+    point:{
+    x:1792,
+    y:561
+},
+    radius:5.0,
+    color:{
+    r:109,
+    g:232,
+    b:194
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape53 = {
+    point:{
+    x:1380,
+    y:892
+},
+    radius:5.0,
+    color:{
+    r:5,
+    g:157,
+    b:199
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape54 = {
+    point:{
+    x:1003,
+    y:120
+},
+    radius:5.0,
+    color:{
+    r:208,
+    g:155,
+    b:200
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape55 = {
+    point:{
+    x:405,
+    y:487
+},
+    radius:5.0,
+    color:{
+    r:110,
+    g:181,
+    b:17
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape56 = {
+    point:{
+    x:1138,
+    y:887
+},
+    radius:5.0,
+    color:{
+    r:21,
+    g:18,
+    b:210
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape57 = {
+    point:{
+    x:1699,
+    y:858
+},
+    radius:5.0,
+    color:{
+    r:131,
+    g:138,
+    b:222
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape58 = {
+    point:{
+    x:1574,
+    y:431
+},
+    radius:5.0,
+    color:{
+    r:95,
+    g:52,
+    b:238
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape59 = {
+    point:{
+    x:1031,
+    y:250
+},
+    radius:5.0,
+    color:{
+    r:35,
+    g:146,
+    b:89
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape60 = {
+    point:{
+    x:1219,
+    y:594
+},
+    radius:5.0,
+    color:{
+    r:168,
+    g:53,
+    b:189
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape61 = {
+    point:{
+    x:1193,
+    y:450
+},
+    radius:5.0,
+    color:{
+    r:180,
+    g:240,
+    b:3
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape62 = {
+    point:{
+    x:645,
+    y:388
+},
+    radius:5.0,
+    color:{
+    r:130,
+    g:38,
+    b:65
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape63 = {
+    point:{
+    x:1289,
+    y:351
+},
+    radius:5.0,
+    color:{
+    r:163,
+    g:227,
+    b:182
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape64 = {
+    point:{
+    x:1488,
+    y:623
+},
+    radius:5.0,
+    color:{
+    r:108,
+    g:139,
+    b:244
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape65 = {
+    point:{
+    x:1213,
+    y:651
+},
+    radius:5.0,
+    color:{
+    r:225,
+    g:142,
+    b:96
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape66 = {
+    point:{
+    x:511,
+    y:339
+},
+    radius:5.0,
+    color:{
+    r:141,
+    g:215,
+    b:134
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape67 = {
+    point:{
+    x:506,
+    y:771
+},
+    radius:5.0,
+    color:{
+    r:221,
+    g:57,
+    b:61
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape68 = {
+    point:{
+    x:245,
+    y:498
+},
+    radius:5.0,
+    color:{
+    r:4,
+    g:211,
+    b:202
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape69 = {
+    point:{
+    x:447,
+    y:366
+},
+    radius:5.0,
+    color:{
+    r:114,
+    g:151,
+    b:14
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape70 = {
+    point:{
+    x:145,
+    y:366
+},
+    radius:5.0,
+    color:{
+    r:46,
+    g:109,
+    b:159
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape71 = {
+    point:{
+    x:243,
+    y:709
+},
+    radius:5.0,
+    color:{
+    r:104,
+    g:232,
+    b:174
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape72 = {
+    point:{
+    x:1059,
+    y:1073
+},
+    radius:5.0,
+    color:{
+    r:225,
+    g:2,
+    b:163
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape73 = {
+    point:{
+    x:1143,
+    y:270
+},
+    radius:5.0,
+    color:{
+    r:77,
+    g:9,
+    b:252
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape74 = {
+    point:{
+    x:635,
+    y:1004
+},
+    radius:5.0,
+    color:{
+    r:203,
+    g:59,
+    b:127
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape75 = {
+    point:{
+    x:1481,
+    y:412
+},
+    radius:5.0,
+    color:{
+    r:209,
+    g:180,
+    b:224
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape76 = {
+    point:{
+    x:540,
+    y:953
+},
+    radius:5.0,
+    color:{
+    r:221,
+    g:220,
+    b:116
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape77 = {
+    point:{
+    x:1679,
+    y:507
+},
+    radius:5.0,
+    color:{
+    r:128,
+    g:123,
+    b:136
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape78 = {
+    point:{
+    x:1418,
+    y:943
+},
+    radius:5.0,
+    color:{
+    r:37,
+    g:59,
+    b:60
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape79 = {
+    point:{
+    x:710,
+    y:463
+},
+    radius:5.0,
+    color:{
+    r:180,
+    g:178,
+    b:161
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape80 = {
+    point:{
+    x:285,
+    y:27
+},
+    radius:5.0,
+    color:{
+    r:192,
+    g:127,
+    b:135
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape81 = {
+    point:{
+    x:765,
+    y:1003
+},
+    radius:5.0,
+    color:{
+    r:64,
+    g:131,
+    b:217
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape82 = {
+    point:{
+    x:1910,
+    y:757
+},
+    radius:5.0,
+    color:{
+    r:74,
+    g:197,
+    b:21
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape83 = {
+    point:{
+    x:630,
+    y:107
+},
+    radius:5.0,
+    color:{
+    r:48,
+    g:3,
+    b:133
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape84 = {
+    point:{
+    x:1496,
+    y:318
+},
+    radius:5.0,
+    color:{
+    r:191,
+    g:180,
+    b:229
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape85 = {
+    point:{
+    x:1104,
+    y:343
+},
+    radius:5.0,
+    color:{
+    r:133,
+    g:112,
+    b:203
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape86 = {
+    point:{
+    x:552,
+    y:979
+},
+    radius:5.0,
+    color:{
+    r:126,
+    g:229,
+    b:183
 },
     rotation:0,
     around:{
@@ -1578,14 +1570,14 @@ bbcShape86 = {
 
 bbcShape87 = {
     point:{
-    x:1680,
-    y:653
+    x:1497,
+    y:393
 },
     radius:5.0,
     color:{
-    r:23,
-    g:96,
-    b:25
+    r:192,
+    g:169,
+    b:39
 },
     rotation:0,
     around:{
@@ -1596,14 +1588,14 @@ bbcShape87 = {
 
 bbcShape88 = {
     point:{
-    x:1576,
-    y:937
+    x:177,
+    y:417
 },
     radius:5.0,
     color:{
-    r:39,
-    g:60,
-    b:17
+    r:251,
+    g:226,
+    b:212
 },
     rotation:0,
     around:{
@@ -1614,14 +1606,14 @@ bbcShape88 = {
 
 bbcShape89 = {
     point:{
-    x:366,
-    y:1000
+    x:389,
+    y:947
 },
     radius:5.0,
     color:{
-    r:83,
-    g:87,
-    b:166
+    r:168,
+    g:201,
+    b:241
 },
     rotation:0,
     around:{
@@ -1632,14 +1624,14 @@ bbcShape89 = {
 
 bbcShape90 = {
     point:{
-    x:676,
-    y:990
+    x:978,
+    y:140
 },
     radius:5.0,
     color:{
-    r:247,
-    g:131,
-    b:232
+    r:115,
+    g:61,
+    b:235
 },
     rotation:0,
     around:{
@@ -1650,14 +1642,14 @@ bbcShape90 = {
 
 bbcShape91 = {
     point:{
-    x:328,
-    y:917
+    x:615,
+    y:732
 },
     radius:5.0,
     color:{
-    r:53,
-    g:117,
-    b:144
+    r:191,
+    g:173,
+    b:19
 },
     rotation:0,
     around:{
@@ -1668,14 +1660,14 @@ bbcShape91 = {
 
 bbcShape92 = {
     point:{
-    x:1477,
-    y:858
+    x:400,
+    y:853
 },
     radius:5.0,
     color:{
-    r:155,
-    g:187,
-    b:137
+    r:30,
+    g:118,
+    b:179
 },
     rotation:0,
     around:{
@@ -1686,14 +1678,14 @@ bbcShape92 = {
 
 bbcShape93 = {
     point:{
-    x:1742,
-    y:825
+    x:1017,
+    y:546
 },
     radius:5.0,
     color:{
-    r:38,
-    g:30,
-    b:142
+    r:148,
+    g:99,
+    b:77
 },
     rotation:0,
     around:{
@@ -1704,14 +1696,14 @@ bbcShape93 = {
 
 bbcShape94 = {
     point:{
-    x:83,
-    y:568
+    x:993,
+    y:22
 },
     radius:5.0,
     color:{
-    r:253,
-    g:70,
-    b:15
+    r:69,
+    g:62,
+    b:208
 },
     rotation:0,
     around:{
@@ -1722,14 +1714,14 @@ bbcShape94 = {
 
 bbcShape95 = {
     point:{
-    x:947,
-    y:684
+    x:1666,
+    y:240
 },
     radius:5.0,
     color:{
-    r:235,
-    g:109,
-    b:255
+    r:23,
+    g:144,
+    b:122
 },
     rotation:0,
     around:{
@@ -1740,14 +1732,14 @@ bbcShape95 = {
 
 bbcShape96 = {
     point:{
-    x:97,
-    y:839
+    x:349,
+    y:234
 },
     radius:5.0,
     color:{
-    r:57,
-    g:218,
-    b:31
+    r:36,
+    g:212,
+    b:115
 },
     rotation:0,
     around:{
@@ -1758,14 +1750,14 @@ bbcShape96 = {
 
 bbcShape97 = {
     point:{
-    x:299,
-    y:235
+    x:925,
+    y:225
 },
     radius:5.0,
     color:{
-    r:1,
-    g:115,
-    b:51
+    r:97,
+    g:79,
+    b:79
 },
     rotation:0,
     around:{
@@ -1776,14 +1768,14 @@ bbcShape97 = {
 
 bbcShape98 = {
     point:{
-    x:1235,
-    y:476
+    x:1035,
+    y:769
 },
     radius:5.0,
     color:{
-    r:137,
-    g:30,
-    b:199
+    r:89,
+    g:155,
+    b:2
 },
     rotation:0,
     around:{
@@ -1794,14 +1786,14 @@ bbcShape98 = {
 
 bbcShape99 = {
     point:{
-    x:807,
-    y:1003
+    x:768,
+    y:760
 },
     radius:5.0,
     color:{
-    r:63,
-    g:105,
-    b:2
+    r:42,
+    g:131,
+    b:112
 },
     rotation:0,
     around:{
@@ -1812,14 +1804,14 @@ bbcShape99 = {
 
 bbcShape100 = {
     point:{
-    x:645,
-    y:22
+    x:1364,
+    y:960
 },
     radius:5.0,
     color:{
-    r:4,
-    g:143,
-    b:23
+    r:19,
+    g:145,
+    b:137
 },
     rotation:0,
     around:{
@@ -1830,14 +1822,14 @@ bbcShape100 = {
 
 bbcShape101 = {
     point:{
-    x:1529,
-    y:670
+    x:920,
+    y:898
 },
     radius:5.0,
     color:{
-    r:193,
-    g:179,
-    b:57
+    r:107,
+    g:230,
+    b:123
 },
     rotation:0,
     around:{
@@ -1848,14 +1840,14 @@ bbcShape101 = {
 
 bbcShape102 = {
     point:{
-    x:1202,
-    y:980
+    x:1504,
+    y:893
 },
     radius:5.0,
     color:{
-    r:119,
-    g:19,
-    b:176
+    r:227,
+    g:210,
+    b:181
 },
     rotation:0,
     around:{
@@ -1866,14 +1858,14 @@ bbcShape102 = {
 
 bbcShape103 = {
     point:{
-    x:439,
-    y:305
+    x:908,
+    y:409
 },
     radius:5.0,
     color:{
-    r:49,
-    g:214,
-    b:239
+    r:140,
+    g:72,
+    b:208
 },
     rotation:0,
     around:{
@@ -1884,14 +1876,14 @@ bbcShape103 = {
 
 bbcShape104 = {
     point:{
-    x:1193,
-    y:500
+    x:1667,
+    y:921
 },
     radius:5.0,
     color:{
-    r:18,
-    g:166,
-    b:142
+    r:85,
+    g:5,
+    b:145
 },
     rotation:0,
     around:{
@@ -1902,14 +1894,14 @@ bbcShape104 = {
 
 bbcShape105 = {
     point:{
-    x:299,
-    y:732
+    x:1451,
+    y:958
 },
     radius:5.0,
     color:{
-    r:90,
-    g:3,
-    b:111
+    r:135,
+    g:156,
+    b:239
 },
     rotation:0,
     around:{
@@ -1920,14 +1912,14 @@ bbcShape105 = {
 
 bbcShape106 = {
     point:{
-    x:1391,
-    y:105
+    x:13,
+    y:454
 },
     radius:5.0,
     color:{
-    r:230,
-    g:205,
-    b:136
+    r:238,
+    g:145,
+    b:58
 },
     rotation:0,
     around:{
@@ -1938,14 +1930,14 @@ bbcShape106 = {
 
 bbcShape107 = {
     point:{
-    x:1665,
-    y:269
+    x:872,
+    y:164
 },
     radius:5.0,
     color:{
-    r:156,
-    g:111,
-    b:72
+    r:30,
+    g:2,
+    b:30
 },
     rotation:0,
     around:{
@@ -1956,14 +1948,14 @@ bbcShape107 = {
 
 bbcShape108 = {
     point:{
-    x:508,
-    y:444
+    x:1653,
+    y:224
 },
     radius:5.0,
     color:{
-    r:106,
-    g:60,
-    b:190
+    r:110,
+    g:124,
+    b:245
 },
     rotation:0,
     around:{
@@ -1974,66 +1966,12 @@ bbcShape108 = {
 
 bbcShape109 = {
     point:{
-    x:850,
-    y:767
+    x:748,
+    y:139
 },
     radius:5.0,
     color:{
-    r:140,
-    g:146,
-    b:222
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape110 = {
-    point:{
-    x:1699,
-    y:230
-},
-    radius:5.0,
-    color:{
-    r:79,
-    g:43,
-    b:234
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape111 = {
-    point:{
-    x:818,
-    y:758
-},
-    radius:5.0,
-    color:{
-    r:28,
-    g:115,
-    b:181
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape112 = {
-    point:{
-    x:1553,
-    y:435
-},
-    radius:5.0,
-    color:{
-    r:112,
+    r:224,
     g:12,
     b:138
 },
@@ -2044,16 +1982,70 @@ bbcShape112 = {
 }
 };
 
-bbcShape113 = {
+bbcShape110 = {
     point:{
-    x:296,
-    y:120
+    x:1551,
+    y:209
 },
     radius:5.0,
     color:{
-    r:249,
-    g:218,
-    b:181
+    r:106,
+    g:2,
+    b:161
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape111 = {
+    point:{
+    x:569,
+    y:329
+},
+    radius:5.0,
+    color:{
+    r:74,
+    g:12,
+    b:218
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape112 = {
+    point:{
+    x:1386,
+    y:976
+},
+    radius:5.0,
+    color:{
+    r:225,
+    g:11,
+    b:26
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape113 = {
+    point:{
+    x:286,
+    y:479
+},
+    radius:5.0,
+    color:{
+    r:218,
+    g:162,
+    b:67
 },
     rotation:0,
     around:{
@@ -2064,14 +2056,14 @@ bbcShape113 = {
 
 bbcShape114 = {
     point:{
-    x:1554,
-    y:358
+    x:1687,
+    y:369
 },
     radius:5.0,
     color:{
-    r:126,
-    g:173,
-    b:50
+    r:22,
+    g:15,
+    b:91
 },
     rotation:0,
     around:{
@@ -2082,14 +2074,14 @@ bbcShape114 = {
 
 bbcShape115 = {
     point:{
-    x:24,
-    y:407
+    x:1638,
+    y:961
 },
     radius:5.0,
     color:{
-    r:89,
-    g:177,
-    b:215
+    r:99,
+    g:105,
+    b:11
 },
     rotation:0,
     around:{
@@ -2100,14 +2092,14 @@ bbcShape115 = {
 
 bbcShape116 = {
     point:{
-    x:1847,
-    y:895
+    x:1778,
+    y:932
 },
     radius:5.0,
     color:{
-    r:59,
-    g:103,
-    b:69
+    r:81,
+    g:27,
+    b:74
 },
     rotation:0,
     around:{
@@ -2118,14 +2110,14 @@ bbcShape116 = {
 
 bbcShape117 = {
     point:{
-    x:1525,
-    y:899
+    x:1454,
+    y:220
 },
     radius:5.0,
     color:{
-    r:160,
-    g:94,
-    b:216
+    r:41,
+    g:55,
+    b:39
 },
     rotation:0,
     around:{
@@ -2136,14 +2128,14 @@ bbcShape117 = {
 
 bbcShape118 = {
     point:{
-    x:1858,
-    y:81
+    x:132,
+    y:523
 },
     radius:5.0,
     color:{
-    r:178,
-    g:1,
-    b:53
+    r:70,
+    g:128,
+    b:216
 },
     rotation:0,
     around:{
@@ -2154,14 +2146,14 @@ bbcShape118 = {
 
 bbcShape119 = {
     point:{
-    x:333,
-    y:690
+    x:400,
+    y:633
 },
     radius:5.0,
     color:{
-    r:88,
+    r:38,
     g:251,
-    b:16
+    b:224
 },
     rotation:0,
     around:{
@@ -2172,14 +2164,14 @@ bbcShape119 = {
 
 bbcShape120 = {
     point:{
-    x:867,
-    y:69
+    x:1154,
+    y:1072
 },
     radius:5.0,
     color:{
-    r:21,
-    g:124,
-    b:194
+    r:30,
+    g:195,
+    b:28
 },
     rotation:0,
     around:{
@@ -2190,14 +2182,14 @@ bbcShape120 = {
 
 bbcShape121 = {
     point:{
-    x:757,
-    y:546
+    x:331,
+    y:722
 },
     radius:5.0,
     color:{
-    r:92,
-    g:254,
-    b:126
+    r:79,
+    g:221,
+    b:95
 },
     rotation:0,
     around:{
@@ -2208,14 +2200,14 @@ bbcShape121 = {
 
 bbcShape122 = {
     point:{
-    x:1329,
-    y:197
+    x:1200,
+    y:31
 },
     radius:5.0,
     color:{
-    r:11,
-    g:94,
-    b:59
+    r:213,
+    g:11,
+    b:219
 },
     rotation:0,
     around:{
@@ -2226,14 +2218,14 @@ bbcShape122 = {
 
 bbcShape123 = {
     point:{
-    x:332,
-    y:677
+    x:1012,
+    y:107
 },
     radius:5.0,
     color:{
-    r:70,
-    g:234,
-    b:145
+    r:220,
+    g:47,
+    b:93
 },
     rotation:0,
     around:{
@@ -2244,14 +2236,14 @@ bbcShape123 = {
 
 bbcShape124 = {
     point:{
-    x:1749,
-    y:1026
+    x:860,
+    y:1076
 },
     radius:5.0,
     color:{
-    r:86,
-    g:57,
-    b:7
+    r:234,
+    g:8,
+    b:155
 },
     rotation:0,
     around:{
@@ -2262,14 +2254,14 @@ bbcShape124 = {
 
 bbcShape125 = {
     point:{
-    x:734,
-    y:622
+    x:203,
+    y:752
 },
     radius:5.0,
     color:{
-    r:199,
-    g:84,
-    b:243
+    r:120,
+    g:214,
+    b:51
 },
     rotation:0,
     around:{
@@ -2280,14 +2272,14 @@ bbcShape125 = {
 
 bbcShape126 = {
     point:{
-    x:18,
-    y:681
+    x:873,
+    y:837
 },
     radius:5.0,
     color:{
-    r:154,
-    g:9,
-    b:61
+    r:35,
+    g:252,
+    b:188
 },
     rotation:0,
     around:{
@@ -2298,14 +2290,14 @@ bbcShape126 = {
 
 bbcShape127 = {
     point:{
-    x:827,
-    y:569
+    x:880,
+    y:1031
 },
     radius:5.0,
     color:{
-    r:189,
-    g:106,
-    b:240
+    r:73,
+    g:179,
+    b:34
 },
     rotation:0,
     around:{
@@ -2316,14 +2308,14 @@ bbcShape127 = {
 
 bbcShape128 = {
     point:{
-    x:238,
-    y:352
+    x:1537,
+    y:224
 },
     radius:5.0,
     color:{
-    r:32,
-    g:19,
-    b:1
+    r:213,
+    g:153,
+    b:215
 },
     rotation:0,
     around:{
@@ -2334,14 +2326,14 @@ bbcShape128 = {
 
 bbcShape129 = {
     point:{
-    x:785,
-    y:367
+    x:1902,
+    y:1059
 },
     radius:5.0,
     color:{
-    r:236,
-    g:58,
-    b:150
+    r:111,
+    g:37,
+    b:245
 },
     rotation:0,
     around:{
@@ -2352,14 +2344,14 @@ bbcShape129 = {
 
 bbcShape130 = {
     point:{
-    x:1363,
-    y:1007
+    x:1107,
+    y:188
 },
     radius:5.0,
     color:{
-    r:0,
-    g:92,
-    b:199
+    r:243,
+    g:126,
+    b:97
 },
     rotation:0,
     around:{
@@ -2370,14 +2362,14 @@ bbcShape130 = {
 
 bbcShape131 = {
     point:{
-    x:165,
-    y:552
+    x:903,
+    y:713
 },
     radius:5.0,
     color:{
-    r:36,
-    g:43,
-    b:84
+    r:164,
+    g:54,
+    b:200
 },
     rotation:0,
     around:{
@@ -2388,14 +2380,14 @@ bbcShape131 = {
 
 bbcShape132 = {
     point:{
-    x:354,
-    y:1061
+    x:869,
+    y:740
 },
     radius:5.0,
     color:{
-    r:150,
-    g:90,
-    b:144
+    r:227,
+    g:207,
+    b:174
 },
     rotation:0,
     around:{
@@ -2406,14 +2398,14 @@ bbcShape132 = {
 
 bbcShape133 = {
     point:{
-    x:26,
-    y:1011
+    x:1061,
+    y:549
 },
     radius:5.0,
     color:{
-    r:185,
-    g:37,
-    b:98
+    r:238,
+    g:120,
+    b:10
 },
     rotation:0,
     around:{
@@ -2424,14 +2416,14 @@ bbcShape133 = {
 
 bbcShape134 = {
     point:{
-    x:1511,
-    y:790
+    x:137,
+    y:627
 },
     radius:5.0,
     color:{
-    r:172,
-    g:31,
-    b:6
+    r:249,
+    g:134,
+    b:201
 },
     rotation:0,
     around:{
@@ -2442,14 +2434,14 @@ bbcShape134 = {
 
 bbcShape135 = {
     point:{
-    x:564,
-    y:954
+    x:809,
+    y:546
 },
     radius:5.0,
     color:{
-    r:136,
-    g:51,
-    b:203
+    r:115,
+    g:3,
+    b:33
 },
     rotation:0,
     around:{
@@ -2460,14 +2452,14 @@ bbcShape135 = {
 
 bbcShape136 = {
     point:{
-    x:700,
-    y:852
+    x:534,
+    y:906
 },
     radius:5.0,
     color:{
-    r:123,
-    g:73,
-    b:184
+    r:157,
+    g:18,
+    b:198
 },
     rotation:0,
     around:{
@@ -2478,14 +2470,14 @@ bbcShape136 = {
 
 bbcShape137 = {
     point:{
-    x:1298,
-    y:547
+    x:1733,
+    y:541
 },
     radius:5.0,
     color:{
-    r:67,
-    g:63,
-    b:39
+    r:24,
+    g:61,
+    b:135
 },
     rotation:0,
     around:{
@@ -2496,14 +2488,14 @@ bbcShape137 = {
 
 bbcShape138 = {
     point:{
-    x:1590,
-    y:250
+    x:35,
+    y:568
 },
     radius:5.0,
     color:{
-    r:237,
-    g:1,
-    b:106
+    r:208,
+    g:110,
+    b:105
 },
     rotation:0,
     around:{
@@ -2514,390 +2506,12 @@ bbcShape138 = {
 
 bbcShape139 = {
     point:{
-    x:1200,
-    y:240
+    x:916,
+    y:813
 },
     radius:5.0,
     color:{
-    r:244,
-    g:124,
-    b:65
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape140 = {
-    point:{
-    x:1176,
-    y:478
-},
-    radius:5.0,
-    color:{
-    r:170,
-    g:79,
-    b:252
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape141 = {
-    point:{
-    x:398,
-    y:593
-},
-    radius:5.0,
-    color:{
-    r:105,
-    g:238,
-    b:102
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape142 = {
-    point:{
-    x:1695,
-    y:31
-},
-    radius:5.0,
-    color:{
-    r:60,
-    g:47,
-    b:190
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape143 = {
-    point:{
-    x:1635,
-    y:87
-},
-    radius:5.0,
-    color:{
-    r:117,
-    g:146,
-    b:205
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape144 = {
-    point:{
-    x:1427,
-    y:986
-},
-    radius:5.0,
-    color:{
-    r:123,
-    g:251,
-    b:243
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape145 = {
-    point:{
-    x:1055,
-    y:81
-},
-    radius:5.0,
-    color:{
-    r:10,
-    g:172,
-    b:35
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape146 = {
-    point:{
-    x:724,
-    y:195
-},
-    radius:5.0,
-    color:{
-    r:85,
-    g:199,
-    b:191
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape147 = {
-    point:{
-    x:905,
-    y:816
-},
-    radius:5.0,
-    color:{
-    r:77,
-    g:216,
-    b:193
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape148 = {
-    point:{
-    x:362,
-    y:287
-},
-    radius:5.0,
-    color:{
-    r:167,
-    g:118,
-    b:165
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape149 = {
-    point:{
-    x:828,
-    y:638
-},
-    radius:5.0,
-    color:{
-    r:61,
-    g:128,
-    b:210
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape150 = {
-    point:{
-    x:1825,
-    y:831
-},
-    radius:5.0,
-    color:{
-    r:147,
-    g:77,
-    b:211
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape151 = {
-    point:{
-    x:396,
-    y:892
-},
-    radius:5.0,
-    color:{
-    r:54,
-    g:140,
-    b:76
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape152 = {
-    point:{
-    x:1188,
-    y:188
-},
-    radius:5.0,
-    color:{
-    r:200,
-    g:196,
-    b:1
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape153 = {
-    point:{
-    x:1380,
-    y:793
-},
-    radius:5.0,
-    color:{
-    r:57,
-    g:51,
-    b:209
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape154 = {
-    point:{
-    x:1482,
-    y:359
-},
-    radius:5.0,
-    color:{
-    r:226,
-    g:143,
-    b:111
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape155 = {
-    point:{
-    x:1674,
-    y:174
-},
-    radius:5.0,
-    color:{
-    r:135,
-    g:49,
-    b:83
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape156 = {
-    point:{
-    x:150,
-    y:917
-},
-    radius:5.0,
-    color:{
-    r:88,
-    g:48,
-    b:60
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape157 = {
-    point:{
-    x:445,
-    y:217
-},
-    radius:5.0,
-    color:{
-    r:235,
-    g:104,
-    b:124
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape158 = {
-    point:{
-    x:403,
-    y:744
-},
-    radius:5.0,
-    color:{
-    r:46,
-    g:146,
-    b:254
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape159 = {
-    point:{
-    x:626,
-    y:915
-},
-    radius:5.0,
-    color:{
-    r:7,
-    g:61,
-    b:130
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape160 = {
-    point:{
-    x:792,
-    y:307
-},
-    radius:5.0,
-    color:{
-    r:37,
+    r:236,
     g:24,
     b:28
 },
@@ -2908,16 +2522,394 @@ bbcShape160 = {
 }
 };
 
-bbcShape161 = {
+bbcShape140 = {
     point:{
-    x:1521,
-    y:225
+    x:1087,
+    y:749
 },
     radius:5.0,
     color:{
-    r:88,
-    g:177,
-    b:169
+    r:3,
+    g:92,
+    b:75
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape141 = {
+    point:{
+    x:1633,
+    y:534
+},
+    radius:5.0,
+    color:{
+    r:178,
+    g:237,
+    b:184
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape142 = {
+    point:{
+    x:307,
+    y:455
+},
+    radius:5.0,
+    color:{
+    r:249,
+    g:83,
+    b:219
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape143 = {
+    point:{
+    x:571,
+    y:415
+},
+    radius:5.0,
+    color:{
+    r:83,
+    g:242,
+    b:147
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape144 = {
+    point:{
+    x:820,
+    y:760
+},
+    radius:5.0,
+    color:{
+    r:83,
+    g:28,
+    b:193
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape145 = {
+    point:{
+    x:792,
+    y:456
+},
+    radius:5.0,
+    color:{
+    r:16,
+    g:48,
+    b:82
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape146 = {
+    point:{
+    x:1317,
+    y:64
+},
+    radius:5.0,
+    color:{
+    r:135,
+    g:185,
+    b:128
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape147 = {
+    point:{
+    x:1273,
+    y:245
+},
+    radius:5.0,
+    color:{
+    r:191,
+    g:186,
+    b:12
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape148 = {
+    point:{
+    x:15,
+    y:192
+},
+    radius:5.0,
+    color:{
+    r:232,
+    g:88,
+    b:213
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape149 = {
+    point:{
+    x:1251,
+    y:615
+},
+    radius:5.0,
+    color:{
+    r:42,
+    g:84,
+    b:82
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape150 = {
+    point:{
+    x:1457,
+    y:946
+},
+    radius:5.0,
+    color:{
+    r:170,
+    g:79,
+    b:151
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape151 = {
+    point:{
+    x:1528,
+    y:645
+},
+    radius:5.0,
+    color:{
+    r:181,
+    g:158,
+    b:13
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape152 = {
+    point:{
+    x:368,
+    y:432
+},
+    radius:5.0,
+    color:{
+    r:83,
+    g:184,
+    b:157
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape153 = {
+    point:{
+    x:663,
+    y:971
+},
+    radius:5.0,
+    color:{
+    r:110,
+    g:66,
+    b:97
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape154 = {
+    point:{
+    x:1865,
+    y:912
+},
+    radius:5.0,
+    color:{
+    r:188,
+    g:59,
+    b:56
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape155 = {
+    point:{
+    x:836,
+    y:1021
+},
+    radius:5.0,
+    color:{
+    r:230,
+    g:247,
+    b:226
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape156 = {
+    point:{
+    x:647,
+    y:733
+},
+    radius:5.0,
+    color:{
+    r:115,
+    g:57,
+    b:224
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape157 = {
+    point:{
+    x:184,
+    y:782
+},
+    radius:5.0,
+    color:{
+    r:170,
+    g:38,
+    b:202
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape158 = {
+    point:{
+    x:17,
+    y:864
+},
+    radius:5.0,
+    color:{
+    r:177,
+    g:116,
+    b:115
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape159 = {
+    point:{
+    x:215,
+    y:226
+},
+    radius:5.0,
+    color:{
+    r:9,
+    g:90,
+    b:165
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape160 = {
+    point:{
+    x:1238,
+    y:451
+},
+    radius:5.0,
+    color:{
+    r:57,
+    g:22,
+    b:42
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape161 = {
+    point:{
+    x:1364,
+    y:589
+},
+    radius:5.0,
+    color:{
+    r:193,
+    g:87,
+    b:152
 },
     rotation:0,
     around:{
@@ -2928,14 +2920,14 @@ bbcShape161 = {
 
 bbcShape162 = {
     point:{
-    x:329,
-    y:348
+    x:1505,
+    y:15
 },
     radius:5.0,
     color:{
-    r:133,
-    g:103,
-    b:147
+    r:64,
+    g:213,
+    b:116
 },
     rotation:0,
     around:{
@@ -2946,14 +2938,14 @@ bbcShape162 = {
 
 bbcShape163 = {
     point:{
-    x:577,
-    y:1012
+    x:17,
+    y:454
 },
     radius:5.0,
     color:{
-    r:111,
-    g:156,
-    b:5
+    r:242,
+    g:127,
+    b:90
 },
     rotation:0,
     around:{
@@ -2964,14 +2956,14 @@ bbcShape163 = {
 
 bbcShape164 = {
     point:{
-    x:1105,
-    y:1062
+    x:1,
+    y:442
 },
     radius:5.0,
     color:{
-    r:180,
-    g:37,
-    b:172
+    r:68,
+    g:155,
+    b:74
 },
     rotation:0,
     around:{
@@ -2982,14 +2974,14 @@ bbcShape164 = {
 
 bbcShape165 = {
     point:{
-    x:1727,
-    y:357
+    x:828,
+    y:684
 },
     radius:5.0,
     color:{
-    r:36,
-    g:235,
-    b:199
+    r:89,
+    g:136,
+    b:50
 },
     rotation:0,
     around:{
@@ -3000,14 +2992,14 @@ bbcShape165 = {
 
 bbcShape166 = {
     point:{
-    x:666,
-    y:871
+    x:972,
+    y:386
 },
     radius:5.0,
     color:{
-    r:204,
-    g:57,
-    b:137
+    r:140,
+    g:160,
+    b:253
 },
     rotation:0,
     around:{
@@ -3018,14 +3010,14 @@ bbcShape166 = {
 
 bbcShape167 = {
     point:{
-    x:575,
-    y:566
+    x:1845,
+    y:744
 },
     radius:5.0,
     color:{
-    r:232,
-    g:122,
-    b:35
+    r:7,
+    g:14,
+    b:239
 },
     rotation:0,
     around:{
@@ -3036,14 +3028,14 @@ bbcShape167 = {
 
 bbcShape168 = {
     point:{
-    x:406,
-    y:260
+    x:274,
+    y:465
 },
     radius:5.0,
     color:{
-    r:226,
-    g:129,
-    b:81
+    r:85,
+    g:89,
+    b:126
 },
     rotation:0,
     around:{
@@ -3054,14 +3046,14 @@ bbcShape168 = {
 
 bbcShape169 = {
     point:{
-    x:419,
-    y:183
+    x:694,
+    y:417
 },
     radius:5.0,
     color:{
-    r:174,
-    g:24,
-    b:151
+    r:4,
+    g:94,
+    b:30
 },
     rotation:0,
     around:{
@@ -3072,14 +3064,14 @@ bbcShape169 = {
 
 bbcShape170 = {
     point:{
-    x:106,
-    y:34
+    x:247,
+    y:474
 },
     radius:5.0,
     color:{
-    r:11,
-    g:5,
-    b:23
+    r:27,
+    g:185,
+    b:232
 },
     rotation:0,
     around:{
@@ -3090,14 +3082,14 @@ bbcShape170 = {
 
 bbcShape171 = {
     point:{
-    x:1665,
-    y:529
+    x:281,
+    y:689
 },
     radius:5.0,
     color:{
-    r:46,
-    g:174,
-    b:20
+    r:110,
+    g:211,
+    b:216
 },
     rotation:0,
     around:{
@@ -3108,14 +3100,14 @@ bbcShape171 = {
 
 bbcShape172 = {
     point:{
-    x:528,
-    y:584
+    x:883,
+    y:415
 },
     radius:5.0,
     color:{
-    r:110,
-    g:137,
-    b:97
+    r:253,
+    g:118,
+    b:142
 },
     rotation:0,
     around:{
@@ -3126,14 +3118,14 @@ bbcShape172 = {
 
 bbcShape173 = {
     point:{
-    x:1772,
-    y:265
+    x:866,
+    y:372
 },
     radius:5.0,
     color:{
     r:86,
-    g:162,
-    b:18
+    g:76,
+    b:94
 },
     rotation:0,
     around:{
@@ -3144,14 +3136,14 @@ bbcShape173 = {
 
 bbcShape174 = {
     point:{
-    x:585,
-    y:840
+    x:1627,
+    y:924
 },
     radius:5.0,
     color:{
-    r:195,
-    g:51,
-    b:104
+    r:236,
+    g:33,
+    b:100
 },
     rotation:0,
     around:{
@@ -3162,14 +3154,14 @@ bbcShape174 = {
 
 bbcShape175 = {
     point:{
-    x:207,
-    y:62
+    x:1569,
+    y:918
 },
     radius:5.0,
     color:{
-    r:145,
-    g:234,
-    b:85
+    r:211,
+    g:149,
+    b:64
 },
     rotation:0,
     around:{
@@ -3180,14 +3172,14 @@ bbcShape175 = {
 
 bbcShape176 = {
     point:{
-    x:747,
-    y:1028
+    x:170,
+    y:260
 },
     radius:5.0,
     color:{
-    r:233,
-    g:197,
-    b:15
+    r:65,
+    g:27,
+    b:199
 },
     rotation:0,
     around:{
@@ -3198,14 +3190,14 @@ bbcShape176 = {
 
 bbcShape177 = {
     point:{
-    x:1174,
-    y:290
+    x:122,
+    y:74
 },
     radius:5.0,
     color:{
-    r:106,
-    g:133,
-    b:101
+    r:217,
+    g:229,
+    b:175
 },
     rotation:0,
     around:{
@@ -3216,14 +3208,14 @@ bbcShape177 = {
 
 bbcShape178 = {
     point:{
-    x:1449,
-    y:201
+    x:1884,
+    y:273
 },
     radius:5.0,
     color:{
-    r:219,
-    g:73,
-    b:64
+    r:94,
+    g:103,
+    b:169
 },
     rotation:0,
     around:{
@@ -3234,14 +3226,14 @@ bbcShape178 = {
 
 bbcShape179 = {
     point:{
-    x:939,
-    y:692
+    x:351,
+    y:749
 },
     radius:5.0,
     color:{
-    r:184,
-    g:7,
-    b:62
+    r:74,
+    g:64,
+    b:213
 },
     rotation:0,
     around:{
@@ -3252,14 +3244,14 @@ bbcShape179 = {
 
 bbcShape180 = {
     point:{
-    x:1503,
-    y:1028
+    x:80,
+    y:531
 },
     radius:5.0,
     color:{
-    r:71,
-    g:0,
-    b:134
+    r:108,
+    g:211,
+    b:76
 },
     rotation:0,
     around:{
@@ -3270,14 +3262,14 @@ bbcShape180 = {
 
 bbcShape181 = {
     point:{
-    x:900,
-    y:737
+    x:1155,
+    y:355
 },
     radius:5.0,
     color:{
-    r:130,
-    g:180,
-    b:173
+    r:203,
+    g:32,
+    b:25
 },
     rotation:0,
     around:{
@@ -3288,14 +3280,14 @@ bbcShape181 = {
 
 bbcShape182 = {
     point:{
-    x:891,
-    y:945
+    x:819,
+    y:4
 },
     radius:5.0,
     color:{
-    r:151,
-    g:190,
-    b:26
+    r:84,
+    g:37,
+    b:204
 },
     rotation:0,
     around:{
@@ -3306,14 +3298,14 @@ bbcShape182 = {
 
 bbcShape183 = {
     point:{
-    x:438,
-    y:919
+    x:193,
+    y:582
 },
     radius:5.0,
     color:{
-    r:68,
+    r:146,
     g:99,
-    b:25
+    b:203
 },
     rotation:0,
     around:{
@@ -3324,14 +3316,14 @@ bbcShape183 = {
 
 bbcShape184 = {
     point:{
-    x:628,
-    y:982
+    x:1564,
+    y:94
 },
     radius:5.0,
     color:{
-    r:128,
-    g:174,
-    b:131
+    r:99,
+    g:223,
+    b:212
 },
     rotation:0,
     around:{
@@ -3342,14 +3334,14 @@ bbcShape184 = {
 
 bbcShape185 = {
     point:{
-    x:713,
-    y:226
+    x:1751,
+    y:168
 },
     radius:5.0,
     color:{
-    r:96,
-    g:124,
-    b:153
+    r:35,
+    g:84,
+    b:4
 },
     rotation:0,
     around:{
@@ -3360,14 +3352,14 @@ bbcShape185 = {
 
 bbcShape186 = {
     point:{
-    x:1269,
-    y:380
+    x:436,
+    y:307
 },
     radius:5.0,
     color:{
-    r:18,
-    g:132,
-    b:10
+    r:77,
+    g:217,
+    b:76
 },
     rotation:0,
     around:{
@@ -3378,14 +3370,14 @@ bbcShape186 = {
 
 bbcShape187 = {
     point:{
-    x:582,
-    y:161
+    x:973,
+    y:778
 },
     radius:5.0,
     color:{
-    r:201,
-    g:181,
-    b:37
+    r:232,
+    g:215,
+    b:160
 },
     rotation:0,
     around:{
@@ -3396,14 +3388,14 @@ bbcShape187 = {
 
 bbcShape188 = {
     point:{
-    x:719,
-    y:535
+    x:1193,
+    y:828
 },
     radius:5.0,
     color:{
-    r:215,
-    g:25,
-    b:129
+    r:14,
+    g:20,
+    b:114
 },
     rotation:0,
     around:{
@@ -3414,14 +3406,14 @@ bbcShape188 = {
 
 bbcShape189 = {
     point:{
-    x:700,
-    y:424
+    x:196,
+    y:708
 },
     radius:5.0,
     color:{
-    r:31,
-    g:249,
-    b:37
+    r:217,
+    g:114,
+    b:235
 },
     rotation:0,
     around:{
@@ -3432,14 +3424,14 @@ bbcShape189 = {
 
 bbcShape190 = {
     point:{
-    x:1419,
-    y:13
+    x:493,
+    y:851
 },
     radius:5.0,
     color:{
-    r:96,
-    g:117,
-    b:116
+    r:183,
+    g:218,
+    b:250
 },
     rotation:0,
     around:{
@@ -3450,14 +3442,14 @@ bbcShape190 = {
 
 bbcShape191 = {
     point:{
-    x:1172,
-    y:563
+    x:1792,
+    y:456
 },
     radius:5.0,
     color:{
-    r:181,
+    r:30,
     g:42,
-    b:196
+    b:16
 },
     rotation:0,
     around:{
@@ -3468,14 +3460,14 @@ bbcShape191 = {
 
 bbcShape192 = {
     point:{
-    x:485,
-    y:727
+    x:1449,
+    y:804
 },
     radius:5.0,
     color:{
-    r:17,
-    g:62,
-    b:123
+    r:14,
+    g:181,
+    b:26
 },
     rotation:0,
     around:{
@@ -3486,14 +3478,14 @@ bbcShape192 = {
 
 bbcShape193 = {
     point:{
-    x:1660,
-    y:237
+    x:1408,
+    y:71
 },
     radius:5.0,
     color:{
-    r:153,
-    g:192,
-    b:130
+    r:14,
+    g:160,
+    b:6
 },
     rotation:0,
     around:{
@@ -3504,14 +3496,14 @@ bbcShape193 = {
 
 bbcShape194 = {
     point:{
-    x:373,
-    y:813
+    x:1877,
+    y:978
 },
     radius:5.0,
     color:{
-    r:17,
-    g:66,
-    b:139
+    r:92,
+    g:128,
+    b:173
 },
     rotation:0,
     around:{
@@ -3522,14 +3514,14 @@ bbcShape194 = {
 
 bbcShape195 = {
     point:{
-    x:157,
-    y:656
+    x:550,
+    y:63
 },
     radius:5.0,
     color:{
-    r:82,
-    g:49,
-    b:77
+    r:99,
+    g:215,
+    b:126
 },
     rotation:0,
     around:{
@@ -3540,14 +3532,14 @@ bbcShape195 = {
 
 bbcShape196 = {
     point:{
-    x:358,
-    y:755
+    x:895,
+    y:269
 },
     radius:5.0,
     color:{
-    r:78,
-    g:216,
-    b:55
+    r:91,
+    g:206,
+    b:65
 },
     rotation:0,
     around:{
@@ -3558,14 +3550,14 @@ bbcShape196 = {
 
 bbcShape197 = {
     point:{
-    x:1785,
-    y:213
+    x:1587,
+    y:738
 },
     radius:5.0,
     color:{
-    r:215,
-    g:118,
-    b:223
+    r:170,
+    g:248,
+    b:207
 },
     rotation:0,
     around:{
@@ -3576,14 +3568,14 @@ bbcShape197 = {
 
 bbcShape198 = {
     point:{
-    x:603,
-    y:146
+    x:1729,
+    y:182
 },
     radius:5.0,
     color:{
-    r:163,
-    g:253,
-    b:103
+    r:73,
+    g:161,
+    b:0
 },
     rotation:0,
     around:{
@@ -3594,14 +3586,14 @@ bbcShape198 = {
 
 bbcShape199 = {
     point:{
-    x:431,
-    y:790
+    x:498,
+    y:422
 },
     radius:5.0,
     color:{
-    r:11,
-    g:125,
-    b:242
+    r:52,
+    g:118,
+    b:139
 },
     rotation:0,
     around:{
@@ -3612,14 +3604,14 @@ bbcShape199 = {
 
 bbcShape200 = {
     point:{
-    x:436,
-    y:164
+    x:1721,
+    y:620
 },
     radius:5.0,
     color:{
-    r:189,
-    g:94,
-    b:225
+    r:114,
+    g:75,
+    b:80
 },
     rotation:0,
     around:{
@@ -3630,14 +3622,14 @@ bbcShape200 = {
 
 bbcShape201 = {
     point:{
-    x:1272,
-    y:1032
+    x:651,
+    y:604
 },
     radius:5.0,
     color:{
-    r:208,
-    g:134,
-    b:54
+    r:123,
+    g:25,
+    b:107
 },
     rotation:0,
     around:{
@@ -3648,14 +3640,14 @@ bbcShape201 = {
 
 bbcShape202 = {
     point:{
-    x:1227,
-    y:321
+    x:1117,
+    y:1075
 },
     radius:5.0,
     color:{
-    r:9,
-    g:179,
-    b:15
+    r:5,
+    g:199,
+    b:170
 },
     rotation:0,
     around:{
@@ -3666,14 +3658,14 @@ bbcShape202 = {
 
 bbcShape203 = {
     point:{
-    x:668,
-    y:323
+    x:951,
+    y:997
 },
     radius:5.0,
     color:{
-    r:0,
-    g:214,
-    b:158
+    r:178,
+    g:231,
+    b:65
 },
     rotation:0,
     around:{
@@ -3684,14 +3676,14 @@ bbcShape203 = {
 
 bbcShape204 = {
     point:{
-    x:3,
-    y:141
+    x:591,
+    y:1033
 },
     radius:5.0,
     color:{
-    r:168,
-    g:73,
-    b:81
+    r:92,
+    g:252,
+    b:52
 },
     rotation:0,
     around:{
@@ -3702,14 +3694,14 @@ bbcShape204 = {
 
 bbcShape205 = {
     point:{
-    x:1789,
-    y:561
+    x:1456,
+    y:646
 },
     radius:5.0,
     color:{
-    r:184,
-    g:230,
-    b:178
+    r:254,
+    g:147,
+    b:10
 },
     rotation:0,
     around:{
@@ -3720,14 +3712,14 @@ bbcShape205 = {
 
 bbcShape206 = {
     point:{
-    x:1902,
-    y:323
+    x:1189,
+    y:82
 },
     radius:5.0,
     color:{
-    r:30,
-    g:14,
-    b:190
+    r:125,
+    g:121,
+    b:176
 },
     rotation:0,
     around:{
@@ -3738,14 +3730,14 @@ bbcShape206 = {
 
 bbcShape207 = {
     point:{
-    x:1330,
-    y:156
+    x:227,
+    y:405
 },
     radius:5.0,
     color:{
-    r:77,
-    g:102,
-    b:12
+    r:7,
+    g:97,
+    b:164
 },
     rotation:0,
     around:{
@@ -3756,14 +3748,14 @@ bbcShape207 = {
 
 bbcShape208 = {
     point:{
-    x:1894,
-    y:1040
+    x:605,
+    y:89
 },
     radius:5.0,
     color:{
-    r:24,
-    g:215,
-    b:243
+    r:140,
+    g:64,
+    b:6
 },
     rotation:0,
     around:{
@@ -3774,14 +3766,14 @@ bbcShape208 = {
 
 bbcShape209 = {
     point:{
-    x:854,
-    y:943
+    x:1730,
+    y:864
 },
     radius:5.0,
     color:{
-    r:175,
-    g:131,
-    b:153
+    r:117,
+    g:192,
+    b:58
 },
     rotation:0,
     around:{
@@ -3792,14 +3784,14 @@ bbcShape209 = {
 
 bbcShape210 = {
     point:{
-    x:1008,
-    y:1063
+    x:390,
+    y:381
 },
     radius:5.0,
     color:{
-    r:197,
-    g:255,
-    b:213
+    r:65,
+    g:65,
+    b:150
 },
     rotation:0,
     around:{
@@ -3810,14 +3802,14 @@ bbcShape210 = {
 
 bbcShape211 = {
     point:{
-    x:578,
-    y:891
+    x:129,
+    y:789
 },
     radius:5.0,
     color:{
-    r:182,
-    g:42,
-    b:176
+    r:21,
+    g:217,
+    b:227
 },
     rotation:0,
     around:{
@@ -3828,14 +3820,14 @@ bbcShape211 = {
 
 bbcShape212 = {
     point:{
-    x:697,
-    y:364
+    x:1497,
+    y:663
 },
     radius:5.0,
     color:{
-    r:179,
-    g:120,
-    b:123
+    r:22,
+    g:17,
+    b:95
 },
     rotation:0,
     around:{
@@ -3846,14 +3838,14 @@ bbcShape212 = {
 
 bbcShape213 = {
     point:{
-    x:1671,
-    y:66
+    x:154,
+    y:175
 },
     radius:5.0,
     color:{
-    r:152,
-    g:192,
-    b:131
+    r:50,
+    g:198,
+    b:191
 },
     rotation:0,
     around:{
@@ -3864,14 +3856,14 @@ bbcShape213 = {
 
 bbcShape214 = {
     point:{
-    x:828,
-    y:309
+    x:1196,
+    y:340
 },
     radius:5.0,
     color:{
-    r:118,
-    g:215,
-    b:72
+    r:207,
+    g:150,
+    b:73
 },
     rotation:0,
     around:{
@@ -3882,14 +3874,14 @@ bbcShape214 = {
 
 bbcShape215 = {
     point:{
-    x:1004,
-    y:1057
+    x:221,
+    y:607
 },
     radius:5.0,
     color:{
-    r:138,
-    g:178,
-    b:231
+    r:183,
+    g:222,
+    b:8
 },
     rotation:0,
     around:{
@@ -3900,14 +3892,14 @@ bbcShape215 = {
 
 bbcShape216 = {
     point:{
-    x:1858,
-    y:90
+    x:311,
+    y:634
 },
     radius:5.0,
     color:{
-    r:195,
-    g:254,
-    b:208
+    r:230,
+    g:201,
+    b:49
 },
     rotation:0,
     around:{
@@ -3918,14 +3910,14 @@ bbcShape216 = {
 
 bbcShape217 = {
     point:{
-    x:896,
-    y:736
+    x:916,
+    y:412
 },
     radius:5.0,
     color:{
-    r:177,
-    g:190,
-    b:4
+    r:104,
+    g:20,
+    b:223
 },
     rotation:0,
     around:{
@@ -3936,14 +3928,14 @@ bbcShape217 = {
 
 bbcShape218 = {
     point:{
-    x:477,
-    y:462
+    x:386,
+    y:645
 },
     radius:5.0,
     color:{
-    r:53,
-    g:80,
-    b:253
+    r:151,
+    g:240,
+    b:164
 },
     rotation:0,
     around:{
@@ -3954,14 +3946,14 @@ bbcShape218 = {
 
 bbcShape219 = {
     point:{
-    x:1157,
-    y:1033
+    x:817,
+    y:170
 },
     radius:5.0,
     color:{
-    r:234,
-    g:79,
-    b:75
+    r:129,
+    g:103,
+    b:207
 },
     rotation:0,
     around:{
@@ -3972,14 +3964,14 @@ bbcShape219 = {
 
 bbcShape220 = {
     point:{
-    x:746,
-    y:762
+    x:1812,
+    y:83
 },
     radius:5.0,
     color:{
-    r:160,
-    g:239,
-    b:17
+    r:254,
+    g:188,
+    b:28
 },
     rotation:0,
     around:{
@@ -3990,14 +3982,14 @@ bbcShape220 = {
 
 bbcShape221 = {
     point:{
-    x:116,
-    y:314
+    x:987,
+    y:1045
 },
     radius:5.0,
     color:{
-    r:199,
-    g:114,
-    b:197
+    r:187,
+    g:242,
+    b:79
 },
     rotation:0,
     around:{
@@ -4008,14 +4000,14 @@ bbcShape221 = {
 
 bbcShape222 = {
     point:{
-    x:288,
-    y:847
+    x:539,
+    y:185
 },
     radius:5.0,
     color:{
-    r:122,
-    g:72,
-    b:163
+    r:194,
+    g:77,
+    b:114
 },
     rotation:0,
     around:{
@@ -4026,14 +4018,14 @@ bbcShape222 = {
 
 bbcShape223 = {
     point:{
-    x:123,
-    y:621
+    x:1755,
+    y:439
 },
     radius:5.0,
     color:{
-    r:32,
-    g:118,
-    b:213
+    r:157,
+    g:49,
+    b:211
 },
     rotation:0,
     around:{
@@ -4044,14 +4036,14 @@ bbcShape223 = {
 
 bbcShape224 = {
     point:{
-    x:1606,
-    y:389
+    x:126,
+    y:864
 },
     radius:5.0,
     color:{
-    r:52,
-    g:44,
-    b:56
+    r:212,
+    g:17,
+    b:151
 },
     rotation:0,
     around:{
@@ -4062,14 +4054,14 @@ bbcShape224 = {
 
 bbcShape225 = {
     point:{
-    x:1073,
-    y:329
+    x:1575,
+    y:58
 },
     radius:5.0,
     color:{
-    r:72,
-    g:211,
-    b:194
+    r:171,
+    g:192,
+    b:141
 },
     rotation:0,
     around:{
@@ -4080,14 +4072,14 @@ bbcShape225 = {
 
 bbcShape226 = {
     point:{
-    x:1777,
-    y:919
+    x:644,
+    y:900
 },
     radius:5.0,
     color:{
-    r:193,
-    g:108,
-    b:207
+    r:186,
+    g:76,
+    b:117
 },
     rotation:0,
     around:{
@@ -4098,14 +4090,14 @@ bbcShape226 = {
 
 bbcShape227 = {
     point:{
-    x:1243,
-    y:766
+    x:773,
+    y:1
 },
     radius:5.0,
     color:{
-    r:102,
-    g:157,
-    b:125
+    r:230,
+    g:241,
+    b:36
 },
     rotation:0,
     around:{
@@ -4116,14 +4108,14 @@ bbcShape227 = {
 
 bbcShape228 = {
     point:{
-    x:68,
-    y:400
+    x:1307,
+    y:591
 },
     radius:5.0,
     color:{
-    r:166,
-    g:243,
-    b:81
+    r:100,
+    g:218,
+    b:37
 },
     rotation:0,
     around:{
@@ -4134,14 +4126,14 @@ bbcShape228 = {
 
 bbcShape229 = {
     point:{
-    x:820,
-    y:28
+    x:1496,
+    y:283
 },
     radius:5.0,
     color:{
-    r:148,
-    g:210,
-    b:164
+    r:165,
+    g:34,
+    b:221
 },
     rotation:0,
     around:{
@@ -4152,14 +4144,14 @@ bbcShape229 = {
 
 bbcShape230 = {
     point:{
-    x:775,
-    y:31
+    x:1594,
+    y:1045
 },
     radius:5.0,
     color:{
-    r:197,
-    g:215,
-    b:81
+    r:224,
+    g:72,
+    b:210
 },
     rotation:0,
     around:{
@@ -4170,14 +4162,14 @@ bbcShape230 = {
 
 bbcShape231 = {
     point:{
-    x:1400,
-    y:911
+    x:435,
+    y:401
 },
     radius:5.0,
     color:{
-    r:74,
-    g:69,
-    b:54
+    r:204,
+    g:96,
+    b:116
 },
     rotation:0,
     around:{
@@ -4188,14 +4180,14 @@ bbcShape231 = {
 
 bbcShape232 = {
     point:{
-    x:294,
-    y:47
+    x:430,
+    y:923
 },
     radius:5.0,
     color:{
-    r:225,
-    g:137,
-    b:170
+    r:99,
+    g:192,
+    b:247
 },
     rotation:0,
     around:{
@@ -4206,14 +4198,14 @@ bbcShape232 = {
 
 bbcShape233 = {
     point:{
-    x:1481,
-    y:209
+    x:1344,
+    y:758
 },
     radius:5.0,
     color:{
-    r:66,
-    g:140,
-    b:209
+    r:240,
+    g:78,
+    b:252
 },
     rotation:0,
     around:{
@@ -4224,14 +4216,14 @@ bbcShape233 = {
 
 bbcShape234 = {
     point:{
-    x:851,
-    y:119
+    x:1247,
+    y:225
 },
     radius:5.0,
     color:{
-    r:26,
-    g:16,
-    b:84
+    r:159,
+    g:69,
+    b:171
 },
     rotation:0,
     around:{
@@ -4242,14 +4234,14 @@ bbcShape234 = {
 
 bbcShape235 = {
     point:{
-    x:1005,
-    y:158
+    x:322,
+    y:319
 },
     radius:5.0,
     color:{
-    r:164,
-    g:192,
-    b:119
+    r:67,
+    g:96,
+    b:35
 },
     rotation:0,
     around:{
@@ -4260,14 +4252,14 @@ bbcShape235 = {
 
 bbcShape236 = {
     point:{
-    x:1863,
-    y:282
+    x:962,
+    y:664
 },
     radius:5.0,
     color:{
-    r:124,
-    g:157,
-    b:211
+    r:103,
+    g:242,
+    b:109
 },
     rotation:0,
     around:{
@@ -4278,14 +4270,14 @@ bbcShape236 = {
 
 bbcShape237 = {
     point:{
-    x:1779,
-    y:92
+    x:32,
+    y:157
 },
     radius:5.0,
     color:{
-    r:86,
-    g:243,
-    b:230
+    r:174,
+    g:20,
+    b:7
 },
     rotation:0,
     around:{
@@ -4296,14 +4288,14 @@ bbcShape237 = {
 
 bbcShape238 = {
     point:{
-    x:108,
-    y:482
+    x:44,
+    y:600
 },
     radius:5.0,
     color:{
-    r:208,
-    g:204,
-    b:163
+    r:250,
+    g:24,
+    b:170
 },
     rotation:0,
     around:{
@@ -4314,14 +4306,14 @@ bbcShape238 = {
 
 bbcShape239 = {
     point:{
-    x:631,
-    y:481
+    x:1635,
+    y:123
 },
     radius:5.0,
     color:{
-    r:130,
-    g:10,
-    b:252
+    r:53,
+    g:187,
+    b:17
 },
     rotation:0,
     around:{
@@ -4332,14 +4324,14 @@ bbcShape239 = {
 
 bbcShape240 = {
     point:{
-    x:313,
-    y:519
+    x:690,
+    y:913
 },
     radius:5.0,
     color:{
-    r:34,
-    g:221,
-    b:49
+    r:2,
+    g:151,
+    b:193
 },
     rotation:0,
     around:{
@@ -4350,14 +4342,14 @@ bbcShape240 = {
 
 bbcShape241 = {
     point:{
-    x:1603,
-    y:435
+    x:279,
+    y:666
 },
     radius:5.0,
     color:{
-    r:169,
-    g:103,
-    b:39
+    r:164,
+    g:127,
+    b:200
 },
     rotation:0,
     around:{
@@ -4368,14 +4360,14 @@ bbcShape241 = {
 
 bbcShape242 = {
     point:{
-    x:941,
-    y:441
+    x:892,
+    y:704
 },
     radius:5.0,
     color:{
-    r:188,
-    g:63,
-    b:250
+    r:230,
+    g:255,
+    b:149
 },
     rotation:0,
     around:{
@@ -4386,14 +4378,14 @@ bbcShape242 = {
 
 bbcShape243 = {
     point:{
-    x:1300,
-    y:519
+    x:716,
+    y:619
 },
     radius:5.0,
     color:{
-    r:103,
-    g:161,
-    b:142
+    r:191,
+    g:140,
+    b:226
 },
     rotation:0,
     around:{
@@ -4404,14 +4396,14 @@ bbcShape243 = {
 
 bbcShape244 = {
     point:{
-    x:843,
-    y:357
+    x:1105,
+    y:716
 },
     radius:5.0,
     color:{
-    r:56,
-    g:255,
-    b:45
+    r:198,
+    g:171,
+    b:177
 },
     rotation:0,
     around:{
@@ -4422,14 +4414,14 @@ bbcShape244 = {
 
 bbcShape245 = {
     point:{
-    x:327,
-    y:452
+    x:1599,
+    y:946
 },
     radius:5.0,
     color:{
-    r:137,
-    g:33,
-    b:88
+    r:161,
+    g:63,
+    b:229
 },
     rotation:0,
     around:{
@@ -4440,14 +4432,14 @@ bbcShape245 = {
 
 bbcShape246 = {
     point:{
-    x:1182,
-    y:776
+    x:496,
+    y:175
 },
     radius:5.0,
     color:{
-    r:174,
-    g:245,
-    b:124
+    r:100,
+    g:138,
+    b:181
 },
     rotation:0,
     around:{
@@ -4458,14 +4450,14 @@ bbcShape246 = {
 
 bbcShape247 = {
     point:{
-    x:371,
-    y:246
+    x:281,
+    y:133
 },
     radius:5.0,
     color:{
-    r:233,
-    g:217,
-    b:47
+    r:166,
+    g:87,
+    b:32
 },
     rotation:0,
     around:{
@@ -4476,14 +4468,14 @@ bbcShape247 = {
 
 bbcShape248 = {
     point:{
-    x:1510,
-    y:248
+    x:266,
+    y:86
 },
     radius:5.0,
     color:{
-    r:230,
-    g:92,
-    b:41
+    r:57,
+    g:169,
+    b:176
 },
     rotation:0,
     around:{
@@ -4494,14 +4486,14 @@ bbcShape248 = {
 
 bbcShape249 = {
     point:{
-    x:173,
-    y:507
+    x:1007,
+    y:253
 },
     radius:5.0,
     color:{
-    r:7,
-    g:10,
-    b:71
+    r:66,
+    g:204,
+    b:91
 },
     rotation:0,
     around:{
@@ -4512,14 +4504,14 @@ bbcShape249 = {
 
 bbcShape250 = {
     point:{
-    x:307,
-    y:743
+    x:1782,
+    y:607
 },
     radius:5.0,
     color:{
-    r:196,
-    g:6,
-    b:218
+    r:250,
+    g:81,
+    b:91
 },
     rotation:0,
     around:{
@@ -4530,14 +4522,14 @@ bbcShape250 = {
 
 bbcShape251 = {
     point:{
-    x:1095,
-    y:195
+    x:1663,
+    y:128
 },
     radius:5.0,
     color:{
-    r:53,
-    g:66,
-    b:114
+    r:197,
+    g:7,
+    b:82
 },
     rotation:0,
     around:{
@@ -4548,14 +4540,14 @@ bbcShape251 = {
 
 bbcShape252 = {
     point:{
-    x:1523,
-    y:298
+    x:1446,
+    y:814
 },
     radius:5.0,
     color:{
-    r:166,
-    g:156,
-    b:178
+    r:83,
+    g:170,
+    b:174
 },
     rotation:0,
     around:{
@@ -4566,14 +4558,14 @@ bbcShape252 = {
 
 bbcShape253 = {
     point:{
-    x:22,
-    y:165
+    x:812,
+    y:690
 },
     radius:5.0,
     color:{
-    r:52,
-    g:118,
-    b:38
+    r:89,
+    g:53,
+    b:173
 },
     rotation:0,
     around:{
@@ -4584,14 +4576,14 @@ bbcShape253 = {
 
 bbcShape254 = {
     point:{
-    x:852,
-    y:330
+    x:899,
+    y:327
 },
     radius:5.0,
     color:{
-    r:43,
-    g:181,
-    b:55
+    r:246,
+    g:148,
+    b:233
 },
     rotation:0,
     around:{
@@ -4602,14 +4594,14 @@ bbcShape254 = {
 
 bbcShape255 = {
     point:{
-    x:805,
-    y:115
+    x:888,
+    y:1077
 },
     radius:5.0,
     color:{
-    r:202,
-    g:20,
-    b:238
+    r:174,
+    g:185,
+    b:98
 },
     rotation:0,
     around:{
@@ -4620,14 +4612,14 @@ bbcShape255 = {
 
 bbcShape256 = {
     point:{
-    x:73,
-    y:1028
+    x:1332,
+    y:597
 },
     radius:5.0,
     color:{
-    r:36,
-    g:29,
-    b:102
+    r:219,
+    g:172,
+    b:93
 },
     rotation:0,
     around:{
@@ -4638,14 +4630,14 @@ bbcShape256 = {
 
 bbcShape257 = {
     point:{
-    x:1558,
-    y:410
+    x:1577,
+    y:765
 },
     radius:5.0,
     color:{
-    r:209,
-    g:182,
-    b:85
+    r:222,
+    g:18,
+    b:64
 },
     rotation:0,
     around:{
@@ -4656,14 +4648,14 @@ bbcShape257 = {
 
 bbcShape258 = {
     point:{
-    x:758,
-    y:329
+    x:746,
+    y:804
 },
     radius:5.0,
     color:{
-    r:77,
-    g:67,
-    b:103
+    r:47,
+    g:90,
+    b:149
 },
     rotation:0,
     around:{
@@ -4674,14 +4666,14 @@ bbcShape258 = {
 
 bbcShape259 = {
     point:{
-    x:1867,
-    y:262
+    x:829,
+    y:1013
 },
     radius:5.0,
     color:{
-    r:58,
-    g:245,
-    b:18
+    r:8,
+    g:179,
+    b:113
 },
     rotation:0,
     around:{
@@ -4692,14 +4684,14 @@ bbcShape259 = {
 
 bbcShape260 = {
     point:{
-    x:1542,
-    y:720
+    x:1620,
+    y:7
 },
     radius:5.0,
     color:{
-    r:253,
-    g:188,
-    b:27
+    r:247,
+    g:52,
+    b:245
 },
     rotation:0,
     around:{
@@ -4710,14 +4702,14 @@ bbcShape260 = {
 
 bbcShape261 = {
     point:{
-    x:541,
-    y:322
+    x:1714,
+    y:486
 },
     radius:5.0,
     color:{
-    r:96,
-    g:222,
-    b:194
+    r:126,
+    g:114,
+    b:204
 },
     rotation:0,
     around:{
@@ -4728,14 +4720,14 @@ bbcShape261 = {
 
 bbcShape262 = {
     point:{
-    x:1446,
-    y:639
+    x:1347,
+    y:351
 },
     radius:5.0,
     color:{
-    r:50,
-    g:241,
-    b:76
+    r:171,
+    g:95,
+    b:82
 },
     rotation:0,
     around:{
@@ -4746,14 +4738,14 @@ bbcShape262 = {
 
 bbcShape263 = {
     point:{
-    x:1601,
-    y:683
+    x:16,
+    y:1046
 },
     radius:5.0,
     color:{
-    r:119,
-    g:209,
-    b:216
+    r:217,
+    g:121,
+    b:224
 },
     rotation:0,
     around:{
@@ -4764,14 +4756,14 @@ bbcShape263 = {
 
 bbcShape264 = {
     point:{
-    x:43,
-    y:537
+    x:1595,
+    y:668
 },
     radius:5.0,
     color:{
-    r:54,
-    g:181,
-    b:91
+    r:46,
+    g:226,
+    b:237
 },
     rotation:0,
     around:{
@@ -4782,14 +4774,14 @@ bbcShape264 = {
 
 bbcShape265 = {
     point:{
-    x:1455,
-    y:102
+    x:663,
+    y:427
 },
     radius:5.0,
     color:{
-    r:124,
-    g:26,
-    b:244
+    r:187,
+    g:34,
+    b:43
 },
     rotation:0,
     around:{
@@ -4800,14 +4792,14 @@ bbcShape265 = {
 
 bbcShape266 = {
     point:{
-    x:1713,
-    y:964
+    x:698,
+    y:150
 },
     radius:5.0,
     color:{
-    r:164,
-    g:125,
-    b:91
+    r:187,
+    g:217,
+    b:44
 },
     rotation:0,
     around:{
@@ -4818,14 +4810,14 @@ bbcShape266 = {
 
 bbcShape267 = {
     point:{
-    x:1487,
-    y:784
+    x:1858,
+    y:438
 },
     radius:5.0,
     color:{
-    r:222,
-    g:162,
-    b:186
+    r:31,
+    g:174,
+    b:23
 },
     rotation:0,
     around:{
@@ -4836,14 +4828,14 @@ bbcShape267 = {
 
 bbcShape268 = {
     point:{
-    x:786,
-    y:879
+    x:1083,
+    y:584
 },
     radius:5.0,
     color:{
-    r:55,
-    g:249,
-    b:226
+    r:192,
+    g:217,
+    b:18
 },
     rotation:0,
     around:{
@@ -4854,14 +4846,14 @@ bbcShape268 = {
 
 bbcShape269 = {
     point:{
-    x:249,
-    y:1037
+    x:1155,
+    y:518
 },
     radius:5.0,
     color:{
-    r:222,
-    g:57,
-    b:37
+    r:28,
+    g:218,
+    b:117
 },
     rotation:0,
     around:{
@@ -4872,14 +4864,14 @@ bbcShape269 = {
 
 bbcShape270 = {
     point:{
-    x:1540,
-    y:251
+    x:1211,
+    y:353
 },
     radius:5.0,
     color:{
-    r:183,
-    g:174,
-    b:74
+    r:47,
+    g:251,
+    b:251
 },
     rotation:0,
     around:{
@@ -4890,14 +4882,14 @@ bbcShape270 = {
 
 bbcShape271 = {
     point:{
-    x:1218,
-    y:498
+    x:79,
+    y:451
 },
     radius:5.0,
     color:{
-    r:246,
-    g:12,
-    b:15
+    r:84,
+    g:94,
+    b:62
 },
     rotation:0,
     around:{
@@ -4908,14 +4900,14 @@ bbcShape271 = {
 
 bbcShape272 = {
     point:{
-    x:538,
-    y:458
+    x:1321,
+    y:462
 },
     radius:5.0,
     color:{
-    r:144,
-    g:93,
-    b:222
+    r:20,
+    g:78,
+    b:129
 },
     rotation:0,
     around:{
@@ -4926,14 +4918,14 @@ bbcShape272 = {
 
 bbcShape273 = {
     point:{
-    x:1045,
-    y:789
+    x:1524,
+    y:1052
 },
     radius:5.0,
     color:{
-    r:213,
-    g:159,
-    b:112
+    r:170,
+    g:79,
+    b:164
 },
     rotation:0,
     around:{
@@ -4944,14 +4936,14 @@ bbcShape273 = {
 
 bbcShape274 = {
     point:{
-    x:1435,
-    y:209
+    x:911,
+    y:229
 },
     radius:5.0,
     color:{
-    r:58,
-    g:250,
-    b:141
+    r:97,
+    g:105,
+    b:250
 },
     rotation:0,
     around:{
@@ -4962,14 +4954,14 @@ bbcShape274 = {
 
 bbcShape275 = {
     point:{
-    x:1498,
-    y:368
+    x:1518,
+    y:91
 },
     radius:5.0,
     color:{
-    r:195,
-    g:229,
-    b:244
+    r:168,
+    g:178,
+    b:11
 },
     rotation:0,
     around:{
@@ -4980,14 +4972,14 @@ bbcShape275 = {
 
 bbcShape276 = {
     point:{
-    x:987,
-    y:848
+    x:92,
+    y:675
 },
     radius:5.0,
     color:{
-    r:178,
-    g:109,
-    b:22
+    r:18,
+    g:34,
+    b:134
 },
     rotation:0,
     around:{
@@ -4998,14 +4990,14 @@ bbcShape276 = {
 
 bbcShape277 = {
     point:{
-    x:176,
-    y:103
+    x:1001,
+    y:297
 },
     radius:5.0,
     color:{
-    r:200,
-    g:207,
-    b:90
+    r:249,
+    g:199,
+    b:159
 },
     rotation:0,
     around:{
@@ -5016,14 +5008,14 @@ bbcShape277 = {
 
 bbcShape278 = {
     point:{
-    x:1243,
-    y:860
+    x:1875,
+    y:1068
 },
     radius:5.0,
     color:{
-    r:74,
-    g:172,
-    b:204
+    r:220,
+    g:63,
+    b:152
 },
     rotation:0,
     around:{
@@ -5034,14 +5026,14 @@ bbcShape278 = {
 
 bbcShape279 = {
     point:{
-    x:624,
-    y:838
+    x:552,
+    y:863
 },
     radius:5.0,
     color:{
-    r:168,
-    g:109,
-    b:115
+    r:42,
+    g:43,
+    b:113
 },
     rotation:0,
     around:{
@@ -5052,14 +5044,14 @@ bbcShape279 = {
 
 bbcShape280 = {
     point:{
-    x:50,
-    y:854
+    x:812,
+    y:494
 },
     radius:5.0,
     color:{
-    r:5,
-    g:172,
-    b:146
+    r:19,
+    g:176,
+    b:80
 },
     rotation:0,
     around:{
@@ -5070,14 +5062,14 @@ bbcShape280 = {
 
 bbcShape281 = {
     point:{
-    x:1147,
-    y:604
+    x:249,
+    y:192
 },
     radius:5.0,
     color:{
-    r:156,
-    g:135,
-    b:91
+    r:67,
+    g:147,
+    b:22
 },
     rotation:0,
     around:{
@@ -5088,14 +5080,14 @@ bbcShape281 = {
 
 bbcShape282 = {
     point:{
-    x:320,
-    y:921
+    x:1292,
+    y:339
 },
     radius:5.0,
     color:{
-    r:224,
-    g:196,
-    b:65
+    r:196,
+    g:224,
+    b:163
 },
     rotation:0,
     around:{
@@ -5106,14 +5098,14 @@ bbcShape282 = {
 
 bbcShape283 = {
     point:{
-    x:1080,
-    y:387
+    x:1178,
+    y:1006
 },
     radius:5.0,
     color:{
-    r:71,
-    g:97,
-    b:232
+    r:52,
+    g:93,
+    b:139
 },
     rotation:0,
     around:{
@@ -5124,14 +5116,14 @@ bbcShape283 = {
 
 bbcShape284 = {
     point:{
-    x:1327,
-    y:578
+    x:585,
+    y:682
 },
     radius:5.0,
     color:{
-    r:227,
-    g:145,
-    b:229
+    r:234,
+    g:119,
+    b:250
 },
     rotation:0,
     around:{
@@ -5142,14 +5134,14 @@ bbcShape284 = {
 
 bbcShape285 = {
     point:{
-    x:43,
-    y:205
+    x:1613,
+    y:1057
 },
     radius:5.0,
     color:{
-    r:113,
-    g:210,
-    b:99
+    r:41,
+    g:165,
+    b:87
 },
     rotation:0,
     around:{
@@ -5160,14 +5152,14 @@ bbcShape285 = {
 
 bbcShape286 = {
     point:{
-    x:966,
-    y:374
+    x:441,
+    y:540
 },
     radius:5.0,
     color:{
-    r:231,
-    g:241,
-    b:7
+    r:36,
+    g:200,
+    b:252
 },
     rotation:0,
     around:{
@@ -5178,14 +5170,14 @@ bbcShape286 = {
 
 bbcShape287 = {
     point:{
-    x:1640,
-    y:854
+    x:673,
+    y:900
 },
     radius:5.0,
     color:{
-    r:81,
-    g:60,
-    b:134
+    r:244,
+    g:160,
+    b:19
 },
     rotation:0,
     around:{
@@ -5196,14 +5188,14 @@ bbcShape287 = {
 
 bbcShape288 = {
     point:{
-    x:334,
-    y:1029
+    x:1253,
+    y:823
 },
     radius:5.0,
     color:{
-    r:242,
-    g:17,
-    b:48
+    r:202,
+    g:26,
+    b:189
 },
     rotation:0,
     around:{
@@ -5214,14 +5206,14 @@ bbcShape288 = {
 
 bbcShape289 = {
     point:{
-    x:233,
-    y:662
+    x:438,
+    y:5
 },
     radius:5.0,
     color:{
-    r:166,
-    g:49,
-    b:244
+    r:245,
+    g:203,
+    b:6
 },
     rotation:0,
     around:{
@@ -5232,14 +5224,14 @@ bbcShape289 = {
 
 bbcShape290 = {
     point:{
-    x:1778,
-    y:779
+    x:1660,
+    y:746
 },
     radius:5.0,
     color:{
-    r:202,
-    g:16,
-    b:52
+    r:108,
+    g:141,
+    b:70
 },
     rotation:0,
     around:{
@@ -5250,14 +5242,14 @@ bbcShape290 = {
 
 bbcShape291 = {
     point:{
-    x:1446,
-    y:85
+    x:945,
+    y:128
 },
     radius:5.0,
     color:{
-    r:86,
-    g:221,
-    b:76
+    r:207,
+    g:4,
+    b:215
 },
     rotation:0,
     around:{
@@ -5268,14 +5260,14 @@ bbcShape291 = {
 
 bbcShape292 = {
     point:{
-    x:966,
-    y:798
+    x:1269,
+    y:713
 },
     radius:5.0,
     color:{
-    r:12,
-    g:107,
-    b:235
+    r:209,
+    g:141,
+    b:210
 },
     rotation:0,
     around:{
@@ -5286,14 +5278,14 @@ bbcShape292 = {
 
 bbcShape293 = {
     point:{
-    x:1341,
-    y:577
+    x:249,
+    y:56
 },
     radius:5.0,
     color:{
-    r:248,
-    g:82,
-    b:80
+    r:70,
+    g:187,
+    b:85
 },
     rotation:0,
     around:{
@@ -5304,14 +5296,14 @@ bbcShape293 = {
 
 bbcShape294 = {
     point:{
-    x:204,
-    y:227
+    x:311,
+    y:890
 },
     radius:5.0,
     color:{
     r:14,
-    g:198,
-    b:42
+    g:149,
+    b:120
 },
     rotation:0,
     around:{
@@ -5322,14 +5314,14 @@ bbcShape294 = {
 
 bbcShape295 = {
     point:{
-    x:1162,
-    y:540
+    x:731,
+    y:815
 },
     radius:5.0,
     color:{
-    r:184,
-    g:89,
-    b:203
+    r:31,
+    g:10,
+    b:52
 },
     rotation:0,
     around:{
@@ -5340,14 +5332,14 @@ bbcShape295 = {
 
 bbcShape296 = {
     point:{
-    x:598,
-    y:1019
+    x:1395,
+    y:942
 },
     radius:5.0,
     color:{
-    r:61,
-    g:42,
-    b:109
+    r:46,
+    g:212,
+    b:54
 },
     rotation:0,
     around:{
@@ -5358,14 +5350,14 @@ bbcShape296 = {
 
 bbcShape297 = {
     point:{
-    x:546,
-    y:1037
+    x:556,
+    y:500
 },
     radius:5.0,
     color:{
-    r:20,
-    g:69,
-    b:248
+    r:45,
+    g:107,
+    b:112
 },
     rotation:0,
     around:{
@@ -5376,14 +5368,14 @@ bbcShape297 = {
 
 bbcShape298 = {
     point:{
-    x:641,
-    y:126
+    x:110,
+    y:277
 },
     radius:5.0,
     color:{
-    r:248,
-    g:24,
-    b:181
+    r:89,
+    g:166,
+    b:7
 },
     rotation:0,
     around:{
@@ -5394,14 +5386,14 @@ bbcShape298 = {
 
 bbcShape299 = {
     point:{
-    x:483,
-    y:658
+    x:1085,
+    y:391
 },
     radius:5.0,
     color:{
-    r:42,
-    g:189,
-    b:45
+    r:89,
+    g:190,
+    b:182
 },
     rotation:0,
     around:{
@@ -5412,14 +5404,14 @@ bbcShape299 = {
 
 bbcShape300 = {
     point:{
-    x:402,
-    y:605
+    x:1544,
+    y:289
 },
     radius:5.0,
     color:{
-    r:189,
-    g:1,
-    b:11
+    r:10,
+    g:32,
+    b:122
 },
     rotation:0,
     around:{
@@ -5429,6 +5421,42 @@ bbcShape300 = {
 };
 
 bbcShape301 = {
+    point:{
+    x:99,
+    y:424
+},
+    radius:5.0,
+    color:{
+    r:118,
+    g:225,
+    b:218
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape302 = {
+    point:{
+    x:1647,
+    y:256
+},
+    radius:5.0,
+    color:{
+    r:54,
+    g:180,
+    b:70
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape303 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:0.0,
@@ -5442,51 +5470,9 @@ bbcShape301 = {
 }
 };
 
-bbcShape302 = {
-    point:{
-    x:500.0,
-    y:150.0
-},
-    size:{
-    width:50.0,
-    height:50.0
-},
-    color:{
-    r:255.0,
-    g:0.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape303 = {
-    point:{
-    x:500.0,
-    y:230.0
-},
-    size:{
-    width:50.0,
-    height:50.0
-},
-    color:{
-    r:255.0,
-    g:0.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape304 = {
     point:{
-    x:580.0,
+    x:500.0,
     y:150.0
 },
     size:{
@@ -5507,7 +5493,7 @@ bbcShape304 = {
 
 bbcShape305 = {
     point:{
-    x:580.0,
+    x:500.0,
     y:230.0
 },
     size:{
@@ -5528,7 +5514,7 @@ bbcShape305 = {
 
 bbcShape306 = {
     point:{
-    x:660.0,
+    x:580.0,
     y:150.0
 },
     size:{
@@ -5549,7 +5535,7 @@ bbcShape306 = {
 
 bbcShape307 = {
     point:{
-    x:660.0,
+    x:580.0,
     y:230.0
 },
     size:{
@@ -5570,7 +5556,7 @@ bbcShape307 = {
 
 bbcShape308 = {
     point:{
-    x:740.0,
+    x:660.0,
     y:150.0
 },
     size:{
@@ -5591,7 +5577,7 @@ bbcShape308 = {
 
 bbcShape309 = {
     point:{
-    x:740.0,
+    x:660.0,
     y:230.0
 },
     size:{
@@ -5612,7 +5598,7 @@ bbcShape309 = {
 
 bbcShape310 = {
     point:{
-    x:820.0,
+    x:740.0,
     y:150.0
 },
     size:{
@@ -5633,7 +5619,7 @@ bbcShape310 = {
 
 bbcShape311 = {
     point:{
-    x:820.0,
+    x:740.0,
     y:230.0
 },
     size:{
@@ -5654,7 +5640,7 @@ bbcShape311 = {
 
 bbcShape312 = {
     point:{
-    x:900.0,
+    x:820.0,
     y:150.0
 },
     size:{
@@ -5675,7 +5661,7 @@ bbcShape312 = {
 
 bbcShape313 = {
     point:{
-    x:900.0,
+    x:820.0,
     y:230.0
 },
     size:{
@@ -5696,7 +5682,7 @@ bbcShape313 = {
 
 bbcShape314 = {
     point:{
-    x:980.0,
+    x:900.0,
     y:150.0
 },
     size:{
@@ -5717,7 +5703,7 @@ bbcShape314 = {
 
 bbcShape315 = {
     point:{
-    x:980.0,
+    x:900.0,
     y:230.0
 },
     size:{
@@ -5738,7 +5724,7 @@ bbcShape315 = {
 
 bbcShape316 = {
     point:{
-    x:1060.0,
+    x:980.0,
     y:150.0
 },
     size:{
@@ -5759,7 +5745,7 @@ bbcShape316 = {
 
 bbcShape317 = {
     point:{
-    x:1060.0,
+    x:980.0,
     y:230.0
 },
     size:{
@@ -5780,7 +5766,7 @@ bbcShape317 = {
 
 bbcShape318 = {
     point:{
-    x:1140.0,
+    x:1060.0,
     y:150.0
 },
     size:{
@@ -5801,7 +5787,7 @@ bbcShape318 = {
 
 bbcShape319 = {
     point:{
-    x:1140.0,
+    x:1060.0,
     y:230.0
 },
     size:{
@@ -5822,7 +5808,7 @@ bbcShape319 = {
 
 bbcShape320 = {
     point:{
-    x:1220.0,
+    x:1140.0,
     y:150.0
 },
     size:{
@@ -5843,7 +5829,7 @@ bbcShape320 = {
 
 bbcShape321 = {
     point:{
-    x:1220.0,
+    x:1140.0,
     y:230.0
 },
     size:{
@@ -5863,6 +5849,48 @@ bbcShape321 = {
 };
 
 bbcShape322 = {
+    point:{
+    x:1220.0,
+    y:150.0
+},
+    size:{
+    width:50.0,
+    height:50.0
+},
+    color:{
+    r:255.0,
+    g:0.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape323 = {
+    point:{
+    x:1220.0,
+    y:230.0
+},
+    size:{
+    width:50.0,
+    height:50.0
+},
+    color:{
+    r:255.0,
+    g:0.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape324 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:25.0,
@@ -5876,51 +5904,9 @@ bbcShape322 = {
 }
 };
 
-bbcShape323 = {
-    point:{
-    x:501.0,
-    y:151.0
-},
-    size:{
-    width:48.0,
-    height:48.0
-},
-    color:{
-    r:255.0,
-    g:25.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape324 = {
-    point:{
-    x:501.0,
-    y:231.0
-},
-    size:{
-    width:48.0,
-    height:48.0
-},
-    color:{
-    r:255.0,
-    g:25.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape325 = {
     point:{
-    x:581.0,
+    x:501.0,
     y:151.0
 },
     size:{
@@ -5941,7 +5927,7 @@ bbcShape325 = {
 
 bbcShape326 = {
     point:{
-    x:581.0,
+    x:501.0,
     y:231.0
 },
     size:{
@@ -5962,7 +5948,7 @@ bbcShape326 = {
 
 bbcShape327 = {
     point:{
-    x:661.0,
+    x:581.0,
     y:151.0
 },
     size:{
@@ -5983,7 +5969,7 @@ bbcShape327 = {
 
 bbcShape328 = {
     point:{
-    x:661.0,
+    x:581.0,
     y:231.0
 },
     size:{
@@ -6004,7 +5990,7 @@ bbcShape328 = {
 
 bbcShape329 = {
     point:{
-    x:741.0,
+    x:661.0,
     y:151.0
 },
     size:{
@@ -6025,7 +6011,7 @@ bbcShape329 = {
 
 bbcShape330 = {
     point:{
-    x:741.0,
+    x:661.0,
     y:231.0
 },
     size:{
@@ -6046,7 +6032,7 @@ bbcShape330 = {
 
 bbcShape331 = {
     point:{
-    x:821.0,
+    x:741.0,
     y:151.0
 },
     size:{
@@ -6067,7 +6053,7 @@ bbcShape331 = {
 
 bbcShape332 = {
     point:{
-    x:821.0,
+    x:741.0,
     y:231.0
 },
     size:{
@@ -6088,7 +6074,7 @@ bbcShape332 = {
 
 bbcShape333 = {
     point:{
-    x:901.0,
+    x:821.0,
     y:151.0
 },
     size:{
@@ -6109,7 +6095,7 @@ bbcShape333 = {
 
 bbcShape334 = {
     point:{
-    x:901.0,
+    x:821.0,
     y:231.0
 },
     size:{
@@ -6130,7 +6116,7 @@ bbcShape334 = {
 
 bbcShape335 = {
     point:{
-    x:981.0,
+    x:901.0,
     y:151.0
 },
     size:{
@@ -6151,7 +6137,7 @@ bbcShape335 = {
 
 bbcShape336 = {
     point:{
-    x:981.0,
+    x:901.0,
     y:231.0
 },
     size:{
@@ -6172,7 +6158,7 @@ bbcShape336 = {
 
 bbcShape337 = {
     point:{
-    x:1061.0,
+    x:981.0,
     y:151.0
 },
     size:{
@@ -6193,7 +6179,7 @@ bbcShape337 = {
 
 bbcShape338 = {
     point:{
-    x:1061.0,
+    x:981.0,
     y:231.0
 },
     size:{
@@ -6214,7 +6200,7 @@ bbcShape338 = {
 
 bbcShape339 = {
     point:{
-    x:1141.0,
+    x:1061.0,
     y:151.0
 },
     size:{
@@ -6235,7 +6221,7 @@ bbcShape339 = {
 
 bbcShape340 = {
     point:{
-    x:1141.0,
+    x:1061.0,
     y:231.0
 },
     size:{
@@ -6256,7 +6242,7 @@ bbcShape340 = {
 
 bbcShape341 = {
     point:{
-    x:1221.0,
+    x:1141.0,
     y:151.0
 },
     size:{
@@ -6277,7 +6263,7 @@ bbcShape341 = {
 
 bbcShape342 = {
     point:{
-    x:1221.0,
+    x:1141.0,
     y:231.0
 },
     size:{
@@ -6297,6 +6283,48 @@ bbcShape342 = {
 };
 
 bbcShape343 = {
+    point:{
+    x:1221.0,
+    y:151.0
+},
+    size:{
+    width:48.0,
+    height:48.0
+},
+    color:{
+    r:255.0,
+    g:25.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape344 = {
+    point:{
+    x:1221.0,
+    y:231.0
+},
+    size:{
+    width:48.0,
+    height:48.0
+},
+    color:{
+    r:255.0,
+    g:25.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape345 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:50.0,
@@ -6310,51 +6338,9 @@ bbcShape343 = {
 }
 };
 
-bbcShape344 = {
-    point:{
-    x:502.0,
-    y:152.0
-},
-    size:{
-    width:46.0,
-    height:46.0
-},
-    color:{
-    r:255.0,
-    g:50.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape345 = {
-    point:{
-    x:502.0,
-    y:232.0
-},
-    size:{
-    width:46.0,
-    height:46.0
-},
-    color:{
-    r:255.0,
-    g:50.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape346 = {
     point:{
-    x:582.0,
+    x:502.0,
     y:152.0
 },
     size:{
@@ -6375,7 +6361,7 @@ bbcShape346 = {
 
 bbcShape347 = {
     point:{
-    x:582.0,
+    x:502.0,
     y:232.0
 },
     size:{
@@ -6396,7 +6382,7 @@ bbcShape347 = {
 
 bbcShape348 = {
     point:{
-    x:662.0,
+    x:582.0,
     y:152.0
 },
     size:{
@@ -6417,7 +6403,7 @@ bbcShape348 = {
 
 bbcShape349 = {
     point:{
-    x:662.0,
+    x:582.0,
     y:232.0
 },
     size:{
@@ -6438,7 +6424,7 @@ bbcShape349 = {
 
 bbcShape350 = {
     point:{
-    x:742.0,
+    x:662.0,
     y:152.0
 },
     size:{
@@ -6459,7 +6445,7 @@ bbcShape350 = {
 
 bbcShape351 = {
     point:{
-    x:742.0,
+    x:662.0,
     y:232.0
 },
     size:{
@@ -6480,7 +6466,7 @@ bbcShape351 = {
 
 bbcShape352 = {
     point:{
-    x:822.0,
+    x:742.0,
     y:152.0
 },
     size:{
@@ -6501,7 +6487,7 @@ bbcShape352 = {
 
 bbcShape353 = {
     point:{
-    x:822.0,
+    x:742.0,
     y:232.0
 },
     size:{
@@ -6522,7 +6508,7 @@ bbcShape353 = {
 
 bbcShape354 = {
     point:{
-    x:902.0,
+    x:822.0,
     y:152.0
 },
     size:{
@@ -6543,7 +6529,7 @@ bbcShape354 = {
 
 bbcShape355 = {
     point:{
-    x:902.0,
+    x:822.0,
     y:232.0
 },
     size:{
@@ -6564,7 +6550,7 @@ bbcShape355 = {
 
 bbcShape356 = {
     point:{
-    x:982.0,
+    x:902.0,
     y:152.0
 },
     size:{
@@ -6585,7 +6571,7 @@ bbcShape356 = {
 
 bbcShape357 = {
     point:{
-    x:982.0,
+    x:902.0,
     y:232.0
 },
     size:{
@@ -6606,7 +6592,7 @@ bbcShape357 = {
 
 bbcShape358 = {
     point:{
-    x:1062.0,
+    x:982.0,
     y:152.0
 },
     size:{
@@ -6627,7 +6613,7 @@ bbcShape358 = {
 
 bbcShape359 = {
     point:{
-    x:1062.0,
+    x:982.0,
     y:232.0
 },
     size:{
@@ -6648,7 +6634,7 @@ bbcShape359 = {
 
 bbcShape360 = {
     point:{
-    x:1142.0,
+    x:1062.0,
     y:152.0
 },
     size:{
@@ -6669,7 +6655,7 @@ bbcShape360 = {
 
 bbcShape361 = {
     point:{
-    x:1142.0,
+    x:1062.0,
     y:232.0
 },
     size:{
@@ -6690,7 +6676,7 @@ bbcShape361 = {
 
 bbcShape362 = {
     point:{
-    x:1222.0,
+    x:1142.0,
     y:152.0
 },
     size:{
@@ -6711,7 +6697,7 @@ bbcShape362 = {
 
 bbcShape363 = {
     point:{
-    x:1222.0,
+    x:1142.0,
     y:232.0
 },
     size:{
@@ -6731,6 +6717,48 @@ bbcShape363 = {
 };
 
 bbcShape364 = {
+    point:{
+    x:1222.0,
+    y:152.0
+},
+    size:{
+    width:46.0,
+    height:46.0
+},
+    color:{
+    r:255.0,
+    g:50.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape365 = {
+    point:{
+    x:1222.0,
+    y:232.0
+},
+    size:{
+    width:46.0,
+    height:46.0
+},
+    color:{
+    r:255.0,
+    g:50.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape366 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:75.0,
@@ -6744,51 +6772,9 @@ bbcShape364 = {
 }
 };
 
-bbcShape365 = {
-    point:{
-    x:503.0,
-    y:153.0
-},
-    size:{
-    width:44.0,
-    height:44.0
-},
-    color:{
-    r:255.0,
-    g:75.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape366 = {
-    point:{
-    x:503.0,
-    y:233.0
-},
-    size:{
-    width:44.0,
-    height:44.0
-},
-    color:{
-    r:255.0,
-    g:75.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape367 = {
     point:{
-    x:583.0,
+    x:503.0,
     y:153.0
 },
     size:{
@@ -6809,7 +6795,7 @@ bbcShape367 = {
 
 bbcShape368 = {
     point:{
-    x:583.0,
+    x:503.0,
     y:233.0
 },
     size:{
@@ -6830,7 +6816,7 @@ bbcShape368 = {
 
 bbcShape369 = {
     point:{
-    x:663.0,
+    x:583.0,
     y:153.0
 },
     size:{
@@ -6851,7 +6837,7 @@ bbcShape369 = {
 
 bbcShape370 = {
     point:{
-    x:663.0,
+    x:583.0,
     y:233.0
 },
     size:{
@@ -6872,7 +6858,7 @@ bbcShape370 = {
 
 bbcShape371 = {
     point:{
-    x:743.0,
+    x:663.0,
     y:153.0
 },
     size:{
@@ -6893,7 +6879,7 @@ bbcShape371 = {
 
 bbcShape372 = {
     point:{
-    x:743.0,
+    x:663.0,
     y:233.0
 },
     size:{
@@ -6914,7 +6900,7 @@ bbcShape372 = {
 
 bbcShape373 = {
     point:{
-    x:823.0,
+    x:743.0,
     y:153.0
 },
     size:{
@@ -6935,7 +6921,7 @@ bbcShape373 = {
 
 bbcShape374 = {
     point:{
-    x:823.0,
+    x:743.0,
     y:233.0
 },
     size:{
@@ -6956,7 +6942,7 @@ bbcShape374 = {
 
 bbcShape375 = {
     point:{
-    x:903.0,
+    x:823.0,
     y:153.0
 },
     size:{
@@ -6977,7 +6963,7 @@ bbcShape375 = {
 
 bbcShape376 = {
     point:{
-    x:903.0,
+    x:823.0,
     y:233.0
 },
     size:{
@@ -6998,7 +6984,7 @@ bbcShape376 = {
 
 bbcShape377 = {
     point:{
-    x:983.0,
+    x:903.0,
     y:153.0
 },
     size:{
@@ -7019,7 +7005,7 @@ bbcShape377 = {
 
 bbcShape378 = {
     point:{
-    x:983.0,
+    x:903.0,
     y:233.0
 },
     size:{
@@ -7040,7 +7026,7 @@ bbcShape378 = {
 
 bbcShape379 = {
     point:{
-    x:1063.0,
+    x:983.0,
     y:153.0
 },
     size:{
@@ -7061,7 +7047,7 @@ bbcShape379 = {
 
 bbcShape380 = {
     point:{
-    x:1063.0,
+    x:983.0,
     y:233.0
 },
     size:{
@@ -7082,7 +7068,7 @@ bbcShape380 = {
 
 bbcShape381 = {
     point:{
-    x:1143.0,
+    x:1063.0,
     y:153.0
 },
     size:{
@@ -7103,7 +7089,7 @@ bbcShape381 = {
 
 bbcShape382 = {
     point:{
-    x:1143.0,
+    x:1063.0,
     y:233.0
 },
     size:{
@@ -7124,7 +7110,7 @@ bbcShape382 = {
 
 bbcShape383 = {
     point:{
-    x:1223.0,
+    x:1143.0,
     y:153.0
 },
     size:{
@@ -7145,7 +7131,7 @@ bbcShape383 = {
 
 bbcShape384 = {
     point:{
-    x:1223.0,
+    x:1143.0,
     y:233.0
 },
     size:{
@@ -7165,6 +7151,48 @@ bbcShape384 = {
 };
 
 bbcShape385 = {
+    point:{
+    x:1223.0,
+    y:153.0
+},
+    size:{
+    width:44.0,
+    height:44.0
+},
+    color:{
+    r:255.0,
+    g:75.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape386 = {
+    point:{
+    x:1223.0,
+    y:233.0
+},
+    size:{
+    width:44.0,
+    height:44.0
+},
+    color:{
+    r:255.0,
+    g:75.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape387 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:100.0,
@@ -7178,51 +7206,9 @@ bbcShape385 = {
 }
 };
 
-bbcShape386 = {
-    point:{
-    x:504.0,
-    y:154.0
-},
-    size:{
-    width:42.0,
-    height:42.0
-},
-    color:{
-    r:255.0,
-    g:100.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape387 = {
-    point:{
-    x:504.0,
-    y:234.0
-},
-    size:{
-    width:42.0,
-    height:42.0
-},
-    color:{
-    r:255.0,
-    g:100.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape388 = {
     point:{
-    x:584.0,
+    x:504.0,
     y:154.0
 },
     size:{
@@ -7243,7 +7229,7 @@ bbcShape388 = {
 
 bbcShape389 = {
     point:{
-    x:584.0,
+    x:504.0,
     y:234.0
 },
     size:{
@@ -7264,7 +7250,7 @@ bbcShape389 = {
 
 bbcShape390 = {
     point:{
-    x:664.0,
+    x:584.0,
     y:154.0
 },
     size:{
@@ -7285,7 +7271,7 @@ bbcShape390 = {
 
 bbcShape391 = {
     point:{
-    x:664.0,
+    x:584.0,
     y:234.0
 },
     size:{
@@ -7306,7 +7292,7 @@ bbcShape391 = {
 
 bbcShape392 = {
     point:{
-    x:744.0,
+    x:664.0,
     y:154.0
 },
     size:{
@@ -7327,7 +7313,7 @@ bbcShape392 = {
 
 bbcShape393 = {
     point:{
-    x:744.0,
+    x:664.0,
     y:234.0
 },
     size:{
@@ -7348,7 +7334,7 @@ bbcShape393 = {
 
 bbcShape394 = {
     point:{
-    x:824.0,
+    x:744.0,
     y:154.0
 },
     size:{
@@ -7369,7 +7355,7 @@ bbcShape394 = {
 
 bbcShape395 = {
     point:{
-    x:824.0,
+    x:744.0,
     y:234.0
 },
     size:{
@@ -7390,7 +7376,7 @@ bbcShape395 = {
 
 bbcShape396 = {
     point:{
-    x:904.0,
+    x:824.0,
     y:154.0
 },
     size:{
@@ -7411,7 +7397,7 @@ bbcShape396 = {
 
 bbcShape397 = {
     point:{
-    x:904.0,
+    x:824.0,
     y:234.0
 },
     size:{
@@ -7432,7 +7418,7 @@ bbcShape397 = {
 
 bbcShape398 = {
     point:{
-    x:984.0,
+    x:904.0,
     y:154.0
 },
     size:{
@@ -7453,7 +7439,7 @@ bbcShape398 = {
 
 bbcShape399 = {
     point:{
-    x:984.0,
+    x:904.0,
     y:234.0
 },
     size:{
@@ -7474,7 +7460,7 @@ bbcShape399 = {
 
 bbcShape400 = {
     point:{
-    x:1064.0,
+    x:984.0,
     y:154.0
 },
     size:{
@@ -7495,7 +7481,7 @@ bbcShape400 = {
 
 bbcShape401 = {
     point:{
-    x:1064.0,
+    x:984.0,
     y:234.0
 },
     size:{
@@ -7516,7 +7502,7 @@ bbcShape401 = {
 
 bbcShape402 = {
     point:{
-    x:1144.0,
+    x:1064.0,
     y:154.0
 },
     size:{
@@ -7537,7 +7523,7 @@ bbcShape402 = {
 
 bbcShape403 = {
     point:{
-    x:1144.0,
+    x:1064.0,
     y:234.0
 },
     size:{
@@ -7558,7 +7544,7 @@ bbcShape403 = {
 
 bbcShape404 = {
     point:{
-    x:1224.0,
+    x:1144.0,
     y:154.0
 },
     size:{
@@ -7579,7 +7565,7 @@ bbcShape404 = {
 
 bbcShape405 = {
     point:{
-    x:1224.0,
+    x:1144.0,
     y:234.0
 },
     size:{
@@ -7599,6 +7585,48 @@ bbcShape405 = {
 };
 
 bbcShape406 = {
+    point:{
+    x:1224.0,
+    y:154.0
+},
+    size:{
+    width:42.0,
+    height:42.0
+},
+    color:{
+    r:255.0,
+    g:100.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape407 = {
+    point:{
+    x:1224.0,
+    y:234.0
+},
+    size:{
+    width:42.0,
+    height:42.0
+},
+    color:{
+    r:255.0,
+    g:100.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape408 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:125.0,
@@ -7612,51 +7640,9 @@ bbcShape406 = {
 }
 };
 
-bbcShape407 = {
-    point:{
-    x:505.0,
-    y:155.0
-},
-    size:{
-    width:40.0,
-    height:40.0
-},
-    color:{
-    r:255.0,
-    g:125.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape408 = {
-    point:{
-    x:505.0,
-    y:235.0
-},
-    size:{
-    width:40.0,
-    height:40.0
-},
-    color:{
-    r:255.0,
-    g:125.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape409 = {
     point:{
-    x:585.0,
+    x:505.0,
     y:155.0
 },
     size:{
@@ -7677,7 +7663,7 @@ bbcShape409 = {
 
 bbcShape410 = {
     point:{
-    x:585.0,
+    x:505.0,
     y:235.0
 },
     size:{
@@ -7698,7 +7684,7 @@ bbcShape410 = {
 
 bbcShape411 = {
     point:{
-    x:665.0,
+    x:585.0,
     y:155.0
 },
     size:{
@@ -7719,7 +7705,7 @@ bbcShape411 = {
 
 bbcShape412 = {
     point:{
-    x:665.0,
+    x:585.0,
     y:235.0
 },
     size:{
@@ -7740,7 +7726,7 @@ bbcShape412 = {
 
 bbcShape413 = {
     point:{
-    x:745.0,
+    x:665.0,
     y:155.0
 },
     size:{
@@ -7761,7 +7747,7 @@ bbcShape413 = {
 
 bbcShape414 = {
     point:{
-    x:745.0,
+    x:665.0,
     y:235.0
 },
     size:{
@@ -7782,7 +7768,7 @@ bbcShape414 = {
 
 bbcShape415 = {
     point:{
-    x:825.0,
+    x:745.0,
     y:155.0
 },
     size:{
@@ -7803,7 +7789,7 @@ bbcShape415 = {
 
 bbcShape416 = {
     point:{
-    x:825.0,
+    x:745.0,
     y:235.0
 },
     size:{
@@ -7824,7 +7810,7 @@ bbcShape416 = {
 
 bbcShape417 = {
     point:{
-    x:905.0,
+    x:825.0,
     y:155.0
 },
     size:{
@@ -7845,7 +7831,7 @@ bbcShape417 = {
 
 bbcShape418 = {
     point:{
-    x:905.0,
+    x:825.0,
     y:235.0
 },
     size:{
@@ -7866,7 +7852,7 @@ bbcShape418 = {
 
 bbcShape419 = {
     point:{
-    x:985.0,
+    x:905.0,
     y:155.0
 },
     size:{
@@ -7887,7 +7873,7 @@ bbcShape419 = {
 
 bbcShape420 = {
     point:{
-    x:985.0,
+    x:905.0,
     y:235.0
 },
     size:{
@@ -7908,7 +7894,7 @@ bbcShape420 = {
 
 bbcShape421 = {
     point:{
-    x:1065.0,
+    x:985.0,
     y:155.0
 },
     size:{
@@ -7929,7 +7915,7 @@ bbcShape421 = {
 
 bbcShape422 = {
     point:{
-    x:1065.0,
+    x:985.0,
     y:235.0
 },
     size:{
@@ -7950,7 +7936,7 @@ bbcShape422 = {
 
 bbcShape423 = {
     point:{
-    x:1145.0,
+    x:1065.0,
     y:155.0
 },
     size:{
@@ -7971,7 +7957,7 @@ bbcShape423 = {
 
 bbcShape424 = {
     point:{
-    x:1145.0,
+    x:1065.0,
     y:235.0
 },
     size:{
@@ -7992,7 +7978,7 @@ bbcShape424 = {
 
 bbcShape425 = {
     point:{
-    x:1225.0,
+    x:1145.0,
     y:155.0
 },
     size:{
@@ -8013,7 +7999,7 @@ bbcShape425 = {
 
 bbcShape426 = {
     point:{
-    x:1225.0,
+    x:1145.0,
     y:235.0
 },
     size:{
@@ -8033,6 +8019,48 @@ bbcShape426 = {
 };
 
 bbcShape427 = {
+    point:{
+    x:1225.0,
+    y:155.0
+},
+    size:{
+    width:40.0,
+    height:40.0
+},
+    color:{
+    r:255.0,
+    g:125.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape428 = {
+    point:{
+    x:1225.0,
+    y:235.0
+},
+    size:{
+    width:40.0,
+    height:40.0
+},
+    color:{
+    r:255.0,
+    g:125.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape429 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:150.0,
@@ -8046,51 +8074,9 @@ bbcShape427 = {
 }
 };
 
-bbcShape428 = {
-    point:{
-    x:506.0,
-    y:156.0
-},
-    size:{
-    width:38.0,
-    height:38.0
-},
-    color:{
-    r:255.0,
-    g:150.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape429 = {
-    point:{
-    x:506.0,
-    y:236.0
-},
-    size:{
-    width:38.0,
-    height:38.0
-},
-    color:{
-    r:255.0,
-    g:150.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape430 = {
     point:{
-    x:586.0,
+    x:506.0,
     y:156.0
 },
     size:{
@@ -8111,7 +8097,7 @@ bbcShape430 = {
 
 bbcShape431 = {
     point:{
-    x:586.0,
+    x:506.0,
     y:236.0
 },
     size:{
@@ -8132,7 +8118,7 @@ bbcShape431 = {
 
 bbcShape432 = {
     point:{
-    x:666.0,
+    x:586.0,
     y:156.0
 },
     size:{
@@ -8153,7 +8139,7 @@ bbcShape432 = {
 
 bbcShape433 = {
     point:{
-    x:666.0,
+    x:586.0,
     y:236.0
 },
     size:{
@@ -8174,7 +8160,7 @@ bbcShape433 = {
 
 bbcShape434 = {
     point:{
-    x:746.0,
+    x:666.0,
     y:156.0
 },
     size:{
@@ -8195,7 +8181,7 @@ bbcShape434 = {
 
 bbcShape435 = {
     point:{
-    x:746.0,
+    x:666.0,
     y:236.0
 },
     size:{
@@ -8216,7 +8202,7 @@ bbcShape435 = {
 
 bbcShape436 = {
     point:{
-    x:826.0,
+    x:746.0,
     y:156.0
 },
     size:{
@@ -8237,7 +8223,7 @@ bbcShape436 = {
 
 bbcShape437 = {
     point:{
-    x:826.0,
+    x:746.0,
     y:236.0
 },
     size:{
@@ -8258,7 +8244,7 @@ bbcShape437 = {
 
 bbcShape438 = {
     point:{
-    x:906.0,
+    x:826.0,
     y:156.0
 },
     size:{
@@ -8279,7 +8265,7 @@ bbcShape438 = {
 
 bbcShape439 = {
     point:{
-    x:906.0,
+    x:826.0,
     y:236.0
 },
     size:{
@@ -8300,7 +8286,7 @@ bbcShape439 = {
 
 bbcShape440 = {
     point:{
-    x:986.0,
+    x:906.0,
     y:156.0
 },
     size:{
@@ -8321,7 +8307,7 @@ bbcShape440 = {
 
 bbcShape441 = {
     point:{
-    x:986.0,
+    x:906.0,
     y:236.0
 },
     size:{
@@ -8342,7 +8328,7 @@ bbcShape441 = {
 
 bbcShape442 = {
     point:{
-    x:1066.0,
+    x:986.0,
     y:156.0
 },
     size:{
@@ -8363,7 +8349,7 @@ bbcShape442 = {
 
 bbcShape443 = {
     point:{
-    x:1066.0,
+    x:986.0,
     y:236.0
 },
     size:{
@@ -8384,7 +8370,7 @@ bbcShape443 = {
 
 bbcShape444 = {
     point:{
-    x:1146.0,
+    x:1066.0,
     y:156.0
 },
     size:{
@@ -8405,7 +8391,7 @@ bbcShape444 = {
 
 bbcShape445 = {
     point:{
-    x:1146.0,
+    x:1066.0,
     y:236.0
 },
     size:{
@@ -8426,7 +8412,7 @@ bbcShape445 = {
 
 bbcShape446 = {
     point:{
-    x:1226.0,
+    x:1146.0,
     y:156.0
 },
     size:{
@@ -8447,7 +8433,7 @@ bbcShape446 = {
 
 bbcShape447 = {
     point:{
-    x:1226.0,
+    x:1146.0,
     y:236.0
 },
     size:{
@@ -8467,6 +8453,48 @@ bbcShape447 = {
 };
 
 bbcShape448 = {
+    point:{
+    x:1226.0,
+    y:156.0
+},
+    size:{
+    width:38.0,
+    height:38.0
+},
+    color:{
+    r:255.0,
+    g:150.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape449 = {
+    point:{
+    x:1226.0,
+    y:236.0
+},
+    size:{
+    width:38.0,
+    height:38.0
+},
+    color:{
+    r:255.0,
+    g:150.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape450 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:175.0,
@@ -8480,51 +8508,9 @@ bbcShape448 = {
 }
 };
 
-bbcShape449 = {
-    point:{
-    x:507.0,
-    y:157.0
-},
-    size:{
-    width:36.0,
-    height:36.0
-},
-    color:{
-    r:255.0,
-    g:175.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape450 = {
-    point:{
-    x:507.0,
-    y:237.0
-},
-    size:{
-    width:36.0,
-    height:36.0
-},
-    color:{
-    r:255.0,
-    g:175.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape451 = {
     point:{
-    x:587.0,
+    x:507.0,
     y:157.0
 },
     size:{
@@ -8545,7 +8531,7 @@ bbcShape451 = {
 
 bbcShape452 = {
     point:{
-    x:587.0,
+    x:507.0,
     y:237.0
 },
     size:{
@@ -8566,7 +8552,7 @@ bbcShape452 = {
 
 bbcShape453 = {
     point:{
-    x:667.0,
+    x:587.0,
     y:157.0
 },
     size:{
@@ -8587,7 +8573,7 @@ bbcShape453 = {
 
 bbcShape454 = {
     point:{
-    x:667.0,
+    x:587.0,
     y:237.0
 },
     size:{
@@ -8608,7 +8594,7 @@ bbcShape454 = {
 
 bbcShape455 = {
     point:{
-    x:747.0,
+    x:667.0,
     y:157.0
 },
     size:{
@@ -8629,7 +8615,7 @@ bbcShape455 = {
 
 bbcShape456 = {
     point:{
-    x:747.0,
+    x:667.0,
     y:237.0
 },
     size:{
@@ -8650,7 +8636,7 @@ bbcShape456 = {
 
 bbcShape457 = {
     point:{
-    x:827.0,
+    x:747.0,
     y:157.0
 },
     size:{
@@ -8671,7 +8657,7 @@ bbcShape457 = {
 
 bbcShape458 = {
     point:{
-    x:827.0,
+    x:747.0,
     y:237.0
 },
     size:{
@@ -8692,7 +8678,7 @@ bbcShape458 = {
 
 bbcShape459 = {
     point:{
-    x:907.0,
+    x:827.0,
     y:157.0
 },
     size:{
@@ -8713,7 +8699,7 @@ bbcShape459 = {
 
 bbcShape460 = {
     point:{
-    x:907.0,
+    x:827.0,
     y:237.0
 },
     size:{
@@ -8734,7 +8720,7 @@ bbcShape460 = {
 
 bbcShape461 = {
     point:{
-    x:987.0,
+    x:907.0,
     y:157.0
 },
     size:{
@@ -8755,7 +8741,7 @@ bbcShape461 = {
 
 bbcShape462 = {
     point:{
-    x:987.0,
+    x:907.0,
     y:237.0
 },
     size:{
@@ -8776,7 +8762,7 @@ bbcShape462 = {
 
 bbcShape463 = {
     point:{
-    x:1067.0,
+    x:987.0,
     y:157.0
 },
     size:{
@@ -8797,7 +8783,7 @@ bbcShape463 = {
 
 bbcShape464 = {
     point:{
-    x:1067.0,
+    x:987.0,
     y:237.0
 },
     size:{
@@ -8818,7 +8804,7 @@ bbcShape464 = {
 
 bbcShape465 = {
     point:{
-    x:1147.0,
+    x:1067.0,
     y:157.0
 },
     size:{
@@ -8839,7 +8825,7 @@ bbcShape465 = {
 
 bbcShape466 = {
     point:{
-    x:1147.0,
+    x:1067.0,
     y:237.0
 },
     size:{
@@ -8860,7 +8846,7 @@ bbcShape466 = {
 
 bbcShape467 = {
     point:{
-    x:1227.0,
+    x:1147.0,
     y:157.0
 },
     size:{
@@ -8881,7 +8867,7 @@ bbcShape467 = {
 
 bbcShape468 = {
     point:{
-    x:1227.0,
+    x:1147.0,
     y:237.0
 },
     size:{
@@ -8901,6 +8887,48 @@ bbcShape468 = {
 };
 
 bbcShape469 = {
+    point:{
+    x:1227.0,
+    y:157.0
+},
+    size:{
+    width:36.0,
+    height:36.0
+},
+    color:{
+    r:255.0,
+    g:175.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape470 = {
+    point:{
+    x:1227.0,
+    y:237.0
+},
+    size:{
+    width:36.0,
+    height:36.0
+},
+    color:{
+    r:255.0,
+    g:175.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape471 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:200.0,
@@ -8914,51 +8942,9 @@ bbcShape469 = {
 }
 };
 
-bbcShape470 = {
-    point:{
-    x:508.0,
-    y:158.0
-},
-    size:{
-    width:34.0,
-    height:34.0
-},
-    color:{
-    r:255.0,
-    g:200.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape471 = {
-    point:{
-    x:508.0,
-    y:238.0
-},
-    size:{
-    width:34.0,
-    height:34.0
-},
-    color:{
-    r:255.0,
-    g:200.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape472 = {
     point:{
-    x:588.0,
+    x:508.0,
     y:158.0
 },
     size:{
@@ -8979,7 +8965,7 @@ bbcShape472 = {
 
 bbcShape473 = {
     point:{
-    x:588.0,
+    x:508.0,
     y:238.0
 },
     size:{
@@ -9000,7 +8986,7 @@ bbcShape473 = {
 
 bbcShape474 = {
     point:{
-    x:668.0,
+    x:588.0,
     y:158.0
 },
     size:{
@@ -9021,7 +9007,7 @@ bbcShape474 = {
 
 bbcShape475 = {
     point:{
-    x:668.0,
+    x:588.0,
     y:238.0
 },
     size:{
@@ -9042,7 +9028,7 @@ bbcShape475 = {
 
 bbcShape476 = {
     point:{
-    x:748.0,
+    x:668.0,
     y:158.0
 },
     size:{
@@ -9063,7 +9049,7 @@ bbcShape476 = {
 
 bbcShape477 = {
     point:{
-    x:748.0,
+    x:668.0,
     y:238.0
 },
     size:{
@@ -9084,7 +9070,7 @@ bbcShape477 = {
 
 bbcShape478 = {
     point:{
-    x:828.0,
+    x:748.0,
     y:158.0
 },
     size:{
@@ -9105,7 +9091,7 @@ bbcShape478 = {
 
 bbcShape479 = {
     point:{
-    x:828.0,
+    x:748.0,
     y:238.0
 },
     size:{
@@ -9126,7 +9112,7 @@ bbcShape479 = {
 
 bbcShape480 = {
     point:{
-    x:908.0,
+    x:828.0,
     y:158.0
 },
     size:{
@@ -9147,7 +9133,7 @@ bbcShape480 = {
 
 bbcShape481 = {
     point:{
-    x:908.0,
+    x:828.0,
     y:238.0
 },
     size:{
@@ -9168,7 +9154,7 @@ bbcShape481 = {
 
 bbcShape482 = {
     point:{
-    x:988.0,
+    x:908.0,
     y:158.0
 },
     size:{
@@ -9189,7 +9175,7 @@ bbcShape482 = {
 
 bbcShape483 = {
     point:{
-    x:988.0,
+    x:908.0,
     y:238.0
 },
     size:{
@@ -9210,7 +9196,7 @@ bbcShape483 = {
 
 bbcShape484 = {
     point:{
-    x:1068.0,
+    x:988.0,
     y:158.0
 },
     size:{
@@ -9231,7 +9217,7 @@ bbcShape484 = {
 
 bbcShape485 = {
     point:{
-    x:1068.0,
+    x:988.0,
     y:238.0
 },
     size:{
@@ -9252,7 +9238,7 @@ bbcShape485 = {
 
 bbcShape486 = {
     point:{
-    x:1148.0,
+    x:1068.0,
     y:158.0
 },
     size:{
@@ -9273,7 +9259,7 @@ bbcShape486 = {
 
 bbcShape487 = {
     point:{
-    x:1148.0,
+    x:1068.0,
     y:238.0
 },
     size:{
@@ -9294,7 +9280,7 @@ bbcShape487 = {
 
 bbcShape488 = {
     point:{
-    x:1228.0,
+    x:1148.0,
     y:158.0
 },
     size:{
@@ -9315,7 +9301,7 @@ bbcShape488 = {
 
 bbcShape489 = {
     point:{
-    x:1228.0,
+    x:1148.0,
     y:238.0
 },
     size:{
@@ -9335,6 +9321,48 @@ bbcShape489 = {
 };
 
 bbcShape490 = {
+    point:{
+    x:1228.0,
+    y:158.0
+},
+    size:{
+    width:34.0,
+    height:34.0
+},
+    color:{
+    r:255.0,
+    g:200.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape491 = {
+    point:{
+    x:1228.0,
+    y:238.0
+},
+    size:{
+    width:34.0,
+    height:34.0
+},
+    color:{
+    r:255.0,
+    g:200.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape492 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:225.0,
@@ -9348,51 +9376,9 @@ bbcShape490 = {
 }
 };
 
-bbcShape491 = {
-    point:{
-    x:509.0,
-    y:159.0
-},
-    size:{
-    width:32.0,
-    height:32.0
-},
-    color:{
-    r:255.0,
-    g:225.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape492 = {
-    point:{
-    x:509.0,
-    y:239.0
-},
-    size:{
-    width:32.0,
-    height:32.0
-},
-    color:{
-    r:255.0,
-    g:225.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape493 = {
     point:{
-    x:589.0,
+    x:509.0,
     y:159.0
 },
     size:{
@@ -9413,7 +9399,7 @@ bbcShape493 = {
 
 bbcShape494 = {
     point:{
-    x:589.0,
+    x:509.0,
     y:239.0
 },
     size:{
@@ -9434,7 +9420,7 @@ bbcShape494 = {
 
 bbcShape495 = {
     point:{
-    x:669.0,
+    x:589.0,
     y:159.0
 },
     size:{
@@ -9455,7 +9441,7 @@ bbcShape495 = {
 
 bbcShape496 = {
     point:{
-    x:669.0,
+    x:589.0,
     y:239.0
 },
     size:{
@@ -9476,7 +9462,7 @@ bbcShape496 = {
 
 bbcShape497 = {
     point:{
-    x:749.0,
+    x:669.0,
     y:159.0
 },
     size:{
@@ -9497,7 +9483,7 @@ bbcShape497 = {
 
 bbcShape498 = {
     point:{
-    x:749.0,
+    x:669.0,
     y:239.0
 },
     size:{
@@ -9518,7 +9504,7 @@ bbcShape498 = {
 
 bbcShape499 = {
     point:{
-    x:829.0,
+    x:749.0,
     y:159.0
 },
     size:{
@@ -9539,7 +9525,7 @@ bbcShape499 = {
 
 bbcShape500 = {
     point:{
-    x:829.0,
+    x:749.0,
     y:239.0
 },
     size:{
@@ -9560,7 +9546,7 @@ bbcShape500 = {
 
 bbcShape501 = {
     point:{
-    x:909.0,
+    x:829.0,
     y:159.0
 },
     size:{
@@ -9581,7 +9567,7 @@ bbcShape501 = {
 
 bbcShape502 = {
     point:{
-    x:909.0,
+    x:829.0,
     y:239.0
 },
     size:{
@@ -9602,7 +9588,7 @@ bbcShape502 = {
 
 bbcShape503 = {
     point:{
-    x:989.0,
+    x:909.0,
     y:159.0
 },
     size:{
@@ -9623,7 +9609,7 @@ bbcShape503 = {
 
 bbcShape504 = {
     point:{
-    x:989.0,
+    x:909.0,
     y:239.0
 },
     size:{
@@ -9644,7 +9630,7 @@ bbcShape504 = {
 
 bbcShape505 = {
     point:{
-    x:1069.0,
+    x:989.0,
     y:159.0
 },
     size:{
@@ -9665,7 +9651,7 @@ bbcShape505 = {
 
 bbcShape506 = {
     point:{
-    x:1069.0,
+    x:989.0,
     y:239.0
 },
     size:{
@@ -9686,7 +9672,7 @@ bbcShape506 = {
 
 bbcShape507 = {
     point:{
-    x:1149.0,
+    x:1069.0,
     y:159.0
 },
     size:{
@@ -9707,7 +9693,7 @@ bbcShape507 = {
 
 bbcShape508 = {
     point:{
-    x:1149.0,
+    x:1069.0,
     y:239.0
 },
     size:{
@@ -9728,7 +9714,7 @@ bbcShape508 = {
 
 bbcShape509 = {
     point:{
-    x:1229.0,
+    x:1149.0,
     y:159.0
 },
     size:{
@@ -9749,7 +9735,7 @@ bbcShape509 = {
 
 bbcShape510 = {
     point:{
-    x:1229.0,
+    x:1149.0,
     y:239.0
 },
     size:{
@@ -9769,6 +9755,48 @@ bbcShape510 = {
 };
 
 bbcShape511 = {
+    point:{
+    x:1229.0,
+    y:159.0
+},
+    size:{
+    width:32.0,
+    height:32.0
+},
+    color:{
+    r:255.0,
+    g:225.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape512 = {
+    point:{
+    x:1229.0,
+    y:239.0
+},
+    size:{
+    width:32.0,
+    height:32.0
+},
+    color:{
+    r:255.0,
+    g:225.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape513 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:250.0,
@@ -9782,51 +9810,9 @@ bbcShape511 = {
 }
 };
 
-bbcShape512 = {
-    point:{
-    x:510.0,
-    y:160.0
-},
-    size:{
-    width:30.0,
-    height:30.0
-},
-    color:{
-    r:255.0,
-    g:250.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape513 = {
-    point:{
-    x:510.0,
-    y:240.0
-},
-    size:{
-    width:30.0,
-    height:30.0
-},
-    color:{
-    r:255.0,
-    g:250.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape514 = {
     point:{
-    x:590.0,
+    x:510.0,
     y:160.0
 },
     size:{
@@ -9847,7 +9833,7 @@ bbcShape514 = {
 
 bbcShape515 = {
     point:{
-    x:590.0,
+    x:510.0,
     y:240.0
 },
     size:{
@@ -9868,7 +9854,7 @@ bbcShape515 = {
 
 bbcShape516 = {
     point:{
-    x:670.0,
+    x:590.0,
     y:160.0
 },
     size:{
@@ -9889,7 +9875,7 @@ bbcShape516 = {
 
 bbcShape517 = {
     point:{
-    x:670.0,
+    x:590.0,
     y:240.0
 },
     size:{
@@ -9910,7 +9896,7 @@ bbcShape517 = {
 
 bbcShape518 = {
     point:{
-    x:750.0,
+    x:670.0,
     y:160.0
 },
     size:{
@@ -9931,7 +9917,7 @@ bbcShape518 = {
 
 bbcShape519 = {
     point:{
-    x:750.0,
+    x:670.0,
     y:240.0
 },
     size:{
@@ -9952,7 +9938,7 @@ bbcShape519 = {
 
 bbcShape520 = {
     point:{
-    x:830.0,
+    x:750.0,
     y:160.0
 },
     size:{
@@ -9973,7 +9959,7 @@ bbcShape520 = {
 
 bbcShape521 = {
     point:{
-    x:830.0,
+    x:750.0,
     y:240.0
 },
     size:{
@@ -9994,7 +9980,7 @@ bbcShape521 = {
 
 bbcShape522 = {
     point:{
-    x:910.0,
+    x:830.0,
     y:160.0
 },
     size:{
@@ -10015,7 +10001,7 @@ bbcShape522 = {
 
 bbcShape523 = {
     point:{
-    x:910.0,
+    x:830.0,
     y:240.0
 },
     size:{
@@ -10036,7 +10022,7 @@ bbcShape523 = {
 
 bbcShape524 = {
     point:{
-    x:990.0,
+    x:910.0,
     y:160.0
 },
     size:{
@@ -10057,7 +10043,7 @@ bbcShape524 = {
 
 bbcShape525 = {
     point:{
-    x:990.0,
+    x:910.0,
     y:240.0
 },
     size:{
@@ -10078,7 +10064,7 @@ bbcShape525 = {
 
 bbcShape526 = {
     point:{
-    x:1070.0,
+    x:990.0,
     y:160.0
 },
     size:{
@@ -10099,7 +10085,7 @@ bbcShape526 = {
 
 bbcShape527 = {
     point:{
-    x:1070.0,
+    x:990.0,
     y:240.0
 },
     size:{
@@ -10120,7 +10106,7 @@ bbcShape527 = {
 
 bbcShape528 = {
     point:{
-    x:1150.0,
+    x:1070.0,
     y:160.0
 },
     size:{
@@ -10141,7 +10127,7 @@ bbcShape528 = {
 
 bbcShape529 = {
     point:{
-    x:1150.0,
+    x:1070.0,
     y:240.0
 },
     size:{
@@ -10162,7 +10148,7 @@ bbcShape529 = {
 
 bbcShape530 = {
     point:{
-    x:1230.0,
+    x:1150.0,
     y:160.0
 },
     size:{
@@ -10183,7 +10169,7 @@ bbcShape530 = {
 
 bbcShape531 = {
     point:{
-    x:1230.0,
+    x:1150.0,
     y:240.0
 },
     size:{
@@ -10203,6 +10189,48 @@ bbcShape531 = {
 };
 
 bbcShape532 = {
+    point:{
+    x:1230.0,
+    y:160.0
+},
+    size:{
+    width:30.0,
+    height:30.0
+},
+    color:{
+    r:255.0,
+    g:250.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape533 = {
+    point:{
+    x:1230.0,
+    y:240.0
+},
+    size:{
+    width:30.0,
+    height:30.0
+},
+    color:{
+    r:255.0,
+    g:250.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape534 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:275.0,
@@ -10216,51 +10244,9 @@ bbcShape532 = {
 }
 };
 
-bbcShape533 = {
-    point:{
-    x:511.0,
-    y:161.0
-},
-    size:{
-    width:28.0,
-    height:28.0
-},
-    color:{
-    r:255.0,
-    g:275.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape534 = {
-    point:{
-    x:511.0,
-    y:241.0
-},
-    size:{
-    width:28.0,
-    height:28.0
-},
-    color:{
-    r:255.0,
-    g:275.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape535 = {
     point:{
-    x:591.0,
+    x:511.0,
     y:161.0
 },
     size:{
@@ -10281,7 +10267,7 @@ bbcShape535 = {
 
 bbcShape536 = {
     point:{
-    x:591.0,
+    x:511.0,
     y:241.0
 },
     size:{
@@ -10302,7 +10288,7 @@ bbcShape536 = {
 
 bbcShape537 = {
     point:{
-    x:671.0,
+    x:591.0,
     y:161.0
 },
     size:{
@@ -10323,7 +10309,7 @@ bbcShape537 = {
 
 bbcShape538 = {
     point:{
-    x:671.0,
+    x:591.0,
     y:241.0
 },
     size:{
@@ -10344,7 +10330,7 @@ bbcShape538 = {
 
 bbcShape539 = {
     point:{
-    x:751.0,
+    x:671.0,
     y:161.0
 },
     size:{
@@ -10365,7 +10351,7 @@ bbcShape539 = {
 
 bbcShape540 = {
     point:{
-    x:751.0,
+    x:671.0,
     y:241.0
 },
     size:{
@@ -10386,7 +10372,7 @@ bbcShape540 = {
 
 bbcShape541 = {
     point:{
-    x:831.0,
+    x:751.0,
     y:161.0
 },
     size:{
@@ -10407,7 +10393,7 @@ bbcShape541 = {
 
 bbcShape542 = {
     point:{
-    x:831.0,
+    x:751.0,
     y:241.0
 },
     size:{
@@ -10428,7 +10414,7 @@ bbcShape542 = {
 
 bbcShape543 = {
     point:{
-    x:911.0,
+    x:831.0,
     y:161.0
 },
     size:{
@@ -10449,7 +10435,7 @@ bbcShape543 = {
 
 bbcShape544 = {
     point:{
-    x:911.0,
+    x:831.0,
     y:241.0
 },
     size:{
@@ -10470,7 +10456,7 @@ bbcShape544 = {
 
 bbcShape545 = {
     point:{
-    x:991.0,
+    x:911.0,
     y:161.0
 },
     size:{
@@ -10491,7 +10477,7 @@ bbcShape545 = {
 
 bbcShape546 = {
     point:{
-    x:991.0,
+    x:911.0,
     y:241.0
 },
     size:{
@@ -10512,7 +10498,7 @@ bbcShape546 = {
 
 bbcShape547 = {
     point:{
-    x:1071.0,
+    x:991.0,
     y:161.0
 },
     size:{
@@ -10533,7 +10519,7 @@ bbcShape547 = {
 
 bbcShape548 = {
     point:{
-    x:1071.0,
+    x:991.0,
     y:241.0
 },
     size:{
@@ -10554,7 +10540,7 @@ bbcShape548 = {
 
 bbcShape549 = {
     point:{
-    x:1151.0,
+    x:1071.0,
     y:161.0
 },
     size:{
@@ -10575,7 +10561,7 @@ bbcShape549 = {
 
 bbcShape550 = {
     point:{
-    x:1151.0,
+    x:1071.0,
     y:241.0
 },
     size:{
@@ -10596,7 +10582,7 @@ bbcShape550 = {
 
 bbcShape551 = {
     point:{
-    x:1231.0,
+    x:1151.0,
     y:161.0
 },
     size:{
@@ -10617,7 +10603,7 @@ bbcShape551 = {
 
 bbcShape552 = {
     point:{
-    x:1231.0,
+    x:1151.0,
     y:241.0
 },
     size:{
@@ -10637,6 +10623,48 @@ bbcShape552 = {
 };
 
 bbcShape553 = {
+    point:{
+    x:1231.0,
+    y:161.0
+},
+    size:{
+    width:28.0,
+    height:28.0
+},
+    color:{
+    r:255.0,
+    g:275.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape554 = {
+    point:{
+    x:1231.0,
+    y:241.0
+},
+    size:{
+    width:28.0,
+    height:28.0
+},
+    color:{
+    r:255.0,
+    g:275.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape555 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:300.0,
@@ -10650,51 +10678,9 @@ bbcShape553 = {
 }
 };
 
-bbcShape554 = {
-    point:{
-    x:512.0,
-    y:162.0
-},
-    size:{
-    width:26.0,
-    height:26.0
-},
-    color:{
-    r:255.0,
-    g:300.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape555 = {
-    point:{
-    x:512.0,
-    y:242.0
-},
-    size:{
-    width:26.0,
-    height:26.0
-},
-    color:{
-    r:255.0,
-    g:300.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape556 = {
     point:{
-    x:592.0,
+    x:512.0,
     y:162.0
 },
     size:{
@@ -10715,7 +10701,7 @@ bbcShape556 = {
 
 bbcShape557 = {
     point:{
-    x:592.0,
+    x:512.0,
     y:242.0
 },
     size:{
@@ -10736,7 +10722,7 @@ bbcShape557 = {
 
 bbcShape558 = {
     point:{
-    x:672.0,
+    x:592.0,
     y:162.0
 },
     size:{
@@ -10757,7 +10743,7 @@ bbcShape558 = {
 
 bbcShape559 = {
     point:{
-    x:672.0,
+    x:592.0,
     y:242.0
 },
     size:{
@@ -10778,7 +10764,7 @@ bbcShape559 = {
 
 bbcShape560 = {
     point:{
-    x:752.0,
+    x:672.0,
     y:162.0
 },
     size:{
@@ -10799,7 +10785,7 @@ bbcShape560 = {
 
 bbcShape561 = {
     point:{
-    x:752.0,
+    x:672.0,
     y:242.0
 },
     size:{
@@ -10820,7 +10806,7 @@ bbcShape561 = {
 
 bbcShape562 = {
     point:{
-    x:832.0,
+    x:752.0,
     y:162.0
 },
     size:{
@@ -10841,7 +10827,7 @@ bbcShape562 = {
 
 bbcShape563 = {
     point:{
-    x:832.0,
+    x:752.0,
     y:242.0
 },
     size:{
@@ -10862,7 +10848,7 @@ bbcShape563 = {
 
 bbcShape564 = {
     point:{
-    x:912.0,
+    x:832.0,
     y:162.0
 },
     size:{
@@ -10883,7 +10869,7 @@ bbcShape564 = {
 
 bbcShape565 = {
     point:{
-    x:912.0,
+    x:832.0,
     y:242.0
 },
     size:{
@@ -10904,7 +10890,7 @@ bbcShape565 = {
 
 bbcShape566 = {
     point:{
-    x:992.0,
+    x:912.0,
     y:162.0
 },
     size:{
@@ -10925,7 +10911,7 @@ bbcShape566 = {
 
 bbcShape567 = {
     point:{
-    x:992.0,
+    x:912.0,
     y:242.0
 },
     size:{
@@ -10946,7 +10932,7 @@ bbcShape567 = {
 
 bbcShape568 = {
     point:{
-    x:1072.0,
+    x:992.0,
     y:162.0
 },
     size:{
@@ -10967,7 +10953,7 @@ bbcShape568 = {
 
 bbcShape569 = {
     point:{
-    x:1072.0,
+    x:992.0,
     y:242.0
 },
     size:{
@@ -10988,7 +10974,7 @@ bbcShape569 = {
 
 bbcShape570 = {
     point:{
-    x:1152.0,
+    x:1072.0,
     y:162.0
 },
     size:{
@@ -11009,7 +10995,7 @@ bbcShape570 = {
 
 bbcShape571 = {
     point:{
-    x:1152.0,
+    x:1072.0,
     y:242.0
 },
     size:{
@@ -11030,7 +11016,7 @@ bbcShape571 = {
 
 bbcShape572 = {
     point:{
-    x:1232.0,
+    x:1152.0,
     y:162.0
 },
     size:{
@@ -11051,7 +11037,7 @@ bbcShape572 = {
 
 bbcShape573 = {
     point:{
-    x:1232.0,
+    x:1152.0,
     y:242.0
 },
     size:{
@@ -11071,6 +11057,48 @@ bbcShape573 = {
 };
 
 bbcShape574 = {
+    point:{
+    x:1232.0,
+    y:162.0
+},
+    size:{
+    width:26.0,
+    height:26.0
+},
+    color:{
+    r:255.0,
+    g:300.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape575 = {
+    point:{
+    x:1232.0,
+    y:242.0
+},
+    size:{
+    width:26.0,
+    height:26.0
+},
+    color:{
+    r:255.0,
+    g:300.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape576 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:325.0,
@@ -11084,51 +11112,9 @@ bbcShape574 = {
 }
 };
 
-bbcShape575 = {
-    point:{
-    x:513.0,
-    y:163.0
-},
-    size:{
-    width:24.0,
-    height:24.0
-},
-    color:{
-    r:255.0,
-    g:325.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape576 = {
-    point:{
-    x:513.0,
-    y:243.0
-},
-    size:{
-    width:24.0,
-    height:24.0
-},
-    color:{
-    r:255.0,
-    g:325.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape577 = {
     point:{
-    x:593.0,
+    x:513.0,
     y:163.0
 },
     size:{
@@ -11149,7 +11135,7 @@ bbcShape577 = {
 
 bbcShape578 = {
     point:{
-    x:593.0,
+    x:513.0,
     y:243.0
 },
     size:{
@@ -11170,7 +11156,7 @@ bbcShape578 = {
 
 bbcShape579 = {
     point:{
-    x:673.0,
+    x:593.0,
     y:163.0
 },
     size:{
@@ -11191,7 +11177,7 @@ bbcShape579 = {
 
 bbcShape580 = {
     point:{
-    x:673.0,
+    x:593.0,
     y:243.0
 },
     size:{
@@ -11212,7 +11198,7 @@ bbcShape580 = {
 
 bbcShape581 = {
     point:{
-    x:753.0,
+    x:673.0,
     y:163.0
 },
     size:{
@@ -11233,7 +11219,7 @@ bbcShape581 = {
 
 bbcShape582 = {
     point:{
-    x:753.0,
+    x:673.0,
     y:243.0
 },
     size:{
@@ -11254,7 +11240,7 @@ bbcShape582 = {
 
 bbcShape583 = {
     point:{
-    x:833.0,
+    x:753.0,
     y:163.0
 },
     size:{
@@ -11275,7 +11261,7 @@ bbcShape583 = {
 
 bbcShape584 = {
     point:{
-    x:833.0,
+    x:753.0,
     y:243.0
 },
     size:{
@@ -11296,7 +11282,7 @@ bbcShape584 = {
 
 bbcShape585 = {
     point:{
-    x:913.0,
+    x:833.0,
     y:163.0
 },
     size:{
@@ -11317,7 +11303,7 @@ bbcShape585 = {
 
 bbcShape586 = {
     point:{
-    x:913.0,
+    x:833.0,
     y:243.0
 },
     size:{
@@ -11338,7 +11324,7 @@ bbcShape586 = {
 
 bbcShape587 = {
     point:{
-    x:993.0,
+    x:913.0,
     y:163.0
 },
     size:{
@@ -11359,7 +11345,7 @@ bbcShape587 = {
 
 bbcShape588 = {
     point:{
-    x:993.0,
+    x:913.0,
     y:243.0
 },
     size:{
@@ -11380,7 +11366,7 @@ bbcShape588 = {
 
 bbcShape589 = {
     point:{
-    x:1073.0,
+    x:993.0,
     y:163.0
 },
     size:{
@@ -11401,7 +11387,7 @@ bbcShape589 = {
 
 bbcShape590 = {
     point:{
-    x:1073.0,
+    x:993.0,
     y:243.0
 },
     size:{
@@ -11422,7 +11408,7 @@ bbcShape590 = {
 
 bbcShape591 = {
     point:{
-    x:1153.0,
+    x:1073.0,
     y:163.0
 },
     size:{
@@ -11443,7 +11429,7 @@ bbcShape591 = {
 
 bbcShape592 = {
     point:{
-    x:1153.0,
+    x:1073.0,
     y:243.0
 },
     size:{
@@ -11464,7 +11450,7 @@ bbcShape592 = {
 
 bbcShape593 = {
     point:{
-    x:1233.0,
+    x:1153.0,
     y:163.0
 },
     size:{
@@ -11485,7 +11471,7 @@ bbcShape593 = {
 
 bbcShape594 = {
     point:{
-    x:1233.0,
+    x:1153.0,
     y:243.0
 },
     size:{
@@ -11505,6 +11491,48 @@ bbcShape594 = {
 };
 
 bbcShape595 = {
+    point:{
+    x:1233.0,
+    y:163.0
+},
+    size:{
+    width:24.0,
+    height:24.0
+},
+    color:{
+    r:255.0,
+    g:325.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape596 = {
+    point:{
+    x:1233.0,
+    y:243.0
+},
+    size:{
+    width:24.0,
+    height:24.0
+},
+    color:{
+    r:255.0,
+    g:325.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape597 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:350.0,
@@ -11518,51 +11546,9 @@ bbcShape595 = {
 }
 };
 
-bbcShape596 = {
-    point:{
-    x:514.0,
-    y:164.0
-},
-    size:{
-    width:22.0,
-    height:22.0
-},
-    color:{
-    r:255.0,
-    g:350.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape597 = {
-    point:{
-    x:514.0,
-    y:244.0
-},
-    size:{
-    width:22.0,
-    height:22.0
-},
-    color:{
-    r:255.0,
-    g:350.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape598 = {
     point:{
-    x:594.0,
+    x:514.0,
     y:164.0
 },
     size:{
@@ -11583,7 +11569,7 @@ bbcShape598 = {
 
 bbcShape599 = {
     point:{
-    x:594.0,
+    x:514.0,
     y:244.0
 },
     size:{
@@ -11604,7 +11590,7 @@ bbcShape599 = {
 
 bbcShape600 = {
     point:{
-    x:674.0,
+    x:594.0,
     y:164.0
 },
     size:{
@@ -11625,7 +11611,7 @@ bbcShape600 = {
 
 bbcShape601 = {
     point:{
-    x:674.0,
+    x:594.0,
     y:244.0
 },
     size:{
@@ -11646,7 +11632,7 @@ bbcShape601 = {
 
 bbcShape602 = {
     point:{
-    x:754.0,
+    x:674.0,
     y:164.0
 },
     size:{
@@ -11667,7 +11653,7 @@ bbcShape602 = {
 
 bbcShape603 = {
     point:{
-    x:754.0,
+    x:674.0,
     y:244.0
 },
     size:{
@@ -11688,7 +11674,7 @@ bbcShape603 = {
 
 bbcShape604 = {
     point:{
-    x:834.0,
+    x:754.0,
     y:164.0
 },
     size:{
@@ -11709,7 +11695,7 @@ bbcShape604 = {
 
 bbcShape605 = {
     point:{
-    x:834.0,
+    x:754.0,
     y:244.0
 },
     size:{
@@ -11730,7 +11716,7 @@ bbcShape605 = {
 
 bbcShape606 = {
     point:{
-    x:914.0,
+    x:834.0,
     y:164.0
 },
     size:{
@@ -11751,7 +11737,7 @@ bbcShape606 = {
 
 bbcShape607 = {
     point:{
-    x:914.0,
+    x:834.0,
     y:244.0
 },
     size:{
@@ -11772,7 +11758,7 @@ bbcShape607 = {
 
 bbcShape608 = {
     point:{
-    x:994.0,
+    x:914.0,
     y:164.0
 },
     size:{
@@ -11793,7 +11779,7 @@ bbcShape608 = {
 
 bbcShape609 = {
     point:{
-    x:994.0,
+    x:914.0,
     y:244.0
 },
     size:{
@@ -11814,7 +11800,7 @@ bbcShape609 = {
 
 bbcShape610 = {
     point:{
-    x:1074.0,
+    x:994.0,
     y:164.0
 },
     size:{
@@ -11835,7 +11821,7 @@ bbcShape610 = {
 
 bbcShape611 = {
     point:{
-    x:1074.0,
+    x:994.0,
     y:244.0
 },
     size:{
@@ -11856,7 +11842,7 @@ bbcShape611 = {
 
 bbcShape612 = {
     point:{
-    x:1154.0,
+    x:1074.0,
     y:164.0
 },
     size:{
@@ -11877,7 +11863,7 @@ bbcShape612 = {
 
 bbcShape613 = {
     point:{
-    x:1154.0,
+    x:1074.0,
     y:244.0
 },
     size:{
@@ -11898,7 +11884,7 @@ bbcShape613 = {
 
 bbcShape614 = {
     point:{
-    x:1234.0,
+    x:1154.0,
     y:164.0
 },
     size:{
@@ -11919,7 +11905,7 @@ bbcShape614 = {
 
 bbcShape615 = {
     point:{
-    x:1234.0,
+    x:1154.0,
     y:244.0
 },
     size:{
@@ -11939,6 +11925,48 @@ bbcShape615 = {
 };
 
 bbcShape616 = {
+    point:{
+    x:1234.0,
+    y:164.0
+},
+    size:{
+    width:22.0,
+    height:22.0
+},
+    color:{
+    r:255.0,
+    g:350.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape617 = {
+    point:{
+    x:1234.0,
+    y:244.0
+},
+    size:{
+    width:22.0,
+    height:22.0
+},
+    color:{
+    r:255.0,
+    g:350.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape618 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:375.0,
@@ -11952,51 +11980,9 @@ bbcShape616 = {
 }
 };
 
-bbcShape617 = {
-    point:{
-    x:515.0,
-    y:165.0
-},
-    size:{
-    width:20.0,
-    height:20.0
-},
-    color:{
-    r:255.0,
-    g:375.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape618 = {
-    point:{
-    x:515.0,
-    y:245.0
-},
-    size:{
-    width:20.0,
-    height:20.0
-},
-    color:{
-    r:255.0,
-    g:375.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape619 = {
     point:{
-    x:595.0,
+    x:515.0,
     y:165.0
 },
     size:{
@@ -12017,7 +12003,7 @@ bbcShape619 = {
 
 bbcShape620 = {
     point:{
-    x:595.0,
+    x:515.0,
     y:245.0
 },
     size:{
@@ -12038,7 +12024,7 @@ bbcShape620 = {
 
 bbcShape621 = {
     point:{
-    x:675.0,
+    x:595.0,
     y:165.0
 },
     size:{
@@ -12059,7 +12045,7 @@ bbcShape621 = {
 
 bbcShape622 = {
     point:{
-    x:675.0,
+    x:595.0,
     y:245.0
 },
     size:{
@@ -12080,7 +12066,7 @@ bbcShape622 = {
 
 bbcShape623 = {
     point:{
-    x:755.0,
+    x:675.0,
     y:165.0
 },
     size:{
@@ -12101,7 +12087,7 @@ bbcShape623 = {
 
 bbcShape624 = {
     point:{
-    x:755.0,
+    x:675.0,
     y:245.0
 },
     size:{
@@ -12122,7 +12108,7 @@ bbcShape624 = {
 
 bbcShape625 = {
     point:{
-    x:835.0,
+    x:755.0,
     y:165.0
 },
     size:{
@@ -12143,7 +12129,7 @@ bbcShape625 = {
 
 bbcShape626 = {
     point:{
-    x:835.0,
+    x:755.0,
     y:245.0
 },
     size:{
@@ -12164,7 +12150,7 @@ bbcShape626 = {
 
 bbcShape627 = {
     point:{
-    x:915.0,
+    x:835.0,
     y:165.0
 },
     size:{
@@ -12185,7 +12171,7 @@ bbcShape627 = {
 
 bbcShape628 = {
     point:{
-    x:915.0,
+    x:835.0,
     y:245.0
 },
     size:{
@@ -12206,7 +12192,7 @@ bbcShape628 = {
 
 bbcShape629 = {
     point:{
-    x:995.0,
+    x:915.0,
     y:165.0
 },
     size:{
@@ -12227,7 +12213,7 @@ bbcShape629 = {
 
 bbcShape630 = {
     point:{
-    x:995.0,
+    x:915.0,
     y:245.0
 },
     size:{
@@ -12248,7 +12234,7 @@ bbcShape630 = {
 
 bbcShape631 = {
     point:{
-    x:1075.0,
+    x:995.0,
     y:165.0
 },
     size:{
@@ -12269,7 +12255,7 @@ bbcShape631 = {
 
 bbcShape632 = {
     point:{
-    x:1075.0,
+    x:995.0,
     y:245.0
 },
     size:{
@@ -12290,7 +12276,7 @@ bbcShape632 = {
 
 bbcShape633 = {
     point:{
-    x:1155.0,
+    x:1075.0,
     y:165.0
 },
     size:{
@@ -12311,7 +12297,7 @@ bbcShape633 = {
 
 bbcShape634 = {
     point:{
-    x:1155.0,
+    x:1075.0,
     y:245.0
 },
     size:{
@@ -12332,7 +12318,7 @@ bbcShape634 = {
 
 bbcShape635 = {
     point:{
-    x:1235.0,
+    x:1155.0,
     y:165.0
 },
     size:{
@@ -12353,7 +12339,7 @@ bbcShape635 = {
 
 bbcShape636 = {
     point:{
-    x:1235.0,
+    x:1155.0,
     y:245.0
 },
     size:{
@@ -12373,6 +12359,48 @@ bbcShape636 = {
 };
 
 bbcShape637 = {
+    point:{
+    x:1235.0,
+    y:165.0
+},
+    size:{
+    width:20.0,
+    height:20.0
+},
+    color:{
+    r:255.0,
+    g:375.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape638 = {
+    point:{
+    x:1235.0,
+    y:245.0
+},
+    size:{
+    width:20.0,
+    height:20.0
+},
+    color:{
+    r:255.0,
+    g:375.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape639 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:400.0,
@@ -12386,51 +12414,9 @@ bbcShape637 = {
 }
 };
 
-bbcShape638 = {
-    point:{
-    x:516.0,
-    y:166.0
-},
-    size:{
-    width:18.0,
-    height:18.0
-},
-    color:{
-    r:255.0,
-    g:400.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape639 = {
-    point:{
-    x:516.0,
-    y:246.0
-},
-    size:{
-    width:18.0,
-    height:18.0
-},
-    color:{
-    r:255.0,
-    g:400.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape640 = {
     point:{
-    x:596.0,
+    x:516.0,
     y:166.0
 },
     size:{
@@ -12451,7 +12437,7 @@ bbcShape640 = {
 
 bbcShape641 = {
     point:{
-    x:596.0,
+    x:516.0,
     y:246.0
 },
     size:{
@@ -12472,7 +12458,7 @@ bbcShape641 = {
 
 bbcShape642 = {
     point:{
-    x:676.0,
+    x:596.0,
     y:166.0
 },
     size:{
@@ -12493,7 +12479,7 @@ bbcShape642 = {
 
 bbcShape643 = {
     point:{
-    x:676.0,
+    x:596.0,
     y:246.0
 },
     size:{
@@ -12514,7 +12500,7 @@ bbcShape643 = {
 
 bbcShape644 = {
     point:{
-    x:756.0,
+    x:676.0,
     y:166.0
 },
     size:{
@@ -12535,7 +12521,7 @@ bbcShape644 = {
 
 bbcShape645 = {
     point:{
-    x:756.0,
+    x:676.0,
     y:246.0
 },
     size:{
@@ -12556,7 +12542,7 @@ bbcShape645 = {
 
 bbcShape646 = {
     point:{
-    x:836.0,
+    x:756.0,
     y:166.0
 },
     size:{
@@ -12577,7 +12563,7 @@ bbcShape646 = {
 
 bbcShape647 = {
     point:{
-    x:836.0,
+    x:756.0,
     y:246.0
 },
     size:{
@@ -12598,7 +12584,7 @@ bbcShape647 = {
 
 bbcShape648 = {
     point:{
-    x:916.0,
+    x:836.0,
     y:166.0
 },
     size:{
@@ -12619,7 +12605,7 @@ bbcShape648 = {
 
 bbcShape649 = {
     point:{
-    x:916.0,
+    x:836.0,
     y:246.0
 },
     size:{
@@ -12640,7 +12626,7 @@ bbcShape649 = {
 
 bbcShape650 = {
     point:{
-    x:996.0,
+    x:916.0,
     y:166.0
 },
     size:{
@@ -12661,7 +12647,7 @@ bbcShape650 = {
 
 bbcShape651 = {
     point:{
-    x:996.0,
+    x:916.0,
     y:246.0
 },
     size:{
@@ -12682,7 +12668,7 @@ bbcShape651 = {
 
 bbcShape652 = {
     point:{
-    x:1076.0,
+    x:996.0,
     y:166.0
 },
     size:{
@@ -12703,7 +12689,7 @@ bbcShape652 = {
 
 bbcShape653 = {
     point:{
-    x:1076.0,
+    x:996.0,
     y:246.0
 },
     size:{
@@ -12724,7 +12710,7 @@ bbcShape653 = {
 
 bbcShape654 = {
     point:{
-    x:1156.0,
+    x:1076.0,
     y:166.0
 },
     size:{
@@ -12745,7 +12731,7 @@ bbcShape654 = {
 
 bbcShape655 = {
     point:{
-    x:1156.0,
+    x:1076.0,
     y:246.0
 },
     size:{
@@ -12766,7 +12752,7 @@ bbcShape655 = {
 
 bbcShape656 = {
     point:{
-    x:1236.0,
+    x:1156.0,
     y:166.0
 },
     size:{
@@ -12787,7 +12773,7 @@ bbcShape656 = {
 
 bbcShape657 = {
     point:{
-    x:1236.0,
+    x:1156.0,
     y:246.0
 },
     size:{
@@ -12807,6 +12793,48 @@ bbcShape657 = {
 };
 
 bbcShape658 = {
+    point:{
+    x:1236.0,
+    y:166.0
+},
+    size:{
+    width:18.0,
+    height:18.0
+},
+    color:{
+    r:255.0,
+    g:400.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape659 = {
+    point:{
+    x:1236.0,
+    y:246.0
+},
+    size:{
+    width:18.0,
+    height:18.0
+},
+    color:{
+    r:255.0,
+    g:400.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape660 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:425.0,
@@ -12820,51 +12848,9 @@ bbcShape658 = {
 }
 };
 
-bbcShape659 = {
-    point:{
-    x:517.0,
-    y:167.0
-},
-    size:{
-    width:16.0,
-    height:16.0
-},
-    color:{
-    r:255.0,
-    g:425.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape660 = {
-    point:{
-    x:517.0,
-    y:247.0
-},
-    size:{
-    width:16.0,
-    height:16.0
-},
-    color:{
-    r:255.0,
-    g:425.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape661 = {
     point:{
-    x:597.0,
+    x:517.0,
     y:167.0
 },
     size:{
@@ -12885,7 +12871,7 @@ bbcShape661 = {
 
 bbcShape662 = {
     point:{
-    x:597.0,
+    x:517.0,
     y:247.0
 },
     size:{
@@ -12906,7 +12892,7 @@ bbcShape662 = {
 
 bbcShape663 = {
     point:{
-    x:677.0,
+    x:597.0,
     y:167.0
 },
     size:{
@@ -12927,7 +12913,7 @@ bbcShape663 = {
 
 bbcShape664 = {
     point:{
-    x:677.0,
+    x:597.0,
     y:247.0
 },
     size:{
@@ -12948,7 +12934,7 @@ bbcShape664 = {
 
 bbcShape665 = {
     point:{
-    x:757.0,
+    x:677.0,
     y:167.0
 },
     size:{
@@ -12969,7 +12955,7 @@ bbcShape665 = {
 
 bbcShape666 = {
     point:{
-    x:757.0,
+    x:677.0,
     y:247.0
 },
     size:{
@@ -12990,7 +12976,7 @@ bbcShape666 = {
 
 bbcShape667 = {
     point:{
-    x:837.0,
+    x:757.0,
     y:167.0
 },
     size:{
@@ -13011,7 +12997,7 @@ bbcShape667 = {
 
 bbcShape668 = {
     point:{
-    x:837.0,
+    x:757.0,
     y:247.0
 },
     size:{
@@ -13032,7 +13018,7 @@ bbcShape668 = {
 
 bbcShape669 = {
     point:{
-    x:917.0,
+    x:837.0,
     y:167.0
 },
     size:{
@@ -13053,7 +13039,7 @@ bbcShape669 = {
 
 bbcShape670 = {
     point:{
-    x:917.0,
+    x:837.0,
     y:247.0
 },
     size:{
@@ -13074,7 +13060,7 @@ bbcShape670 = {
 
 bbcShape671 = {
     point:{
-    x:997.0,
+    x:917.0,
     y:167.0
 },
     size:{
@@ -13095,7 +13081,7 @@ bbcShape671 = {
 
 bbcShape672 = {
     point:{
-    x:997.0,
+    x:917.0,
     y:247.0
 },
     size:{
@@ -13116,7 +13102,7 @@ bbcShape672 = {
 
 bbcShape673 = {
     point:{
-    x:1077.0,
+    x:997.0,
     y:167.0
 },
     size:{
@@ -13137,7 +13123,7 @@ bbcShape673 = {
 
 bbcShape674 = {
     point:{
-    x:1077.0,
+    x:997.0,
     y:247.0
 },
     size:{
@@ -13158,7 +13144,7 @@ bbcShape674 = {
 
 bbcShape675 = {
     point:{
-    x:1157.0,
+    x:1077.0,
     y:167.0
 },
     size:{
@@ -13179,7 +13165,7 @@ bbcShape675 = {
 
 bbcShape676 = {
     point:{
-    x:1157.0,
+    x:1077.0,
     y:247.0
 },
     size:{
@@ -13200,7 +13186,7 @@ bbcShape676 = {
 
 bbcShape677 = {
     point:{
-    x:1237.0,
+    x:1157.0,
     y:167.0
 },
     size:{
@@ -13221,7 +13207,7 @@ bbcShape677 = {
 
 bbcShape678 = {
     point:{
-    x:1237.0,
+    x:1157.0,
     y:247.0
 },
     size:{
@@ -13241,6 +13227,48 @@ bbcShape678 = {
 };
 
 bbcShape679 = {
+    point:{
+    x:1237.0,
+    y:167.0
+},
+    size:{
+    width:16.0,
+    height:16.0
+},
+    color:{
+    r:255.0,
+    g:425.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape680 = {
+    point:{
+    x:1237.0,
+    y:247.0
+},
+    size:{
+    width:16.0,
+    height:16.0
+},
+    color:{
+    r:255.0,
+    g:425.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape681 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:450.0,
@@ -13254,51 +13282,9 @@ bbcShape679 = {
 }
 };
 
-bbcShape680 = {
-    point:{
-    x:518.0,
-    y:168.0
-},
-    size:{
-    width:14.0,
-    height:14.0
-},
-    color:{
-    r:255.0,
-    g:450.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape681 = {
-    point:{
-    x:518.0,
-    y:248.0
-},
-    size:{
-    width:14.0,
-    height:14.0
-},
-    color:{
-    r:255.0,
-    g:450.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape682 = {
     point:{
-    x:598.0,
+    x:518.0,
     y:168.0
 },
     size:{
@@ -13319,7 +13305,7 @@ bbcShape682 = {
 
 bbcShape683 = {
     point:{
-    x:598.0,
+    x:518.0,
     y:248.0
 },
     size:{
@@ -13340,7 +13326,7 @@ bbcShape683 = {
 
 bbcShape684 = {
     point:{
-    x:678.0,
+    x:598.0,
     y:168.0
 },
     size:{
@@ -13361,7 +13347,7 @@ bbcShape684 = {
 
 bbcShape685 = {
     point:{
-    x:678.0,
+    x:598.0,
     y:248.0
 },
     size:{
@@ -13382,7 +13368,7 @@ bbcShape685 = {
 
 bbcShape686 = {
     point:{
-    x:758.0,
+    x:678.0,
     y:168.0
 },
     size:{
@@ -13403,7 +13389,7 @@ bbcShape686 = {
 
 bbcShape687 = {
     point:{
-    x:758.0,
+    x:678.0,
     y:248.0
 },
     size:{
@@ -13424,7 +13410,7 @@ bbcShape687 = {
 
 bbcShape688 = {
     point:{
-    x:838.0,
+    x:758.0,
     y:168.0
 },
     size:{
@@ -13445,7 +13431,7 @@ bbcShape688 = {
 
 bbcShape689 = {
     point:{
-    x:838.0,
+    x:758.0,
     y:248.0
 },
     size:{
@@ -13466,7 +13452,7 @@ bbcShape689 = {
 
 bbcShape690 = {
     point:{
-    x:918.0,
+    x:838.0,
     y:168.0
 },
     size:{
@@ -13487,7 +13473,7 @@ bbcShape690 = {
 
 bbcShape691 = {
     point:{
-    x:918.0,
+    x:838.0,
     y:248.0
 },
     size:{
@@ -13508,7 +13494,7 @@ bbcShape691 = {
 
 bbcShape692 = {
     point:{
-    x:998.0,
+    x:918.0,
     y:168.0
 },
     size:{
@@ -13529,7 +13515,7 @@ bbcShape692 = {
 
 bbcShape693 = {
     point:{
-    x:998.0,
+    x:918.0,
     y:248.0
 },
     size:{
@@ -13550,7 +13536,7 @@ bbcShape693 = {
 
 bbcShape694 = {
     point:{
-    x:1078.0,
+    x:998.0,
     y:168.0
 },
     size:{
@@ -13571,7 +13557,7 @@ bbcShape694 = {
 
 bbcShape695 = {
     point:{
-    x:1078.0,
+    x:998.0,
     y:248.0
 },
     size:{
@@ -13592,7 +13578,7 @@ bbcShape695 = {
 
 bbcShape696 = {
     point:{
-    x:1158.0,
+    x:1078.0,
     y:168.0
 },
     size:{
@@ -13613,7 +13599,7 @@ bbcShape696 = {
 
 bbcShape697 = {
     point:{
-    x:1158.0,
+    x:1078.0,
     y:248.0
 },
     size:{
@@ -13634,7 +13620,7 @@ bbcShape697 = {
 
 bbcShape698 = {
     point:{
-    x:1238.0,
+    x:1158.0,
     y:168.0
 },
     size:{
@@ -13655,7 +13641,7 @@ bbcShape698 = {
 
 bbcShape699 = {
     point:{
-    x:1238.0,
+    x:1158.0,
     y:248.0
 },
     size:{
@@ -13675,6 +13661,48 @@ bbcShape699 = {
 };
 
 bbcShape700 = {
+    point:{
+    x:1238.0,
+    y:168.0
+},
+    size:{
+    width:14.0,
+    height:14.0
+},
+    color:{
+    r:255.0,
+    g:450.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape701 = {
+    point:{
+    x:1238.0,
+    y:248.0
+},
+    size:{
+    width:14.0,
+    height:14.0
+},
+    color:{
+    r:255.0,
+    g:450.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape702 = {
     points:[[300.0, 100.0], [320.0, 165.36], [386.6, 150.0], [340.0, 200.0], [386.6, 250.0], [320.0, 234.64], [300.0, 300.0], [280.0, 234.64], [213.4, 250.0], [260.0, 200.0], [213.4, 150.0], [280.0, 165.36]],
     color:{
     r:475.0,
@@ -13688,51 +13716,9 @@ bbcShape700 = {
 }
 };
 
-bbcShape701 = {
-    point:{
-    x:519.0,
-    y:169.0
-},
-    size:{
-    width:12.0,
-    height:12.0
-},
-    color:{
-    r:255.0,
-    g:475.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
-bbcShape702 = {
-    point:{
-    x:519.0,
-    y:249.0
-},
-    size:{
-    width:12.0,
-    height:12.0
-},
-    color:{
-    r:255.0,
-    g:475.0,
-    b:0.0
-},
-    rotation:0,
-    around:{
-    x:0,
-    y:0
-}
-};
-
 bbcShape703 = {
     point:{
-    x:599.0,
+    x:519.0,
     y:169.0
 },
     size:{
@@ -13753,7 +13739,7 @@ bbcShape703 = {
 
 bbcShape704 = {
     point:{
-    x:599.0,
+    x:519.0,
     y:249.0
 },
     size:{
@@ -13774,7 +13760,7 @@ bbcShape704 = {
 
 bbcShape705 = {
     point:{
-    x:679.0,
+    x:599.0,
     y:169.0
 },
     size:{
@@ -13795,7 +13781,7 @@ bbcShape705 = {
 
 bbcShape706 = {
     point:{
-    x:679.0,
+    x:599.0,
     y:249.0
 },
     size:{
@@ -13816,7 +13802,7 @@ bbcShape706 = {
 
 bbcShape707 = {
     point:{
-    x:759.0,
+    x:679.0,
     y:169.0
 },
     size:{
@@ -13837,7 +13823,7 @@ bbcShape707 = {
 
 bbcShape708 = {
     point:{
-    x:759.0,
+    x:679.0,
     y:249.0
 },
     size:{
@@ -13858,7 +13844,7 @@ bbcShape708 = {
 
 bbcShape709 = {
     point:{
-    x:839.0,
+    x:759.0,
     y:169.0
 },
     size:{
@@ -13879,7 +13865,7 @@ bbcShape709 = {
 
 bbcShape710 = {
     point:{
-    x:839.0,
+    x:759.0,
     y:249.0
 },
     size:{
@@ -13900,7 +13886,7 @@ bbcShape710 = {
 
 bbcShape711 = {
     point:{
-    x:919.0,
+    x:839.0,
     y:169.0
 },
     size:{
@@ -13921,7 +13907,7 @@ bbcShape711 = {
 
 bbcShape712 = {
     point:{
-    x:919.0,
+    x:839.0,
     y:249.0
 },
     size:{
@@ -13942,7 +13928,7 @@ bbcShape712 = {
 
 bbcShape713 = {
     point:{
-    x:999.0,
+    x:919.0,
     y:169.0
 },
     size:{
@@ -13963,7 +13949,7 @@ bbcShape713 = {
 
 bbcShape714 = {
     point:{
-    x:999.0,
+    x:919.0,
     y:249.0
 },
     size:{
@@ -13984,7 +13970,7 @@ bbcShape714 = {
 
 bbcShape715 = {
     point:{
-    x:1079.0,
+    x:999.0,
     y:169.0
 },
     size:{
@@ -14005,7 +13991,7 @@ bbcShape715 = {
 
 bbcShape716 = {
     point:{
-    x:1079.0,
+    x:999.0,
     y:249.0
 },
     size:{
@@ -14026,7 +14012,7 @@ bbcShape716 = {
 
 bbcShape717 = {
     point:{
-    x:1159.0,
+    x:1079.0,
     y:169.0
 },
     size:{
@@ -14047,7 +14033,7 @@ bbcShape717 = {
 
 bbcShape718 = {
     point:{
-    x:1159.0,
+    x:1079.0,
     y:249.0
 },
     size:{
@@ -14068,7 +14054,7 @@ bbcShape718 = {
 
 bbcShape719 = {
     point:{
-    x:1239.0,
+    x:1159.0,
     y:169.0
 },
     size:{
@@ -14088,6 +14074,48 @@ bbcShape719 = {
 };
 
 bbcShape720 = {
+    point:{
+    x:1159.0,
+    y:249.0
+},
+    size:{
+    width:12.0,
+    height:12.0
+},
+    color:{
+    r:255.0,
+    g:475.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape721 = {
+    point:{
+    x:1239.0,
+    y:169.0
+},
+    size:{
+    width:12.0,
+    height:12.0
+},
+    color:{
+    r:255.0,
+    g:475.0,
+    b:0.0
+},
+    rotation:0,
+    around:{
+    x:0,
+    y:0
+}
+};
+
+bbcShape722 = {
     point:{
     x:1239.0,
     y:249.0
@@ -14111,918 +14139,909 @@ bbcShape720 = {
 }
 
 function bbcUpdate() {
-if(Date.now() > start + updateTime)
-{
+if(Date.now() > start + updateTime) {
     bbcInit();
 }
 
-bbcShape1.point.x += 4;
-bbcShape1.point.y += 7;
+bbcShape3.point.x += 10;
+bbcShape3.point.y += -7;
 
-bbcShape2.point.x += -4;
-bbcShape2.point.y += -1;
+bbcShape4.point.x += 9;
+bbcShape4.point.y += -9;
 
-bbcShape3.point.x += 2;
-bbcShape3.point.y += 10;
+bbcShape5.point.x += -9;
+bbcShape5.point.y += 6;
 
-bbcShape4.point.x += 10;
-bbcShape4.point.y += -6;
+bbcShape6.point.x += 6;
+bbcShape6.point.y += -4;
 
-bbcShape5.point.x += 8;
-bbcShape5.point.y += 3;
+bbcShape7.point.x += 6;
+bbcShape7.point.y += 7;
 
-bbcShape6.point.x += -4;
-bbcShape6.point.y += 3;
+bbcShape8.point.x += 3;
+bbcShape8.point.y += -9;
 
-bbcShape7.point.x += -3;
-bbcShape7.point.y += 10;
+bbcShape9.point.x += -4;
+bbcShape9.point.y += 10;
 
-bbcShape8.point.x += 8;
-bbcShape8.point.y += -5;
+bbcShape10.point.x += -7;
+bbcShape10.point.y += 7;
 
-bbcShape9.point.x += -7;
-bbcShape9.point.y += 3;
+bbcShape11.point.x += -6;
+bbcShape11.point.y += -1;
 
-bbcShape10.point.x += -4;
-bbcShape10.point.y += 0;
+bbcShape12.point.x += 6;
+bbcShape12.point.y += -1;
 
-bbcShape11.point.x += 1;
-bbcShape11.point.y += -6;
+bbcShape13.point.x += 9;
+bbcShape13.point.y += 9;
 
-bbcShape12.point.x += 4;
-bbcShape12.point.y += -5;
+bbcShape14.point.x += -10;
+bbcShape14.point.y += -7;
 
-bbcShape13.point.x += -4;
-bbcShape13.point.y += -4;
+bbcShape15.point.x += 6;
+bbcShape15.point.y += -2;
 
-bbcShape14.point.x += -2;
-bbcShape14.point.y += -2;
+bbcShape16.point.x += -4;
+bbcShape16.point.y += 2;
 
-bbcShape15.point.x += -4;
-bbcShape15.point.y += -1;
+bbcShape17.point.x += 10;
+bbcShape17.point.y += 4;
 
-bbcShape16.point.x += -6;
-bbcShape16.point.y += 8;
+bbcShape18.point.x += -5;
+bbcShape18.point.y += 4;
 
-bbcShape17.point.x += -4;
-bbcShape17.point.y += -4;
+bbcShape19.point.x += -4;
+bbcShape19.point.y += -5;
 
-bbcShape18.point.x += -4;
-bbcShape18.point.y += 3;
+bbcShape20.point.x += 3;
+bbcShape20.point.y += -10;
 
-bbcShape19.point.x += 1;
-bbcShape19.point.y += -7;
+bbcShape21.point.x += -8;
+bbcShape21.point.y += -3;
 
-bbcShape20.point.x += -10;
-bbcShape20.point.y += 6;
+bbcShape22.point.x += 8;
+bbcShape22.point.y += 2;
 
-bbcShape21.point.x += -5;
-bbcShape21.point.y += 7;
+bbcShape23.point.x += -10;
+bbcShape23.point.y += -5;
 
-bbcShape22.point.x += -3;
-bbcShape22.point.y += 8;
+bbcShape24.point.x += -1;
+bbcShape24.point.y += -5;
 
-bbcShape23.point.x += 8;
-bbcShape23.point.y += 6;
+bbcShape25.point.x += -5;
+bbcShape25.point.y += 2;
 
-bbcShape24.point.x += 8;
-bbcShape24.point.y += 0;
+bbcShape26.point.x += 1;
+bbcShape26.point.y += 10;
 
-bbcShape25.point.x += 7;
-bbcShape25.point.y += -6;
+bbcShape27.point.x += 4;
+bbcShape27.point.y += -7;
 
-bbcShape26.point.x += -7;
-bbcShape26.point.y += -8;
+bbcShape28.point.x += 7;
+bbcShape28.point.y += 0;
 
-bbcShape27.point.x += 5;
-bbcShape27.point.y += 2;
+bbcShape29.point.x += 1;
+bbcShape29.point.y += 1;
 
-bbcShape28.point.x += 8;
-bbcShape28.point.y += -8;
+bbcShape30.point.x += 6;
+bbcShape30.point.y += 10;
 
-bbcShape29.point.x += -5;
-bbcShape29.point.y += 0;
+bbcShape31.point.x += -4;
+bbcShape31.point.y += 6;
 
-bbcShape30.point.x += -6;
-bbcShape30.point.y += 8;
+bbcShape32.point.x += -1;
+bbcShape32.point.y += 0;
 
-bbcShape31.point.x += 1;
-bbcShape31.point.y += 4;
+bbcShape33.point.x += -3;
+bbcShape33.point.y += -7;
 
-bbcShape32.point.x += -6;
-bbcShape32.point.y += -8;
+bbcShape34.point.x += 4;
+bbcShape34.point.y += -8;
 
-bbcShape33.point.x += 7;
-bbcShape33.point.y += 10;
+bbcShape35.point.x += -9;
+bbcShape35.point.y += 10;
 
-bbcShape34.point.x += -9;
-bbcShape34.point.y += -6;
+bbcShape36.point.x += 6;
+bbcShape36.point.y += -8;
 
-bbcShape35.point.x += -8;
-bbcShape35.point.y += -10;
+bbcShape37.point.x += -5;
+bbcShape37.point.y += 9;
 
-bbcShape36.point.x += 1;
-bbcShape36.point.y += 3;
+bbcShape38.point.x += -7;
+bbcShape38.point.y += 0;
 
-bbcShape37.point.x += -1;
-bbcShape37.point.y += -1;
-
-bbcShape38.point.x += 0;
-bbcShape38.point.y += -6;
-
-bbcShape39.point.x += -2;
+bbcShape39.point.x += 0;
 bbcShape39.point.y += 5;
 
-bbcShape40.point.x += 7;
-bbcShape40.point.y += 0;
+bbcShape40.point.x += -7;
+bbcShape40.point.y += -8;
 
-bbcShape41.point.x += -2;
-bbcShape41.point.y += 5;
+bbcShape41.point.x += 4;
+bbcShape41.point.y += -7;
 
-bbcShape42.point.x += -5;
-bbcShape42.point.y += 0;
+bbcShape42.point.x += 1;
+bbcShape42.point.y += 4;
 
-bbcShape43.point.x += 8;
-bbcShape43.point.y += 5;
+bbcShape43.point.x += 4;
+bbcShape43.point.y += 4;
 
-bbcShape44.point.x += 3;
-bbcShape44.point.y += -4;
+bbcShape44.point.x += 0;
+bbcShape44.point.y += 4;
 
-bbcShape45.point.x += 4;
-bbcShape45.point.y += 5;
+bbcShape45.point.x += 5;
+bbcShape45.point.y += 8;
 
-bbcShape46.point.x += -8;
-bbcShape46.point.y += 4;
+bbcShape46.point.x += 2;
+bbcShape46.point.y += -9;
 
-bbcShape47.point.x += 8;
-bbcShape47.point.y += -2;
+bbcShape47.point.x += 2;
+bbcShape47.point.y += -6;
 
-bbcShape48.point.x += 0;
-bbcShape48.point.y += 6;
+bbcShape48.point.x += -7;
+bbcShape48.point.y += 7;
 
-bbcShape49.point.x += -3;
-bbcShape49.point.y += 2;
+bbcShape49.point.x += -5;
+bbcShape49.point.y += 7;
 
-bbcShape50.point.x += 6;
-bbcShape50.point.y += -4;
+bbcShape50.point.x += -4;
+bbcShape50.point.y += 7;
 
-bbcShape51.point.x += 3;
-bbcShape51.point.y += 6;
+bbcShape51.point.x += -10;
+bbcShape51.point.y += -6;
 
-bbcShape52.point.x += 4;
-bbcShape52.point.y += 1;
+bbcShape52.point.x += -3;
+bbcShape52.point.y += -4;
 
 bbcShape53.point.x += 10;
-bbcShape53.point.y += 9;
+bbcShape53.point.y += -6;
 
-bbcShape54.point.x += -4;
-bbcShape54.point.y += 2;
+bbcShape54.point.x += 5;
+bbcShape54.point.y += 8;
 
-bbcShape55.point.x += -9;
+bbcShape55.point.x += -6;
 bbcShape55.point.y += -3;
 
-bbcShape56.point.x += 5;
-bbcShape56.point.y += -7;
+bbcShape56.point.x += 8;
+bbcShape56.point.y += 5;
 
-bbcShape57.point.x += -8;
-bbcShape57.point.y += -10;
+bbcShape57.point.x += -6;
+bbcShape57.point.y += 8;
 
-bbcShape58.point.x += -8;
-bbcShape58.point.y += -7;
+bbcShape58.point.x += 8;
+bbcShape58.point.y += 2;
 
-bbcShape59.point.x += -8;
-bbcShape59.point.y += 3;
+bbcShape59.point.x += -3;
+bbcShape59.point.y += 6;
 
-bbcShape60.point.x += -1;
-bbcShape60.point.y += 7;
+bbcShape60.point.x += 8;
+bbcShape60.point.y += 5;
 
-bbcShape61.point.x += 4;
-bbcShape61.point.y += -9;
+bbcShape61.point.x += -1;
+bbcShape61.point.y += -8;
 
-bbcShape62.point.x += 8;
-bbcShape62.point.y += -9;
+bbcShape62.point.x += -2;
+bbcShape62.point.y += -5;
 
-bbcShape63.point.x += -9;
-bbcShape63.point.y += 9;
+bbcShape63.point.x += 0;
+bbcShape63.point.y += -9;
 
-bbcShape64.point.x += -9;
-bbcShape64.point.y += -8;
+bbcShape64.point.x += 7;
+bbcShape64.point.y += -4;
 
-bbcShape65.point.x += 4;
+bbcShape65.point.x += -10;
 bbcShape65.point.y += -2;
 
-bbcShape66.point.x += 1;
-bbcShape66.point.y += 5;
+bbcShape66.point.x += 10;
+bbcShape66.point.y += -2;
 
-bbcShape67.point.x += 3;
-bbcShape67.point.y += 2;
+bbcShape67.point.x += -7;
+bbcShape67.point.y += -10;
 
-bbcShape68.point.x += 9;
-bbcShape68.point.y += -9;
+bbcShape68.point.x += -3;
+bbcShape68.point.y += -2;
 
-bbcShape69.point.x += 0;
-bbcShape69.point.y += -4;
+bbcShape69.point.x += -4;
+bbcShape69.point.y += -10;
 
-bbcShape70.point.x += 9;
-bbcShape70.point.y += -6;
+bbcShape70.point.x += 7;
+bbcShape70.point.y += 3;
 
-bbcShape71.point.x += -10;
-bbcShape71.point.y += 5;
+bbcShape71.point.x += 4;
+bbcShape71.point.y += -1;
 
-bbcShape72.point.x += 7;
-bbcShape72.point.y += 10;
+bbcShape72.point.x += -9;
+bbcShape72.point.y += -7;
 
-bbcShape73.point.x += -6;
-bbcShape73.point.y += 10;
+bbcShape73.point.x += -9;
+bbcShape73.point.y += -3;
 
-bbcShape74.point.x += 9;
-bbcShape74.point.y += -1;
+bbcShape74.point.x += 4;
+bbcShape74.point.y += 6;
 
-bbcShape75.point.x += -6;
-bbcShape75.point.y += 8;
+bbcShape75.point.x += 1;
+bbcShape75.point.y += -9;
 
-bbcShape76.point.x += 9;
-bbcShape76.point.y += 6;
+bbcShape76.point.x += 2;
+bbcShape76.point.y += 7;
 
-bbcShape77.point.x += 6;
+bbcShape77.point.x += 2;
 bbcShape77.point.y += -4;
 
-bbcShape78.point.x += -3;
-bbcShape78.point.y += -1;
+bbcShape78.point.x += 6;
+bbcShape78.point.y += -9;
 
-bbcShape79.point.x += 1;
-bbcShape79.point.y += -6;
+bbcShape79.point.x += 10;
+bbcShape79.point.y += -4;
 
-bbcShape80.point.x += -10;
-bbcShape80.point.y += 6;
+bbcShape80.point.x += 9;
+bbcShape80.point.y += 4;
 
-bbcShape81.point.x += -6;
-bbcShape81.point.y += -1;
+bbcShape81.point.x += -9;
+bbcShape81.point.y += 4;
 
-bbcShape82.point.x += 7;
-bbcShape82.point.y += 3;
+bbcShape82.point.x += 3;
+bbcShape82.point.y += 1;
 
-bbcShape83.point.x += 5;
-bbcShape83.point.y += 6;
+bbcShape83.point.x += 6;
+bbcShape83.point.y += 8;
 
-bbcShape84.point.x += -4;
-bbcShape84.point.y += 1;
+bbcShape84.point.x += 0;
+bbcShape84.point.y += 4;
 
-bbcShape85.point.x += -9;
-bbcShape85.point.y += -2;
+bbcShape85.point.x += -5;
+bbcShape85.point.y += 9;
 
-bbcShape86.point.x += -8;
-bbcShape86.point.y += -2;
+bbcShape86.point.x += -9;
+bbcShape86.point.y += -10;
 
-bbcShape87.point.x += -8;
-bbcShape87.point.y += -10;
+bbcShape87.point.x += -9;
+bbcShape87.point.y += 4;
 
 bbcShape88.point.x += 2;
-bbcShape88.point.y += 4;
+bbcShape88.point.y += 3;
 
-bbcShape89.point.x += 8;
-bbcShape89.point.y += -3;
+bbcShape89.point.x += -6;
+bbcShape89.point.y += 10;
 
-bbcShape90.point.x += -7;
-bbcShape90.point.y += 10;
+bbcShape90.point.x += 9;
+bbcShape90.point.y += 5;
 
-bbcShape91.point.x += -2;
-bbcShape91.point.y += -7;
+bbcShape91.point.x += -10;
+bbcShape91.point.y += -9;
 
-bbcShape92.point.x += 2;
-bbcShape92.point.y += 5;
+bbcShape92.point.x += -2;
+bbcShape92.point.y += 7;
 
-bbcShape93.point.x += -10;
-bbcShape93.point.y += -6;
+bbcShape93.point.x += -4;
+bbcShape93.point.y += -1;
 
-bbcShape94.point.x += 8;
-bbcShape94.point.y += 4;
+bbcShape94.point.x += 4;
+bbcShape94.point.y += 1;
 
-bbcShape95.point.x += 1;
-bbcShape95.point.y += -5;
+bbcShape95.point.x += 3;
+bbcShape95.point.y += 2;
 
-bbcShape96.point.x += -8;
-bbcShape96.point.y += -1;
+bbcShape96.point.x += 10;
+bbcShape96.point.y += 2;
 
-bbcShape97.point.x += -2;
-bbcShape97.point.y += 2;
+bbcShape97.point.x += -9;
+bbcShape97.point.y += -5;
 
-bbcShape98.point.x += 4;
-bbcShape98.point.y += -4;
+bbcShape98.point.x += 10;
+bbcShape98.point.y += 1;
 
-bbcShape99.point.x += -8;
-bbcShape99.point.y += 10;
+bbcShape99.point.x += 10;
+bbcShape99.point.y += 0;
 
-bbcShape100.point.x += -10;
-bbcShape100.point.y += -6;
+bbcShape100.point.x += -6;
+bbcShape100.point.y += 3;
 
-bbcShape101.point.x += -1;
-bbcShape101.point.y += 7;
+bbcShape101.point.x += -6;
+bbcShape101.point.y += -8;
 
-bbcShape102.point.x += -4;
-bbcShape102.point.y += -10;
+bbcShape102.point.x += -5;
+bbcShape102.point.y += -7;
 
-bbcShape103.point.x += -6;
-bbcShape103.point.y += -8;
+bbcShape103.point.x += -2;
+bbcShape103.point.y += -7;
 
-bbcShape104.point.x += -8;
-bbcShape104.point.y += -4;
+bbcShape104.point.x += -3;
+bbcShape104.point.y += 4;
 
-bbcShape105.point.x += 2;
-bbcShape105.point.y += -10;
+bbcShape105.point.x += 7;
+bbcShape105.point.y += -7;
 
-bbcShape106.point.x += -3;
-bbcShape106.point.y += 0;
+bbcShape106.point.x += -7;
+bbcShape106.point.y += 3;
 
-bbcShape107.point.x += 2;
-bbcShape107.point.y += -10;
+bbcShape107.point.x += 4;
+bbcShape107.point.y += -3;
 
-bbcShape108.point.x += -4;
-bbcShape108.point.y += -8;
+bbcShape108.point.x += 10;
+bbcShape108.point.y += -10;
 
-bbcShape109.point.x += 0;
-bbcShape109.point.y += 0;
+bbcShape109.point.x += 6;
+bbcShape109.point.y += -1;
 
-bbcShape110.point.x += 1;
+bbcShape110.point.x += -2;
 bbcShape110.point.y += -2;
 
-bbcShape111.point.x += -3;
-bbcShape111.point.y += 3;
+bbcShape111.point.x += 4;
+bbcShape111.point.y += -7;
 
-bbcShape112.point.x += -6;
-bbcShape112.point.y += 5;
+bbcShape112.point.x += 3;
+bbcShape112.point.y += -8;
 
-bbcShape113.point.x += 4;
-bbcShape113.point.y += 0;
+bbcShape113.point.x += 10;
+bbcShape113.point.y += -4;
 
-bbcShape114.point.x += -2;
-bbcShape114.point.y += 1;
+bbcShape114.point.x += -10;
+bbcShape114.point.y += -3;
 
-bbcShape115.point.x += 1;
-bbcShape115.point.y += 1;
+bbcShape115.point.x += 10;
+bbcShape115.point.y += -4;
 
-bbcShape116.point.x += -3;
-bbcShape116.point.y += -5;
+bbcShape116.point.x += -8;
+bbcShape116.point.y += -8;
 
-bbcShape117.point.x += -5;
-bbcShape117.point.y += -1;
+bbcShape117.point.x += 2;
+bbcShape117.point.y += 10;
 
-bbcShape118.point.x += 0;
-bbcShape118.point.y += 0;
+bbcShape118.point.x += 6;
+bbcShape118.point.y += 1;
 
-bbcShape119.point.x += -5;
-bbcShape119.point.y += -7;
+bbcShape119.point.x += 5;
+bbcShape119.point.y += 7;
 
-bbcShape120.point.x += 3;
-bbcShape120.point.y += 1;
+bbcShape120.point.x += -3;
+bbcShape120.point.y += 10;
 
 bbcShape121.point.x += -7;
-bbcShape121.point.y += 5;
+bbcShape121.point.y += 6;
 
-bbcShape122.point.x += 6;
-bbcShape122.point.y += 7;
+bbcShape122.point.x += -2;
+bbcShape122.point.y += -5;
 
-bbcShape123.point.x += -5;
-bbcShape123.point.y += -2;
+bbcShape123.point.x += 8;
+bbcShape123.point.y += 8;
 
-bbcShape124.point.x += -1;
-bbcShape124.point.y += -8;
+bbcShape124.point.x += 2;
+bbcShape124.point.y += 2;
 
-bbcShape125.point.x += 1;
-bbcShape125.point.y += -9;
+bbcShape125.point.x += 10;
+bbcShape125.point.y += 6;
 
 bbcShape126.point.x += -7;
-bbcShape126.point.y += -5;
+bbcShape126.point.y += 10;
 
-bbcShape127.point.x += 6;
-bbcShape127.point.y += -10;
+bbcShape127.point.x += 3;
+bbcShape127.point.y += 1;
 
-bbcShape128.point.x += 10;
-bbcShape128.point.y += -9;
+bbcShape128.point.x += -8;
+bbcShape128.point.y += -8;
 
-bbcShape129.point.x += 2;
-bbcShape129.point.y += -4;
+bbcShape129.point.x += 9;
+bbcShape129.point.y += 3;
 
 bbcShape130.point.x += -7;
-bbcShape130.point.y += 7;
+bbcShape130.point.y += 2;
 
-bbcShape131.point.x += 2;
-bbcShape131.point.y += -5;
+bbcShape131.point.x += 7;
+bbcShape131.point.y += 7;
 
-bbcShape132.point.x += 8;
-bbcShape132.point.y += 9;
+bbcShape132.point.x += -9;
+bbcShape132.point.y += -5;
 
-bbcShape133.point.x += 6;
-bbcShape133.point.y += 0;
+bbcShape133.point.x += -10;
+bbcShape133.point.y += 5;
 
-bbcShape134.point.x += -9;
-bbcShape134.point.y += -9;
+bbcShape134.point.x += 10;
+bbcShape134.point.y += 7;
 
-bbcShape135.point.x += -7;
-bbcShape135.point.y += 6;
+bbcShape135.point.x += 3;
+bbcShape135.point.y += 9;
 
-bbcShape136.point.x += -5;
-bbcShape136.point.y += 10;
+bbcShape136.point.x += -9;
+bbcShape136.point.y += -10;
 
-bbcShape137.point.x += 8;
-bbcShape137.point.y += -3;
+bbcShape137.point.x += -6;
+bbcShape137.point.y += -1;
 
-bbcShape138.point.x += 4;
-bbcShape138.point.y += -2;
+bbcShape138.point.x += -10;
+bbcShape138.point.y += 9;
 
-bbcShape139.point.x += 0;
-bbcShape139.point.y += -10;
+bbcShape139.point.x += 10;
+bbcShape139.point.y += -1;
 
-bbcShape140.point.x += -4;
-bbcShape140.point.y += 4;
+bbcShape140.point.x += 3;
+bbcShape140.point.y += 1;
 
-bbcShape141.point.x += -6;
-bbcShape141.point.y += 1;
+bbcShape141.point.x += 7;
+bbcShape141.point.y += 3;
 
-bbcShape142.point.x += 10;
-bbcShape142.point.y += -1;
+bbcShape142.point.x += 5;
+bbcShape142.point.y += -4;
 
-bbcShape143.point.x += -2;
-bbcShape143.point.y += 5;
+bbcShape143.point.x += -5;
+bbcShape143.point.y += -6;
 
-bbcShape144.point.x += 0;
-bbcShape144.point.y += 9;
+bbcShape144.point.x += 3;
+bbcShape144.point.y += -1;
 
-bbcShape145.point.x += 8;
-bbcShape145.point.y += -9;
+bbcShape145.point.x += 3;
+bbcShape145.point.y += 6;
 
-bbcShape146.point.x += -2;
-bbcShape146.point.y += -5;
+bbcShape146.point.x += 9;
+bbcShape146.point.y += 7;
 
-bbcShape147.point.x += 0;
-bbcShape147.point.y += -1;
+bbcShape147.point.x += 9;
+bbcShape147.point.y += 1;
 
-bbcShape148.point.x += -7;
-bbcShape148.point.y += -2;
+bbcShape148.point.x += -6;
+bbcShape148.point.y += 7;
 
-bbcShape149.point.x += -2;
-bbcShape149.point.y += 5;
+bbcShape149.point.x += 8;
+bbcShape149.point.y += 2;
 
-bbcShape150.point.x += 0;
-bbcShape150.point.y += -9;
+bbcShape150.point.x += 6;
+bbcShape150.point.y += 0;
 
-bbcShape151.point.x += 3;
-bbcShape151.point.y += 6;
+bbcShape151.point.x += -7;
+bbcShape151.point.y += 7;
 
-bbcShape152.point.x += 1;
-bbcShape152.point.y += 7;
+bbcShape152.point.x += -7;
+bbcShape152.point.y += 9;
 
-bbcShape153.point.x += 10;
-bbcShape153.point.y += -5;
+bbcShape153.point.x += -1;
+bbcShape153.point.y += -10;
 
-bbcShape154.point.x += 3;
-bbcShape154.point.y += 7;
+bbcShape154.point.x += -7;
+bbcShape154.point.y += 4;
 
-bbcShape155.point.x += -10;
-bbcShape155.point.y += 0;
+bbcShape155.point.x += 10;
+bbcShape155.point.y += -6;
 
-bbcShape156.point.x += -3;
-bbcShape156.point.y += 10;
+bbcShape156.point.x += 10;
+bbcShape156.point.y += 2;
 
-bbcShape157.point.x += -3;
-bbcShape157.point.y += 4;
+bbcShape157.point.x += 9;
+bbcShape157.point.y += -9;
 
-bbcShape158.point.x += 4;
-bbcShape158.point.y += -4;
+bbcShape158.point.x += 1;
+bbcShape158.point.y += -5;
 
-bbcShape159.point.x += -2;
-bbcShape159.point.y += 4;
+bbcShape159.point.x += -1;
+bbcShape159.point.y += -6;
 
 bbcShape160.point.x += 5;
-bbcShape160.point.y += -6;
+bbcShape160.point.y += 6;
 
-bbcShape161.point.x += 3;
-bbcShape161.point.y += 7;
+bbcShape161.point.x += 6;
+bbcShape161.point.y += -1;
 
-bbcShape162.point.x += -2;
-bbcShape162.point.y += 7;
+bbcShape162.point.x += 2;
+bbcShape162.point.y += 10;
 
-bbcShape163.point.x += -3;
-bbcShape163.point.y += -2;
+bbcShape163.point.x += 2;
+bbcShape163.point.y += 1;
 
-bbcShape164.point.x += 4;
-bbcShape164.point.y += 0;
+bbcShape164.point.x += -1;
+bbcShape164.point.y += 2;
 
-bbcShape165.point.x += 8;
-bbcShape165.point.y += -8;
+bbcShape165.point.x += 3;
+bbcShape165.point.y += -2;
 
-bbcShape166.point.x += 8;
-bbcShape166.point.y += -3;
+bbcShape166.point.x += 0;
+bbcShape166.point.y += 3;
 
-bbcShape167.point.x += -9;
-bbcShape167.point.y += 5;
+bbcShape167.point.x += -1;
+bbcShape167.point.y += 1;
 
-bbcShape168.point.x += 7;
-bbcShape168.point.y += 5;
+bbcShape168.point.x += -2;
+bbcShape168.point.y += 8;
 
-bbcShape169.point.x += 0;
-bbcShape169.point.y += -8;
+bbcShape169.point.x += -6;
+bbcShape169.point.y += 10;
 
-bbcShape170.point.x += 7;
+bbcShape170.point.x += 1;
 bbcShape170.point.y += 3;
 
-bbcShape171.point.x += 2;
-bbcShape171.point.y += 10;
+bbcShape171.point.x += 6;
+bbcShape171.point.y += -10;
 
-bbcShape172.point.x += 6;
-bbcShape172.point.y += 10;
+bbcShape172.point.x += -8;
+bbcShape172.point.y += -7;
 
-bbcShape173.point.x += -8;
-bbcShape173.point.y += -1;
+bbcShape173.point.x += 9;
+bbcShape173.point.y += 2;
 
-bbcShape174.point.x += -2;
+bbcShape174.point.x += 3;
 bbcShape174.point.y += -4;
 
-bbcShape175.point.x += 10;
-bbcShape175.point.y += -1;
+bbcShape175.point.x += -5;
+bbcShape175.point.y += 2;
 
-bbcShape176.point.x += 0;
-bbcShape176.point.y += 10;
+bbcShape176.point.x += 3;
+bbcShape176.point.y += -3;
 
-bbcShape177.point.x += 6;
-bbcShape177.point.y += -5;
+bbcShape177.point.x += -2;
+bbcShape177.point.y += 4;
 
-bbcShape178.point.x += 8;
-bbcShape178.point.y += 0;
+bbcShape178.point.x += -1;
+bbcShape178.point.y += 3;
 
-bbcShape179.point.x += 6;
-bbcShape179.point.y += 8;
+bbcShape179.point.x += -4;
+bbcShape179.point.y += -7;
 
-bbcShape180.point.x += -6;
-bbcShape180.point.y += 5;
+bbcShape180.point.x += 3;
+bbcShape180.point.y += 3;
 
-bbcShape181.point.x += 5;
-bbcShape181.point.y += 9;
+bbcShape181.point.x += 10;
+bbcShape181.point.y += -3;
 
-bbcShape182.point.x += -8;
-bbcShape182.point.y += 1;
+bbcShape182.point.x += -3;
+bbcShape182.point.y += 8;
 
-bbcShape183.point.x += -10;
-bbcShape183.point.y += 3;
+bbcShape183.point.x += -2;
+bbcShape183.point.y += -9;
 
-bbcShape184.point.x += 6;
-bbcShape184.point.y += 6;
+bbcShape184.point.x += -5;
+bbcShape184.point.y += -9;
 
-bbcShape185.point.x += 0;
-bbcShape185.point.y += -6;
+bbcShape185.point.x += 3;
+bbcShape185.point.y += 1;
 
-bbcShape186.point.x += 6;
-bbcShape186.point.y += -8;
+bbcShape186.point.x += -8;
+bbcShape186.point.y += 0;
 
-bbcShape187.point.x += -6;
-bbcShape187.point.y += 0;
+bbcShape187.point.x += 1;
+bbcShape187.point.y += 2;
 
-bbcShape188.point.x += 6;
-bbcShape188.point.y += -6;
+bbcShape188.point.x += 0;
+bbcShape188.point.y += 5;
 
-bbcShape189.point.x += -4;
-bbcShape189.point.y += -9;
+bbcShape189.point.x += 1;
+bbcShape189.point.y += 10;
 
-bbcShape190.point.x += 10;
-bbcShape190.point.y += -4;
+bbcShape190.point.x += -10;
+bbcShape190.point.y += 1;
 
-bbcShape191.point.x += -5;
+bbcShape191.point.x += -4;
 bbcShape191.point.y += 3;
 
-bbcShape192.point.x += 7;
-bbcShape192.point.y += 8;
+bbcShape192.point.x += 3;
+bbcShape192.point.y += 0;
 
-bbcShape193.point.x += -9;
-bbcShape193.point.y += -6;
+bbcShape193.point.x += 3;
+bbcShape193.point.y += -9;
 
-bbcShape194.point.x += 0;
-bbcShape194.point.y += 2;
+bbcShape194.point.x += -3;
+bbcShape194.point.y += -8;
 
-bbcShape195.point.x += 9;
-bbcShape195.point.y += 5;
+bbcShape195.point.x += 2;
+bbcShape195.point.y += -6;
 
-bbcShape196.point.x += -3;
-bbcShape196.point.y += -10;
+bbcShape196.point.x += 7;
+bbcShape196.point.y += -6;
 
-bbcShape197.point.x += 5;
-bbcShape197.point.y += -5;
+bbcShape197.point.x += 7;
+bbcShape197.point.y += 6;
 
-bbcShape198.point.x += -1;
-bbcShape198.point.y += -4;
+bbcShape198.point.x += -8;
+bbcShape198.point.y += -2;
 
-bbcShape199.point.x += -5;
-bbcShape199.point.y += -5;
+bbcShape199.point.x += -9;
+bbcShape199.point.y += 2;
 
-bbcShape200.point.x += 6;
-bbcShape200.point.y += 2;
+bbcShape200.point.x += -5;
+bbcShape200.point.y += 6;
 
-bbcShape201.point.x += -1;
-bbcShape201.point.y += -9;
+bbcShape201.point.x += 0;
+bbcShape201.point.y += -5;
 
-bbcShape202.point.x += -5;
-bbcShape202.point.y += -8;
+bbcShape202.point.x += 4;
+bbcShape202.point.y += 8;
 
-bbcShape203.point.x += 6;
-bbcShape203.point.y += 5;
+bbcShape203.point.x += 2;
+bbcShape203.point.y += 4;
 
-bbcShape204.point.x += -1;
-bbcShape204.point.y += 7;
+bbcShape204.point.x += 4;
+bbcShape204.point.y += -8;
 
-bbcShape205.point.x += -1;
-bbcShape205.point.y += 7;
+bbcShape205.point.x += 1;
+bbcShape205.point.y += -4;
 
-bbcShape206.point.x += -2;
-bbcShape206.point.y += -8;
+bbcShape206.point.x += 9;
+bbcShape206.point.y += 8;
 
-bbcShape207.point.x += 4;
-bbcShape207.point.y += -5;
+bbcShape207.point.x += -10;
+bbcShape207.point.y += -10;
 
-bbcShape208.point.x += -6;
-bbcShape208.point.y += -5;
+bbcShape208.point.x += 5;
+bbcShape208.point.y += 1;
 
-bbcShape209.point.x += 2;
-bbcShape209.point.y += 8;
+bbcShape209.point.x += -2;
+bbcShape209.point.y += 6;
 
-bbcShape210.point.x += -1;
-bbcShape210.point.y += 8;
+bbcShape210.point.x += -7;
+bbcShape210.point.y += 7;
 
-bbcShape211.point.x += -8;
-bbcShape211.point.y += 1;
+bbcShape211.point.x += -5;
+bbcShape211.point.y += -2;
 
-bbcShape212.point.x += 10;
-bbcShape212.point.y += -4;
+bbcShape212.point.x += 3;
+bbcShape212.point.y += 7;
 
-bbcShape213.point.x += 10;
-bbcShape213.point.y += 9;
+bbcShape213.point.x += -1;
+bbcShape213.point.y += 10;
 
-bbcShape214.point.x += 6;
-bbcShape214.point.y += -5;
+bbcShape214.point.x += -5;
+bbcShape214.point.y += 8;
 
-bbcShape215.point.x += 8;
-bbcShape215.point.y += -10;
+bbcShape215.point.x += 9;
+bbcShape215.point.y += -2;
 
-bbcShape216.point.x += -9;
-bbcShape216.point.y += -9;
+bbcShape216.point.x += 1;
+bbcShape216.point.y += 0;
 
-bbcShape217.point.x += 5;
-bbcShape217.point.y += -3;
+bbcShape217.point.x += 1;
+bbcShape217.point.y += 0;
 
-bbcShape218.point.x += 3;
-bbcShape218.point.y += -4;
+bbcShape218.point.x += 7;
+bbcShape218.point.y += 0;
 
-bbcShape219.point.x += 0;
-bbcShape219.point.y += 7;
+bbcShape219.point.x += 9;
+bbcShape219.point.y += 9;
 
-bbcShape220.point.x += 9;
-bbcShape220.point.y += -9;
+bbcShape220.point.x += 1;
+bbcShape220.point.y += 4;
 
-bbcShape221.point.x += 0;
-bbcShape221.point.y += 6;
+bbcShape221.point.x += 4;
+bbcShape221.point.y += -2;
 
-bbcShape222.point.x += -10;
-bbcShape222.point.y += 4;
+bbcShape222.point.x += 8;
+bbcShape222.point.y += 2;
 
 bbcShape223.point.x += 6;
-bbcShape223.point.y += -3;
+bbcShape223.point.y += 1;
 
-bbcShape224.point.x += 0;
-bbcShape224.point.y += 9;
+bbcShape224.point.x += -6;
+bbcShape224.point.y += 1;
 
-bbcShape225.point.x += 2;
-bbcShape225.point.y += -1;
+bbcShape225.point.x += 6;
+bbcShape225.point.y += -8;
 
-bbcShape226.point.x += 7;
-bbcShape226.point.y += 0;
+bbcShape226.point.x += 4;
+bbcShape226.point.y += 9;
 
-bbcShape227.point.x += -5;
-bbcShape227.point.y += 1;
+bbcShape227.point.x += 4;
+bbcShape227.point.y += -6;
 
-bbcShape228.point.x += 8;
-bbcShape228.point.y += 9;
+bbcShape228.point.x += -2;
+bbcShape228.point.y += -7;
 
-bbcShape229.point.x += 4;
-bbcShape229.point.y += -1;
+bbcShape229.point.x += -6;
+bbcShape229.point.y += -5;
 
-bbcShape230.point.x += -5;
-bbcShape230.point.y += -1;
+bbcShape230.point.x += 6;
+bbcShape230.point.y += 4;
 
-bbcShape231.point.x += -5;
-bbcShape231.point.y += 8;
+bbcShape231.point.x += 8;
+bbcShape231.point.y += -1;
 
-bbcShape232.point.x += 9;
-bbcShape232.point.y += -4;
+bbcShape232.point.x += -4;
+bbcShape232.point.y += -3;
 
-bbcShape233.point.x += -7;
-bbcShape233.point.y += -8;
+bbcShape233.point.x += -1;
+bbcShape233.point.y += -6;
 
-bbcShape234.point.x += 8;
-bbcShape234.point.y += 9;
+bbcShape234.point.x += -3;
+bbcShape234.point.y += -1;
 
-bbcShape235.point.x += 1;
-bbcShape235.point.y += 9;
+bbcShape235.point.x += -3;
+bbcShape235.point.y += -5;
 
-bbcShape236.point.x += 0;
-bbcShape236.point.y += 2;
+bbcShape236.point.x += 9;
+bbcShape236.point.y += 0;
 
-bbcShape237.point.x += -3;
-bbcShape237.point.y += 0;
+bbcShape237.point.x += -5;
+bbcShape237.point.y += -10;
 
-bbcShape238.point.x += 1;
-bbcShape238.point.y += 4;
+bbcShape238.point.x += 7;
+bbcShape238.point.y += -7;
 
-bbcShape239.point.x += 1;
-bbcShape239.point.y += -2;
+bbcShape239.point.x += -4;
+bbcShape239.point.y += 1;
 
-bbcShape240.point.x += -6;
-bbcShape240.point.y += -6;
+bbcShape240.point.x += -8;
+bbcShape240.point.y += 2;
 
-bbcShape241.point.x += 0;
-bbcShape241.point.y += 8;
+bbcShape241.point.x += 2;
+bbcShape241.point.y += -3;
 
-bbcShape242.point.x += -9;
-bbcShape242.point.y += -8;
+bbcShape242.point.x += 5;
+bbcShape242.point.y += -5;
 
-bbcShape243.point.x += 5;
-bbcShape243.point.y += 1;
+bbcShape243.point.x += -2;
+bbcShape243.point.y += 7;
 
-bbcShape244.point.x += -5;
-bbcShape244.point.y += -9;
+bbcShape244.point.x += 4;
+bbcShape244.point.y += 10;
 
-bbcShape245.point.x += 3;
-bbcShape245.point.y += 1;
+bbcShape245.point.x += -5;
+bbcShape245.point.y += 6;
 
-bbcShape246.point.x += -8;
-bbcShape246.point.y += -5;
+bbcShape246.point.x += -1;
+bbcShape246.point.y += 10;
 
-bbcShape247.point.x += -9;
-bbcShape247.point.y += -2;
+bbcShape247.point.x += -3;
+bbcShape247.point.y += -9;
 
-bbcShape248.point.x += -3;
-bbcShape248.point.y += 6;
+bbcShape248.point.x += 3;
+bbcShape248.point.y += 7;
 
-bbcShape249.point.x += 5;
+bbcShape249.point.x += -2;
 bbcShape249.point.y += 2;
 
-bbcShape250.point.x += -4;
-bbcShape250.point.y += 3;
+bbcShape250.point.x += -3;
+bbcShape250.point.y += 0;
 
-bbcShape251.point.x += 10;
-bbcShape251.point.y += 8;
+bbcShape251.point.x += 8;
+bbcShape251.point.y += -4;
 
-bbcShape252.point.x += 7;
-bbcShape252.point.y += 10;
+bbcShape252.point.x += 1;
+bbcShape252.point.y += -3;
 
-bbcShape253.point.x += -2;
-bbcShape253.point.y += -2;
+bbcShape253.point.x += 0;
+bbcShape253.point.y += -3;
 
-bbcShape254.point.x += 4;
-bbcShape254.point.y += -3;
+bbcShape254.point.x += 7;
+bbcShape254.point.y += -5;
 
-bbcShape255.point.x += -3;
-bbcShape255.point.y += 10;
+bbcShape255.point.x += -8;
+bbcShape255.point.y += -6;
 
-bbcShape256.point.x += 4;
+bbcShape256.point.x += -1;
 bbcShape256.point.y += 8;
 
-bbcShape257.point.x += -7;
-bbcShape257.point.y += 5;
+bbcShape257.point.x += 3;
+bbcShape257.point.y += 10;
 
-bbcShape258.point.x += 1;
-bbcShape258.point.y += -4;
+bbcShape258.point.x += -7;
+bbcShape258.point.y += -1;
 
-bbcShape259.point.x += -4;
-bbcShape259.point.y += -7;
+bbcShape259.point.x += 6;
+bbcShape259.point.y += -8;
 
-bbcShape260.point.x += 10;
-bbcShape260.point.y += -7;
+bbcShape260.point.x += -6;
+bbcShape260.point.y += -9;
 
-bbcShape261.point.x += -6;
-bbcShape261.point.y += -6;
+bbcShape261.point.x += 6;
+bbcShape261.point.y += -5;
 
-bbcShape262.point.x += -8;
-bbcShape262.point.y += 9;
+bbcShape262.point.x += 4;
+bbcShape262.point.y += -1;
 
-bbcShape263.point.x += -9;
-bbcShape263.point.y += -3;
+bbcShape263.point.x += -8;
+bbcShape263.point.y += -7;
 
-bbcShape264.point.x += 1;
+bbcShape264.point.x += -1;
 bbcShape264.point.y += 10;
 
-bbcShape265.point.x += -2;
-bbcShape265.point.y += -9;
+bbcShape265.point.x += -6;
+bbcShape265.point.y += -1;
 
-bbcShape266.point.x += -8;
+bbcShape266.point.x += 5;
 bbcShape266.point.y += -10;
 
-bbcShape267.point.x += 6;
-bbcShape267.point.y += -7;
+bbcShape267.point.x += 8;
+bbcShape267.point.y += 1;
 
-bbcShape268.point.x += 7;
-bbcShape268.point.y += -8;
+bbcShape268.point.x += 1;
+bbcShape268.point.y += 4;
 
-bbcShape269.point.x += -6;
-bbcShape269.point.y += -10;
+bbcShape269.point.x += -2;
+bbcShape269.point.y += 0;
 
-bbcShape270.point.x += 4;
-bbcShape270.point.y += 2;
+bbcShape270.point.x += 5;
+bbcShape270.point.y += -8;
 
-bbcShape271.point.x += -3;
-bbcShape271.point.y += 0;
+bbcShape271.point.x += -8;
+bbcShape271.point.y += -8;
 
-bbcShape272.point.x += -9;
-bbcShape272.point.y += -4;
+bbcShape272.point.x += 8;
+bbcShape272.point.y += -10;
 
-bbcShape273.point.x += -4;
-bbcShape273.point.y += 5;
+bbcShape273.point.x += 3;
+bbcShape273.point.y += 0;
 
-bbcShape274.point.x += -3;
-bbcShape274.point.y += 6;
+bbcShape274.point.x += -1;
+bbcShape274.point.y += 1;
 
-bbcShape275.point.x += 7;
-bbcShape275.point.y += -5;
+bbcShape275.point.x += 9;
+bbcShape275.point.y += 8;
 
 bbcShape276.point.x += -4;
-bbcShape276.point.y += -1;
+bbcShape276.point.y += -9;
 
-bbcShape277.point.x += -6;
-bbcShape277.point.y += -1;
+bbcShape277.point.x += 9;
+bbcShape277.point.y += -4;
 
-bbcShape278.point.x += 1;
+bbcShape278.point.x += -10;
 bbcShape278.point.y += 4;
 
-bbcShape279.point.x += -5;
+bbcShape279.point.x += -10;
 bbcShape279.point.y += -5;
 
-bbcShape280.point.x += -3;
-bbcShape280.point.y += 8;
+bbcShape280.point.x += -4;
+bbcShape280.point.y += -4;
 
-bbcShape281.point.x += -8;
-bbcShape281.point.y += 9;
+bbcShape281.point.x += 0;
+bbcShape281.point.y += 6;
 
-bbcShape282.point.x += -7;
-bbcShape282.point.y += -4;
+bbcShape282.point.x += -5;
+bbcShape282.point.y += 2;
 
-bbcShape283.point.x += -7;
-bbcShape283.point.y += 1;
+bbcShape283.point.x += 9;
+bbcShape283.point.y += 0;
 
-bbcShape284.point.x += 0;
-bbcShape284.point.y += -10;
+bbcShape284.point.x += -6;
+bbcShape284.point.y += 5;
 
-bbcShape285.point.x += 6;
-bbcShape285.point.y += 3;
+bbcShape285.point.x += -7;
+bbcShape285.point.y += 5;
 
-bbcShape286.point.x += -5;
-bbcShape286.point.y += 7;
+bbcShape286.point.x += -7;
+bbcShape286.point.y += 10;
 
-bbcShape287.point.x += 7;
-bbcShape287.point.y += 2;
+bbcShape287.point.x += -1;
+bbcShape287.point.y += 7;
 
 bbcShape288.point.x += 10;
-bbcShape288.point.y += 2;
+bbcShape288.point.y += -7;
 
-bbcShape289.point.x += -4;
-bbcShape289.point.y += 2;
+bbcShape289.point.x += 3;
+bbcShape289.point.y += 4;
 
-bbcShape290.point.x += 10;
-bbcShape290.point.y += 9;
+bbcShape290.point.x += 7;
+bbcShape290.point.y += -1;
 
-bbcShape291.point.x += -2;
-bbcShape291.point.y += 2;
+bbcShape291.point.x += -3;
+bbcShape291.point.y += 9;
 
-bbcShape292.point.x += -4;
-bbcShape292.point.y += 0;
+bbcShape292.point.x += -9;
+bbcShape292.point.y += 7;
 
-bbcShape293.point.x += -7;
-bbcShape293.point.y += 1;
+bbcShape293.point.x += -1;
+bbcShape293.point.y += -6;
 
-bbcShape294.point.x += -4;
-bbcShape294.point.y += 8;
+bbcShape294.point.x += -3;
+bbcShape294.point.y += -4;
 
-bbcShape295.point.x += -6;
-bbcShape295.point.y += 3;
+bbcShape295.point.x += -10;
+bbcShape295.point.y += 9;
 
-bbcShape296.point.x += 6;
-bbcShape296.point.y += -8;
+bbcShape296.point.x += -6;
+bbcShape296.point.y += 10;
 
-bbcShape297.point.x += 6;
-bbcShape297.point.y += 2;
+bbcShape297.point.x += -5;
+bbcShape297.point.y += -9;
 
-bbcShape298.point.x += 0;
-bbcShape298.point.y += 3;
+bbcShape298.point.x += -5;
+bbcShape298.point.y += -8;
 
-bbcShape299.point.x += 5;
-bbcShape299.point.y += 7;
+bbcShape299.point.x += -1;
+bbcShape299.point.y += 8;
 
-bbcShape300.point.x += 6;
-bbcShape300.point.y += 8;
+bbcShape300.point.x += 9;
+bbcShape300.point.y += -9;
 
-bbcShape301.rotation += 0.0;
-bbcShape301.around.x = 300.0;
-bbcShape301.around.y = 200.0;
+bbcShape301.point.x += 8;
+bbcShape301.point.y += -4;
 
-bbcShape302.rotation += 0.0;
-bbcShape302.around.x = 300.0;
-bbcShape302.around.y = 200.0;
+bbcShape302.point.x += 4;
+bbcShape302.point.y += -5;
 
 bbcShape303.rotation += 0.0;
 bbcShape303.around.x = 300.0;
@@ -15100,15 +15119,15 @@ bbcShape321.rotation += 0.0;
 bbcShape321.around.x = 300.0;
 bbcShape321.around.y = 200.0;
 
-bbcShape322.rotation += 0.05;
+bbcShape322.rotation += 0.0;
 bbcShape322.around.x = 300.0;
 bbcShape322.around.y = 200.0;
 
-bbcShape323.rotation += 0.1;
+bbcShape323.rotation += 0.0;
 bbcShape323.around.x = 300.0;
 bbcShape323.around.y = 200.0;
 
-bbcShape324.rotation += 0.1;
+bbcShape324.rotation += 0.05;
 bbcShape324.around.x = 300.0;
 bbcShape324.around.y = 200.0;
 
@@ -15188,11 +15207,11 @@ bbcShape343.rotation += 0.1;
 bbcShape343.around.x = 300.0;
 bbcShape343.around.y = 200.0;
 
-bbcShape344.rotation += 0.2;
+bbcShape344.rotation += 0.1;
 bbcShape344.around.x = 300.0;
 bbcShape344.around.y = 200.0;
 
-bbcShape345.rotation += 0.2;
+bbcShape345.rotation += 0.1;
 bbcShape345.around.x = 300.0;
 bbcShape345.around.y = 200.0;
 
@@ -15268,15 +15287,15 @@ bbcShape363.rotation += 0.2;
 bbcShape363.around.x = 300.0;
 bbcShape363.around.y = 200.0;
 
-bbcShape364.rotation += 0.15;
+bbcShape364.rotation += 0.2;
 bbcShape364.around.x = 300.0;
 bbcShape364.around.y = 200.0;
 
-bbcShape365.rotation += 0.3;
+bbcShape365.rotation += 0.2;
 bbcShape365.around.x = 300.0;
 bbcShape365.around.y = 200.0;
 
-bbcShape366.rotation += 0.3;
+bbcShape366.rotation += 0.15;
 bbcShape366.around.x = 300.0;
 bbcShape366.around.y = 200.0;
 
@@ -15352,15 +15371,15 @@ bbcShape384.rotation += 0.3;
 bbcShape384.around.x = 300.0;
 bbcShape384.around.y = 200.0;
 
-bbcShape385.rotation += 0.2;
+bbcShape385.rotation += 0.3;
 bbcShape385.around.x = 300.0;
 bbcShape385.around.y = 200.0;
 
-bbcShape386.rotation += 0.4;
+bbcShape386.rotation += 0.3;
 bbcShape386.around.x = 300.0;
 bbcShape386.around.y = 200.0;
 
-bbcShape387.rotation += 0.4;
+bbcShape387.rotation += 0.2;
 bbcShape387.around.x = 300.0;
 bbcShape387.around.y = 200.0;
 
@@ -15436,15 +15455,15 @@ bbcShape405.rotation += 0.4;
 bbcShape405.around.x = 300.0;
 bbcShape405.around.y = 200.0;
 
-bbcShape406.rotation += 0.25;
+bbcShape406.rotation += 0.4;
 bbcShape406.around.x = 300.0;
 bbcShape406.around.y = 200.0;
 
-bbcShape407.rotation += 0.5;
+bbcShape407.rotation += 0.4;
 bbcShape407.around.x = 300.0;
 bbcShape407.around.y = 200.0;
 
-bbcShape408.rotation += 0.5;
+bbcShape408.rotation += 0.25;
 bbcShape408.around.x = 300.0;
 bbcShape408.around.y = 200.0;
 
@@ -15520,15 +15539,15 @@ bbcShape426.rotation += 0.5;
 bbcShape426.around.x = 300.0;
 bbcShape426.around.y = 200.0;
 
-bbcShape427.rotation += 0.3;
+bbcShape427.rotation += 0.5;
 bbcShape427.around.x = 300.0;
 bbcShape427.around.y = 200.0;
 
-bbcShape428.rotation += 0.6;
+bbcShape428.rotation += 0.5;
 bbcShape428.around.x = 300.0;
 bbcShape428.around.y = 200.0;
 
-bbcShape429.rotation += 0.6;
+bbcShape429.rotation += 0.3;
 bbcShape429.around.x = 300.0;
 bbcShape429.around.y = 200.0;
 
@@ -15604,15 +15623,15 @@ bbcShape447.rotation += 0.6;
 bbcShape447.around.x = 300.0;
 bbcShape447.around.y = 200.0;
 
-bbcShape448.rotation += 0.35;
+bbcShape448.rotation += 0.6;
 bbcShape448.around.x = 300.0;
 bbcShape448.around.y = 200.0;
 
-bbcShape449.rotation += 0.7;
+bbcShape449.rotation += 0.6;
 bbcShape449.around.x = 300.0;
 bbcShape449.around.y = 200.0;
 
-bbcShape450.rotation += 0.7;
+bbcShape450.rotation += 0.35;
 bbcShape450.around.x = 300.0;
 bbcShape450.around.y = 200.0;
 
@@ -15688,15 +15707,15 @@ bbcShape468.rotation += 0.7;
 bbcShape468.around.x = 300.0;
 bbcShape468.around.y = 200.0;
 
-bbcShape469.rotation += 0.4;
+bbcShape469.rotation += 0.7;
 bbcShape469.around.x = 300.0;
 bbcShape469.around.y = 200.0;
 
-bbcShape470.rotation += 0.8;
+bbcShape470.rotation += 0.7;
 bbcShape470.around.x = 300.0;
 bbcShape470.around.y = 200.0;
 
-bbcShape471.rotation += 0.8;
+bbcShape471.rotation += 0.4;
 bbcShape471.around.x = 300.0;
 bbcShape471.around.y = 200.0;
 
@@ -15772,15 +15791,15 @@ bbcShape489.rotation += 0.8;
 bbcShape489.around.x = 300.0;
 bbcShape489.around.y = 200.0;
 
-bbcShape490.rotation += 0.45;
+bbcShape490.rotation += 0.8;
 bbcShape490.around.x = 300.0;
 bbcShape490.around.y = 200.0;
 
-bbcShape491.rotation += 0.9;
+bbcShape491.rotation += 0.8;
 bbcShape491.around.x = 300.0;
 bbcShape491.around.y = 200.0;
 
-bbcShape492.rotation += 0.9;
+bbcShape492.rotation += 0.45;
 bbcShape492.around.x = 300.0;
 bbcShape492.around.y = 200.0;
 
@@ -15856,15 +15875,15 @@ bbcShape510.rotation += 0.9;
 bbcShape510.around.x = 300.0;
 bbcShape510.around.y = 200.0;
 
-bbcShape511.rotation += 0.5;
+bbcShape511.rotation += 0.9;
 bbcShape511.around.x = 300.0;
 bbcShape511.around.y = 200.0;
 
-bbcShape512.rotation += 1.0;
+bbcShape512.rotation += 0.9;
 bbcShape512.around.x = 300.0;
 bbcShape512.around.y = 200.0;
 
-bbcShape513.rotation += 1.0;
+bbcShape513.rotation += 0.5;
 bbcShape513.around.x = 300.0;
 bbcShape513.around.y = 200.0;
 
@@ -15940,15 +15959,15 @@ bbcShape531.rotation += 1.0;
 bbcShape531.around.x = 300.0;
 bbcShape531.around.y = 200.0;
 
-bbcShape532.rotation += 0.55;
+bbcShape532.rotation += 1.0;
 bbcShape532.around.x = 300.0;
 bbcShape532.around.y = 200.0;
 
-bbcShape533.rotation += 1.1;
+bbcShape533.rotation += 1.0;
 bbcShape533.around.x = 300.0;
 bbcShape533.around.y = 200.0;
 
-bbcShape534.rotation += 1.1;
+bbcShape534.rotation += 0.55;
 bbcShape534.around.x = 300.0;
 bbcShape534.around.y = 200.0;
 
@@ -16024,15 +16043,15 @@ bbcShape552.rotation += 1.1;
 bbcShape552.around.x = 300.0;
 bbcShape552.around.y = 200.0;
 
-bbcShape553.rotation += 0.6;
+bbcShape553.rotation += 1.1;
 bbcShape553.around.x = 300.0;
 bbcShape553.around.y = 200.0;
 
-bbcShape554.rotation += 1.2;
+bbcShape554.rotation += 1.1;
 bbcShape554.around.x = 300.0;
 bbcShape554.around.y = 200.0;
 
-bbcShape555.rotation += 1.2;
+bbcShape555.rotation += 0.6;
 bbcShape555.around.x = 300.0;
 bbcShape555.around.y = 200.0;
 
@@ -16108,15 +16127,15 @@ bbcShape573.rotation += 1.2;
 bbcShape573.around.x = 300.0;
 bbcShape573.around.y = 200.0;
 
-bbcShape574.rotation += 0.65;
+bbcShape574.rotation += 1.2;
 bbcShape574.around.x = 300.0;
 bbcShape574.around.y = 200.0;
 
-bbcShape575.rotation += 1.3;
+bbcShape575.rotation += 1.2;
 bbcShape575.around.x = 300.0;
 bbcShape575.around.y = 200.0;
 
-bbcShape576.rotation += 1.3;
+bbcShape576.rotation += 0.65;
 bbcShape576.around.x = 300.0;
 bbcShape576.around.y = 200.0;
 
@@ -16192,15 +16211,15 @@ bbcShape594.rotation += 1.3;
 bbcShape594.around.x = 300.0;
 bbcShape594.around.y = 200.0;
 
-bbcShape595.rotation += 0.7;
+bbcShape595.rotation += 1.3;
 bbcShape595.around.x = 300.0;
 bbcShape595.around.y = 200.0;
 
-bbcShape596.rotation += 1.4;
+bbcShape596.rotation += 1.3;
 bbcShape596.around.x = 300.0;
 bbcShape596.around.y = 200.0;
 
-bbcShape597.rotation += 1.4;
+bbcShape597.rotation += 0.7;
 bbcShape597.around.x = 300.0;
 bbcShape597.around.y = 200.0;
 
@@ -16276,15 +16295,15 @@ bbcShape615.rotation += 1.4;
 bbcShape615.around.x = 300.0;
 bbcShape615.around.y = 200.0;
 
-bbcShape616.rotation += 0.75;
+bbcShape616.rotation += 1.4;
 bbcShape616.around.x = 300.0;
 bbcShape616.around.y = 200.0;
 
-bbcShape617.rotation += 1.5;
+bbcShape617.rotation += 1.4;
 bbcShape617.around.x = 300.0;
 bbcShape617.around.y = 200.0;
 
-bbcShape618.rotation += 1.5;
+bbcShape618.rotation += 0.75;
 bbcShape618.around.x = 300.0;
 bbcShape618.around.y = 200.0;
 
@@ -16360,15 +16379,15 @@ bbcShape636.rotation += 1.5;
 bbcShape636.around.x = 300.0;
 bbcShape636.around.y = 200.0;
 
-bbcShape637.rotation += 0.8;
+bbcShape637.rotation += 1.5;
 bbcShape637.around.x = 300.0;
 bbcShape637.around.y = 200.0;
 
-bbcShape638.rotation += 1.6;
+bbcShape638.rotation += 1.5;
 bbcShape638.around.x = 300.0;
 bbcShape638.around.y = 200.0;
 
-bbcShape639.rotation += 1.6;
+bbcShape639.rotation += 0.8;
 bbcShape639.around.x = 300.0;
 bbcShape639.around.y = 200.0;
 
@@ -16444,15 +16463,15 @@ bbcShape657.rotation += 1.6;
 bbcShape657.around.x = 300.0;
 bbcShape657.around.y = 200.0;
 
-bbcShape658.rotation += 0.85;
+bbcShape658.rotation += 1.6;
 bbcShape658.around.x = 300.0;
 bbcShape658.around.y = 200.0;
 
-bbcShape659.rotation += 1.7;
+bbcShape659.rotation += 1.6;
 bbcShape659.around.x = 300.0;
 bbcShape659.around.y = 200.0;
 
-bbcShape660.rotation += 1.7;
+bbcShape660.rotation += 0.85;
 bbcShape660.around.x = 300.0;
 bbcShape660.around.y = 200.0;
 
@@ -16528,15 +16547,15 @@ bbcShape678.rotation += 1.7;
 bbcShape678.around.x = 300.0;
 bbcShape678.around.y = 200.0;
 
-bbcShape679.rotation += 0.9;
+bbcShape679.rotation += 1.7;
 bbcShape679.around.x = 300.0;
 bbcShape679.around.y = 200.0;
 
-bbcShape680.rotation += 1.8;
+bbcShape680.rotation += 1.7;
 bbcShape680.around.x = 300.0;
 bbcShape680.around.y = 200.0;
 
-bbcShape681.rotation += 1.8;
+bbcShape681.rotation += 0.9;
 bbcShape681.around.x = 300.0;
 bbcShape681.around.y = 200.0;
 
@@ -16612,15 +16631,15 @@ bbcShape699.rotation += 1.8;
 bbcShape699.around.x = 300.0;
 bbcShape699.around.y = 200.0;
 
-bbcShape700.rotation += 0.95;
+bbcShape700.rotation += 1.8;
 bbcShape700.around.x = 300.0;
 bbcShape700.around.y = 200.0;
 
-bbcShape701.rotation += 1.9;
+bbcShape701.rotation += 1.8;
 bbcShape701.around.x = 300.0;
 bbcShape701.around.y = 200.0;
 
-bbcShape702.rotation += 1.9;
+bbcShape702.rotation += 0.95;
 bbcShape702.around.x = 300.0;
 bbcShape702.around.y = 200.0;
 
@@ -16696,6 +16715,14 @@ bbcShape720.rotation += 1.9;
 bbcShape720.around.x = 300.0;
 bbcShape720.around.y = 200.0;
 
+bbcShape721.rotation += 1.9;
+bbcShape721.around.x = 300.0;
+bbcShape721.around.y = 200.0;
+
+bbcShape722.rotation += 1.9;
+bbcShape722.around.x = 300.0;
+bbcShape722.around.y = 200.0;
+
 bbcDraw();
 
 }
@@ -16707,31 +16734,45 @@ ctx.fillStyle = BACKGROUND_COLOR;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 
-ctx.fillStyle = 'rgb(174, 98, 181)';
+ctx.fillStyle = 'rgb(255.0, 0.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape1.around.x, bbcShape1.around.y);
 ctx.rotate(bbcShape1.rotation * Math.PI / 180);
 ctx.translate(-bbcShape1.around.x, -bbcShape1.around.y);
 ctx.beginPath();
-ctx.arc(bbcShape1.point.x, bbcShape1.point.y, bbcShape1.radius, 0, 2 * Math.PI);
+ctx.moveTo(bbcShape1.points[0][0], bbcShape1.points[0][1]);
+ctx.lineTo(bbcShape1.points[1][0], bbcShape1.points[1][1]);
+ctx.lineTo(bbcShape1.points[2][0], bbcShape1.points[2][1]);
+ctx.lineTo(bbcShape1.points[3][0], bbcShape1.points[3][1]);
+ctx.lineTo(bbcShape1.points[4][0], bbcShape1.points[4][1]);
+ctx.lineTo(bbcShape1.points[5][0], bbcShape1.points[5][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(151, 139, 190)';
+ctx.fillStyle = 'rgb(255.0, 150.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape2.around.x, bbcShape2.around.y);
 ctx.rotate(bbcShape2.rotation * Math.PI / 180);
 ctx.translate(-bbcShape2.around.x, -bbcShape2.around.y);
 ctx.beginPath();
-ctx.arc(bbcShape2.point.x, bbcShape2.point.y, bbcShape2.radius, 0, 2 * Math.PI);
+ctx.moveTo(bbcShape2.points[0][0], bbcShape2.points[0][1]);
+ctx.lineTo(bbcShape2.points[1][0], bbcShape2.points[1][1]);
+ctx.lineTo(bbcShape2.points[2][0], bbcShape2.points[2][1]);
+ctx.lineTo(bbcShape2.points[3][0], bbcShape2.points[3][1]);
+ctx.lineTo(bbcShape2.points[4][0], bbcShape2.points[4][1]);
+ctx.lineTo(bbcShape2.points[5][0], bbcShape2.points[5][1]);
+ctx.lineTo(bbcShape2.points[6][0], bbcShape2.points[6][1]);
+ctx.lineTo(bbcShape2.points[7][0], bbcShape2.points[7][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(179, 192, 197)';
+ctx.fillStyle = 'rgb(170, 85, 223)';
 
 ctx.save();
 ctx.translate(bbcShape3.around.x, bbcShape3.around.y);
@@ -16743,7 +16784,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(102, 218, 215)';
+ctx.fillStyle = 'rgb(40, 227, 32)';
 
 ctx.save();
 ctx.translate(bbcShape4.around.x, bbcShape4.around.y);
@@ -16755,7 +16796,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(82, 181, 246)';
+ctx.fillStyle = 'rgb(157, 43, 208)';
 
 ctx.save();
 ctx.translate(bbcShape5.around.x, bbcShape5.around.y);
@@ -16767,7 +16808,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(57, 86, 42)';
+ctx.fillStyle = 'rgb(126, 139, 224)';
 
 ctx.save();
 ctx.translate(bbcShape6.around.x, bbcShape6.around.y);
@@ -16779,7 +16820,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(251, 85, 119)';
+ctx.fillStyle = 'rgb(202, 136, 34)';
 
 ctx.save();
 ctx.translate(bbcShape7.around.x, bbcShape7.around.y);
@@ -16791,7 +16832,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(173, 212, 130)';
+ctx.fillStyle = 'rgb(114, 51, 118)';
 
 ctx.save();
 ctx.translate(bbcShape8.around.x, bbcShape8.around.y);
@@ -16803,7 +16844,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(39, 17, 14)';
+ctx.fillStyle = 'rgb(226, 207, 17)';
 
 ctx.save();
 ctx.translate(bbcShape9.around.x, bbcShape9.around.y);
@@ -16815,7 +16856,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(84, 172, 255)';
+ctx.fillStyle = 'rgb(48, 60, 71)';
 
 ctx.save();
 ctx.translate(bbcShape10.around.x, bbcShape10.around.y);
@@ -16827,7 +16868,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(6, 176, 29)';
+ctx.fillStyle = 'rgb(10, 53, 13)';
 
 ctx.save();
 ctx.translate(bbcShape11.around.x, bbcShape11.around.y);
@@ -16839,7 +16880,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(34, 105, 212)';
+ctx.fillStyle = 'rgb(207, 77, 14)';
 
 ctx.save();
 ctx.translate(bbcShape12.around.x, bbcShape12.around.y);
@@ -16851,7 +16892,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(242, 149, 14)';
+ctx.fillStyle = 'rgb(193, 171, 47)';
 
 ctx.save();
 ctx.translate(bbcShape13.around.x, bbcShape13.around.y);
@@ -16863,7 +16904,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(201, 54, 229)';
+ctx.fillStyle = 'rgb(16, 40, 251)';
 
 ctx.save();
 ctx.translate(bbcShape14.around.x, bbcShape14.around.y);
@@ -16875,7 +16916,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(215, 202, 126)';
+ctx.fillStyle = 'rgb(52, 207, 18)';
 
 ctx.save();
 ctx.translate(bbcShape15.around.x, bbcShape15.around.y);
@@ -16887,7 +16928,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(58, 189, 67)';
+ctx.fillStyle = 'rgb(143, 87, 58)';
 
 ctx.save();
 ctx.translate(bbcShape16.around.x, bbcShape16.around.y);
@@ -16899,7 +16940,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(241, 171, 28)';
+ctx.fillStyle = 'rgb(119, 7, 57)';
 
 ctx.save();
 ctx.translate(bbcShape17.around.x, bbcShape17.around.y);
@@ -16911,7 +16952,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(184, 239, 234)';
+ctx.fillStyle = 'rgb(113, 55, 216)';
 
 ctx.save();
 ctx.translate(bbcShape18.around.x, bbcShape18.around.y);
@@ -16923,7 +16964,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(162, 59, 238)';
+ctx.fillStyle = 'rgb(224, 144, 238)';
 
 ctx.save();
 ctx.translate(bbcShape19.around.x, bbcShape19.around.y);
@@ -16935,7 +16976,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(160, 231, 2)';
+ctx.fillStyle = 'rgb(162, 208, 205)';
 
 ctx.save();
 ctx.translate(bbcShape20.around.x, bbcShape20.around.y);
@@ -16947,7 +16988,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(44, 114, 154)';
+ctx.fillStyle = 'rgb(14, 249, 92)';
 
 ctx.save();
 ctx.translate(bbcShape21.around.x, bbcShape21.around.y);
@@ -16959,7 +17000,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(223, 60, 157)';
+ctx.fillStyle = 'rgb(193, 53, 93)';
 
 ctx.save();
 ctx.translate(bbcShape22.around.x, bbcShape22.around.y);
@@ -16971,7 +17012,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(179, 116, 52)';
+ctx.fillStyle = 'rgb(206, 91, 220)';
 
 ctx.save();
 ctx.translate(bbcShape23.around.x, bbcShape23.around.y);
@@ -16983,7 +17024,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(118, 185, 29)';
+ctx.fillStyle = 'rgb(180, 57, 104)';
 
 ctx.save();
 ctx.translate(bbcShape24.around.x, bbcShape24.around.y);
@@ -16995,7 +17036,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(96, 145, 103)';
+ctx.fillStyle = 'rgb(70, 168, 171)';
 
 ctx.save();
 ctx.translate(bbcShape25.around.x, bbcShape25.around.y);
@@ -17007,7 +17048,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(188, 111, 240)';
+ctx.fillStyle = 'rgb(198, 96, 244)';
 
 ctx.save();
 ctx.translate(bbcShape26.around.x, bbcShape26.around.y);
@@ -17019,7 +17060,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(186, 61, 50)';
+ctx.fillStyle = 'rgb(160, 10, 147)';
 
 ctx.save();
 ctx.translate(bbcShape27.around.x, bbcShape27.around.y);
@@ -17031,7 +17072,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(249, 97, 180)';
+ctx.fillStyle = 'rgb(152, 113, 195)';
 
 ctx.save();
 ctx.translate(bbcShape28.around.x, bbcShape28.around.y);
@@ -17043,7 +17084,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(112, 91, 14)';
+ctx.fillStyle = 'rgb(250, 3, 149)';
 
 ctx.save();
 ctx.translate(bbcShape29.around.x, bbcShape29.around.y);
@@ -17055,7 +17096,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(134, 48, 98)';
+ctx.fillStyle = 'rgb(239, 252, 96)';
 
 ctx.save();
 ctx.translate(bbcShape30.around.x, bbcShape30.around.y);
@@ -17067,7 +17108,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(160, 181, 63)';
+ctx.fillStyle = 'rgb(213, 31, 108)';
 
 ctx.save();
 ctx.translate(bbcShape31.around.x, bbcShape31.around.y);
@@ -17079,7 +17120,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(52, 221, 232)';
+ctx.fillStyle = 'rgb(185, 75, 245)';
 
 ctx.save();
 ctx.translate(bbcShape32.around.x, bbcShape32.around.y);
@@ -17091,7 +17132,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(228, 145, 120)';
+ctx.fillStyle = 'rgb(222, 24, 182)';
 
 ctx.save();
 ctx.translate(bbcShape33.around.x, bbcShape33.around.y);
@@ -17103,7 +17144,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(113, 193, 1)';
+ctx.fillStyle = 'rgb(85, 145, 220)';
 
 ctx.save();
 ctx.translate(bbcShape34.around.x, bbcShape34.around.y);
@@ -17115,7 +17156,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(180, 40, 126)';
+ctx.fillStyle = 'rgb(207, 206, 69)';
 
 ctx.save();
 ctx.translate(bbcShape35.around.x, bbcShape35.around.y);
@@ -17127,7 +17168,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(51, 25, 62)';
+ctx.fillStyle = 'rgb(176, 185, 209)';
 
 ctx.save();
 ctx.translate(bbcShape36.around.x, bbcShape36.around.y);
@@ -17139,7 +17180,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(39, 66, 57)';
+ctx.fillStyle = 'rgb(85, 181, 48)';
 
 ctx.save();
 ctx.translate(bbcShape37.around.x, bbcShape37.around.y);
@@ -17151,7 +17192,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(21, 28, 45)';
+ctx.fillStyle = 'rgb(222, 248, 96)';
 
 ctx.save();
 ctx.translate(bbcShape38.around.x, bbcShape38.around.y);
@@ -17163,7 +17204,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(207, 137, 202)';
+ctx.fillStyle = 'rgb(157, 223, 48)';
 
 ctx.save();
 ctx.translate(bbcShape39.around.x, bbcShape39.around.y);
@@ -17175,7 +17216,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(156, 122, 118)';
+ctx.fillStyle = 'rgb(208, 70, 190)';
 
 ctx.save();
 ctx.translate(bbcShape40.around.x, bbcShape40.around.y);
@@ -17187,7 +17228,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(189, 236, 188)';
+ctx.fillStyle = 'rgb(227, 206, 235)';
 
 ctx.save();
 ctx.translate(bbcShape41.around.x, bbcShape41.around.y);
@@ -17199,7 +17240,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(218, 98, 121)';
+ctx.fillStyle = 'rgb(29, 77, 130)';
 
 ctx.save();
 ctx.translate(bbcShape42.around.x, bbcShape42.around.y);
@@ -17211,7 +17252,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(53, 58, 0)';
+ctx.fillStyle = 'rgb(5, 118, 204)';
 
 ctx.save();
 ctx.translate(bbcShape43.around.x, bbcShape43.around.y);
@@ -17223,7 +17264,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(85, 189, 11)';
+ctx.fillStyle = 'rgb(2, 38, 242)';
 
 ctx.save();
 ctx.translate(bbcShape44.around.x, bbcShape44.around.y);
@@ -17235,7 +17276,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(200, 0, 227)';
+ctx.fillStyle = 'rgb(230, 228, 156)';
 
 ctx.save();
 ctx.translate(bbcShape45.around.x, bbcShape45.around.y);
@@ -17247,7 +17288,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(5, 0, 99)';
+ctx.fillStyle = 'rgb(108, 191, 208)';
 
 ctx.save();
 ctx.translate(bbcShape46.around.x, bbcShape46.around.y);
@@ -17259,7 +17300,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(205, 171, 38)';
+ctx.fillStyle = 'rgb(183, 240, 102)';
 
 ctx.save();
 ctx.translate(bbcShape47.around.x, bbcShape47.around.y);
@@ -17271,7 +17312,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(12, 228, 1)';
+ctx.fillStyle = 'rgb(67, 41, 58)';
 
 ctx.save();
 ctx.translate(bbcShape48.around.x, bbcShape48.around.y);
@@ -17283,7 +17324,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(215, 46, 111)';
+ctx.fillStyle = 'rgb(232, 94, 46)';
 
 ctx.save();
 ctx.translate(bbcShape49.around.x, bbcShape49.around.y);
@@ -17295,7 +17336,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(35, 41, 55)';
+ctx.fillStyle = 'rgb(122, 9, 100)';
 
 ctx.save();
 ctx.translate(bbcShape50.around.x, bbcShape50.around.y);
@@ -17307,7 +17348,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(203, 137, 157)';
+ctx.fillStyle = 'rgb(50, 48, 36)';
 
 ctx.save();
 ctx.translate(bbcShape51.around.x, bbcShape51.around.y);
@@ -17319,7 +17360,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(218, 214, 48)';
+ctx.fillStyle = 'rgb(109, 232, 194)';
 
 ctx.save();
 ctx.translate(bbcShape52.around.x, bbcShape52.around.y);
@@ -17331,7 +17372,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(18, 220, 141)';
+ctx.fillStyle = 'rgb(5, 157, 199)';
 
 ctx.save();
 ctx.translate(bbcShape53.around.x, bbcShape53.around.y);
@@ -17343,7 +17384,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(5, 206, 79)';
+ctx.fillStyle = 'rgb(208, 155, 200)';
 
 ctx.save();
 ctx.translate(bbcShape54.around.x, bbcShape54.around.y);
@@ -17355,7 +17396,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(242, 197, 231)';
+ctx.fillStyle = 'rgb(110, 181, 17)';
 
 ctx.save();
 ctx.translate(bbcShape55.around.x, bbcShape55.around.y);
@@ -17367,7 +17408,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(25, 236, 179)';
+ctx.fillStyle = 'rgb(21, 18, 210)';
 
 ctx.save();
 ctx.translate(bbcShape56.around.x, bbcShape56.around.y);
@@ -17379,7 +17420,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(249, 113, 217)';
+ctx.fillStyle = 'rgb(131, 138, 222)';
 
 ctx.save();
 ctx.translate(bbcShape57.around.x, bbcShape57.around.y);
@@ -17391,7 +17432,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(32, 198, 217)';
+ctx.fillStyle = 'rgb(95, 52, 238)';
 
 ctx.save();
 ctx.translate(bbcShape58.around.x, bbcShape58.around.y);
@@ -17403,7 +17444,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(43, 111, 48)';
+ctx.fillStyle = 'rgb(35, 146, 89)';
 
 ctx.save();
 ctx.translate(bbcShape59.around.x, bbcShape59.around.y);
@@ -17415,7 +17456,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(247, 184, 85)';
+ctx.fillStyle = 'rgb(168, 53, 189)';
 
 ctx.save();
 ctx.translate(bbcShape60.around.x, bbcShape60.around.y);
@@ -17427,7 +17468,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(120, 16, 82)';
+ctx.fillStyle = 'rgb(180, 240, 3)';
 
 ctx.save();
 ctx.translate(bbcShape61.around.x, bbcShape61.around.y);
@@ -17439,7 +17480,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(48, 69, 174)';
+ctx.fillStyle = 'rgb(130, 38, 65)';
 
 ctx.save();
 ctx.translate(bbcShape62.around.x, bbcShape62.around.y);
@@ -17451,7 +17492,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(206, 201, 220)';
+ctx.fillStyle = 'rgb(163, 227, 182)';
 
 ctx.save();
 ctx.translate(bbcShape63.around.x, bbcShape63.around.y);
@@ -17463,7 +17504,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(100, 223, 57)';
+ctx.fillStyle = 'rgb(108, 139, 244)';
 
 ctx.save();
 ctx.translate(bbcShape64.around.x, bbcShape64.around.y);
@@ -17475,7 +17516,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(168, 253, 34)';
+ctx.fillStyle = 'rgb(225, 142, 96)';
 
 ctx.save();
 ctx.translate(bbcShape65.around.x, bbcShape65.around.y);
@@ -17487,7 +17528,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(228, 208, 243)';
+ctx.fillStyle = 'rgb(141, 215, 134)';
 
 ctx.save();
 ctx.translate(bbcShape66.around.x, bbcShape66.around.y);
@@ -17499,7 +17540,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(146, 237, 120)';
+ctx.fillStyle = 'rgb(221, 57, 61)';
 
 ctx.save();
 ctx.translate(bbcShape67.around.x, bbcShape67.around.y);
@@ -17511,7 +17552,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(245, 247, 151)';
+ctx.fillStyle = 'rgb(4, 211, 202)';
 
 ctx.save();
 ctx.translate(bbcShape68.around.x, bbcShape68.around.y);
@@ -17523,7 +17564,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(181, 221, 142)';
+ctx.fillStyle = 'rgb(114, 151, 14)';
 
 ctx.save();
 ctx.translate(bbcShape69.around.x, bbcShape69.around.y);
@@ -17535,7 +17576,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(36, 165, 145)';
+ctx.fillStyle = 'rgb(46, 109, 159)';
 
 ctx.save();
 ctx.translate(bbcShape70.around.x, bbcShape70.around.y);
@@ -17547,7 +17588,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(96, 185, 161)';
+ctx.fillStyle = 'rgb(104, 232, 174)';
 
 ctx.save();
 ctx.translate(bbcShape71.around.x, bbcShape71.around.y);
@@ -17559,7 +17600,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(104, 78, 64)';
+ctx.fillStyle = 'rgb(225, 2, 163)';
 
 ctx.save();
 ctx.translate(bbcShape72.around.x, bbcShape72.around.y);
@@ -17571,7 +17612,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(196, 194, 46)';
+ctx.fillStyle = 'rgb(77, 9, 252)';
 
 ctx.save();
 ctx.translate(bbcShape73.around.x, bbcShape73.around.y);
@@ -17583,7 +17624,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(247, 68, 63)';
+ctx.fillStyle = 'rgb(203, 59, 127)';
 
 ctx.save();
 ctx.translate(bbcShape74.around.x, bbcShape74.around.y);
@@ -17595,7 +17636,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(191, 227, 24)';
+ctx.fillStyle = 'rgb(209, 180, 224)';
 
 ctx.save();
 ctx.translate(bbcShape75.around.x, bbcShape75.around.y);
@@ -17607,7 +17648,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(33, 29, 186)';
+ctx.fillStyle = 'rgb(221, 220, 116)';
 
 ctx.save();
 ctx.translate(bbcShape76.around.x, bbcShape76.around.y);
@@ -17619,7 +17660,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(169, 146, 97)';
+ctx.fillStyle = 'rgb(128, 123, 136)';
 
 ctx.save();
 ctx.translate(bbcShape77.around.x, bbcShape77.around.y);
@@ -17631,7 +17672,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(147, 35, 136)';
+ctx.fillStyle = 'rgb(37, 59, 60)';
 
 ctx.save();
 ctx.translate(bbcShape78.around.x, bbcShape78.around.y);
@@ -17643,7 +17684,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(224, 187, 169)';
+ctx.fillStyle = 'rgb(180, 178, 161)';
 
 ctx.save();
 ctx.translate(bbcShape79.around.x, bbcShape79.around.y);
@@ -17655,7 +17696,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(92, 89, 65)';
+ctx.fillStyle = 'rgb(192, 127, 135)';
 
 ctx.save();
 ctx.translate(bbcShape80.around.x, bbcShape80.around.y);
@@ -17667,7 +17708,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(77, 220, 40)';
+ctx.fillStyle = 'rgb(64, 131, 217)';
 
 ctx.save();
 ctx.translate(bbcShape81.around.x, bbcShape81.around.y);
@@ -17679,7 +17720,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(54, 8, 146)';
+ctx.fillStyle = 'rgb(74, 197, 21)';
 
 ctx.save();
 ctx.translate(bbcShape82.around.x, bbcShape82.around.y);
@@ -17691,7 +17732,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(125, 88, 180)';
+ctx.fillStyle = 'rgb(48, 3, 133)';
 
 ctx.save();
 ctx.translate(bbcShape83.around.x, bbcShape83.around.y);
@@ -17703,7 +17744,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(135, 139, 27)';
+ctx.fillStyle = 'rgb(191, 180, 229)';
 
 ctx.save();
 ctx.translate(bbcShape84.around.x, bbcShape84.around.y);
@@ -17715,7 +17756,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(112, 53, 93)';
+ctx.fillStyle = 'rgb(133, 112, 203)';
 
 ctx.save();
 ctx.translate(bbcShape85.around.x, bbcShape85.around.y);
@@ -17727,7 +17768,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(235, 149, 62)';
+ctx.fillStyle = 'rgb(126, 229, 183)';
 
 ctx.save();
 ctx.translate(bbcShape86.around.x, bbcShape86.around.y);
@@ -17739,7 +17780,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(23, 96, 25)';
+ctx.fillStyle = 'rgb(192, 169, 39)';
 
 ctx.save();
 ctx.translate(bbcShape87.around.x, bbcShape87.around.y);
@@ -17751,7 +17792,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(39, 60, 17)';
+ctx.fillStyle = 'rgb(251, 226, 212)';
 
 ctx.save();
 ctx.translate(bbcShape88.around.x, bbcShape88.around.y);
@@ -17763,7 +17804,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(83, 87, 166)';
+ctx.fillStyle = 'rgb(168, 201, 241)';
 
 ctx.save();
 ctx.translate(bbcShape89.around.x, bbcShape89.around.y);
@@ -17775,7 +17816,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(247, 131, 232)';
+ctx.fillStyle = 'rgb(115, 61, 235)';
 
 ctx.save();
 ctx.translate(bbcShape90.around.x, bbcShape90.around.y);
@@ -17787,7 +17828,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(53, 117, 144)';
+ctx.fillStyle = 'rgb(191, 173, 19)';
 
 ctx.save();
 ctx.translate(bbcShape91.around.x, bbcShape91.around.y);
@@ -17799,7 +17840,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(155, 187, 137)';
+ctx.fillStyle = 'rgb(30, 118, 179)';
 
 ctx.save();
 ctx.translate(bbcShape92.around.x, bbcShape92.around.y);
@@ -17811,7 +17852,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(38, 30, 142)';
+ctx.fillStyle = 'rgb(148, 99, 77)';
 
 ctx.save();
 ctx.translate(bbcShape93.around.x, bbcShape93.around.y);
@@ -17823,7 +17864,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(253, 70, 15)';
+ctx.fillStyle = 'rgb(69, 62, 208)';
 
 ctx.save();
 ctx.translate(bbcShape94.around.x, bbcShape94.around.y);
@@ -17835,7 +17876,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(235, 109, 255)';
+ctx.fillStyle = 'rgb(23, 144, 122)';
 
 ctx.save();
 ctx.translate(bbcShape95.around.x, bbcShape95.around.y);
@@ -17847,7 +17888,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(57, 218, 31)';
+ctx.fillStyle = 'rgb(36, 212, 115)';
 
 ctx.save();
 ctx.translate(bbcShape96.around.x, bbcShape96.around.y);
@@ -17859,7 +17900,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(1, 115, 51)';
+ctx.fillStyle = 'rgb(97, 79, 79)';
 
 ctx.save();
 ctx.translate(bbcShape97.around.x, bbcShape97.around.y);
@@ -17871,7 +17912,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(137, 30, 199)';
+ctx.fillStyle = 'rgb(89, 155, 2)';
 
 ctx.save();
 ctx.translate(bbcShape98.around.x, bbcShape98.around.y);
@@ -17883,7 +17924,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(63, 105, 2)';
+ctx.fillStyle = 'rgb(42, 131, 112)';
 
 ctx.save();
 ctx.translate(bbcShape99.around.x, bbcShape99.around.y);
@@ -17895,7 +17936,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(4, 143, 23)';
+ctx.fillStyle = 'rgb(19, 145, 137)';
 
 ctx.save();
 ctx.translate(bbcShape100.around.x, bbcShape100.around.y);
@@ -17907,7 +17948,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(193, 179, 57)';
+ctx.fillStyle = 'rgb(107, 230, 123)';
 
 ctx.save();
 ctx.translate(bbcShape101.around.x, bbcShape101.around.y);
@@ -17919,7 +17960,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(119, 19, 176)';
+ctx.fillStyle = 'rgb(227, 210, 181)';
 
 ctx.save();
 ctx.translate(bbcShape102.around.x, bbcShape102.around.y);
@@ -17931,7 +17972,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(49, 214, 239)';
+ctx.fillStyle = 'rgb(140, 72, 208)';
 
 ctx.save();
 ctx.translate(bbcShape103.around.x, bbcShape103.around.y);
@@ -17943,7 +17984,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(18, 166, 142)';
+ctx.fillStyle = 'rgb(85, 5, 145)';
 
 ctx.save();
 ctx.translate(bbcShape104.around.x, bbcShape104.around.y);
@@ -17955,7 +17996,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(90, 3, 111)';
+ctx.fillStyle = 'rgb(135, 156, 239)';
 
 ctx.save();
 ctx.translate(bbcShape105.around.x, bbcShape105.around.y);
@@ -17967,7 +18008,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(230, 205, 136)';
+ctx.fillStyle = 'rgb(238, 145, 58)';
 
 ctx.save();
 ctx.translate(bbcShape106.around.x, bbcShape106.around.y);
@@ -17979,7 +18020,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(156, 111, 72)';
+ctx.fillStyle = 'rgb(30, 2, 30)';
 
 ctx.save();
 ctx.translate(bbcShape107.around.x, bbcShape107.around.y);
@@ -17991,7 +18032,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(106, 60, 190)';
+ctx.fillStyle = 'rgb(110, 124, 245)';
 
 ctx.save();
 ctx.translate(bbcShape108.around.x, bbcShape108.around.y);
@@ -18003,7 +18044,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(140, 146, 222)';
+ctx.fillStyle = 'rgb(224, 12, 138)';
 
 ctx.save();
 ctx.translate(bbcShape109.around.x, bbcShape109.around.y);
@@ -18015,7 +18056,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(79, 43, 234)';
+ctx.fillStyle = 'rgb(106, 2, 161)';
 
 ctx.save();
 ctx.translate(bbcShape110.around.x, bbcShape110.around.y);
@@ -18027,7 +18068,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(28, 115, 181)';
+ctx.fillStyle = 'rgb(74, 12, 218)';
 
 ctx.save();
 ctx.translate(bbcShape111.around.x, bbcShape111.around.y);
@@ -18039,7 +18080,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(112, 12, 138)';
+ctx.fillStyle = 'rgb(225, 11, 26)';
 
 ctx.save();
 ctx.translate(bbcShape112.around.x, bbcShape112.around.y);
@@ -18051,7 +18092,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(249, 218, 181)';
+ctx.fillStyle = 'rgb(218, 162, 67)';
 
 ctx.save();
 ctx.translate(bbcShape113.around.x, bbcShape113.around.y);
@@ -18063,7 +18104,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(126, 173, 50)';
+ctx.fillStyle = 'rgb(22, 15, 91)';
 
 ctx.save();
 ctx.translate(bbcShape114.around.x, bbcShape114.around.y);
@@ -18075,7 +18116,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(89, 177, 215)';
+ctx.fillStyle = 'rgb(99, 105, 11)';
 
 ctx.save();
 ctx.translate(bbcShape115.around.x, bbcShape115.around.y);
@@ -18087,7 +18128,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(59, 103, 69)';
+ctx.fillStyle = 'rgb(81, 27, 74)';
 
 ctx.save();
 ctx.translate(bbcShape116.around.x, bbcShape116.around.y);
@@ -18099,7 +18140,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(160, 94, 216)';
+ctx.fillStyle = 'rgb(41, 55, 39)';
 
 ctx.save();
 ctx.translate(bbcShape117.around.x, bbcShape117.around.y);
@@ -18111,7 +18152,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(178, 1, 53)';
+ctx.fillStyle = 'rgb(70, 128, 216)';
 
 ctx.save();
 ctx.translate(bbcShape118.around.x, bbcShape118.around.y);
@@ -18123,7 +18164,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(88, 251, 16)';
+ctx.fillStyle = 'rgb(38, 251, 224)';
 
 ctx.save();
 ctx.translate(bbcShape119.around.x, bbcShape119.around.y);
@@ -18135,7 +18176,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(21, 124, 194)';
+ctx.fillStyle = 'rgb(30, 195, 28)';
 
 ctx.save();
 ctx.translate(bbcShape120.around.x, bbcShape120.around.y);
@@ -18147,7 +18188,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(92, 254, 126)';
+ctx.fillStyle = 'rgb(79, 221, 95)';
 
 ctx.save();
 ctx.translate(bbcShape121.around.x, bbcShape121.around.y);
@@ -18159,7 +18200,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(11, 94, 59)';
+ctx.fillStyle = 'rgb(213, 11, 219)';
 
 ctx.save();
 ctx.translate(bbcShape122.around.x, bbcShape122.around.y);
@@ -18171,7 +18212,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(70, 234, 145)';
+ctx.fillStyle = 'rgb(220, 47, 93)';
 
 ctx.save();
 ctx.translate(bbcShape123.around.x, bbcShape123.around.y);
@@ -18183,7 +18224,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(86, 57, 7)';
+ctx.fillStyle = 'rgb(234, 8, 155)';
 
 ctx.save();
 ctx.translate(bbcShape124.around.x, bbcShape124.around.y);
@@ -18195,7 +18236,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(199, 84, 243)';
+ctx.fillStyle = 'rgb(120, 214, 51)';
 
 ctx.save();
 ctx.translate(bbcShape125.around.x, bbcShape125.around.y);
@@ -18207,7 +18248,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(154, 9, 61)';
+ctx.fillStyle = 'rgb(35, 252, 188)';
 
 ctx.save();
 ctx.translate(bbcShape126.around.x, bbcShape126.around.y);
@@ -18219,7 +18260,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(189, 106, 240)';
+ctx.fillStyle = 'rgb(73, 179, 34)';
 
 ctx.save();
 ctx.translate(bbcShape127.around.x, bbcShape127.around.y);
@@ -18231,7 +18272,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(32, 19, 1)';
+ctx.fillStyle = 'rgb(213, 153, 215)';
 
 ctx.save();
 ctx.translate(bbcShape128.around.x, bbcShape128.around.y);
@@ -18243,7 +18284,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(236, 58, 150)';
+ctx.fillStyle = 'rgb(111, 37, 245)';
 
 ctx.save();
 ctx.translate(bbcShape129.around.x, bbcShape129.around.y);
@@ -18255,7 +18296,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(0, 92, 199)';
+ctx.fillStyle = 'rgb(243, 126, 97)';
 
 ctx.save();
 ctx.translate(bbcShape130.around.x, bbcShape130.around.y);
@@ -18267,7 +18308,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(36, 43, 84)';
+ctx.fillStyle = 'rgb(164, 54, 200)';
 
 ctx.save();
 ctx.translate(bbcShape131.around.x, bbcShape131.around.y);
@@ -18279,7 +18320,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(150, 90, 144)';
+ctx.fillStyle = 'rgb(227, 207, 174)';
 
 ctx.save();
 ctx.translate(bbcShape132.around.x, bbcShape132.around.y);
@@ -18291,7 +18332,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(185, 37, 98)';
+ctx.fillStyle = 'rgb(238, 120, 10)';
 
 ctx.save();
 ctx.translate(bbcShape133.around.x, bbcShape133.around.y);
@@ -18303,7 +18344,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(172, 31, 6)';
+ctx.fillStyle = 'rgb(249, 134, 201)';
 
 ctx.save();
 ctx.translate(bbcShape134.around.x, bbcShape134.around.y);
@@ -18315,7 +18356,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(136, 51, 203)';
+ctx.fillStyle = 'rgb(115, 3, 33)';
 
 ctx.save();
 ctx.translate(bbcShape135.around.x, bbcShape135.around.y);
@@ -18327,7 +18368,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(123, 73, 184)';
+ctx.fillStyle = 'rgb(157, 18, 198)';
 
 ctx.save();
 ctx.translate(bbcShape136.around.x, bbcShape136.around.y);
@@ -18339,7 +18380,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(67, 63, 39)';
+ctx.fillStyle = 'rgb(24, 61, 135)';
 
 ctx.save();
 ctx.translate(bbcShape137.around.x, bbcShape137.around.y);
@@ -18351,7 +18392,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(237, 1, 106)';
+ctx.fillStyle = 'rgb(208, 110, 105)';
 
 ctx.save();
 ctx.translate(bbcShape138.around.x, bbcShape138.around.y);
@@ -18363,7 +18404,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(244, 124, 65)';
+ctx.fillStyle = 'rgb(236, 24, 28)';
 
 ctx.save();
 ctx.translate(bbcShape139.around.x, bbcShape139.around.y);
@@ -18375,7 +18416,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(170, 79, 252)';
+ctx.fillStyle = 'rgb(3, 92, 75)';
 
 ctx.save();
 ctx.translate(bbcShape140.around.x, bbcShape140.around.y);
@@ -18387,7 +18428,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(105, 238, 102)';
+ctx.fillStyle = 'rgb(178, 237, 184)';
 
 ctx.save();
 ctx.translate(bbcShape141.around.x, bbcShape141.around.y);
@@ -18399,7 +18440,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(60, 47, 190)';
+ctx.fillStyle = 'rgb(249, 83, 219)';
 
 ctx.save();
 ctx.translate(bbcShape142.around.x, bbcShape142.around.y);
@@ -18411,7 +18452,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(117, 146, 205)';
+ctx.fillStyle = 'rgb(83, 242, 147)';
 
 ctx.save();
 ctx.translate(bbcShape143.around.x, bbcShape143.around.y);
@@ -18423,7 +18464,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(123, 251, 243)';
+ctx.fillStyle = 'rgb(83, 28, 193)';
 
 ctx.save();
 ctx.translate(bbcShape144.around.x, bbcShape144.around.y);
@@ -18435,7 +18476,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(10, 172, 35)';
+ctx.fillStyle = 'rgb(16, 48, 82)';
 
 ctx.save();
 ctx.translate(bbcShape145.around.x, bbcShape145.around.y);
@@ -18447,7 +18488,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(85, 199, 191)';
+ctx.fillStyle = 'rgb(135, 185, 128)';
 
 ctx.save();
 ctx.translate(bbcShape146.around.x, bbcShape146.around.y);
@@ -18459,7 +18500,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(77, 216, 193)';
+ctx.fillStyle = 'rgb(191, 186, 12)';
 
 ctx.save();
 ctx.translate(bbcShape147.around.x, bbcShape147.around.y);
@@ -18471,7 +18512,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(167, 118, 165)';
+ctx.fillStyle = 'rgb(232, 88, 213)';
 
 ctx.save();
 ctx.translate(bbcShape148.around.x, bbcShape148.around.y);
@@ -18483,7 +18524,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(61, 128, 210)';
+ctx.fillStyle = 'rgb(42, 84, 82)';
 
 ctx.save();
 ctx.translate(bbcShape149.around.x, bbcShape149.around.y);
@@ -18495,7 +18536,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(147, 77, 211)';
+ctx.fillStyle = 'rgb(170, 79, 151)';
 
 ctx.save();
 ctx.translate(bbcShape150.around.x, bbcShape150.around.y);
@@ -18507,7 +18548,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(54, 140, 76)';
+ctx.fillStyle = 'rgb(181, 158, 13)';
 
 ctx.save();
 ctx.translate(bbcShape151.around.x, bbcShape151.around.y);
@@ -18519,7 +18560,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(200, 196, 1)';
+ctx.fillStyle = 'rgb(83, 184, 157)';
 
 ctx.save();
 ctx.translate(bbcShape152.around.x, bbcShape152.around.y);
@@ -18531,7 +18572,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(57, 51, 209)';
+ctx.fillStyle = 'rgb(110, 66, 97)';
 
 ctx.save();
 ctx.translate(bbcShape153.around.x, bbcShape153.around.y);
@@ -18543,7 +18584,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(226, 143, 111)';
+ctx.fillStyle = 'rgb(188, 59, 56)';
 
 ctx.save();
 ctx.translate(bbcShape154.around.x, bbcShape154.around.y);
@@ -18555,7 +18596,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(135, 49, 83)';
+ctx.fillStyle = 'rgb(230, 247, 226)';
 
 ctx.save();
 ctx.translate(bbcShape155.around.x, bbcShape155.around.y);
@@ -18567,7 +18608,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(88, 48, 60)';
+ctx.fillStyle = 'rgb(115, 57, 224)';
 
 ctx.save();
 ctx.translate(bbcShape156.around.x, bbcShape156.around.y);
@@ -18579,7 +18620,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(235, 104, 124)';
+ctx.fillStyle = 'rgb(170, 38, 202)';
 
 ctx.save();
 ctx.translate(bbcShape157.around.x, bbcShape157.around.y);
@@ -18591,7 +18632,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(46, 146, 254)';
+ctx.fillStyle = 'rgb(177, 116, 115)';
 
 ctx.save();
 ctx.translate(bbcShape158.around.x, bbcShape158.around.y);
@@ -18603,7 +18644,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(7, 61, 130)';
+ctx.fillStyle = 'rgb(9, 90, 165)';
 
 ctx.save();
 ctx.translate(bbcShape159.around.x, bbcShape159.around.y);
@@ -18615,7 +18656,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(37, 24, 28)';
+ctx.fillStyle = 'rgb(57, 22, 42)';
 
 ctx.save();
 ctx.translate(bbcShape160.around.x, bbcShape160.around.y);
@@ -18627,7 +18668,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(88, 177, 169)';
+ctx.fillStyle = 'rgb(193, 87, 152)';
 
 ctx.save();
 ctx.translate(bbcShape161.around.x, bbcShape161.around.y);
@@ -18639,7 +18680,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(133, 103, 147)';
+ctx.fillStyle = 'rgb(64, 213, 116)';
 
 ctx.save();
 ctx.translate(bbcShape162.around.x, bbcShape162.around.y);
@@ -18651,7 +18692,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(111, 156, 5)';
+ctx.fillStyle = 'rgb(242, 127, 90)';
 
 ctx.save();
 ctx.translate(bbcShape163.around.x, bbcShape163.around.y);
@@ -18663,7 +18704,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(180, 37, 172)';
+ctx.fillStyle = 'rgb(68, 155, 74)';
 
 ctx.save();
 ctx.translate(bbcShape164.around.x, bbcShape164.around.y);
@@ -18675,7 +18716,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(36, 235, 199)';
+ctx.fillStyle = 'rgb(89, 136, 50)';
 
 ctx.save();
 ctx.translate(bbcShape165.around.x, bbcShape165.around.y);
@@ -18687,7 +18728,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(204, 57, 137)';
+ctx.fillStyle = 'rgb(140, 160, 253)';
 
 ctx.save();
 ctx.translate(bbcShape166.around.x, bbcShape166.around.y);
@@ -18699,7 +18740,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(232, 122, 35)';
+ctx.fillStyle = 'rgb(7, 14, 239)';
 
 ctx.save();
 ctx.translate(bbcShape167.around.x, bbcShape167.around.y);
@@ -18711,7 +18752,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(226, 129, 81)';
+ctx.fillStyle = 'rgb(85, 89, 126)';
 
 ctx.save();
 ctx.translate(bbcShape168.around.x, bbcShape168.around.y);
@@ -18723,7 +18764,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(174, 24, 151)';
+ctx.fillStyle = 'rgb(4, 94, 30)';
 
 ctx.save();
 ctx.translate(bbcShape169.around.x, bbcShape169.around.y);
@@ -18735,7 +18776,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(11, 5, 23)';
+ctx.fillStyle = 'rgb(27, 185, 232)';
 
 ctx.save();
 ctx.translate(bbcShape170.around.x, bbcShape170.around.y);
@@ -18747,7 +18788,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(46, 174, 20)';
+ctx.fillStyle = 'rgb(110, 211, 216)';
 
 ctx.save();
 ctx.translate(bbcShape171.around.x, bbcShape171.around.y);
@@ -18759,7 +18800,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(110, 137, 97)';
+ctx.fillStyle = 'rgb(253, 118, 142)';
 
 ctx.save();
 ctx.translate(bbcShape172.around.x, bbcShape172.around.y);
@@ -18771,7 +18812,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(86, 162, 18)';
+ctx.fillStyle = 'rgb(86, 76, 94)';
 
 ctx.save();
 ctx.translate(bbcShape173.around.x, bbcShape173.around.y);
@@ -18783,7 +18824,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(195, 51, 104)';
+ctx.fillStyle = 'rgb(236, 33, 100)';
 
 ctx.save();
 ctx.translate(bbcShape174.around.x, bbcShape174.around.y);
@@ -18795,7 +18836,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(145, 234, 85)';
+ctx.fillStyle = 'rgb(211, 149, 64)';
 
 ctx.save();
 ctx.translate(bbcShape175.around.x, bbcShape175.around.y);
@@ -18807,7 +18848,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(233, 197, 15)';
+ctx.fillStyle = 'rgb(65, 27, 199)';
 
 ctx.save();
 ctx.translate(bbcShape176.around.x, bbcShape176.around.y);
@@ -18819,7 +18860,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(106, 133, 101)';
+ctx.fillStyle = 'rgb(217, 229, 175)';
 
 ctx.save();
 ctx.translate(bbcShape177.around.x, bbcShape177.around.y);
@@ -18831,7 +18872,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(219, 73, 64)';
+ctx.fillStyle = 'rgb(94, 103, 169)';
 
 ctx.save();
 ctx.translate(bbcShape178.around.x, bbcShape178.around.y);
@@ -18843,7 +18884,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(184, 7, 62)';
+ctx.fillStyle = 'rgb(74, 64, 213)';
 
 ctx.save();
 ctx.translate(bbcShape179.around.x, bbcShape179.around.y);
@@ -18855,7 +18896,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(71, 0, 134)';
+ctx.fillStyle = 'rgb(108, 211, 76)';
 
 ctx.save();
 ctx.translate(bbcShape180.around.x, bbcShape180.around.y);
@@ -18867,7 +18908,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(130, 180, 173)';
+ctx.fillStyle = 'rgb(203, 32, 25)';
 
 ctx.save();
 ctx.translate(bbcShape181.around.x, bbcShape181.around.y);
@@ -18879,7 +18920,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(151, 190, 26)';
+ctx.fillStyle = 'rgb(84, 37, 204)';
 
 ctx.save();
 ctx.translate(bbcShape182.around.x, bbcShape182.around.y);
@@ -18891,7 +18932,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(68, 99, 25)';
+ctx.fillStyle = 'rgb(146, 99, 203)';
 
 ctx.save();
 ctx.translate(bbcShape183.around.x, bbcShape183.around.y);
@@ -18903,7 +18944,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(128, 174, 131)';
+ctx.fillStyle = 'rgb(99, 223, 212)';
 
 ctx.save();
 ctx.translate(bbcShape184.around.x, bbcShape184.around.y);
@@ -18915,7 +18956,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(96, 124, 153)';
+ctx.fillStyle = 'rgb(35, 84, 4)';
 
 ctx.save();
 ctx.translate(bbcShape185.around.x, bbcShape185.around.y);
@@ -18927,7 +18968,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(18, 132, 10)';
+ctx.fillStyle = 'rgb(77, 217, 76)';
 
 ctx.save();
 ctx.translate(bbcShape186.around.x, bbcShape186.around.y);
@@ -18939,7 +18980,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(201, 181, 37)';
+ctx.fillStyle = 'rgb(232, 215, 160)';
 
 ctx.save();
 ctx.translate(bbcShape187.around.x, bbcShape187.around.y);
@@ -18951,7 +18992,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(215, 25, 129)';
+ctx.fillStyle = 'rgb(14, 20, 114)';
 
 ctx.save();
 ctx.translate(bbcShape188.around.x, bbcShape188.around.y);
@@ -18963,7 +19004,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(31, 249, 37)';
+ctx.fillStyle = 'rgb(217, 114, 235)';
 
 ctx.save();
 ctx.translate(bbcShape189.around.x, bbcShape189.around.y);
@@ -18975,7 +19016,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(96, 117, 116)';
+ctx.fillStyle = 'rgb(183, 218, 250)';
 
 ctx.save();
 ctx.translate(bbcShape190.around.x, bbcShape190.around.y);
@@ -18987,7 +19028,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(181, 42, 196)';
+ctx.fillStyle = 'rgb(30, 42, 16)';
 
 ctx.save();
 ctx.translate(bbcShape191.around.x, bbcShape191.around.y);
@@ -18999,7 +19040,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(17, 62, 123)';
+ctx.fillStyle = 'rgb(14, 181, 26)';
 
 ctx.save();
 ctx.translate(bbcShape192.around.x, bbcShape192.around.y);
@@ -19011,7 +19052,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(153, 192, 130)';
+ctx.fillStyle = 'rgb(14, 160, 6)';
 
 ctx.save();
 ctx.translate(bbcShape193.around.x, bbcShape193.around.y);
@@ -19023,7 +19064,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(17, 66, 139)';
+ctx.fillStyle = 'rgb(92, 128, 173)';
 
 ctx.save();
 ctx.translate(bbcShape194.around.x, bbcShape194.around.y);
@@ -19035,7 +19076,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(82, 49, 77)';
+ctx.fillStyle = 'rgb(99, 215, 126)';
 
 ctx.save();
 ctx.translate(bbcShape195.around.x, bbcShape195.around.y);
@@ -19047,7 +19088,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(78, 216, 55)';
+ctx.fillStyle = 'rgb(91, 206, 65)';
 
 ctx.save();
 ctx.translate(bbcShape196.around.x, bbcShape196.around.y);
@@ -19059,7 +19100,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(215, 118, 223)';
+ctx.fillStyle = 'rgb(170, 248, 207)';
 
 ctx.save();
 ctx.translate(bbcShape197.around.x, bbcShape197.around.y);
@@ -19071,7 +19112,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(163, 253, 103)';
+ctx.fillStyle = 'rgb(73, 161, 0)';
 
 ctx.save();
 ctx.translate(bbcShape198.around.x, bbcShape198.around.y);
@@ -19083,7 +19124,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(11, 125, 242)';
+ctx.fillStyle = 'rgb(52, 118, 139)';
 
 ctx.save();
 ctx.translate(bbcShape199.around.x, bbcShape199.around.y);
@@ -19095,7 +19136,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(189, 94, 225)';
+ctx.fillStyle = 'rgb(114, 75, 80)';
 
 ctx.save();
 ctx.translate(bbcShape200.around.x, bbcShape200.around.y);
@@ -19107,7 +19148,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(208, 134, 54)';
+ctx.fillStyle = 'rgb(123, 25, 107)';
 
 ctx.save();
 ctx.translate(bbcShape201.around.x, bbcShape201.around.y);
@@ -19119,7 +19160,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(9, 179, 15)';
+ctx.fillStyle = 'rgb(5, 199, 170)';
 
 ctx.save();
 ctx.translate(bbcShape202.around.x, bbcShape202.around.y);
@@ -19131,7 +19172,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(0, 214, 158)';
+ctx.fillStyle = 'rgb(178, 231, 65)';
 
 ctx.save();
 ctx.translate(bbcShape203.around.x, bbcShape203.around.y);
@@ -19143,7 +19184,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(168, 73, 81)';
+ctx.fillStyle = 'rgb(92, 252, 52)';
 
 ctx.save();
 ctx.translate(bbcShape204.around.x, bbcShape204.around.y);
@@ -19155,7 +19196,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(184, 230, 178)';
+ctx.fillStyle = 'rgb(254, 147, 10)';
 
 ctx.save();
 ctx.translate(bbcShape205.around.x, bbcShape205.around.y);
@@ -19167,7 +19208,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(30, 14, 190)';
+ctx.fillStyle = 'rgb(125, 121, 176)';
 
 ctx.save();
 ctx.translate(bbcShape206.around.x, bbcShape206.around.y);
@@ -19179,7 +19220,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(77, 102, 12)';
+ctx.fillStyle = 'rgb(7, 97, 164)';
 
 ctx.save();
 ctx.translate(bbcShape207.around.x, bbcShape207.around.y);
@@ -19191,7 +19232,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(24, 215, 243)';
+ctx.fillStyle = 'rgb(140, 64, 6)';
 
 ctx.save();
 ctx.translate(bbcShape208.around.x, bbcShape208.around.y);
@@ -19203,7 +19244,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(175, 131, 153)';
+ctx.fillStyle = 'rgb(117, 192, 58)';
 
 ctx.save();
 ctx.translate(bbcShape209.around.x, bbcShape209.around.y);
@@ -19215,7 +19256,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(197, 255, 213)';
+ctx.fillStyle = 'rgb(65, 65, 150)';
 
 ctx.save();
 ctx.translate(bbcShape210.around.x, bbcShape210.around.y);
@@ -19227,7 +19268,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(182, 42, 176)';
+ctx.fillStyle = 'rgb(21, 217, 227)';
 
 ctx.save();
 ctx.translate(bbcShape211.around.x, bbcShape211.around.y);
@@ -19239,7 +19280,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(179, 120, 123)';
+ctx.fillStyle = 'rgb(22, 17, 95)';
 
 ctx.save();
 ctx.translate(bbcShape212.around.x, bbcShape212.around.y);
@@ -19251,7 +19292,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(152, 192, 131)';
+ctx.fillStyle = 'rgb(50, 198, 191)';
 
 ctx.save();
 ctx.translate(bbcShape213.around.x, bbcShape213.around.y);
@@ -19263,7 +19304,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(118, 215, 72)';
+ctx.fillStyle = 'rgb(207, 150, 73)';
 
 ctx.save();
 ctx.translate(bbcShape214.around.x, bbcShape214.around.y);
@@ -19275,7 +19316,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(138, 178, 231)';
+ctx.fillStyle = 'rgb(183, 222, 8)';
 
 ctx.save();
 ctx.translate(bbcShape215.around.x, bbcShape215.around.y);
@@ -19287,7 +19328,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(195, 254, 208)';
+ctx.fillStyle = 'rgb(230, 201, 49)';
 
 ctx.save();
 ctx.translate(bbcShape216.around.x, bbcShape216.around.y);
@@ -19299,7 +19340,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(177, 190, 4)';
+ctx.fillStyle = 'rgb(104, 20, 223)';
 
 ctx.save();
 ctx.translate(bbcShape217.around.x, bbcShape217.around.y);
@@ -19311,7 +19352,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(53, 80, 253)';
+ctx.fillStyle = 'rgb(151, 240, 164)';
 
 ctx.save();
 ctx.translate(bbcShape218.around.x, bbcShape218.around.y);
@@ -19323,7 +19364,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(234, 79, 75)';
+ctx.fillStyle = 'rgb(129, 103, 207)';
 
 ctx.save();
 ctx.translate(bbcShape219.around.x, bbcShape219.around.y);
@@ -19335,7 +19376,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(160, 239, 17)';
+ctx.fillStyle = 'rgb(254, 188, 28)';
 
 ctx.save();
 ctx.translate(bbcShape220.around.x, bbcShape220.around.y);
@@ -19347,7 +19388,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(199, 114, 197)';
+ctx.fillStyle = 'rgb(187, 242, 79)';
 
 ctx.save();
 ctx.translate(bbcShape221.around.x, bbcShape221.around.y);
@@ -19359,7 +19400,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(122, 72, 163)';
+ctx.fillStyle = 'rgb(194, 77, 114)';
 
 ctx.save();
 ctx.translate(bbcShape222.around.x, bbcShape222.around.y);
@@ -19371,7 +19412,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(32, 118, 213)';
+ctx.fillStyle = 'rgb(157, 49, 211)';
 
 ctx.save();
 ctx.translate(bbcShape223.around.x, bbcShape223.around.y);
@@ -19383,7 +19424,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(52, 44, 56)';
+ctx.fillStyle = 'rgb(212, 17, 151)';
 
 ctx.save();
 ctx.translate(bbcShape224.around.x, bbcShape224.around.y);
@@ -19395,7 +19436,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(72, 211, 194)';
+ctx.fillStyle = 'rgb(171, 192, 141)';
 
 ctx.save();
 ctx.translate(bbcShape225.around.x, bbcShape225.around.y);
@@ -19407,7 +19448,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(193, 108, 207)';
+ctx.fillStyle = 'rgb(186, 76, 117)';
 
 ctx.save();
 ctx.translate(bbcShape226.around.x, bbcShape226.around.y);
@@ -19419,7 +19460,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(102, 157, 125)';
+ctx.fillStyle = 'rgb(230, 241, 36)';
 
 ctx.save();
 ctx.translate(bbcShape227.around.x, bbcShape227.around.y);
@@ -19431,7 +19472,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(166, 243, 81)';
+ctx.fillStyle = 'rgb(100, 218, 37)';
 
 ctx.save();
 ctx.translate(bbcShape228.around.x, bbcShape228.around.y);
@@ -19443,7 +19484,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(148, 210, 164)';
+ctx.fillStyle = 'rgb(165, 34, 221)';
 
 ctx.save();
 ctx.translate(bbcShape229.around.x, bbcShape229.around.y);
@@ -19455,7 +19496,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(197, 215, 81)';
+ctx.fillStyle = 'rgb(224, 72, 210)';
 
 ctx.save();
 ctx.translate(bbcShape230.around.x, bbcShape230.around.y);
@@ -19467,7 +19508,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(74, 69, 54)';
+ctx.fillStyle = 'rgb(204, 96, 116)';
 
 ctx.save();
 ctx.translate(bbcShape231.around.x, bbcShape231.around.y);
@@ -19479,7 +19520,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(225, 137, 170)';
+ctx.fillStyle = 'rgb(99, 192, 247)';
 
 ctx.save();
 ctx.translate(bbcShape232.around.x, bbcShape232.around.y);
@@ -19491,7 +19532,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(66, 140, 209)';
+ctx.fillStyle = 'rgb(240, 78, 252)';
 
 ctx.save();
 ctx.translate(bbcShape233.around.x, bbcShape233.around.y);
@@ -19503,7 +19544,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(26, 16, 84)';
+ctx.fillStyle = 'rgb(159, 69, 171)';
 
 ctx.save();
 ctx.translate(bbcShape234.around.x, bbcShape234.around.y);
@@ -19515,7 +19556,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(164, 192, 119)';
+ctx.fillStyle = 'rgb(67, 96, 35)';
 
 ctx.save();
 ctx.translate(bbcShape235.around.x, bbcShape235.around.y);
@@ -19527,7 +19568,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(124, 157, 211)';
+ctx.fillStyle = 'rgb(103, 242, 109)';
 
 ctx.save();
 ctx.translate(bbcShape236.around.x, bbcShape236.around.y);
@@ -19539,7 +19580,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(86, 243, 230)';
+ctx.fillStyle = 'rgb(174, 20, 7)';
 
 ctx.save();
 ctx.translate(bbcShape237.around.x, bbcShape237.around.y);
@@ -19551,7 +19592,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(208, 204, 163)';
+ctx.fillStyle = 'rgb(250, 24, 170)';
 
 ctx.save();
 ctx.translate(bbcShape238.around.x, bbcShape238.around.y);
@@ -19563,7 +19604,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(130, 10, 252)';
+ctx.fillStyle = 'rgb(53, 187, 17)';
 
 ctx.save();
 ctx.translate(bbcShape239.around.x, bbcShape239.around.y);
@@ -19575,7 +19616,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(34, 221, 49)';
+ctx.fillStyle = 'rgb(2, 151, 193)';
 
 ctx.save();
 ctx.translate(bbcShape240.around.x, bbcShape240.around.y);
@@ -19587,7 +19628,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(169, 103, 39)';
+ctx.fillStyle = 'rgb(164, 127, 200)';
 
 ctx.save();
 ctx.translate(bbcShape241.around.x, bbcShape241.around.y);
@@ -19599,7 +19640,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(188, 63, 250)';
+ctx.fillStyle = 'rgb(230, 255, 149)';
 
 ctx.save();
 ctx.translate(bbcShape242.around.x, bbcShape242.around.y);
@@ -19611,7 +19652,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(103, 161, 142)';
+ctx.fillStyle = 'rgb(191, 140, 226)';
 
 ctx.save();
 ctx.translate(bbcShape243.around.x, bbcShape243.around.y);
@@ -19623,7 +19664,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(56, 255, 45)';
+ctx.fillStyle = 'rgb(198, 171, 177)';
 
 ctx.save();
 ctx.translate(bbcShape244.around.x, bbcShape244.around.y);
@@ -19635,7 +19676,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(137, 33, 88)';
+ctx.fillStyle = 'rgb(161, 63, 229)';
 
 ctx.save();
 ctx.translate(bbcShape245.around.x, bbcShape245.around.y);
@@ -19647,7 +19688,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(174, 245, 124)';
+ctx.fillStyle = 'rgb(100, 138, 181)';
 
 ctx.save();
 ctx.translate(bbcShape246.around.x, bbcShape246.around.y);
@@ -19659,7 +19700,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(233, 217, 47)';
+ctx.fillStyle = 'rgb(166, 87, 32)';
 
 ctx.save();
 ctx.translate(bbcShape247.around.x, bbcShape247.around.y);
@@ -19671,7 +19712,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(230, 92, 41)';
+ctx.fillStyle = 'rgb(57, 169, 176)';
 
 ctx.save();
 ctx.translate(bbcShape248.around.x, bbcShape248.around.y);
@@ -19683,7 +19724,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(7, 10, 71)';
+ctx.fillStyle = 'rgb(66, 204, 91)';
 
 ctx.save();
 ctx.translate(bbcShape249.around.x, bbcShape249.around.y);
@@ -19695,7 +19736,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(196, 6, 218)';
+ctx.fillStyle = 'rgb(250, 81, 91)';
 
 ctx.save();
 ctx.translate(bbcShape250.around.x, bbcShape250.around.y);
@@ -19707,7 +19748,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(53, 66, 114)';
+ctx.fillStyle = 'rgb(197, 7, 82)';
 
 ctx.save();
 ctx.translate(bbcShape251.around.x, bbcShape251.around.y);
@@ -19719,7 +19760,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(166, 156, 178)';
+ctx.fillStyle = 'rgb(83, 170, 174)';
 
 ctx.save();
 ctx.translate(bbcShape252.around.x, bbcShape252.around.y);
@@ -19731,7 +19772,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(52, 118, 38)';
+ctx.fillStyle = 'rgb(89, 53, 173)';
 
 ctx.save();
 ctx.translate(bbcShape253.around.x, bbcShape253.around.y);
@@ -19743,7 +19784,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(43, 181, 55)';
+ctx.fillStyle = 'rgb(246, 148, 233)';
 
 ctx.save();
 ctx.translate(bbcShape254.around.x, bbcShape254.around.y);
@@ -19755,7 +19796,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(202, 20, 238)';
+ctx.fillStyle = 'rgb(174, 185, 98)';
 
 ctx.save();
 ctx.translate(bbcShape255.around.x, bbcShape255.around.y);
@@ -19767,7 +19808,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(36, 29, 102)';
+ctx.fillStyle = 'rgb(219, 172, 93)';
 
 ctx.save();
 ctx.translate(bbcShape256.around.x, bbcShape256.around.y);
@@ -19779,7 +19820,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(209, 182, 85)';
+ctx.fillStyle = 'rgb(222, 18, 64)';
 
 ctx.save();
 ctx.translate(bbcShape257.around.x, bbcShape257.around.y);
@@ -19791,7 +19832,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(77, 67, 103)';
+ctx.fillStyle = 'rgb(47, 90, 149)';
 
 ctx.save();
 ctx.translate(bbcShape258.around.x, bbcShape258.around.y);
@@ -19803,7 +19844,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(58, 245, 18)';
+ctx.fillStyle = 'rgb(8, 179, 113)';
 
 ctx.save();
 ctx.translate(bbcShape259.around.x, bbcShape259.around.y);
@@ -19815,7 +19856,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(253, 188, 27)';
+ctx.fillStyle = 'rgb(247, 52, 245)';
 
 ctx.save();
 ctx.translate(bbcShape260.around.x, bbcShape260.around.y);
@@ -19827,7 +19868,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(96, 222, 194)';
+ctx.fillStyle = 'rgb(126, 114, 204)';
 
 ctx.save();
 ctx.translate(bbcShape261.around.x, bbcShape261.around.y);
@@ -19839,7 +19880,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(50, 241, 76)';
+ctx.fillStyle = 'rgb(171, 95, 82)';
 
 ctx.save();
 ctx.translate(bbcShape262.around.x, bbcShape262.around.y);
@@ -19851,7 +19892,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(119, 209, 216)';
+ctx.fillStyle = 'rgb(217, 121, 224)';
 
 ctx.save();
 ctx.translate(bbcShape263.around.x, bbcShape263.around.y);
@@ -19863,7 +19904,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(54, 181, 91)';
+ctx.fillStyle = 'rgb(46, 226, 237)';
 
 ctx.save();
 ctx.translate(bbcShape264.around.x, bbcShape264.around.y);
@@ -19875,7 +19916,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(124, 26, 244)';
+ctx.fillStyle = 'rgb(187, 34, 43)';
 
 ctx.save();
 ctx.translate(bbcShape265.around.x, bbcShape265.around.y);
@@ -19887,7 +19928,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(164, 125, 91)';
+ctx.fillStyle = 'rgb(187, 217, 44)';
 
 ctx.save();
 ctx.translate(bbcShape266.around.x, bbcShape266.around.y);
@@ -19899,7 +19940,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(222, 162, 186)';
+ctx.fillStyle = 'rgb(31, 174, 23)';
 
 ctx.save();
 ctx.translate(bbcShape267.around.x, bbcShape267.around.y);
@@ -19911,7 +19952,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(55, 249, 226)';
+ctx.fillStyle = 'rgb(192, 217, 18)';
 
 ctx.save();
 ctx.translate(bbcShape268.around.x, bbcShape268.around.y);
@@ -19923,7 +19964,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(222, 57, 37)';
+ctx.fillStyle = 'rgb(28, 218, 117)';
 
 ctx.save();
 ctx.translate(bbcShape269.around.x, bbcShape269.around.y);
@@ -19935,7 +19976,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(183, 174, 74)';
+ctx.fillStyle = 'rgb(47, 251, 251)';
 
 ctx.save();
 ctx.translate(bbcShape270.around.x, bbcShape270.around.y);
@@ -19947,7 +19988,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(246, 12, 15)';
+ctx.fillStyle = 'rgb(84, 94, 62)';
 
 ctx.save();
 ctx.translate(bbcShape271.around.x, bbcShape271.around.y);
@@ -19959,7 +20000,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(144, 93, 222)';
+ctx.fillStyle = 'rgb(20, 78, 129)';
 
 ctx.save();
 ctx.translate(bbcShape272.around.x, bbcShape272.around.y);
@@ -19971,7 +20012,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(213, 159, 112)';
+ctx.fillStyle = 'rgb(170, 79, 164)';
 
 ctx.save();
 ctx.translate(bbcShape273.around.x, bbcShape273.around.y);
@@ -19983,7 +20024,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(58, 250, 141)';
+ctx.fillStyle = 'rgb(97, 105, 250)';
 
 ctx.save();
 ctx.translate(bbcShape274.around.x, bbcShape274.around.y);
@@ -19995,7 +20036,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(195, 229, 244)';
+ctx.fillStyle = 'rgb(168, 178, 11)';
 
 ctx.save();
 ctx.translate(bbcShape275.around.x, bbcShape275.around.y);
@@ -20007,7 +20048,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(178, 109, 22)';
+ctx.fillStyle = 'rgb(18, 34, 134)';
 
 ctx.save();
 ctx.translate(bbcShape276.around.x, bbcShape276.around.y);
@@ -20019,7 +20060,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(200, 207, 90)';
+ctx.fillStyle = 'rgb(249, 199, 159)';
 
 ctx.save();
 ctx.translate(bbcShape277.around.x, bbcShape277.around.y);
@@ -20031,7 +20072,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(74, 172, 204)';
+ctx.fillStyle = 'rgb(220, 63, 152)';
 
 ctx.save();
 ctx.translate(bbcShape278.around.x, bbcShape278.around.y);
@@ -20043,7 +20084,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(168, 109, 115)';
+ctx.fillStyle = 'rgb(42, 43, 113)';
 
 ctx.save();
 ctx.translate(bbcShape279.around.x, bbcShape279.around.y);
@@ -20055,7 +20096,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(5, 172, 146)';
+ctx.fillStyle = 'rgb(19, 176, 80)';
 
 ctx.save();
 ctx.translate(bbcShape280.around.x, bbcShape280.around.y);
@@ -20067,7 +20108,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(156, 135, 91)';
+ctx.fillStyle = 'rgb(67, 147, 22)';
 
 ctx.save();
 ctx.translate(bbcShape281.around.x, bbcShape281.around.y);
@@ -20079,7 +20120,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(224, 196, 65)';
+ctx.fillStyle = 'rgb(196, 224, 163)';
 
 ctx.save();
 ctx.translate(bbcShape282.around.x, bbcShape282.around.y);
@@ -20091,7 +20132,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(71, 97, 232)';
+ctx.fillStyle = 'rgb(52, 93, 139)';
 
 ctx.save();
 ctx.translate(bbcShape283.around.x, bbcShape283.around.y);
@@ -20103,7 +20144,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(227, 145, 229)';
+ctx.fillStyle = 'rgb(234, 119, 250)';
 
 ctx.save();
 ctx.translate(bbcShape284.around.x, bbcShape284.around.y);
@@ -20115,7 +20156,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(113, 210, 99)';
+ctx.fillStyle = 'rgb(41, 165, 87)';
 
 ctx.save();
 ctx.translate(bbcShape285.around.x, bbcShape285.around.y);
@@ -20127,7 +20168,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(231, 241, 7)';
+ctx.fillStyle = 'rgb(36, 200, 252)';
 
 ctx.save();
 ctx.translate(bbcShape286.around.x, bbcShape286.around.y);
@@ -20139,7 +20180,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(81, 60, 134)';
+ctx.fillStyle = 'rgb(244, 160, 19)';
 
 ctx.save();
 ctx.translate(bbcShape287.around.x, bbcShape287.around.y);
@@ -20151,7 +20192,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(242, 17, 48)';
+ctx.fillStyle = 'rgb(202, 26, 189)';
 
 ctx.save();
 ctx.translate(bbcShape288.around.x, bbcShape288.around.y);
@@ -20163,7 +20204,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(166, 49, 244)';
+ctx.fillStyle = 'rgb(245, 203, 6)';
 
 ctx.save();
 ctx.translate(bbcShape289.around.x, bbcShape289.around.y);
@@ -20175,7 +20216,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(202, 16, 52)';
+ctx.fillStyle = 'rgb(108, 141, 70)';
 
 ctx.save();
 ctx.translate(bbcShape290.around.x, bbcShape290.around.y);
@@ -20187,7 +20228,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(86, 221, 76)';
+ctx.fillStyle = 'rgb(207, 4, 215)';
 
 ctx.save();
 ctx.translate(bbcShape291.around.x, bbcShape291.around.y);
@@ -20199,7 +20240,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(12, 107, 235)';
+ctx.fillStyle = 'rgb(209, 141, 210)';
 
 ctx.save();
 ctx.translate(bbcShape292.around.x, bbcShape292.around.y);
@@ -20211,7 +20252,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(248, 82, 80)';
+ctx.fillStyle = 'rgb(70, 187, 85)';
 
 ctx.save();
 ctx.translate(bbcShape293.around.x, bbcShape293.around.y);
@@ -20223,7 +20264,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(14, 198, 42)';
+ctx.fillStyle = 'rgb(14, 149, 120)';
 
 ctx.save();
 ctx.translate(bbcShape294.around.x, bbcShape294.around.y);
@@ -20235,7 +20276,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(184, 89, 203)';
+ctx.fillStyle = 'rgb(31, 10, 52)';
 
 ctx.save();
 ctx.translate(bbcShape295.around.x, bbcShape295.around.y);
@@ -20247,7 +20288,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(61, 42, 109)';
+ctx.fillStyle = 'rgb(46, 212, 54)';
 
 ctx.save();
 ctx.translate(bbcShape296.around.x, bbcShape296.around.y);
@@ -20259,7 +20300,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(20, 69, 248)';
+ctx.fillStyle = 'rgb(45, 107, 112)';
 
 ctx.save();
 ctx.translate(bbcShape297.around.x, bbcShape297.around.y);
@@ -20271,7 +20312,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(248, 24, 181)';
+ctx.fillStyle = 'rgb(89, 166, 7)';
 
 ctx.save();
 ctx.translate(bbcShape298.around.x, bbcShape298.around.y);
@@ -20283,7 +20324,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(42, 189, 45)';
+ctx.fillStyle = 'rgb(89, 190, 182)';
 
 ctx.save();
 ctx.translate(bbcShape299.around.x, bbcShape299.around.y);
@@ -20295,7 +20336,7 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(189, 1, 11)';
+ctx.fillStyle = 'rgb(10, 32, 122)';
 
 ctx.save();
 ctx.translate(bbcShape300.around.x, bbcShape300.around.y);
@@ -20307,50 +20348,50 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(0.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(118, 225, 218)';
 
 ctx.save();
 ctx.translate(bbcShape301.around.x, bbcShape301.around.y);
 ctx.rotate(bbcShape301.rotation * Math.PI / 180);
 ctx.translate(-bbcShape301.around.x, -bbcShape301.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape301.points[0][0], bbcShape301.points[0][1]);
-ctx.lineTo(bbcShape301.points[1][0], bbcShape301.points[1][1]);
-ctx.lineTo(bbcShape301.points[2][0], bbcShape301.points[2][1]);
-ctx.lineTo(bbcShape301.points[3][0], bbcShape301.points[3][1]);
-ctx.lineTo(bbcShape301.points[4][0], bbcShape301.points[4][1]);
-ctx.lineTo(bbcShape301.points[5][0], bbcShape301.points[5][1]);
-ctx.lineTo(bbcShape301.points[6][0], bbcShape301.points[6][1]);
-ctx.lineTo(bbcShape301.points[7][0], bbcShape301.points[7][1]);
-ctx.lineTo(bbcShape301.points[8][0], bbcShape301.points[8][1]);
-ctx.lineTo(bbcShape301.points[9][0], bbcShape301.points[9][1]);
-ctx.lineTo(bbcShape301.points[10][0], bbcShape301.points[10][1]);
-ctx.lineTo(bbcShape301.points[11][0], bbcShape301.points[11][1]);
-ctx.closePath();
+ctx.arc(bbcShape301.point.x, bbcShape301.point.y, bbcShape301.radius, 0, 2 * Math.PI);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 0.0, 0.0)';
+ctx.fillStyle = 'rgb(54, 180, 70)';
 
 ctx.save();
 ctx.translate(bbcShape302.around.x, bbcShape302.around.y);
 ctx.rotate(bbcShape302.rotation * Math.PI / 180);
 ctx.translate(-bbcShape302.around.x, -bbcShape302.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape302.point.x, bbcShape302.point.y, bbcShape302.size.width, bbcShape302.size.height);
+ctx.arc(bbcShape302.point.x, bbcShape302.point.y, bbcShape302.radius, 0, 2 * Math.PI);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 0.0, 0.0)';
+ctx.fillStyle = 'rgb(0.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape303.around.x, bbcShape303.around.y);
 ctx.rotate(bbcShape303.rotation * Math.PI / 180);
 ctx.translate(-bbcShape303.around.x, -bbcShape303.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape303.point.x, bbcShape303.point.y, bbcShape303.size.width, bbcShape303.size.height);
+ctx.moveTo(bbcShape303.points[0][0], bbcShape303.points[0][1]);
+ctx.lineTo(bbcShape303.points[1][0], bbcShape303.points[1][1]);
+ctx.lineTo(bbcShape303.points[2][0], bbcShape303.points[2][1]);
+ctx.lineTo(bbcShape303.points[3][0], bbcShape303.points[3][1]);
+ctx.lineTo(bbcShape303.points[4][0], bbcShape303.points[4][1]);
+ctx.lineTo(bbcShape303.points[5][0], bbcShape303.points[5][1]);
+ctx.lineTo(bbcShape303.points[6][0], bbcShape303.points[6][1]);
+ctx.lineTo(bbcShape303.points[7][0], bbcShape303.points[7][1]);
+ctx.lineTo(bbcShape303.points[8][0], bbcShape303.points[8][1]);
+ctx.lineTo(bbcShape303.points[9][0], bbcShape303.points[9][1]);
+ctx.lineTo(bbcShape303.points[10][0], bbcShape303.points[10][1]);
+ctx.lineTo(bbcShape303.points[11][0], bbcShape303.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -20571,31 +20612,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(25.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 0.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape322.around.x, bbcShape322.around.y);
 ctx.rotate(bbcShape322.rotation * Math.PI / 180);
 ctx.translate(-bbcShape322.around.x, -bbcShape322.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape322.points[0][0], bbcShape322.points[0][1]);
-ctx.lineTo(bbcShape322.points[1][0], bbcShape322.points[1][1]);
-ctx.lineTo(bbcShape322.points[2][0], bbcShape322.points[2][1]);
-ctx.lineTo(bbcShape322.points[3][0], bbcShape322.points[3][1]);
-ctx.lineTo(bbcShape322.points[4][0], bbcShape322.points[4][1]);
-ctx.lineTo(bbcShape322.points[5][0], bbcShape322.points[5][1]);
-ctx.lineTo(bbcShape322.points[6][0], bbcShape322.points[6][1]);
-ctx.lineTo(bbcShape322.points[7][0], bbcShape322.points[7][1]);
-ctx.lineTo(bbcShape322.points[8][0], bbcShape322.points[8][1]);
-ctx.lineTo(bbcShape322.points[9][0], bbcShape322.points[9][1]);
-ctx.lineTo(bbcShape322.points[10][0], bbcShape322.points[10][1]);
-ctx.lineTo(bbcShape322.points[11][0], bbcShape322.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape322.point.x, bbcShape322.point.y, bbcShape322.size.width, bbcShape322.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 25.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 0.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape323.around.x, bbcShape323.around.y);
@@ -20607,14 +20636,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 25.0, 0.0)';
+ctx.fillStyle = 'rgb(25.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape324.around.x, bbcShape324.around.y);
 ctx.rotate(bbcShape324.rotation * Math.PI / 180);
 ctx.translate(-bbcShape324.around.x, -bbcShape324.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape324.point.x, bbcShape324.point.y, bbcShape324.size.width, bbcShape324.size.height);
+ctx.moveTo(bbcShape324.points[0][0], bbcShape324.points[0][1]);
+ctx.lineTo(bbcShape324.points[1][0], bbcShape324.points[1][1]);
+ctx.lineTo(bbcShape324.points[2][0], bbcShape324.points[2][1]);
+ctx.lineTo(bbcShape324.points[3][0], bbcShape324.points[3][1]);
+ctx.lineTo(bbcShape324.points[4][0], bbcShape324.points[4][1]);
+ctx.lineTo(bbcShape324.points[5][0], bbcShape324.points[5][1]);
+ctx.lineTo(bbcShape324.points[6][0], bbcShape324.points[6][1]);
+ctx.lineTo(bbcShape324.points[7][0], bbcShape324.points[7][1]);
+ctx.lineTo(bbcShape324.points[8][0], bbcShape324.points[8][1]);
+ctx.lineTo(bbcShape324.points[9][0], bbcShape324.points[9][1]);
+ctx.lineTo(bbcShape324.points[10][0], bbcShape324.points[10][1]);
+ctx.lineTo(bbcShape324.points[11][0], bbcShape324.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -20835,31 +20876,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(50.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 25.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape343.around.x, bbcShape343.around.y);
 ctx.rotate(bbcShape343.rotation * Math.PI / 180);
 ctx.translate(-bbcShape343.around.x, -bbcShape343.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape343.points[0][0], bbcShape343.points[0][1]);
-ctx.lineTo(bbcShape343.points[1][0], bbcShape343.points[1][1]);
-ctx.lineTo(bbcShape343.points[2][0], bbcShape343.points[2][1]);
-ctx.lineTo(bbcShape343.points[3][0], bbcShape343.points[3][1]);
-ctx.lineTo(bbcShape343.points[4][0], bbcShape343.points[4][1]);
-ctx.lineTo(bbcShape343.points[5][0], bbcShape343.points[5][1]);
-ctx.lineTo(bbcShape343.points[6][0], bbcShape343.points[6][1]);
-ctx.lineTo(bbcShape343.points[7][0], bbcShape343.points[7][1]);
-ctx.lineTo(bbcShape343.points[8][0], bbcShape343.points[8][1]);
-ctx.lineTo(bbcShape343.points[9][0], bbcShape343.points[9][1]);
-ctx.lineTo(bbcShape343.points[10][0], bbcShape343.points[10][1]);
-ctx.lineTo(bbcShape343.points[11][0], bbcShape343.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape343.point.x, bbcShape343.point.y, bbcShape343.size.width, bbcShape343.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 50.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 25.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape344.around.x, bbcShape344.around.y);
@@ -20871,14 +20900,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 50.0, 0.0)';
+ctx.fillStyle = 'rgb(50.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape345.around.x, bbcShape345.around.y);
 ctx.rotate(bbcShape345.rotation * Math.PI / 180);
 ctx.translate(-bbcShape345.around.x, -bbcShape345.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape345.point.x, bbcShape345.point.y, bbcShape345.size.width, bbcShape345.size.height);
+ctx.moveTo(bbcShape345.points[0][0], bbcShape345.points[0][1]);
+ctx.lineTo(bbcShape345.points[1][0], bbcShape345.points[1][1]);
+ctx.lineTo(bbcShape345.points[2][0], bbcShape345.points[2][1]);
+ctx.lineTo(bbcShape345.points[3][0], bbcShape345.points[3][1]);
+ctx.lineTo(bbcShape345.points[4][0], bbcShape345.points[4][1]);
+ctx.lineTo(bbcShape345.points[5][0], bbcShape345.points[5][1]);
+ctx.lineTo(bbcShape345.points[6][0], bbcShape345.points[6][1]);
+ctx.lineTo(bbcShape345.points[7][0], bbcShape345.points[7][1]);
+ctx.lineTo(bbcShape345.points[8][0], bbcShape345.points[8][1]);
+ctx.lineTo(bbcShape345.points[9][0], bbcShape345.points[9][1]);
+ctx.lineTo(bbcShape345.points[10][0], bbcShape345.points[10][1]);
+ctx.lineTo(bbcShape345.points[11][0], bbcShape345.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -21099,31 +21140,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(75.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 50.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape364.around.x, bbcShape364.around.y);
 ctx.rotate(bbcShape364.rotation * Math.PI / 180);
 ctx.translate(-bbcShape364.around.x, -bbcShape364.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape364.points[0][0], bbcShape364.points[0][1]);
-ctx.lineTo(bbcShape364.points[1][0], bbcShape364.points[1][1]);
-ctx.lineTo(bbcShape364.points[2][0], bbcShape364.points[2][1]);
-ctx.lineTo(bbcShape364.points[3][0], bbcShape364.points[3][1]);
-ctx.lineTo(bbcShape364.points[4][0], bbcShape364.points[4][1]);
-ctx.lineTo(bbcShape364.points[5][0], bbcShape364.points[5][1]);
-ctx.lineTo(bbcShape364.points[6][0], bbcShape364.points[6][1]);
-ctx.lineTo(bbcShape364.points[7][0], bbcShape364.points[7][1]);
-ctx.lineTo(bbcShape364.points[8][0], bbcShape364.points[8][1]);
-ctx.lineTo(bbcShape364.points[9][0], bbcShape364.points[9][1]);
-ctx.lineTo(bbcShape364.points[10][0], bbcShape364.points[10][1]);
-ctx.lineTo(bbcShape364.points[11][0], bbcShape364.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape364.point.x, bbcShape364.point.y, bbcShape364.size.width, bbcShape364.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 75.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 50.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape365.around.x, bbcShape365.around.y);
@@ -21135,14 +21164,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 75.0, 0.0)';
+ctx.fillStyle = 'rgb(75.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape366.around.x, bbcShape366.around.y);
 ctx.rotate(bbcShape366.rotation * Math.PI / 180);
 ctx.translate(-bbcShape366.around.x, -bbcShape366.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape366.point.x, bbcShape366.point.y, bbcShape366.size.width, bbcShape366.size.height);
+ctx.moveTo(bbcShape366.points[0][0], bbcShape366.points[0][1]);
+ctx.lineTo(bbcShape366.points[1][0], bbcShape366.points[1][1]);
+ctx.lineTo(bbcShape366.points[2][0], bbcShape366.points[2][1]);
+ctx.lineTo(bbcShape366.points[3][0], bbcShape366.points[3][1]);
+ctx.lineTo(bbcShape366.points[4][0], bbcShape366.points[4][1]);
+ctx.lineTo(bbcShape366.points[5][0], bbcShape366.points[5][1]);
+ctx.lineTo(bbcShape366.points[6][0], bbcShape366.points[6][1]);
+ctx.lineTo(bbcShape366.points[7][0], bbcShape366.points[7][1]);
+ctx.lineTo(bbcShape366.points[8][0], bbcShape366.points[8][1]);
+ctx.lineTo(bbcShape366.points[9][0], bbcShape366.points[9][1]);
+ctx.lineTo(bbcShape366.points[10][0], bbcShape366.points[10][1]);
+ctx.lineTo(bbcShape366.points[11][0], bbcShape366.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -21363,31 +21404,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(100.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 75.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape385.around.x, bbcShape385.around.y);
 ctx.rotate(bbcShape385.rotation * Math.PI / 180);
 ctx.translate(-bbcShape385.around.x, -bbcShape385.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape385.points[0][0], bbcShape385.points[0][1]);
-ctx.lineTo(bbcShape385.points[1][0], bbcShape385.points[1][1]);
-ctx.lineTo(bbcShape385.points[2][0], bbcShape385.points[2][1]);
-ctx.lineTo(bbcShape385.points[3][0], bbcShape385.points[3][1]);
-ctx.lineTo(bbcShape385.points[4][0], bbcShape385.points[4][1]);
-ctx.lineTo(bbcShape385.points[5][0], bbcShape385.points[5][1]);
-ctx.lineTo(bbcShape385.points[6][0], bbcShape385.points[6][1]);
-ctx.lineTo(bbcShape385.points[7][0], bbcShape385.points[7][1]);
-ctx.lineTo(bbcShape385.points[8][0], bbcShape385.points[8][1]);
-ctx.lineTo(bbcShape385.points[9][0], bbcShape385.points[9][1]);
-ctx.lineTo(bbcShape385.points[10][0], bbcShape385.points[10][1]);
-ctx.lineTo(bbcShape385.points[11][0], bbcShape385.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape385.point.x, bbcShape385.point.y, bbcShape385.size.width, bbcShape385.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 100.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 75.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape386.around.x, bbcShape386.around.y);
@@ -21399,14 +21428,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 100.0, 0.0)';
+ctx.fillStyle = 'rgb(100.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape387.around.x, bbcShape387.around.y);
 ctx.rotate(bbcShape387.rotation * Math.PI / 180);
 ctx.translate(-bbcShape387.around.x, -bbcShape387.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape387.point.x, bbcShape387.point.y, bbcShape387.size.width, bbcShape387.size.height);
+ctx.moveTo(bbcShape387.points[0][0], bbcShape387.points[0][1]);
+ctx.lineTo(bbcShape387.points[1][0], bbcShape387.points[1][1]);
+ctx.lineTo(bbcShape387.points[2][0], bbcShape387.points[2][1]);
+ctx.lineTo(bbcShape387.points[3][0], bbcShape387.points[3][1]);
+ctx.lineTo(bbcShape387.points[4][0], bbcShape387.points[4][1]);
+ctx.lineTo(bbcShape387.points[5][0], bbcShape387.points[5][1]);
+ctx.lineTo(bbcShape387.points[6][0], bbcShape387.points[6][1]);
+ctx.lineTo(bbcShape387.points[7][0], bbcShape387.points[7][1]);
+ctx.lineTo(bbcShape387.points[8][0], bbcShape387.points[8][1]);
+ctx.lineTo(bbcShape387.points[9][0], bbcShape387.points[9][1]);
+ctx.lineTo(bbcShape387.points[10][0], bbcShape387.points[10][1]);
+ctx.lineTo(bbcShape387.points[11][0], bbcShape387.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -21627,31 +21668,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(125.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 100.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape406.around.x, bbcShape406.around.y);
 ctx.rotate(bbcShape406.rotation * Math.PI / 180);
 ctx.translate(-bbcShape406.around.x, -bbcShape406.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape406.points[0][0], bbcShape406.points[0][1]);
-ctx.lineTo(bbcShape406.points[1][0], bbcShape406.points[1][1]);
-ctx.lineTo(bbcShape406.points[2][0], bbcShape406.points[2][1]);
-ctx.lineTo(bbcShape406.points[3][0], bbcShape406.points[3][1]);
-ctx.lineTo(bbcShape406.points[4][0], bbcShape406.points[4][1]);
-ctx.lineTo(bbcShape406.points[5][0], bbcShape406.points[5][1]);
-ctx.lineTo(bbcShape406.points[6][0], bbcShape406.points[6][1]);
-ctx.lineTo(bbcShape406.points[7][0], bbcShape406.points[7][1]);
-ctx.lineTo(bbcShape406.points[8][0], bbcShape406.points[8][1]);
-ctx.lineTo(bbcShape406.points[9][0], bbcShape406.points[9][1]);
-ctx.lineTo(bbcShape406.points[10][0], bbcShape406.points[10][1]);
-ctx.lineTo(bbcShape406.points[11][0], bbcShape406.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape406.point.x, bbcShape406.point.y, bbcShape406.size.width, bbcShape406.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 125.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 100.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape407.around.x, bbcShape407.around.y);
@@ -21663,14 +21692,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 125.0, 0.0)';
+ctx.fillStyle = 'rgb(125.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape408.around.x, bbcShape408.around.y);
 ctx.rotate(bbcShape408.rotation * Math.PI / 180);
 ctx.translate(-bbcShape408.around.x, -bbcShape408.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape408.point.x, bbcShape408.point.y, bbcShape408.size.width, bbcShape408.size.height);
+ctx.moveTo(bbcShape408.points[0][0], bbcShape408.points[0][1]);
+ctx.lineTo(bbcShape408.points[1][0], bbcShape408.points[1][1]);
+ctx.lineTo(bbcShape408.points[2][0], bbcShape408.points[2][1]);
+ctx.lineTo(bbcShape408.points[3][0], bbcShape408.points[3][1]);
+ctx.lineTo(bbcShape408.points[4][0], bbcShape408.points[4][1]);
+ctx.lineTo(bbcShape408.points[5][0], bbcShape408.points[5][1]);
+ctx.lineTo(bbcShape408.points[6][0], bbcShape408.points[6][1]);
+ctx.lineTo(bbcShape408.points[7][0], bbcShape408.points[7][1]);
+ctx.lineTo(bbcShape408.points[8][0], bbcShape408.points[8][1]);
+ctx.lineTo(bbcShape408.points[9][0], bbcShape408.points[9][1]);
+ctx.lineTo(bbcShape408.points[10][0], bbcShape408.points[10][1]);
+ctx.lineTo(bbcShape408.points[11][0], bbcShape408.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -21891,31 +21932,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(150.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 125.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape427.around.x, bbcShape427.around.y);
 ctx.rotate(bbcShape427.rotation * Math.PI / 180);
 ctx.translate(-bbcShape427.around.x, -bbcShape427.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape427.points[0][0], bbcShape427.points[0][1]);
-ctx.lineTo(bbcShape427.points[1][0], bbcShape427.points[1][1]);
-ctx.lineTo(bbcShape427.points[2][0], bbcShape427.points[2][1]);
-ctx.lineTo(bbcShape427.points[3][0], bbcShape427.points[3][1]);
-ctx.lineTo(bbcShape427.points[4][0], bbcShape427.points[4][1]);
-ctx.lineTo(bbcShape427.points[5][0], bbcShape427.points[5][1]);
-ctx.lineTo(bbcShape427.points[6][0], bbcShape427.points[6][1]);
-ctx.lineTo(bbcShape427.points[7][0], bbcShape427.points[7][1]);
-ctx.lineTo(bbcShape427.points[8][0], bbcShape427.points[8][1]);
-ctx.lineTo(bbcShape427.points[9][0], bbcShape427.points[9][1]);
-ctx.lineTo(bbcShape427.points[10][0], bbcShape427.points[10][1]);
-ctx.lineTo(bbcShape427.points[11][0], bbcShape427.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape427.point.x, bbcShape427.point.y, bbcShape427.size.width, bbcShape427.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 150.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 125.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape428.around.x, bbcShape428.around.y);
@@ -21927,14 +21956,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 150.0, 0.0)';
+ctx.fillStyle = 'rgb(150.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape429.around.x, bbcShape429.around.y);
 ctx.rotate(bbcShape429.rotation * Math.PI / 180);
 ctx.translate(-bbcShape429.around.x, -bbcShape429.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape429.point.x, bbcShape429.point.y, bbcShape429.size.width, bbcShape429.size.height);
+ctx.moveTo(bbcShape429.points[0][0], bbcShape429.points[0][1]);
+ctx.lineTo(bbcShape429.points[1][0], bbcShape429.points[1][1]);
+ctx.lineTo(bbcShape429.points[2][0], bbcShape429.points[2][1]);
+ctx.lineTo(bbcShape429.points[3][0], bbcShape429.points[3][1]);
+ctx.lineTo(bbcShape429.points[4][0], bbcShape429.points[4][1]);
+ctx.lineTo(bbcShape429.points[5][0], bbcShape429.points[5][1]);
+ctx.lineTo(bbcShape429.points[6][0], bbcShape429.points[6][1]);
+ctx.lineTo(bbcShape429.points[7][0], bbcShape429.points[7][1]);
+ctx.lineTo(bbcShape429.points[8][0], bbcShape429.points[8][1]);
+ctx.lineTo(bbcShape429.points[9][0], bbcShape429.points[9][1]);
+ctx.lineTo(bbcShape429.points[10][0], bbcShape429.points[10][1]);
+ctx.lineTo(bbcShape429.points[11][0], bbcShape429.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -22155,31 +22196,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(175.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 150.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape448.around.x, bbcShape448.around.y);
 ctx.rotate(bbcShape448.rotation * Math.PI / 180);
 ctx.translate(-bbcShape448.around.x, -bbcShape448.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape448.points[0][0], bbcShape448.points[0][1]);
-ctx.lineTo(bbcShape448.points[1][0], bbcShape448.points[1][1]);
-ctx.lineTo(bbcShape448.points[2][0], bbcShape448.points[2][1]);
-ctx.lineTo(bbcShape448.points[3][0], bbcShape448.points[3][1]);
-ctx.lineTo(bbcShape448.points[4][0], bbcShape448.points[4][1]);
-ctx.lineTo(bbcShape448.points[5][0], bbcShape448.points[5][1]);
-ctx.lineTo(bbcShape448.points[6][0], bbcShape448.points[6][1]);
-ctx.lineTo(bbcShape448.points[7][0], bbcShape448.points[7][1]);
-ctx.lineTo(bbcShape448.points[8][0], bbcShape448.points[8][1]);
-ctx.lineTo(bbcShape448.points[9][0], bbcShape448.points[9][1]);
-ctx.lineTo(bbcShape448.points[10][0], bbcShape448.points[10][1]);
-ctx.lineTo(bbcShape448.points[11][0], bbcShape448.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape448.point.x, bbcShape448.point.y, bbcShape448.size.width, bbcShape448.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 175.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 150.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape449.around.x, bbcShape449.around.y);
@@ -22191,14 +22220,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 175.0, 0.0)';
+ctx.fillStyle = 'rgb(175.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape450.around.x, bbcShape450.around.y);
 ctx.rotate(bbcShape450.rotation * Math.PI / 180);
 ctx.translate(-bbcShape450.around.x, -bbcShape450.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape450.point.x, bbcShape450.point.y, bbcShape450.size.width, bbcShape450.size.height);
+ctx.moveTo(bbcShape450.points[0][0], bbcShape450.points[0][1]);
+ctx.lineTo(bbcShape450.points[1][0], bbcShape450.points[1][1]);
+ctx.lineTo(bbcShape450.points[2][0], bbcShape450.points[2][1]);
+ctx.lineTo(bbcShape450.points[3][0], bbcShape450.points[3][1]);
+ctx.lineTo(bbcShape450.points[4][0], bbcShape450.points[4][1]);
+ctx.lineTo(bbcShape450.points[5][0], bbcShape450.points[5][1]);
+ctx.lineTo(bbcShape450.points[6][0], bbcShape450.points[6][1]);
+ctx.lineTo(bbcShape450.points[7][0], bbcShape450.points[7][1]);
+ctx.lineTo(bbcShape450.points[8][0], bbcShape450.points[8][1]);
+ctx.lineTo(bbcShape450.points[9][0], bbcShape450.points[9][1]);
+ctx.lineTo(bbcShape450.points[10][0], bbcShape450.points[10][1]);
+ctx.lineTo(bbcShape450.points[11][0], bbcShape450.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -22419,31 +22460,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(200.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 175.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape469.around.x, bbcShape469.around.y);
 ctx.rotate(bbcShape469.rotation * Math.PI / 180);
 ctx.translate(-bbcShape469.around.x, -bbcShape469.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape469.points[0][0], bbcShape469.points[0][1]);
-ctx.lineTo(bbcShape469.points[1][0], bbcShape469.points[1][1]);
-ctx.lineTo(bbcShape469.points[2][0], bbcShape469.points[2][1]);
-ctx.lineTo(bbcShape469.points[3][0], bbcShape469.points[3][1]);
-ctx.lineTo(bbcShape469.points[4][0], bbcShape469.points[4][1]);
-ctx.lineTo(bbcShape469.points[5][0], bbcShape469.points[5][1]);
-ctx.lineTo(bbcShape469.points[6][0], bbcShape469.points[6][1]);
-ctx.lineTo(bbcShape469.points[7][0], bbcShape469.points[7][1]);
-ctx.lineTo(bbcShape469.points[8][0], bbcShape469.points[8][1]);
-ctx.lineTo(bbcShape469.points[9][0], bbcShape469.points[9][1]);
-ctx.lineTo(bbcShape469.points[10][0], bbcShape469.points[10][1]);
-ctx.lineTo(bbcShape469.points[11][0], bbcShape469.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape469.point.x, bbcShape469.point.y, bbcShape469.size.width, bbcShape469.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 200.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 175.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape470.around.x, bbcShape470.around.y);
@@ -22455,14 +22484,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 200.0, 0.0)';
+ctx.fillStyle = 'rgb(200.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape471.around.x, bbcShape471.around.y);
 ctx.rotate(bbcShape471.rotation * Math.PI / 180);
 ctx.translate(-bbcShape471.around.x, -bbcShape471.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape471.point.x, bbcShape471.point.y, bbcShape471.size.width, bbcShape471.size.height);
+ctx.moveTo(bbcShape471.points[0][0], bbcShape471.points[0][1]);
+ctx.lineTo(bbcShape471.points[1][0], bbcShape471.points[1][1]);
+ctx.lineTo(bbcShape471.points[2][0], bbcShape471.points[2][1]);
+ctx.lineTo(bbcShape471.points[3][0], bbcShape471.points[3][1]);
+ctx.lineTo(bbcShape471.points[4][0], bbcShape471.points[4][1]);
+ctx.lineTo(bbcShape471.points[5][0], bbcShape471.points[5][1]);
+ctx.lineTo(bbcShape471.points[6][0], bbcShape471.points[6][1]);
+ctx.lineTo(bbcShape471.points[7][0], bbcShape471.points[7][1]);
+ctx.lineTo(bbcShape471.points[8][0], bbcShape471.points[8][1]);
+ctx.lineTo(bbcShape471.points[9][0], bbcShape471.points[9][1]);
+ctx.lineTo(bbcShape471.points[10][0], bbcShape471.points[10][1]);
+ctx.lineTo(bbcShape471.points[11][0], bbcShape471.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -22683,31 +22724,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(225.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 200.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape490.around.x, bbcShape490.around.y);
 ctx.rotate(bbcShape490.rotation * Math.PI / 180);
 ctx.translate(-bbcShape490.around.x, -bbcShape490.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape490.points[0][0], bbcShape490.points[0][1]);
-ctx.lineTo(bbcShape490.points[1][0], bbcShape490.points[1][1]);
-ctx.lineTo(bbcShape490.points[2][0], bbcShape490.points[2][1]);
-ctx.lineTo(bbcShape490.points[3][0], bbcShape490.points[3][1]);
-ctx.lineTo(bbcShape490.points[4][0], bbcShape490.points[4][1]);
-ctx.lineTo(bbcShape490.points[5][0], bbcShape490.points[5][1]);
-ctx.lineTo(bbcShape490.points[6][0], bbcShape490.points[6][1]);
-ctx.lineTo(bbcShape490.points[7][0], bbcShape490.points[7][1]);
-ctx.lineTo(bbcShape490.points[8][0], bbcShape490.points[8][1]);
-ctx.lineTo(bbcShape490.points[9][0], bbcShape490.points[9][1]);
-ctx.lineTo(bbcShape490.points[10][0], bbcShape490.points[10][1]);
-ctx.lineTo(bbcShape490.points[11][0], bbcShape490.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape490.point.x, bbcShape490.point.y, bbcShape490.size.width, bbcShape490.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 225.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 200.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape491.around.x, bbcShape491.around.y);
@@ -22719,14 +22748,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 225.0, 0.0)';
+ctx.fillStyle = 'rgb(225.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape492.around.x, bbcShape492.around.y);
 ctx.rotate(bbcShape492.rotation * Math.PI / 180);
 ctx.translate(-bbcShape492.around.x, -bbcShape492.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape492.point.x, bbcShape492.point.y, bbcShape492.size.width, bbcShape492.size.height);
+ctx.moveTo(bbcShape492.points[0][0], bbcShape492.points[0][1]);
+ctx.lineTo(bbcShape492.points[1][0], bbcShape492.points[1][1]);
+ctx.lineTo(bbcShape492.points[2][0], bbcShape492.points[2][1]);
+ctx.lineTo(bbcShape492.points[3][0], bbcShape492.points[3][1]);
+ctx.lineTo(bbcShape492.points[4][0], bbcShape492.points[4][1]);
+ctx.lineTo(bbcShape492.points[5][0], bbcShape492.points[5][1]);
+ctx.lineTo(bbcShape492.points[6][0], bbcShape492.points[6][1]);
+ctx.lineTo(bbcShape492.points[7][0], bbcShape492.points[7][1]);
+ctx.lineTo(bbcShape492.points[8][0], bbcShape492.points[8][1]);
+ctx.lineTo(bbcShape492.points[9][0], bbcShape492.points[9][1]);
+ctx.lineTo(bbcShape492.points[10][0], bbcShape492.points[10][1]);
+ctx.lineTo(bbcShape492.points[11][0], bbcShape492.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -22947,31 +22988,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(250.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 225.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape511.around.x, bbcShape511.around.y);
 ctx.rotate(bbcShape511.rotation * Math.PI / 180);
 ctx.translate(-bbcShape511.around.x, -bbcShape511.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape511.points[0][0], bbcShape511.points[0][1]);
-ctx.lineTo(bbcShape511.points[1][0], bbcShape511.points[1][1]);
-ctx.lineTo(bbcShape511.points[2][0], bbcShape511.points[2][1]);
-ctx.lineTo(bbcShape511.points[3][0], bbcShape511.points[3][1]);
-ctx.lineTo(bbcShape511.points[4][0], bbcShape511.points[4][1]);
-ctx.lineTo(bbcShape511.points[5][0], bbcShape511.points[5][1]);
-ctx.lineTo(bbcShape511.points[6][0], bbcShape511.points[6][1]);
-ctx.lineTo(bbcShape511.points[7][0], bbcShape511.points[7][1]);
-ctx.lineTo(bbcShape511.points[8][0], bbcShape511.points[8][1]);
-ctx.lineTo(bbcShape511.points[9][0], bbcShape511.points[9][1]);
-ctx.lineTo(bbcShape511.points[10][0], bbcShape511.points[10][1]);
-ctx.lineTo(bbcShape511.points[11][0], bbcShape511.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape511.point.x, bbcShape511.point.y, bbcShape511.size.width, bbcShape511.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 250.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 225.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape512.around.x, bbcShape512.around.y);
@@ -22983,14 +23012,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 250.0, 0.0)';
+ctx.fillStyle = 'rgb(250.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape513.around.x, bbcShape513.around.y);
 ctx.rotate(bbcShape513.rotation * Math.PI / 180);
 ctx.translate(-bbcShape513.around.x, -bbcShape513.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape513.point.x, bbcShape513.point.y, bbcShape513.size.width, bbcShape513.size.height);
+ctx.moveTo(bbcShape513.points[0][0], bbcShape513.points[0][1]);
+ctx.lineTo(bbcShape513.points[1][0], bbcShape513.points[1][1]);
+ctx.lineTo(bbcShape513.points[2][0], bbcShape513.points[2][1]);
+ctx.lineTo(bbcShape513.points[3][0], bbcShape513.points[3][1]);
+ctx.lineTo(bbcShape513.points[4][0], bbcShape513.points[4][1]);
+ctx.lineTo(bbcShape513.points[5][0], bbcShape513.points[5][1]);
+ctx.lineTo(bbcShape513.points[6][0], bbcShape513.points[6][1]);
+ctx.lineTo(bbcShape513.points[7][0], bbcShape513.points[7][1]);
+ctx.lineTo(bbcShape513.points[8][0], bbcShape513.points[8][1]);
+ctx.lineTo(bbcShape513.points[9][0], bbcShape513.points[9][1]);
+ctx.lineTo(bbcShape513.points[10][0], bbcShape513.points[10][1]);
+ctx.lineTo(bbcShape513.points[11][0], bbcShape513.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -23211,31 +23252,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(275.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 250.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape532.around.x, bbcShape532.around.y);
 ctx.rotate(bbcShape532.rotation * Math.PI / 180);
 ctx.translate(-bbcShape532.around.x, -bbcShape532.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape532.points[0][0], bbcShape532.points[0][1]);
-ctx.lineTo(bbcShape532.points[1][0], bbcShape532.points[1][1]);
-ctx.lineTo(bbcShape532.points[2][0], bbcShape532.points[2][1]);
-ctx.lineTo(bbcShape532.points[3][0], bbcShape532.points[3][1]);
-ctx.lineTo(bbcShape532.points[4][0], bbcShape532.points[4][1]);
-ctx.lineTo(bbcShape532.points[5][0], bbcShape532.points[5][1]);
-ctx.lineTo(bbcShape532.points[6][0], bbcShape532.points[6][1]);
-ctx.lineTo(bbcShape532.points[7][0], bbcShape532.points[7][1]);
-ctx.lineTo(bbcShape532.points[8][0], bbcShape532.points[8][1]);
-ctx.lineTo(bbcShape532.points[9][0], bbcShape532.points[9][1]);
-ctx.lineTo(bbcShape532.points[10][0], bbcShape532.points[10][1]);
-ctx.lineTo(bbcShape532.points[11][0], bbcShape532.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape532.point.x, bbcShape532.point.y, bbcShape532.size.width, bbcShape532.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 275.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 250.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape533.around.x, bbcShape533.around.y);
@@ -23247,14 +23276,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 275.0, 0.0)';
+ctx.fillStyle = 'rgb(275.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape534.around.x, bbcShape534.around.y);
 ctx.rotate(bbcShape534.rotation * Math.PI / 180);
 ctx.translate(-bbcShape534.around.x, -bbcShape534.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape534.point.x, bbcShape534.point.y, bbcShape534.size.width, bbcShape534.size.height);
+ctx.moveTo(bbcShape534.points[0][0], bbcShape534.points[0][1]);
+ctx.lineTo(bbcShape534.points[1][0], bbcShape534.points[1][1]);
+ctx.lineTo(bbcShape534.points[2][0], bbcShape534.points[2][1]);
+ctx.lineTo(bbcShape534.points[3][0], bbcShape534.points[3][1]);
+ctx.lineTo(bbcShape534.points[4][0], bbcShape534.points[4][1]);
+ctx.lineTo(bbcShape534.points[5][0], bbcShape534.points[5][1]);
+ctx.lineTo(bbcShape534.points[6][0], bbcShape534.points[6][1]);
+ctx.lineTo(bbcShape534.points[7][0], bbcShape534.points[7][1]);
+ctx.lineTo(bbcShape534.points[8][0], bbcShape534.points[8][1]);
+ctx.lineTo(bbcShape534.points[9][0], bbcShape534.points[9][1]);
+ctx.lineTo(bbcShape534.points[10][0], bbcShape534.points[10][1]);
+ctx.lineTo(bbcShape534.points[11][0], bbcShape534.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -23475,31 +23516,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(300.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 275.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape553.around.x, bbcShape553.around.y);
 ctx.rotate(bbcShape553.rotation * Math.PI / 180);
 ctx.translate(-bbcShape553.around.x, -bbcShape553.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape553.points[0][0], bbcShape553.points[0][1]);
-ctx.lineTo(bbcShape553.points[1][0], bbcShape553.points[1][1]);
-ctx.lineTo(bbcShape553.points[2][0], bbcShape553.points[2][1]);
-ctx.lineTo(bbcShape553.points[3][0], bbcShape553.points[3][1]);
-ctx.lineTo(bbcShape553.points[4][0], bbcShape553.points[4][1]);
-ctx.lineTo(bbcShape553.points[5][0], bbcShape553.points[5][1]);
-ctx.lineTo(bbcShape553.points[6][0], bbcShape553.points[6][1]);
-ctx.lineTo(bbcShape553.points[7][0], bbcShape553.points[7][1]);
-ctx.lineTo(bbcShape553.points[8][0], bbcShape553.points[8][1]);
-ctx.lineTo(bbcShape553.points[9][0], bbcShape553.points[9][1]);
-ctx.lineTo(bbcShape553.points[10][0], bbcShape553.points[10][1]);
-ctx.lineTo(bbcShape553.points[11][0], bbcShape553.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape553.point.x, bbcShape553.point.y, bbcShape553.size.width, bbcShape553.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 300.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 275.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape554.around.x, bbcShape554.around.y);
@@ -23511,14 +23540,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 300.0, 0.0)';
+ctx.fillStyle = 'rgb(300.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape555.around.x, bbcShape555.around.y);
 ctx.rotate(bbcShape555.rotation * Math.PI / 180);
 ctx.translate(-bbcShape555.around.x, -bbcShape555.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape555.point.x, bbcShape555.point.y, bbcShape555.size.width, bbcShape555.size.height);
+ctx.moveTo(bbcShape555.points[0][0], bbcShape555.points[0][1]);
+ctx.lineTo(bbcShape555.points[1][0], bbcShape555.points[1][1]);
+ctx.lineTo(bbcShape555.points[2][0], bbcShape555.points[2][1]);
+ctx.lineTo(bbcShape555.points[3][0], bbcShape555.points[3][1]);
+ctx.lineTo(bbcShape555.points[4][0], bbcShape555.points[4][1]);
+ctx.lineTo(bbcShape555.points[5][0], bbcShape555.points[5][1]);
+ctx.lineTo(bbcShape555.points[6][0], bbcShape555.points[6][1]);
+ctx.lineTo(bbcShape555.points[7][0], bbcShape555.points[7][1]);
+ctx.lineTo(bbcShape555.points[8][0], bbcShape555.points[8][1]);
+ctx.lineTo(bbcShape555.points[9][0], bbcShape555.points[9][1]);
+ctx.lineTo(bbcShape555.points[10][0], bbcShape555.points[10][1]);
+ctx.lineTo(bbcShape555.points[11][0], bbcShape555.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -23739,31 +23780,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(325.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 300.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape574.around.x, bbcShape574.around.y);
 ctx.rotate(bbcShape574.rotation * Math.PI / 180);
 ctx.translate(-bbcShape574.around.x, -bbcShape574.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape574.points[0][0], bbcShape574.points[0][1]);
-ctx.lineTo(bbcShape574.points[1][0], bbcShape574.points[1][1]);
-ctx.lineTo(bbcShape574.points[2][0], bbcShape574.points[2][1]);
-ctx.lineTo(bbcShape574.points[3][0], bbcShape574.points[3][1]);
-ctx.lineTo(bbcShape574.points[4][0], bbcShape574.points[4][1]);
-ctx.lineTo(bbcShape574.points[5][0], bbcShape574.points[5][1]);
-ctx.lineTo(bbcShape574.points[6][0], bbcShape574.points[6][1]);
-ctx.lineTo(bbcShape574.points[7][0], bbcShape574.points[7][1]);
-ctx.lineTo(bbcShape574.points[8][0], bbcShape574.points[8][1]);
-ctx.lineTo(bbcShape574.points[9][0], bbcShape574.points[9][1]);
-ctx.lineTo(bbcShape574.points[10][0], bbcShape574.points[10][1]);
-ctx.lineTo(bbcShape574.points[11][0], bbcShape574.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape574.point.x, bbcShape574.point.y, bbcShape574.size.width, bbcShape574.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 325.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 300.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape575.around.x, bbcShape575.around.y);
@@ -23775,14 +23804,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 325.0, 0.0)';
+ctx.fillStyle = 'rgb(325.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape576.around.x, bbcShape576.around.y);
 ctx.rotate(bbcShape576.rotation * Math.PI / 180);
 ctx.translate(-bbcShape576.around.x, -bbcShape576.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape576.point.x, bbcShape576.point.y, bbcShape576.size.width, bbcShape576.size.height);
+ctx.moveTo(bbcShape576.points[0][0], bbcShape576.points[0][1]);
+ctx.lineTo(bbcShape576.points[1][0], bbcShape576.points[1][1]);
+ctx.lineTo(bbcShape576.points[2][0], bbcShape576.points[2][1]);
+ctx.lineTo(bbcShape576.points[3][0], bbcShape576.points[3][1]);
+ctx.lineTo(bbcShape576.points[4][0], bbcShape576.points[4][1]);
+ctx.lineTo(bbcShape576.points[5][0], bbcShape576.points[5][1]);
+ctx.lineTo(bbcShape576.points[6][0], bbcShape576.points[6][1]);
+ctx.lineTo(bbcShape576.points[7][0], bbcShape576.points[7][1]);
+ctx.lineTo(bbcShape576.points[8][0], bbcShape576.points[8][1]);
+ctx.lineTo(bbcShape576.points[9][0], bbcShape576.points[9][1]);
+ctx.lineTo(bbcShape576.points[10][0], bbcShape576.points[10][1]);
+ctx.lineTo(bbcShape576.points[11][0], bbcShape576.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -24003,31 +24044,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(350.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 325.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape595.around.x, bbcShape595.around.y);
 ctx.rotate(bbcShape595.rotation * Math.PI / 180);
 ctx.translate(-bbcShape595.around.x, -bbcShape595.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape595.points[0][0], bbcShape595.points[0][1]);
-ctx.lineTo(bbcShape595.points[1][0], bbcShape595.points[1][1]);
-ctx.lineTo(bbcShape595.points[2][0], bbcShape595.points[2][1]);
-ctx.lineTo(bbcShape595.points[3][0], bbcShape595.points[3][1]);
-ctx.lineTo(bbcShape595.points[4][0], bbcShape595.points[4][1]);
-ctx.lineTo(bbcShape595.points[5][0], bbcShape595.points[5][1]);
-ctx.lineTo(bbcShape595.points[6][0], bbcShape595.points[6][1]);
-ctx.lineTo(bbcShape595.points[7][0], bbcShape595.points[7][1]);
-ctx.lineTo(bbcShape595.points[8][0], bbcShape595.points[8][1]);
-ctx.lineTo(bbcShape595.points[9][0], bbcShape595.points[9][1]);
-ctx.lineTo(bbcShape595.points[10][0], bbcShape595.points[10][1]);
-ctx.lineTo(bbcShape595.points[11][0], bbcShape595.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape595.point.x, bbcShape595.point.y, bbcShape595.size.width, bbcShape595.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 350.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 325.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape596.around.x, bbcShape596.around.y);
@@ -24039,14 +24068,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 350.0, 0.0)';
+ctx.fillStyle = 'rgb(350.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape597.around.x, bbcShape597.around.y);
 ctx.rotate(bbcShape597.rotation * Math.PI / 180);
 ctx.translate(-bbcShape597.around.x, -bbcShape597.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape597.point.x, bbcShape597.point.y, bbcShape597.size.width, bbcShape597.size.height);
+ctx.moveTo(bbcShape597.points[0][0], bbcShape597.points[0][1]);
+ctx.lineTo(bbcShape597.points[1][0], bbcShape597.points[1][1]);
+ctx.lineTo(bbcShape597.points[2][0], bbcShape597.points[2][1]);
+ctx.lineTo(bbcShape597.points[3][0], bbcShape597.points[3][1]);
+ctx.lineTo(bbcShape597.points[4][0], bbcShape597.points[4][1]);
+ctx.lineTo(bbcShape597.points[5][0], bbcShape597.points[5][1]);
+ctx.lineTo(bbcShape597.points[6][0], bbcShape597.points[6][1]);
+ctx.lineTo(bbcShape597.points[7][0], bbcShape597.points[7][1]);
+ctx.lineTo(bbcShape597.points[8][0], bbcShape597.points[8][1]);
+ctx.lineTo(bbcShape597.points[9][0], bbcShape597.points[9][1]);
+ctx.lineTo(bbcShape597.points[10][0], bbcShape597.points[10][1]);
+ctx.lineTo(bbcShape597.points[11][0], bbcShape597.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -24267,31 +24308,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(375.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 350.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape616.around.x, bbcShape616.around.y);
 ctx.rotate(bbcShape616.rotation * Math.PI / 180);
 ctx.translate(-bbcShape616.around.x, -bbcShape616.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape616.points[0][0], bbcShape616.points[0][1]);
-ctx.lineTo(bbcShape616.points[1][0], bbcShape616.points[1][1]);
-ctx.lineTo(bbcShape616.points[2][0], bbcShape616.points[2][1]);
-ctx.lineTo(bbcShape616.points[3][0], bbcShape616.points[3][1]);
-ctx.lineTo(bbcShape616.points[4][0], bbcShape616.points[4][1]);
-ctx.lineTo(bbcShape616.points[5][0], bbcShape616.points[5][1]);
-ctx.lineTo(bbcShape616.points[6][0], bbcShape616.points[6][1]);
-ctx.lineTo(bbcShape616.points[7][0], bbcShape616.points[7][1]);
-ctx.lineTo(bbcShape616.points[8][0], bbcShape616.points[8][1]);
-ctx.lineTo(bbcShape616.points[9][0], bbcShape616.points[9][1]);
-ctx.lineTo(bbcShape616.points[10][0], bbcShape616.points[10][1]);
-ctx.lineTo(bbcShape616.points[11][0], bbcShape616.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape616.point.x, bbcShape616.point.y, bbcShape616.size.width, bbcShape616.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 375.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 350.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape617.around.x, bbcShape617.around.y);
@@ -24303,14 +24332,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 375.0, 0.0)';
+ctx.fillStyle = 'rgb(375.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape618.around.x, bbcShape618.around.y);
 ctx.rotate(bbcShape618.rotation * Math.PI / 180);
 ctx.translate(-bbcShape618.around.x, -bbcShape618.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape618.point.x, bbcShape618.point.y, bbcShape618.size.width, bbcShape618.size.height);
+ctx.moveTo(bbcShape618.points[0][0], bbcShape618.points[0][1]);
+ctx.lineTo(bbcShape618.points[1][0], bbcShape618.points[1][1]);
+ctx.lineTo(bbcShape618.points[2][0], bbcShape618.points[2][1]);
+ctx.lineTo(bbcShape618.points[3][0], bbcShape618.points[3][1]);
+ctx.lineTo(bbcShape618.points[4][0], bbcShape618.points[4][1]);
+ctx.lineTo(bbcShape618.points[5][0], bbcShape618.points[5][1]);
+ctx.lineTo(bbcShape618.points[6][0], bbcShape618.points[6][1]);
+ctx.lineTo(bbcShape618.points[7][0], bbcShape618.points[7][1]);
+ctx.lineTo(bbcShape618.points[8][0], bbcShape618.points[8][1]);
+ctx.lineTo(bbcShape618.points[9][0], bbcShape618.points[9][1]);
+ctx.lineTo(bbcShape618.points[10][0], bbcShape618.points[10][1]);
+ctx.lineTo(bbcShape618.points[11][0], bbcShape618.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -24531,31 +24572,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(400.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 375.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape637.around.x, bbcShape637.around.y);
 ctx.rotate(bbcShape637.rotation * Math.PI / 180);
 ctx.translate(-bbcShape637.around.x, -bbcShape637.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape637.points[0][0], bbcShape637.points[0][1]);
-ctx.lineTo(bbcShape637.points[1][0], bbcShape637.points[1][1]);
-ctx.lineTo(bbcShape637.points[2][0], bbcShape637.points[2][1]);
-ctx.lineTo(bbcShape637.points[3][0], bbcShape637.points[3][1]);
-ctx.lineTo(bbcShape637.points[4][0], bbcShape637.points[4][1]);
-ctx.lineTo(bbcShape637.points[5][0], bbcShape637.points[5][1]);
-ctx.lineTo(bbcShape637.points[6][0], bbcShape637.points[6][1]);
-ctx.lineTo(bbcShape637.points[7][0], bbcShape637.points[7][1]);
-ctx.lineTo(bbcShape637.points[8][0], bbcShape637.points[8][1]);
-ctx.lineTo(bbcShape637.points[9][0], bbcShape637.points[9][1]);
-ctx.lineTo(bbcShape637.points[10][0], bbcShape637.points[10][1]);
-ctx.lineTo(bbcShape637.points[11][0], bbcShape637.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape637.point.x, bbcShape637.point.y, bbcShape637.size.width, bbcShape637.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 400.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 375.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape638.around.x, bbcShape638.around.y);
@@ -24567,14 +24596,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 400.0, 0.0)';
+ctx.fillStyle = 'rgb(400.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape639.around.x, bbcShape639.around.y);
 ctx.rotate(bbcShape639.rotation * Math.PI / 180);
 ctx.translate(-bbcShape639.around.x, -bbcShape639.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape639.point.x, bbcShape639.point.y, bbcShape639.size.width, bbcShape639.size.height);
+ctx.moveTo(bbcShape639.points[0][0], bbcShape639.points[0][1]);
+ctx.lineTo(bbcShape639.points[1][0], bbcShape639.points[1][1]);
+ctx.lineTo(bbcShape639.points[2][0], bbcShape639.points[2][1]);
+ctx.lineTo(bbcShape639.points[3][0], bbcShape639.points[3][1]);
+ctx.lineTo(bbcShape639.points[4][0], bbcShape639.points[4][1]);
+ctx.lineTo(bbcShape639.points[5][0], bbcShape639.points[5][1]);
+ctx.lineTo(bbcShape639.points[6][0], bbcShape639.points[6][1]);
+ctx.lineTo(bbcShape639.points[7][0], bbcShape639.points[7][1]);
+ctx.lineTo(bbcShape639.points[8][0], bbcShape639.points[8][1]);
+ctx.lineTo(bbcShape639.points[9][0], bbcShape639.points[9][1]);
+ctx.lineTo(bbcShape639.points[10][0], bbcShape639.points[10][1]);
+ctx.lineTo(bbcShape639.points[11][0], bbcShape639.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -24795,31 +24836,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(425.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 400.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape658.around.x, bbcShape658.around.y);
 ctx.rotate(bbcShape658.rotation * Math.PI / 180);
 ctx.translate(-bbcShape658.around.x, -bbcShape658.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape658.points[0][0], bbcShape658.points[0][1]);
-ctx.lineTo(bbcShape658.points[1][0], bbcShape658.points[1][1]);
-ctx.lineTo(bbcShape658.points[2][0], bbcShape658.points[2][1]);
-ctx.lineTo(bbcShape658.points[3][0], bbcShape658.points[3][1]);
-ctx.lineTo(bbcShape658.points[4][0], bbcShape658.points[4][1]);
-ctx.lineTo(bbcShape658.points[5][0], bbcShape658.points[5][1]);
-ctx.lineTo(bbcShape658.points[6][0], bbcShape658.points[6][1]);
-ctx.lineTo(bbcShape658.points[7][0], bbcShape658.points[7][1]);
-ctx.lineTo(bbcShape658.points[8][0], bbcShape658.points[8][1]);
-ctx.lineTo(bbcShape658.points[9][0], bbcShape658.points[9][1]);
-ctx.lineTo(bbcShape658.points[10][0], bbcShape658.points[10][1]);
-ctx.lineTo(bbcShape658.points[11][0], bbcShape658.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape658.point.x, bbcShape658.point.y, bbcShape658.size.width, bbcShape658.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 425.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 400.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape659.around.x, bbcShape659.around.y);
@@ -24831,14 +24860,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 425.0, 0.0)';
+ctx.fillStyle = 'rgb(425.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape660.around.x, bbcShape660.around.y);
 ctx.rotate(bbcShape660.rotation * Math.PI / 180);
 ctx.translate(-bbcShape660.around.x, -bbcShape660.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape660.point.x, bbcShape660.point.y, bbcShape660.size.width, bbcShape660.size.height);
+ctx.moveTo(bbcShape660.points[0][0], bbcShape660.points[0][1]);
+ctx.lineTo(bbcShape660.points[1][0], bbcShape660.points[1][1]);
+ctx.lineTo(bbcShape660.points[2][0], bbcShape660.points[2][1]);
+ctx.lineTo(bbcShape660.points[3][0], bbcShape660.points[3][1]);
+ctx.lineTo(bbcShape660.points[4][0], bbcShape660.points[4][1]);
+ctx.lineTo(bbcShape660.points[5][0], bbcShape660.points[5][1]);
+ctx.lineTo(bbcShape660.points[6][0], bbcShape660.points[6][1]);
+ctx.lineTo(bbcShape660.points[7][0], bbcShape660.points[7][1]);
+ctx.lineTo(bbcShape660.points[8][0], bbcShape660.points[8][1]);
+ctx.lineTo(bbcShape660.points[9][0], bbcShape660.points[9][1]);
+ctx.lineTo(bbcShape660.points[10][0], bbcShape660.points[10][1]);
+ctx.lineTo(bbcShape660.points[11][0], bbcShape660.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -25059,31 +25100,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(450.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 425.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape679.around.x, bbcShape679.around.y);
 ctx.rotate(bbcShape679.rotation * Math.PI / 180);
 ctx.translate(-bbcShape679.around.x, -bbcShape679.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape679.points[0][0], bbcShape679.points[0][1]);
-ctx.lineTo(bbcShape679.points[1][0], bbcShape679.points[1][1]);
-ctx.lineTo(bbcShape679.points[2][0], bbcShape679.points[2][1]);
-ctx.lineTo(bbcShape679.points[3][0], bbcShape679.points[3][1]);
-ctx.lineTo(bbcShape679.points[4][0], bbcShape679.points[4][1]);
-ctx.lineTo(bbcShape679.points[5][0], bbcShape679.points[5][1]);
-ctx.lineTo(bbcShape679.points[6][0], bbcShape679.points[6][1]);
-ctx.lineTo(bbcShape679.points[7][0], bbcShape679.points[7][1]);
-ctx.lineTo(bbcShape679.points[8][0], bbcShape679.points[8][1]);
-ctx.lineTo(bbcShape679.points[9][0], bbcShape679.points[9][1]);
-ctx.lineTo(bbcShape679.points[10][0], bbcShape679.points[10][1]);
-ctx.lineTo(bbcShape679.points[11][0], bbcShape679.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape679.point.x, bbcShape679.point.y, bbcShape679.size.width, bbcShape679.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 450.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 425.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape680.around.x, bbcShape680.around.y);
@@ -25095,14 +25124,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 450.0, 0.0)';
+ctx.fillStyle = 'rgb(450.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape681.around.x, bbcShape681.around.y);
 ctx.rotate(bbcShape681.rotation * Math.PI / 180);
 ctx.translate(-bbcShape681.around.x, -bbcShape681.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape681.point.x, bbcShape681.point.y, bbcShape681.size.width, bbcShape681.size.height);
+ctx.moveTo(bbcShape681.points[0][0], bbcShape681.points[0][1]);
+ctx.lineTo(bbcShape681.points[1][0], bbcShape681.points[1][1]);
+ctx.lineTo(bbcShape681.points[2][0], bbcShape681.points[2][1]);
+ctx.lineTo(bbcShape681.points[3][0], bbcShape681.points[3][1]);
+ctx.lineTo(bbcShape681.points[4][0], bbcShape681.points[4][1]);
+ctx.lineTo(bbcShape681.points[5][0], bbcShape681.points[5][1]);
+ctx.lineTo(bbcShape681.points[6][0], bbcShape681.points[6][1]);
+ctx.lineTo(bbcShape681.points[7][0], bbcShape681.points[7][1]);
+ctx.lineTo(bbcShape681.points[8][0], bbcShape681.points[8][1]);
+ctx.lineTo(bbcShape681.points[9][0], bbcShape681.points[9][1]);
+ctx.lineTo(bbcShape681.points[10][0], bbcShape681.points[10][1]);
+ctx.lineTo(bbcShape681.points[11][0], bbcShape681.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -25323,31 +25364,19 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(475.0, 255.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 450.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape700.around.x, bbcShape700.around.y);
 ctx.rotate(bbcShape700.rotation * Math.PI / 180);
 ctx.translate(-bbcShape700.around.x, -bbcShape700.around.y);
 ctx.beginPath();
-ctx.moveTo(bbcShape700.points[0][0], bbcShape700.points[0][1]);
-ctx.lineTo(bbcShape700.points[1][0], bbcShape700.points[1][1]);
-ctx.lineTo(bbcShape700.points[2][0], bbcShape700.points[2][1]);
-ctx.lineTo(bbcShape700.points[3][0], bbcShape700.points[3][1]);
-ctx.lineTo(bbcShape700.points[4][0], bbcShape700.points[4][1]);
-ctx.lineTo(bbcShape700.points[5][0], bbcShape700.points[5][1]);
-ctx.lineTo(bbcShape700.points[6][0], bbcShape700.points[6][1]);
-ctx.lineTo(bbcShape700.points[7][0], bbcShape700.points[7][1]);
-ctx.lineTo(bbcShape700.points[8][0], bbcShape700.points[8][1]);
-ctx.lineTo(bbcShape700.points[9][0], bbcShape700.points[9][1]);
-ctx.lineTo(bbcShape700.points[10][0], bbcShape700.points[10][1]);
-ctx.lineTo(bbcShape700.points[11][0], bbcShape700.points[11][1]);
-ctx.closePath();
+ctx.rect(bbcShape700.point.x, bbcShape700.point.y, bbcShape700.size.width, bbcShape700.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 475.0, 0.0)';
+ctx.fillStyle = 'rgb(255.0, 450.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape701.around.x, bbcShape701.around.y);
@@ -25359,14 +25388,26 @@ ctx.fill();
 ctx.stroke();
 ctx.restore();
 
-ctx.fillStyle = 'rgb(255.0, 475.0, 0.0)';
+ctx.fillStyle = 'rgb(475.0, 255.0, 0.0)';
 
 ctx.save();
 ctx.translate(bbcShape702.around.x, bbcShape702.around.y);
 ctx.rotate(bbcShape702.rotation * Math.PI / 180);
 ctx.translate(-bbcShape702.around.x, -bbcShape702.around.y);
 ctx.beginPath();
-ctx.rect(bbcShape702.point.x, bbcShape702.point.y, bbcShape702.size.width, bbcShape702.size.height);
+ctx.moveTo(bbcShape702.points[0][0], bbcShape702.points[0][1]);
+ctx.lineTo(bbcShape702.points[1][0], bbcShape702.points[1][1]);
+ctx.lineTo(bbcShape702.points[2][0], bbcShape702.points[2][1]);
+ctx.lineTo(bbcShape702.points[3][0], bbcShape702.points[3][1]);
+ctx.lineTo(bbcShape702.points[4][0], bbcShape702.points[4][1]);
+ctx.lineTo(bbcShape702.points[5][0], bbcShape702.points[5][1]);
+ctx.lineTo(bbcShape702.points[6][0], bbcShape702.points[6][1]);
+ctx.lineTo(bbcShape702.points[7][0], bbcShape702.points[7][1]);
+ctx.lineTo(bbcShape702.points[8][0], bbcShape702.points[8][1]);
+ctx.lineTo(bbcShape702.points[9][0], bbcShape702.points[9][1]);
+ctx.lineTo(bbcShape702.points[10][0], bbcShape702.points[10][1]);
+ctx.lineTo(bbcShape702.points[11][0], bbcShape702.points[11][1]);
+ctx.closePath();
 ctx.fill();
 ctx.stroke();
 ctx.restore();
@@ -25583,6 +25624,30 @@ ctx.rotate(bbcShape720.rotation * Math.PI / 180);
 ctx.translate(-bbcShape720.around.x, -bbcShape720.around.y);
 ctx.beginPath();
 ctx.rect(bbcShape720.point.x, bbcShape720.point.y, bbcShape720.size.width, bbcShape720.size.height);
+ctx.fill();
+ctx.stroke();
+ctx.restore();
+
+ctx.fillStyle = 'rgb(255.0, 475.0, 0.0)';
+
+ctx.save();
+ctx.translate(bbcShape721.around.x, bbcShape721.around.y);
+ctx.rotate(bbcShape721.rotation * Math.PI / 180);
+ctx.translate(-bbcShape721.around.x, -bbcShape721.around.y);
+ctx.beginPath();
+ctx.rect(bbcShape721.point.x, bbcShape721.point.y, bbcShape721.size.width, bbcShape721.size.height);
+ctx.fill();
+ctx.stroke();
+ctx.restore();
+
+ctx.fillStyle = 'rgb(255.0, 475.0, 0.0)';
+
+ctx.save();
+ctx.translate(bbcShape722.around.x, bbcShape722.around.y);
+ctx.rotate(bbcShape722.rotation * Math.PI / 180);
+ctx.translate(-bbcShape722.around.x, -bbcShape722.around.y);
+ctx.beginPath();
+ctx.rect(bbcShape722.point.x, bbcShape722.point.y, bbcShape722.size.width, bbcShape722.size.height);
 ctx.fill();
 ctx.stroke();
 ctx.restore();
