@@ -1,5 +1,7 @@
 BACKGROUND_COLOR = color(0, 0, 0);
 
+UPDATE_TIME = TIME(5);
+
 polygon {
     (
         point(0, 0),

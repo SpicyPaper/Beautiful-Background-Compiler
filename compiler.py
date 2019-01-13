@@ -34,6 +34,8 @@ BACKGROUND_SIZE = {
 ctx = canvas.getContext('2d');
 BACKGROUND_COLOR = 'rgb(255, 255, 255)';
 
+UPDATE_TIME = 50;
+
 bbcInit();
 bbcUpdate();
 
@@ -44,8 +46,8 @@ canvas.height = BACKGROUND_SIZE.height;
 
 function bbcInit() {
 start = Date.now();
-updateTime = 1000 * 50;
 %s
+updateTime = 1000 * UPDATE_TIME;
 }
 
 function bbcUpdate() {
@@ -294,6 +296,15 @@ def compile(self):
     value = self.children[1].compile()
 
     vars[identifier] = value
+
+@addToClass(AST.AssignTimeNode)
+def compile(self):
+    global JSInit
+
+    identifier = self.children[0].compile()
+    value = self.children[1].compile()
+    
+    JSInit += JSAssign %(identifier, value)
 	
 @addToClass(AST.OpNode)
 def compile(self):

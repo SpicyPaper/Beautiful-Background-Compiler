@@ -30,6 +30,7 @@ tokens = (
 	'MUL_OP',
 	'IDENTIFIER',
 	'AROUND',
+	'TIME',
 ) + tuple(map(lambda s:s.upper(),reserved_words)) + tuple(map(lambda s:s.upper(),reserved_params)) + tuple(map(lambda s:s.upper(),reserved_objects)) + tuple(map(lambda s:s.upper(),reserved_functions))
 
 literals = '();={},:'

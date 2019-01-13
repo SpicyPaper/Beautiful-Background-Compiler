@@ -21,6 +21,7 @@ def p_statement(p):
         | assignation_color
         | assignation_point
         | assignation_size
+        | assignation_time
         | structure
         | shape
         | animation '''
@@ -125,6 +126,10 @@ def p_assign_color(p):
 def p_assign_shape(p):
     ''' assignation_shape : IDENTIFIER '=' shape '''
     p[0] = AST.AssignShapeNode([AST.TokenShapeNode(p[1]), p[3]])
+
+def p_assign_time(p):
+    ''' assignation_time : IDENTIFIER '=' TIME '(' expression ')' '''
+    p[0] = AST.AssignTimeNode([AST.TokenNode(p[1]), p[5]])
     
 def p_assign(p):
     ''' assignation : IDENTIFIER '=' expression '''
