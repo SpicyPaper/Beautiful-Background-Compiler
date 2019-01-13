@@ -20,6 +20,7 @@ def p_statement(p):
         | assignation_shape
         | assignation_color
         | assignation_point
+        | assignation_size
         | structure
         | shape
         | animation '''
@@ -108,6 +109,10 @@ def p_expression_paren(p):
 def p_minus(p):
     ''' expression : ADD_OP expression %prec UMINUS'''
     p[0] = AST.OpNode(p[1], [p[2]])
+
+def p_assign_size(p):
+    ''' assignation_size : IDENTIFIER '=' size_expression '''
+    p[0] = AST.AssignSizeNode([AST.TokenSizeNode(p[1]), p[3]])
 
 def p_assign_point(p):
     ''' assignation_point : IDENTIFIER '=' point_expression '''

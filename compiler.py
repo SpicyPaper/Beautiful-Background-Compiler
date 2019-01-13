@@ -26,8 +26,8 @@ window.onload = function() {
 canvas = document.getElementById('bbcCanvas');
 
 BACKGROUND_SIZE = {
-    x:window.innerWidth,
-    y:window.innerHeight
+    width:window.innerWidth,
+    height:window.innerHeight
 }
 
 
@@ -37,8 +37,8 @@ BACKGROUND_COLOR = 'rgb(255, 255, 255)';
 bbcInit();
 bbcUpdate();
 
-canvas.width = BACKGROUND_SIZE.x;
-canvas.height = BACKGROUND_SIZE.y;
+canvas.width = BACKGROUND_SIZE.width;
+canvas.height = BACKGROUND_SIZE.height;
 
 }
 
@@ -246,6 +246,19 @@ def compile(self):
 @addToClass(AST.TokenPointNode)
 def compile(self):
     return self.tok
+
+@addToClass(AST.TokenSizeNode)
+def compile(self):
+    return self.tok
+
+@addToClass(AST.AssignSizeNode)
+def compile(self):
+    global JSInit
+
+    identifier = self.children[0].compile()
+    value = self.children[1].compile()
+    
+    JSInit += JSAssign %(identifier, value)
 
 @addToClass(AST.AssignPointNode)
 def compile(self):
