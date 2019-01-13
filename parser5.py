@@ -69,8 +69,8 @@ def p_rect_g(p):
     p[0] = AST.RectNode([p[3], p[5], p[7]])
 
 def p_polygon_g(p):
-    ''' polygon_g : POLYGON '{' '(' points_expression ')' ',' color_expression '}' '''
-    p[0] = AST.PolygonNode([p[4], p[7]])
+    ''' polygon_g : POLYGON '{' point_expression ',' '(' points_expression ')' ',' color_expression '}' '''
+    p[0] = AST.PolygonNode([p[3], p[6], p[9]])
 
 def p_expression_points(p):
     ''' points_expression : point_expression '''

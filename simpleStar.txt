@@ -1,0 +1,20 @@
+p1 = polygon {
+        point(300, 100),
+        (
+                point(20, 65.36),
+                point(86.6, 50),
+                point(40, 100),
+                point(86.6, 150),
+                point(20, 134.64),
+                point(0, 200),
+                point(-20, 134.64),
+                point(-86.6, 150),
+                point(-40, 100),
+                point(-86.6, 50),
+                point(-20, 65.36)
+        ),
+        color(50, 255, 0)
+};
+
+translate(p1, point(0.2, 0.2));
+rotate(p1, 1, around(point(300, 100)));
