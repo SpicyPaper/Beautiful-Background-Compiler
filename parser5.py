@@ -3,6 +3,8 @@ import ply.yacc as yacc
 from lex5 import tokens
 import AST
 
+# Grammar rules of the compiler
+
 def p_program_statement(p):
     ''' program : subprogram '''
     p[0] = AST.ProgramNode(p[1])
