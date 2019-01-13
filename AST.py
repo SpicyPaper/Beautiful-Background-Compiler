@@ -10,8 +10,8 @@ est une utilisation un peu "limite" de graphviz. �a marche, mais le layout n'e
 pas toujours optimal...
 '''
 
-#import pydot_ng as pydot
-import pydot
+import pydot_ng as pydot
+#import pydot
 
 class Node:
     count = 0
