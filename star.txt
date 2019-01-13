@@ -1,8 +1,9 @@
 BACKGROUND_COLOR = color(0, 0, 0);
+UPDATE_TIME = time(103);
 
 polygon {
+	point(0, 0),
     (
-        point(0, 0),
         point(800, 0),
         point(600, 300),
         point(800, 500),
@@ -13,15 +14,15 @@ polygon {
 };
 
 polygon {
+    point(800, 0),
     (
-        point(800, 0),
-        point(600, 300),
-        point(800, 500),
-        point(600, 700),
-        point(650, 700),
-        point(850, 500),
-        point(650, 300),
-        point(850, 0)
+        point(-200, 300),
+        point(0, 500),
+        point(-200, 700),
+        point(-150, 700),
+        point(50, 500),
+        point(-150, 300),
+        point(50, 0)
     ),
     color(255, 150, 0)
 };
@@ -47,19 +48,19 @@ i = 0;
 for(0, 20, 1) {
     rotate(
         polygon {
+            point(300, 100),
             (
-                point(300, 100),
-                point(320, 165.36),
-                point(386.6, 150),
-                point(340, 200),
-                point(386.6, 250),
-                point(320, 234.64),
-                point(300, 300),
-                point(280, 234.64),
-                point(213.4, 250),
-                point(260, 200),
-                point(213.4, 150),
-                point(280, 165.36)
+                point(20, 65.36),
+                point(86.6, 50),
+                point(40, 100),
+                point(86.6, 150),
+                point(20, 134.64),
+                point(0, 200),
+                point(-20, 134.64),
+                point(-86.6, 150),
+                point(-40, 100),
+                point(-86.6, 50),
+                point(-20, 65.36)
             ),
             color(0 + 25 * i, 255, 0)
         },

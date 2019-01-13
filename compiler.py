@@ -136,11 +136,13 @@ Math.floor(Math.random() * ({1} - {0} + 1)) + {0}
 
 bbc_shape_num = 0
 
+# Increment the variable name counter
 def nextShapeNum():
     global bbc_shape_num
     bbc_shape_num += 1
     return bbc_shape_num
 
+# JS Circle Object
 JSCircleObject = """{
     point:%s,
     radius:%s,
@@ -149,6 +151,7 @@ JSCircleObject = """{
     around:%s
 }"""
 
+# JS Rect Object
 JSRectObject = """{
     point:%s,
     size:%s,
@@ -157,6 +160,7 @@ JSRectObject = """{
     around:%s
 }"""
 
+# JS Polygon Object
 JSPolygonObject = """{
     point:%s,
     points:%s,
@@ -165,10 +169,13 @@ JSPolygonObject = """{
     around:%s
 }"""
 
+# JS Size Object
 JSSizeObject = """{ width:%s, height:%s }"""
 
+# JS Point Object
 JSPointObject = """{ x:%s, y:%s }"""
 
+# JS Color Object
 JSColorObject = """{ r:%s, g:%s, b:%s }"""
 
 # JS animations
@@ -184,6 +191,7 @@ JSRotate = """
 %s.around.y = %s;
 """
 
+# Operations
 operations = {
     '+' : lambda x,y: x+y,
     '-' : lambda x,y: x-y,
@@ -191,10 +199,10 @@ operations = {
     '/' : lambda x,y: x/y,
 }
 
+# Variables storage
 vars = {}
 
-# noeud de programme
-# retourne la suite d'opcodes de tous les enfants
+# Node of the program
 @addToClass(AST.ProgramNode)
 def compile(self):
     global JSInit
@@ -204,11 +212,13 @@ def compile(self):
         c.compile()
     return JSContent %(JSInit, JSUpdate, JSDraw)
 
+# Node of the subprogram
 @addToClass(AST.SubProgramNode)
 def compile(self):
     for c in self.children:
         c.compile()
 
+# Node of the for lopp
 @addToClass(AST.ForNode)
 def compile(self):
     start = int(self.children[0].compile())
@@ -218,6 +228,7 @@ def compile(self):
     for i in range(start, end, step):
         self.children[3].compile()
 
+# Node of the token
 @addToClass(AST.TokenNode)
 def compile(self):
     if isinstance(self.tok, str):
@@ -227,10 +238,12 @@ def compile(self):
             print ("*** Error: variable %s undefined!" % self.tok)
     return self.tok
 
+# Node of the shape token
 @addToClass(AST.TokenStrNode)
 def compile(self):
     return self.tok
 
+# Node of the size assignement
 @addToClass(AST.AssignSizeNode)
 def compile(self):
     global JSInit
@@ -240,6 +253,7 @@ def compile(self):
     
     JSInit += JSAssign %(identifier, value)
 
+# Node of the point assignement
 @addToClass(AST.AssignPointNode)
 def compile(self):
     global JSInit
@@ -249,6 +263,7 @@ def compile(self):
     
     JSInit += JSAssign %(identifier, value[0])
 
+# Node of the color assignement
 @addToClass(AST.AssignColorNode)
 def compile(self):
     global JSInit
@@ -258,6 +273,7 @@ def compile(self):
     
     JSInit += JSAssign %(identifier, value[0])
 	
+# Node of the shape assignement
 @addToClass(AST.AssignShapeNode)
 def compile(self):
     global JSInit
@@ -267,6 +283,7 @@ def compile(self):
     
     JSInit += JSAssign %(identifier, value[1])
 
+# Node of the time assignement
 @addToClass(AST.AssignTimeNode)
 def compile(self):
     global JSInit
@@ -276,6 +293,7 @@ def compile(self):
     
     JSInit += JSAssign %(identifier, value)
 	
+# Node of the assignement
 @addToClass(AST.AssignNode)
 def compile(self):
 
@@ -291,6 +309,7 @@ def compile(self):
     else:
         return operations[self.op](0, self.children[0].compile())
     
+# Node of the colors
 @addToClass(AST.ColorNode)
 def compile(self):
     colorArray = []
@@ -304,6 +323,7 @@ def compile(self):
 
     return colorArray
     
+# Node of the circles
 @addToClass(AST.CircleNode)
 def compile(self):
     # Init
@@ -336,6 +356,7 @@ def compile(self):
 
     return circleArray
 
+# Node of the rectangles
 @addToClass(AST.RectNode)
 def compile(self):
     # Init
@@ -368,6 +389,7 @@ def compile(self):
 
     return rectArray
 
+# Node of the points list for polygons
 @addToClass(AST.LinkedPointNode)
 def compile(self):
     points = []
@@ -375,6 +397,7 @@ def compile(self):
         points.append(c.compile())
     return points
 
+# Node of the polygons
 @addToClass(AST.PolygonNode)
 def compile(self):
     # Init
@@ -417,6 +440,7 @@ def compile(self):
 
     return polygonArray
 
+# Node of the points
 @addToClass(AST.PointNode)
 def compile(self):
     pointArray = []
@@ -428,10 +452,12 @@ def compile(self):
 
     return pointArray
 
+# Node of the size element
 @addToClass(AST.SizeNode)
 def compile(self):
     return JSSizeObject %(self.children[0].compile(), self.children[1].compile())
     
+# Node of the translate animation
 @addToClass(AST.TranslateNode)
 def compile(self):
     global JSUpdate
@@ -445,6 +471,7 @@ def compile(self):
 
     JSUpdate += JSTranslate %(identifier, translatePoint[0], identifier, translatePoint[1])
     
+# Node of the rotation animation
 @addToClass(AST.RotateNode)
 def compile(self):
     global JSUpdate
@@ -460,6 +487,7 @@ def compile(self):
 
     JSUpdate += JSRotate %(identifier + ".rotation", rotation, identifier, translatePoint[0], identifier, translatePoint[1])
 
+# Node of the random number generator
 @addToClass(AST.RandomNode)
 def compile(self):
     min = 0
@@ -472,6 +500,7 @@ def compile(self):
     return random.randint(min, max)
 
 
+# Entry of the program
 if __name__ == "__main__":
     from parser5 import parse
     import sys, os

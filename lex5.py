@@ -1,5 +1,6 @@
 import ply.lex as lex
 
+# Parameters of the JS Objects
 reserved_params = (
 	'point',
 	'size',
@@ -7,23 +8,27 @@ reserved_params = (
 	'color',
 )
 
+# JS Shapes
 reserved_objects = (
 	'circle',
 	'rect',
 	'polygon',
 )
 
+# Animations and random function
 reserved_functions = (
 	'translate',
 	'rotate',
 	'random'
 )
 
+# Printing and for loop
 reserved_words = (
 	'for',
 	'print',
 )
 
+# All tokens
 tokens = (
 	'NUMBER',
 	'ADD_OP',
@@ -33,6 +38,7 @@ tokens = (
 	'TIME',
 ) + tuple(map(lambda s:s.upper(),reserved_words)) + tuple(map(lambda s:s.upper(),reserved_params)) + tuple(map(lambda s:s.upper(),reserved_objects)) + tuple(map(lambda s:s.upper(),reserved_functions))
 
+# Literals
 literals = '();={},:'
 
 t_ignore = ' \t'
