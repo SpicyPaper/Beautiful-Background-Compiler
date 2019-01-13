@@ -1,6 +1,30 @@
 BACKGROUND_COLOR = color(0, 0, 0);
 
-BACKGROUND_SIZE = size(500, 1000);
+polygon {
+    (
+        point(0, 0),
+        point(800, 0),
+        point(600, 300),
+        point(800, 500),
+        point(600, 700),
+        point(0, 700)
+    ),
+    color(255, 0, 0)
+};
+
+polygon {
+    (
+        point(800, 0),
+        point(600, 300),
+        point(800, 500),
+        point(600, 700),
+        point(650, 700),
+        point(850, 500),
+        point(650, 300),
+        point(850, 0)
+    ),
+    color(255, 150, 0)
+};
 
 i = 0;
 
