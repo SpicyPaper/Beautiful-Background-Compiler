@@ -1,3 +1,6 @@
+BACKGROUND_COLOR = color(0, 0, 0);
+UPDATE_TIME = time(6.1);
+
 circle {
     point(250, 150),
     radius(10),

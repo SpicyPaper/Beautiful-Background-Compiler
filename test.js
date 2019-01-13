@@ -8,9 +8,10 @@ BACKGROUND_SIZE = {
     height:window.innerHeight
 }
 
-
 ctx = canvas.getContext('2d');
 BACKGROUND_COLOR = 'rgb(255, 255, 255)';
+
+UPDATE_TIME = 5.0;
 
 bbcInit();
 bbcUpdate();
@@ -22,7 +23,12 @@ canvas.height = BACKGROUND_SIZE.height;
 
 function bbcInit() {
 start = Date.now();
-updateTime = 1000 * 50;
+
+BACKGROUND_COLOR = 
+ctx.fillStyle = 'rgb(0.0, 0.0, 0.0)';
+;
+
+UPDATE_TIME = 6.1;
 
 bbcShape1 = {
     point:{ x:250.0, y:150.0 },
@@ -42,6 +48,7 @@ bbcShape2 = {
 
 r1 = bbcShape2;
 
+updateTime = 1000 * UPDATE_TIME;
 }
 
 function bbcUpdate() {

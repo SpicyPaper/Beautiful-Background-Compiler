@@ -30,11 +30,10 @@ BACKGROUND_SIZE = {
     height:window.innerHeight
 }
 
-
 ctx = canvas.getContext('2d');
 BACKGROUND_COLOR = 'rgb(255, 255, 255)';
 
-UPDATE_TIME = 50;
+UPDATE_TIME = 5.0;
 
 bbcInit();
 bbcUpdate();
@@ -228,19 +227,7 @@ def compile(self):
             print ("*** Error: variable %s undefined!" % self.tok)
     return self.tok
 
-@addToClass(AST.TokenShapeNode)
-def compile(self):
-    return self.tok
-
-@addToClass(AST.TokenColorNode)
-def compile(self):
-    return self.tok
-
-@addToClass(AST.TokenPointNode)
-def compile(self):
-    return self.tok
-
-@addToClass(AST.TokenSizeNode)
+@addToClass(AST.TokenStrNode)
 def compile(self):
     return self.tok
 
@@ -279,14 +266,6 @@ def compile(self):
     value = self.children[1].compile()
     
     JSInit += JSAssign %(identifier, value[1])
-	
-@addToClass(AST.AssignNode)
-def compile(self):
-
-    identifier = self.children[0].tok
-    value = self.children[1].compile()
-
-    vars[identifier] = value
 
 @addToClass(AST.AssignTimeNode)
 def compile(self):
@@ -296,6 +275,14 @@ def compile(self):
     value = self.children[1].compile()
     
     JSInit += JSAssign %(identifier, value)
+	
+@addToClass(AST.AssignNode)
+def compile(self):
+
+    identifier = self.children[0].tok
+    value = self.children[1].compile()
+
+    vars[identifier] = value
 	
 @addToClass(AST.OpNode)
 def compile(self):

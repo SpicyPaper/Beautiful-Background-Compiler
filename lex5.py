@@ -53,6 +53,10 @@ def t_AROUND(t):
 	r'around'
 	return t
 
+def t_TIME(t):
+	r'time'
+	return t
+
 def t_CIRCLE(t):
 	r'circle'
 	return t

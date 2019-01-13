@@ -49,7 +49,7 @@ def p_animation_rotation(p):
 
 def p_animation_param_id(p):
     ''' animation_param : IDENTIFIER '''
-    p[0] = AST.TokenShapeNode(p[1])
+    p[0] = AST.TokenStrNode(p[1])
 
 def p_animation_param_shape(p):
     ''' animation_param : shape '''
@@ -113,23 +113,23 @@ def p_minus(p):
 
 def p_assign_size(p):
     ''' assignation_size : IDENTIFIER '=' size_expression '''
-    p[0] = AST.AssignSizeNode([AST.TokenSizeNode(p[1]), p[3]])
+    p[0] = AST.AssignSizeNode([AST.TokenStrNode(p[1]), p[3]])
 
 def p_assign_point(p):
     ''' assignation_point : IDENTIFIER '=' point_expression '''
-    p[0] = AST.AssignPointNode([AST.TokenPointNode(p[1]), p[3]])
+    p[0] = AST.AssignPointNode([AST.TokenStrNode(p[1]), p[3]])
 
 def p_assign_color(p):
     ''' assignation_color : IDENTIFIER '=' color_expression '''
-    p[0] = AST.AssignColorNode([AST.TokenColorNode(p[1]), p[3]])
+    p[0] = AST.AssignColorNode([AST.TokenStrNode(p[1]), p[3]])
     	
 def p_assign_shape(p):
     ''' assignation_shape : IDENTIFIER '=' shape '''
-    p[0] = AST.AssignShapeNode([AST.TokenShapeNode(p[1]), p[3]])
+    p[0] = AST.AssignShapeNode([AST.TokenStrNode(p[1]), p[3]])
 
 def p_assign_time(p):
     ''' assignation_time : IDENTIFIER '=' TIME '(' expression ')' '''
-    p[0] = AST.AssignTimeNode([AST.TokenNode(p[1]), p[5]])
+    p[0] = AST.AssignTimeNode([AST.TokenStrNode(p[1]), p[5]])
     
 def p_assign(p):
     ''' assignation : IDENTIFIER '=' expression '''
