@@ -4,6 +4,7 @@ from lex5 import tokens
 import AST
 
 # Grammar rules of the compiler
+# Obviously it doesn't need comments ¯\_(ツ)_/¯
 
 def p_program_statement(p):
     ''' program : subprogram '''

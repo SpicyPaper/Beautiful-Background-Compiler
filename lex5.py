@@ -38,11 +38,11 @@ tokens = (
 	'TIME',
 ) + tuple(map(lambda s:s.upper(),reserved_words)) + tuple(map(lambda s:s.upper(),reserved_params)) + tuple(map(lambda s:s.upper(),reserved_objects)) + tuple(map(lambda s:s.upper(),reserved_functions))
 
-# Literals
 literals = '();={},:'
 
 t_ignore = ' \t'
 
+# Define how the tokens are used in the code with regex
 def t_RANDOM(t):
 	r'random'
 	return t

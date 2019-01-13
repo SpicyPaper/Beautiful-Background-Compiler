@@ -3,7 +3,7 @@ import AST
 import random
 from AST import addToClass
 
-# HTML
+# HTML template
 
 HTMLContent = """
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ HTMLContent = """
 </html>
 """
 
-# JS
+# JS main template
 
 JSContent = """
 window.onload = function() {
@@ -69,6 +69,8 @@ setTimeout(bbcUpdate, 1000 / 60);
 
 }
 """
+
+# Templates for JS code
 
 JSInit = ""
 
@@ -302,6 +304,7 @@ def compile(self):
 
     vars[identifier] = value
 	
+# Node of the operation
 @addToClass(AST.OpNode)
 def compile(self):
     if len(self.children) > 1:
