@@ -4,8 +4,8 @@ window.onload = function() {
 canvas = document.getElementById('bbcCanvas');
 
 BACKGROUND_SIZE = {
-    x:window.innerWidth,
-    y:window.innerHeight
+    width:window.innerWidth,
+    height:window.innerHeight
 }
 
 
@@ -15,8 +15,8 @@ BACKGROUND_COLOR = 'rgb(255, 255, 255)';
 bbcInit();
 bbcUpdate();
 
-canvas.width = BACKGROUND_SIZE.x;
-canvas.height = BACKGROUND_SIZE.y;
+canvas.width = BACKGROUND_SIZE.width;
+canvas.height = BACKGROUND_SIZE.height;
 
 }
 
@@ -25,42 +25,19 @@ start = Date.now();
 updateTime = 1000 * 50;
 
 bbcShape1 = {
-    point:{
-    x:250.0,
-    y:150.0
-},
+    point:{ x:250.0, y:150.0 },
     radius:10.0,
-    color:{
-    r:120.0,
-    g:230.0,
-    b:0.0
-},
+    color:{ r:120.0, g:230.0, b:0.0 },
     rotation:0,
-    around:{
-    x:0,
-    y:0
-}
+    around:{ x:0, y:0 }
 };
 
 bbcShape2 = {
-    point:{
-    x:300.0,
-    y:200.0
-},
-    size:{
-    width:25.0,
-    height:47.0
-},
-    color:{
-    r:0.0,
-    g:0.0,
-    b:255.0
-},
+    point:{ x:300.0, y:200.0 },
+    size:{ width:25.0, height:47.0 },
+    color:{ r:0.0, g:0.0, b:255.0 },
     rotation:0,
-    around:{
-    x:0,
-    y:0
-}
+    around:{ x:0, y:0 }
 };
 
 r1 = bbcShape2;

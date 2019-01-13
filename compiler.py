@@ -163,21 +163,11 @@ JSPolygonObject = """{
     around:%s
 }"""
 
-JSSizeObject = """{
-    width:%s,
-    height:%s
-}"""
+JSSizeObject = """{ width:%s, height:%s }"""
 
-JSPointObject = """{
-    x:%s,
-    y:%s
-}"""
+JSPointObject = """{ x:%s, y:%s }"""
 
-JSColorObject = """{
-    r:%s,
-    g:%s,
-    b:%s
-}"""
+JSColorObject = """{ r:%s, g:%s, b:%s }"""
 
 # JS animations
 
