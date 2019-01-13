@@ -159,27 +159,18 @@ JSRectObject = """{
 }"""
 
 JSPolygonObject = """{
+    point:%s,
     points:%s,
     color:%s,
     rotation:%s,
     around:%s
 }"""
 
-JSSizeObject = """{
-    width:%s,
-    height:%s
-}"""
+JSSizeObject = """{ width:%s, height:%s }"""
 
-JSPointObject = """{
-    x:%s,
-    y:%s
-}"""
+JSPointObject = """{ x:%s, y:%s }"""
 
-JSColorObject = """{
-    r:%s,
-    g:%s,
-    b:%s
-}"""
+JSColorObject = """{ r:%s, g:%s, b:%s }"""
 
 # JS animations
 
@@ -405,30 +396,29 @@ def compile(self):
     polygonArray = []
 
     # Get compiled values
-    points = self.children[0].compile()
-    color = self.children[1].compile()
-    pointsforJS = [point[1] for point in points]
-    for i in range(0, len(pointsforJS)):
+    ref_point = self.children[0].compile()
+    ref_point_JS = JSPointObject %(ref_point[1][0], ref_point[1][1])
+    points = self.children[1].compile()
+    color = self.children[2].compile()
+    points_for_JS = [point[1] for point in points]
+    for i in range(0, len(points_for_JS)):
         array = []
-        array.append(pointsforJS[i][0])
-        array.append(pointsforJS[i][1])
-        pointsforJS[i] = array
+        array.append(points_for_JS[i][0])
+        array.append(points_for_JS[i][1])
+        points_for_JS[i] = array
     around = JSPointObject %(0, 0)
 
     # Create object
-    polygonObject = JSPolygonObject %(pointsforJS, color[1], 0, around)
+    polygonObject = JSPolygonObject %(ref_point_JS, points_for_JS, color[1], 0, around)
 
     # Generate shape var name
     shapeName = "bbcShape" + str(nextShapeNum())
 
     # Create js code
     jscode = color[0]
-    jspoints = ""
+    jspoints = (JSMoveTo %(shapeName + ".point.x", shapeName + ".point.y")).rstrip("\r\n")
     for i in range(0, len(points)):
-        if i == 0:
-            jspoints += (JSMoveTo %(shapeName + ".points[" + str(i) + "][0]", shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
-        else:
-            jspoints += (JSLineTo %(shapeName + ".points[" + str(i) + "][0]", shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
+        jspoints += (JSLineTo %(shapeName + ".point.x + " + shapeName + ".points[" + str(i) + "][0]", shapeName + ".point.y + " + shapeName + ".points[" + str(i) + "][1]")).rstrip("\r\n")
     jscode += JSPolygon %(shapeName + ".around.x", shapeName + ".around.y", shapeName + ".rotation", shapeName + ".around.x", shapeName + ".around.y", jspoints)
     JSDraw += jscode
 

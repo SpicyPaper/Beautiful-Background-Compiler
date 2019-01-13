@@ -27,7 +27,7 @@ Rule 21    shape -> rect_g
 Rule 22    shape -> polygon_g
 Rule 23    circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
 Rule 24    rect_g -> RECT { point_expression , size_expression , color_expression }
-Rule 25    polygon_g -> POLYGON { ( points_expression ) , color_expression }
+Rule 25    polygon_g -> POLYGON { point_expression , ( points_expression ) , color_expression }
 Rule 26    points_expression -> point_expression
 Rule 27    points_expression -> point_expression , points_expression
 Rule 28    point_expression -> POINT ( expression , expression )
@@ -52,7 +52,7 @@ Terminals, with rules where they appear
 
 (                    : 14 16 17 17 23 25 28 29 30 35 41 43 44
 )                    : 14 16 17 17 23 25 28 29 30 35 41 43 44
-,                    : 14 14 16 17 17 23 23 24 24 25 27 28 29 30 30 44
+,                    : 14 14 16 17 17 23 23 24 24 25 25 27 28 29 30 30 44
 ;                    : 2 3
 =                    : 37 38 39 40 41 42
 ADD_OP               : 31 36
@@ -90,7 +90,7 @@ assignation_time     : 9
 circle_g             : 20
 color_expression     : 23 24 25 39
 expression           : 13 14 14 14 17 23 28 28 29 29 30 30 30 31 31 32 32 35 36 41 42 43 44 44
-point_expression     : 16 17 23 24 26 27 38
+point_expression     : 16 17 23 24 25 26 27 38
 points_expression    : 25 27
 polygon_g            : 22
 program              : 0
@@ -133,7 +133,7 @@ state 0
     (15) animation -> . translation
     (23) circle_g -> . CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
     (24) rect_g -> . RECT { point_expression , size_expression , color_expression }
-    (25) polygon_g -> . POLYGON { ( points_expression ) , color_expression }
+    (25) polygon_g -> . POLYGON { point_expression , ( points_expression ) , color_expression }
     (16) translation -> . TRANSLATE ( animation_param , point_expression )
     (17) translation -> . ROTATE ( animation_param , expression , AROUND ( point_expression ) )
 
@@ -333,7 +333,7 @@ state 21
 
 state 22
 
-    (25) polygon_g -> POLYGON . { ( points_expression ) , color_expression }
+    (25) polygon_g -> POLYGON . { point_expression , ( points_expression ) , color_expression }
 
     {               shift and go to state 36
 
@@ -381,7 +381,7 @@ state 25
     (15) animation -> . translation
     (23) circle_g -> . CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
     (24) rect_g -> . RECT { point_expression , size_expression , color_expression }
-    (25) polygon_g -> . POLYGON { ( points_expression ) , color_expression }
+    (25) polygon_g -> . POLYGON { point_expression , ( points_expression ) , color_expression }
     (16) translation -> . TRANSLATE ( animation_param , point_expression )
     (17) translation -> . ROTATE ( animation_param , expression , AROUND ( point_expression ) )
 
@@ -517,7 +517,7 @@ state 32
     (29) size_expression -> . SIZE ( expression , expression )
     (23) circle_g -> . CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
     (24) rect_g -> . RECT { point_expression , size_expression , color_expression }
-    (25) polygon_g -> . POLYGON { ( points_expression ) , color_expression }
+    (25) polygon_g -> . POLYGON { point_expression , ( points_expression ) , color_expression }
 
     TIME            shift and go to state 50
     NUMBER          shift and go to state 28
@@ -581,10 +581,12 @@ state 35
 
 state 36
 
-    (25) polygon_g -> POLYGON { . ( points_expression ) , color_expression }
+    (25) polygon_g -> POLYGON { . point_expression , ( points_expression ) , color_expression }
+    (28) point_expression -> . POINT ( expression , expression )
 
-    (               shift and go to state 57
+    POINT           shift and go to state 52
 
+    point_expression               shift and go to state 57
 
 state 37
 
@@ -596,7 +598,7 @@ state 37
     (22) shape -> . polygon_g
     (23) circle_g -> . CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
     (24) rect_g -> . RECT { point_expression , size_expression , color_expression }
-    (25) polygon_g -> . POLYGON { ( points_expression ) , color_expression }
+    (25) polygon_g -> . POLYGON { point_expression , ( points_expression ) , color_expression }
 
     IDENTIFIER      shift and go to state 59
     CIRCLE          shift and go to state 20
@@ -619,7 +621,7 @@ state 38
     (22) shape -> . polygon_g
     (23) circle_g -> . CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
     (24) rect_g -> . RECT { point_expression , size_expression , color_expression }
-    (25) polygon_g -> . POLYGON { ( points_expression ) , color_expression }
+    (25) polygon_g -> . POLYGON { point_expression , ( points_expression ) , color_expression }
 
     IDENTIFIER      shift and go to state 59
     CIRCLE          shift and go to state 20
@@ -822,21 +824,16 @@ state 56
 
 state 57
 
-    (25) polygon_g -> POLYGON { ( . points_expression ) , color_expression }
-    (26) points_expression -> . point_expression
-    (27) points_expression -> . point_expression , points_expression
-    (28) point_expression -> . POINT ( expression , expression )
+    (25) polygon_g -> POLYGON { point_expression . , ( points_expression ) , color_expression }
 
-    POINT           shift and go to state 52
+    ,               shift and go to state 73
 
-    points_expression              shift and go to state 73
-    point_expression               shift and go to state 74
 
 state 58
 
     (16) translation -> TRANSLATE ( animation_param . , point_expression )
 
-    ,               shift and go to state 75
+    ,               shift and go to state 74
 
 
 state 59
@@ -857,7 +854,7 @@ state 61
 
     (17) translation -> ROTATE ( animation_param . , expression , AROUND ( point_expression ) )
 
-    ,               shift and go to state 76
+    ,               shift and go to state 75
 
 
 state 62
@@ -910,8 +907,8 @@ state 65
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
-    )               shift and go to state 77
-    ,               shift and go to state 78
+    )               shift and go to state 76
+    ,               shift and go to state 77
     ADD_OP          shift and go to state 40
     MUL_OP          shift and go to state 41
 
@@ -934,7 +931,7 @@ state 66
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 79
+    expression                     shift and go to state 78
 
 state 67
 
@@ -954,7 +951,7 @@ state 67
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 80
+    expression                     shift and go to state 79
 
 state 68
 
@@ -974,7 +971,7 @@ state 68
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 81
+    expression                     shift and go to state 80
 
 state 69
 
@@ -994,7 +991,7 @@ state 69
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 82
+    expression                     shift and go to state 81
 
 state 70
 
@@ -1014,13 +1011,13 @@ state 70
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 83
+    expression                     shift and go to state 82
 
 state 71
 
     (23) circle_g -> CIRCLE { point_expression , . RADIUS ( expression ) , color_expression }
 
-    RADIUS          shift and go to state 84
+    RADIUS          shift and go to state 83
 
 
 state 72
@@ -1030,34 +1027,25 @@ state 72
 
     SIZE            shift and go to state 53
 
-    size_expression                shift and go to state 85
+    size_expression                shift and go to state 84
 
 state 73
 
-    (25) polygon_g -> POLYGON { ( points_expression . ) , color_expression }
+    (25) polygon_g -> POLYGON { point_expression , . ( points_expression ) , color_expression }
 
-    )               shift and go to state 86
+    (               shift and go to state 85
 
 
 state 74
-
-    (26) points_expression -> point_expression .
-    (27) points_expression -> point_expression . , points_expression
-
-    )               reduce using rule 26 (points_expression -> point_expression .)
-    ,               shift and go to state 87
-
-
-state 75
 
     (16) translation -> TRANSLATE ( animation_param , . point_expression )
     (28) point_expression -> . POINT ( expression , expression )
 
     POINT           shift and go to state 52
 
-    point_expression               shift and go to state 88
+    point_expression               shift and go to state 86
 
-state 76
+state 75
 
     (17) translation -> ROTATE ( animation_param , . expression , AROUND ( point_expression ) )
     (31) expression -> . expression ADD_OP expression
@@ -1075,9 +1063,9 @@ state 76
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 89
+    expression                     shift and go to state 87
 
-state 77
+state 76
 
     (43) expression -> RANDOM ( expression ) .
 
@@ -1088,7 +1076,7 @@ state 77
     ,               reduce using rule 43 (expression -> RANDOM ( expression ) .)
 
 
-state 78
+state 77
 
     (44) expression -> RANDOM ( expression , . expression )
     (31) expression -> . expression ADD_OP expression
@@ -1106,22 +1094,44 @@ state 78
     ADD_OP          shift and go to state 27
     RANDOM          shift and go to state 31
 
-    expression                     shift and go to state 90
+    expression                     shift and go to state 88
 
-state 79
+state 78
 
     (41) assignation_time -> IDENTIFIER = TIME ( expression . )
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
-    )               shift and go to state 91
+    )               shift and go to state 89
+    ADD_OP          shift and go to state 40
+    MUL_OP          shift and go to state 41
+
+
+state 79
+
+    (30) color_expression -> COLOR ( expression . , expression , expression )
+    (31) expression -> expression . ADD_OP expression
+    (32) expression -> expression . MUL_OP expression
+
+    ,               shift and go to state 90
     ADD_OP          shift and go to state 40
     MUL_OP          shift and go to state 41
 
 
 state 80
 
-    (30) color_expression -> COLOR ( expression . , expression , expression )
+    (28) point_expression -> POINT ( expression . , expression )
+    (31) expression -> expression . ADD_OP expression
+    (32) expression -> expression . MUL_OP expression
+
+    ,               shift and go to state 91
+    ADD_OP          shift and go to state 40
+    MUL_OP          shift and go to state 41
+
+
+state 81
+
+    (29) size_expression -> SIZE ( expression . , expression )
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
@@ -1130,9 +1140,9 @@ state 80
     MUL_OP          shift and go to state 41
 
 
-state 81
+state 82
 
-    (28) point_expression -> POINT ( expression . , expression )
+    (14) structure -> FOR ( expression , expression . , expression ) { subprogram }
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
@@ -1141,100 +1151,111 @@ state 81
     MUL_OP          shift and go to state 41
 
 
-state 82
-
-    (29) size_expression -> SIZE ( expression . , expression )
-    (31) expression -> expression . ADD_OP expression
-    (32) expression -> expression . MUL_OP expression
-
-    ,               shift and go to state 94
-    ADD_OP          shift and go to state 40
-    MUL_OP          shift and go to state 41
-
-
 state 83
 
-    (14) structure -> FOR ( expression , expression . , expression ) { subprogram }
-    (31) expression -> expression . ADD_OP expression
-    (32) expression -> expression . MUL_OP expression
+    (23) circle_g -> CIRCLE { point_expression , RADIUS . ( expression ) , color_expression }
 
-    ,               shift and go to state 95
-    ADD_OP          shift and go to state 40
-    MUL_OP          shift and go to state 41
+    (               shift and go to state 94
 
 
 state 84
 
-    (23) circle_g -> CIRCLE { point_expression , RADIUS . ( expression ) , color_expression }
+    (24) rect_g -> RECT { point_expression , size_expression . , color_expression }
 
-    (               shift and go to state 96
+    ,               shift and go to state 95
 
 
 state 85
 
-    (24) rect_g -> RECT { point_expression , size_expression . , color_expression }
-
-    ,               shift and go to state 97
-
-
-state 86
-
-    (25) polygon_g -> POLYGON { ( points_expression ) . , color_expression }
-
-    ,               shift and go to state 98
-
-
-state 87
-
-    (27) points_expression -> point_expression , . points_expression
+    (25) polygon_g -> POLYGON { point_expression , ( . points_expression ) , color_expression }
     (26) points_expression -> . point_expression
     (27) points_expression -> . point_expression , points_expression
     (28) point_expression -> . POINT ( expression , expression )
 
     POINT           shift and go to state 52
 
-    point_expression               shift and go to state 74
-    points_expression              shift and go to state 99
+    point_expression               shift and go to state 96
+    points_expression              shift and go to state 97
 
-state 88
+state 86
 
     (16) translation -> TRANSLATE ( animation_param , point_expression . )
 
-    )               shift and go to state 100
+    )               shift and go to state 98
 
 
-state 89
+state 87
 
     (17) translation -> ROTATE ( animation_param , expression . , AROUND ( point_expression ) )
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
-    ,               shift and go to state 101
+    ,               shift and go to state 99
     ADD_OP          shift and go to state 40
     MUL_OP          shift and go to state 41
 
 
-state 90
+state 88
 
     (44) expression -> RANDOM ( expression , expression . )
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
-    )               shift and go to state 102
+    )               shift and go to state 100
     ADD_OP          shift and go to state 40
     MUL_OP          shift and go to state 41
 
 
-state 91
+state 89
 
     (41) assignation_time -> IDENTIFIER = TIME ( expression ) .
 
     ;               reduce using rule 41 (assignation_time -> IDENTIFIER = TIME ( expression ) .)
 
 
-state 92
+state 90
 
     (30) color_expression -> COLOR ( expression , . expression , expression )
+    (31) expression -> . expression ADD_OP expression
+    (32) expression -> . expression MUL_OP expression
+    (33) expression -> . NUMBER
+    (34) expression -> . IDENTIFIER
+    (35) expression -> . ( expression )
+    (36) expression -> . ADD_OP expression
+    (43) expression -> . RANDOM ( expression )
+    (44) expression -> . RANDOM ( expression , expression )
+
+    NUMBER          shift and go to state 28
+    IDENTIFIER      shift and go to state 29
+    (               shift and go to state 30
+    ADD_OP          shift and go to state 27
+    RANDOM          shift and go to state 31
+
+    expression                     shift and go to state 101
+
+state 91
+
+    (28) point_expression -> POINT ( expression , . expression )
+    (31) expression -> . expression ADD_OP expression
+    (32) expression -> . expression MUL_OP expression
+    (33) expression -> . NUMBER
+    (34) expression -> . IDENTIFIER
+    (35) expression -> . ( expression )
+    (36) expression -> . ADD_OP expression
+    (43) expression -> . RANDOM ( expression )
+    (44) expression -> . RANDOM ( expression , expression )
+
+    NUMBER          shift and go to state 28
+    IDENTIFIER      shift and go to state 29
+    (               shift and go to state 30
+    ADD_OP          shift and go to state 27
+    RANDOM          shift and go to state 31
+
+    expression                     shift and go to state 102
+
+state 92
+
+    (29) size_expression -> SIZE ( expression , . expression )
     (31) expression -> . expression ADD_OP expression
     (32) expression -> . expression MUL_OP expression
     (33) expression -> . NUMBER
@@ -1254,7 +1275,7 @@ state 92
 
 state 93
 
-    (28) point_expression -> POINT ( expression , . expression )
+    (14) structure -> FOR ( expression , expression , . expression ) { subprogram }
     (31) expression -> . expression ADD_OP expression
     (32) expression -> . expression MUL_OP expression
     (33) expression -> . NUMBER
@@ -1274,7 +1295,7 @@ state 93
 
 state 94
 
-    (29) size_expression -> SIZE ( expression , . expression )
+    (23) circle_g -> CIRCLE { point_expression , RADIUS ( . expression ) , color_expression }
     (31) expression -> . expression ADD_OP expression
     (32) expression -> . expression MUL_OP expression
     (33) expression -> . NUMBER
@@ -1294,84 +1315,44 @@ state 94
 
 state 95
 
-    (14) structure -> FOR ( expression , expression , . expression ) { subprogram }
-    (31) expression -> . expression ADD_OP expression
-    (32) expression -> . expression MUL_OP expression
-    (33) expression -> . NUMBER
-    (34) expression -> . IDENTIFIER
-    (35) expression -> . ( expression )
-    (36) expression -> . ADD_OP expression
-    (43) expression -> . RANDOM ( expression )
-    (44) expression -> . RANDOM ( expression , expression )
-
-    NUMBER          shift and go to state 28
-    IDENTIFIER      shift and go to state 29
-    (               shift and go to state 30
-    ADD_OP          shift and go to state 27
-    RANDOM          shift and go to state 31
-
-    expression                     shift and go to state 106
-
-state 96
-
-    (23) circle_g -> CIRCLE { point_expression , RADIUS ( . expression ) , color_expression }
-    (31) expression -> . expression ADD_OP expression
-    (32) expression -> . expression MUL_OP expression
-    (33) expression -> . NUMBER
-    (34) expression -> . IDENTIFIER
-    (35) expression -> . ( expression )
-    (36) expression -> . ADD_OP expression
-    (43) expression -> . RANDOM ( expression )
-    (44) expression -> . RANDOM ( expression , expression )
-
-    NUMBER          shift and go to state 28
-    IDENTIFIER      shift and go to state 29
-    (               shift and go to state 30
-    ADD_OP          shift and go to state 27
-    RANDOM          shift and go to state 31
-
-    expression                     shift and go to state 107
-
-state 97
-
     (24) rect_g -> RECT { point_expression , size_expression , . color_expression }
     (30) color_expression -> . COLOR ( expression , expression , expression )
 
     COLOR           shift and go to state 51
 
-    color_expression               shift and go to state 108
+    color_expression               shift and go to state 106
+
+state 96
+
+    (26) points_expression -> point_expression .
+    (27) points_expression -> point_expression . , points_expression
+
+    )               reduce using rule 26 (points_expression -> point_expression .)
+    ,               shift and go to state 107
+
+
+state 97
+
+    (25) polygon_g -> POLYGON { point_expression , ( points_expression . ) , color_expression }
+
+    )               shift and go to state 108
+
 
 state 98
-
-    (25) polygon_g -> POLYGON { ( points_expression ) , . color_expression }
-    (30) color_expression -> . COLOR ( expression , expression , expression )
-
-    COLOR           shift and go to state 51
-
-    color_expression               shift and go to state 109
-
-state 99
-
-    (27) points_expression -> point_expression , points_expression .
-
-    )               reduce using rule 27 (points_expression -> point_expression , points_expression .)
-
-
-state 100
 
     (16) translation -> TRANSLATE ( animation_param , point_expression ) .
 
     ;               reduce using rule 16 (translation -> TRANSLATE ( animation_param , point_expression ) .)
 
 
-state 101
+state 99
 
     (17) translation -> ROTATE ( animation_param , expression , . AROUND ( point_expression ) )
 
-    AROUND          shift and go to state 110
+    AROUND          shift and go to state 109
 
 
-state 102
+state 100
 
     (44) expression -> RANDOM ( expression , expression ) .
 
@@ -1382,20 +1363,31 @@ state 102
     ,               reduce using rule 44 (expression -> RANDOM ( expression , expression ) .)
 
 
-state 103
+state 101
 
     (30) color_expression -> COLOR ( expression , expression . , expression )
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
-    ,               shift and go to state 111
+    ,               shift and go to state 110
     ADD_OP          shift and go to state 40
     MUL_OP          shift and go to state 41
 
 
-state 104
+state 102
 
     (28) point_expression -> POINT ( expression , expression . )
+    (31) expression -> expression . ADD_OP expression
+    (32) expression -> expression . MUL_OP expression
+
+    )               shift and go to state 111
+    ADD_OP          shift and go to state 40
+    MUL_OP          shift and go to state 41
+
+
+state 103
+
+    (29) size_expression -> SIZE ( expression , expression . )
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
@@ -1404,9 +1396,9 @@ state 104
     MUL_OP          shift and go to state 41
 
 
-state 105
+state 104
 
-    (29) size_expression -> SIZE ( expression , expression . )
+    (14) structure -> FOR ( expression , expression , expression . ) { subprogram }
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
@@ -1415,9 +1407,9 @@ state 105
     MUL_OP          shift and go to state 41
 
 
-state 106
+state 105
 
-    (14) structure -> FOR ( expression , expression , expression . ) { subprogram }
+    (23) circle_g -> CIRCLE { point_expression , RADIUS ( expression . ) , color_expression }
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
@@ -1426,39 +1418,40 @@ state 106
     MUL_OP          shift and go to state 41
 
 
-state 107
-
-    (23) circle_g -> CIRCLE { point_expression , RADIUS ( expression . ) , color_expression }
-    (31) expression -> expression . ADD_OP expression
-    (32) expression -> expression . MUL_OP expression
-
-    )               shift and go to state 115
-    ADD_OP          shift and go to state 40
-    MUL_OP          shift and go to state 41
-
-
-state 108
+state 106
 
     (24) rect_g -> RECT { point_expression , size_expression , color_expression . }
 
-    }               shift and go to state 116
+    }               shift and go to state 115
+
+
+state 107
+
+    (27) points_expression -> point_expression , . points_expression
+    (26) points_expression -> . point_expression
+    (27) points_expression -> . point_expression , points_expression
+    (28) point_expression -> . POINT ( expression , expression )
+
+    POINT           shift and go to state 52
+
+    point_expression               shift and go to state 96
+    points_expression              shift and go to state 116
+
+state 108
+
+    (25) polygon_g -> POLYGON { point_expression , ( points_expression ) . , color_expression }
+
+    ,               shift and go to state 117
 
 
 state 109
-
-    (25) polygon_g -> POLYGON { ( points_expression ) , color_expression . }
-
-    }               shift and go to state 117
-
-
-state 110
 
     (17) translation -> ROTATE ( animation_param , expression , AROUND . ( point_expression ) )
 
     (               shift and go to state 118
 
 
-state 111
+state 110
 
     (30) color_expression -> COLOR ( expression , expression , . expression )
     (31) expression -> . expression ADD_OP expression
@@ -1478,7 +1471,7 @@ state 111
 
     expression                     shift and go to state 119
 
-state 112
+state 111
 
     (28) point_expression -> POINT ( expression , expression ) .
 
@@ -1487,7 +1480,7 @@ state 112
     )               reduce using rule 28 (point_expression -> POINT ( expression , expression ) .)
 
 
-state 113
+state 112
 
     (29) size_expression -> SIZE ( expression , expression ) .
 
@@ -1495,21 +1488,21 @@ state 113
     ,               reduce using rule 29 (size_expression -> SIZE ( expression , expression ) .)
 
 
-state 114
+state 113
 
     (14) structure -> FOR ( expression , expression , expression ) . { subprogram }
 
     {               shift and go to state 120
 
 
-state 115
+state 114
 
     (23) circle_g -> CIRCLE { point_expression , RADIUS ( expression ) . , color_expression }
 
     ,               shift and go to state 121
 
 
-state 116
+state 115
 
     (24) rect_g -> RECT { point_expression , size_expression , color_expression } .
 
@@ -1517,13 +1510,21 @@ state 116
     ,               reduce using rule 24 (rect_g -> RECT { point_expression , size_expression , color_expression } .)
 
 
+state 116
+
+    (27) points_expression -> point_expression , points_expression .
+
+    )               reduce using rule 27 (points_expression -> point_expression , points_expression .)
+
+
 state 117
 
-    (25) polygon_g -> POLYGON { ( points_expression ) , color_expression } .
+    (25) polygon_g -> POLYGON { point_expression , ( points_expression ) , . color_expression }
+    (30) color_expression -> . COLOR ( expression , expression , expression )
 
-    ;               reduce using rule 25 (polygon_g -> POLYGON { ( points_expression ) , color_expression } .)
-    ,               reduce using rule 25 (polygon_g -> POLYGON { ( points_expression ) , color_expression } .)
+    COLOR           shift and go to state 51
 
+    color_expression               shift and go to state 122
 
 state 118
 
@@ -1532,7 +1533,7 @@ state 118
 
     POINT           shift and go to state 52
 
-    point_expression               shift and go to state 122
+    point_expression               shift and go to state 123
 
 state 119
 
@@ -1540,7 +1541,7 @@ state 119
     (31) expression -> expression . ADD_OP expression
     (32) expression -> expression . MUL_OP expression
 
-    )               shift and go to state 123
+    )               shift and go to state 124
     ADD_OP          shift and go to state 40
     MUL_OP          shift and go to state 41
 
@@ -1573,7 +1574,7 @@ state 120
     (15) animation -> . translation
     (23) circle_g -> . CIRCLE { point_expression , RADIUS ( expression ) , color_expression }
     (24) rect_g -> . RECT { point_expression , size_expression , color_expression }
-    (25) polygon_g -> . POLYGON { ( points_expression ) , color_expression }
+    (25) polygon_g -> . POLYGON { point_expression , ( points_expression ) , color_expression }
     (16) translation -> . TRANSLATE ( animation_param , point_expression )
     (17) translation -> . ROTATE ( animation_param , expression , AROUND ( point_expression ) )
 
@@ -1586,7 +1587,7 @@ state 120
     TRANSLATE       shift and go to state 23
     ROTATE          shift and go to state 24
 
-    subprogram                     shift and go to state 124
+    subprogram                     shift and go to state 125
     statement                      shift and go to state 3
     assignation                    shift and go to state 4
     assignation_shape              shift and go to state 5
@@ -1609,16 +1610,23 @@ state 121
 
     COLOR           shift and go to state 51
 
-    color_expression               shift and go to state 125
+    color_expression               shift and go to state 126
 
 state 122
 
-    (17) translation -> ROTATE ( animation_param , expression , AROUND ( point_expression . ) )
+    (25) polygon_g -> POLYGON { point_expression , ( points_expression ) , color_expression . }
 
-    )               shift and go to state 126
+    }               shift and go to state 127
 
 
 state 123
+
+    (17) translation -> ROTATE ( animation_param , expression , AROUND ( point_expression . ) )
+
+    )               shift and go to state 128
+
+
+state 124
 
     (30) color_expression -> COLOR ( expression , expression , expression ) .
 
@@ -1626,35 +1634,43 @@ state 123
     }               reduce using rule 30 (color_expression -> COLOR ( expression , expression , expression ) .)
 
 
-state 124
+state 125
 
     (14) structure -> FOR ( expression , expression , expression ) { subprogram . }
 
-    }               shift and go to state 127
-
-
-state 125
-
-    (23) circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression . }
-
-    }               shift and go to state 128
+    }               shift and go to state 129
 
 
 state 126
 
-    (17) translation -> ROTATE ( animation_param , expression , AROUND ( point_expression ) . )
+    (23) circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression . }
 
-    )               shift and go to state 129
+    }               shift and go to state 130
 
 
 state 127
+
+    (25) polygon_g -> POLYGON { point_expression , ( points_expression ) , color_expression } .
+
+    ;               reduce using rule 25 (polygon_g -> POLYGON { point_expression , ( points_expression ) , color_expression } .)
+    ,               reduce using rule 25 (polygon_g -> POLYGON { point_expression , ( points_expression ) , color_expression } .)
+
+
+state 128
+
+    (17) translation -> ROTATE ( animation_param , expression , AROUND ( point_expression ) . )
+
+    )               shift and go to state 131
+
+
+state 129
 
     (14) structure -> FOR ( expression , expression , expression ) { subprogram } .
 
     ;               reduce using rule 14 (structure -> FOR ( expression , expression , expression ) { subprogram } .)
 
 
-state 128
+state 130
 
     (23) circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression } .
 
@@ -1662,7 +1678,7 @@ state 128
     ,               reduce using rule 23 (circle_g -> CIRCLE { point_expression , RADIUS ( expression ) , color_expression } .)
 
 
-state 129
+state 131
 
     (17) translation -> ROTATE ( animation_param , expression , AROUND ( point_expression ) ) .
 
